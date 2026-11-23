@@ -1,0 +1,158 @@
+{
+ "req": [
+  {
+   "id": "T1.7",
+   "key": "trackErr_urad",
+   "v": null,
+   "st": "OK",
+   "m": "Nişan noktası hatası el 3.47 / xel 2.08 µrad RMS, P99 9.53 µrad; kilit kaybı 0"
+  },
+  {
+   "id": "T1.7",
+   "key": "trackErr_urad",
+   "v": 5,
+   "st": "OK",
+   "m": "Nişan noktası hatası el 3.47 / xel 2.08 µrad RMS, P99 9.53 µrad; kilit kaybı 0"
+  },
+  {
+   "id": "T1.7",
+   "key": "trackErr_urad",
+   "v": 50,
+   "st": "OK",
+   "m": "Nişan noktası hatası el 3.47 / xel 2.08 µrad RMS, P99 9.53 µrad; kilit kaybı 0"
+  },
+  {
+   "id": "T1.8",
+   "key": "settle_ms",
+   "v": null,
+   "st": "BİLGİ",
+   "m": "Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad"
+  },
+  {
+   "id": "T1.8",
+   "key": "settle_ms",
+   "v": 300,
+   "st": "AŞIM",
+   "m": "Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad"
+  },
+  {
+   "id": "T1.8",
+   "key": "settle_ms",
+   "v": 500,
+   "st": "OK",
+   "m": "Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad"
+  },
+  {
+   "id": "T2.4",
+   "key": "shockPeak_urad",
+   "v": null,
+   "st": "BİLGİ",
+   "m": "Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 3.01 / deniz profili üzerinde 2.77 µrad RMS (tahsis 3)"
+  },
+  {
+   "id": "T2.4",
+   "key": "shockPeak_urad",
+   "v": 100,
+   "st": "AŞIM",
+   "m": "Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 3.01 / deniz profili üzerinde 2.77 µrad RMS (tahsis 3)"
+  },
+  {
+   "id": "T2.4",
+   "key": "shockPeak_urad",
+   "v": 200,
+   "st": "OK",
+   "m": "Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 3.01 / deniz profili üzerinde 2.77 µrad RMS (tahsis 3)"
+  },
+  {
+   "id": "T2.4",
+   "key": "shockSettle_ms",
+   "v": 1000,
+   "st": "AŞIM",
+   "m": "Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 3.01 / deniz profili üzerinde 2.77 µrad RMS (tahsis 3)"
+  },
+  {
+   "id": "T2.4",
+   "key": "shockSettle_ms",
+   "v": 3000,
+   "st": "AŞIM",
+   "m": "Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 3.01 / deniz profili üzerinde 2.77 µrad RMS (tahsis 3)"
+  },
+  {
+   "id": "T4.1",
+   "key": "boresight_urad",
+   "v": null,
+   "st": "BİLGİ",
+   "m": "En büyük kanal kayması 51.3 µrad (ölçüm doğruluğu ≈ 15 µrad; gereksinim girilmedi)"
+  },
+  {
+   "id": "T4.1",
+   "key": "boresight_urad",
+   "v": 20,
+   "st": "AŞIM",
+   "m": "En büyük kanal kayması 51.3 µrad (ölçüm doğruluğu ≈ 15 µrad; gereksinim 20 µrad)"
+  },
+  {
+   "id": "T4.1",
+   "key": "boresight_urad",
+   "v": 100,
+   "st": "OK",
+   "m": "En büyük kanal kayması 51.3 µrad (ölçüm doğruluğu ≈ 15 µrad; gereksinim 100 µrad)"
+  }
+ ],
+ "tw": [
+  {
+   "kind": "sub",
+   "Tw": 60,
+   "wander": 10.75631541318932,
+   "b105": 2.9088820866572163,
+   "opW": 0.000007082302249013513,
+   "opWx": 0.000004506949735844278,
+   "req": 20
+  },
+  {
+   "kind": "sub",
+   "Tw": 120,
+   "wander": 11.142706868564185,
+   "b105": 4.113780498294784,
+   "opW": 0.0000073748953608619894,
+   "opWx": 0.000005424803031177606,
+   "req": 20
+  },
+  {
+   "kind": "sub",
+   "Tw": 240,
+   "wander": 11.877840982065175,
+   "b105": 5.8177641733144325,
+   "opW": 0.000008519217036431722,
+   "opWx": 0.000008718099340429036,
+   "req": 20
+  },
+  {
+   "kind": "ship",
+   "Tw": 60,
+   "wander": 22.71845937911022,
+   "b105": 2.9088820866572163,
+   "opW": 0.000010223012983891543,
+   "opWx": 0.00000469398067015905,
+   "req": 20
+  },
+  {
+   "kind": "ship",
+   "Tw": 120,
+   "wander": 22.903929611553874,
+   "b105": 4.113780498294784,
+   "opW": 0.000010454549457873914,
+   "opWx": 0.000005538116193106086,
+   "req": 20
+  },
+  {
+   "kind": "ship",
+   "Tw": 240,
+   "wander": 23.270435786368378,
+   "b105": 5.8177641733144325,
+   "opW": 0.000011345577457109359,
+   "opWx": 0.000008338205492874633,
+   "req": 20
+  }
+ ]
+}

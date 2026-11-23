@@ -1,0 +1,11 @@
+ship: D_p 100 mm, D_c 150 mm, k 1.1 → vinyetlemesiz yanal kayma ≤ (D_c/k − D_p)/2 = 18.2 mm (k = 1: 25.0 mm); f_c/f 5, iğne deliği 33.3 µrad = 0.833 IFOV, görüntüsü 10.0 µm (piksel 12 µm)
+T1.3 (tohum 1301): en büyük yanal kayma 40.2 mm (yatay 37.5, düşey 35.7); vinyetleme süresi %8.0, en düşük örtüşme %86.2; gerekli D_c = k(D_p + 2e) = 199 mm (mevcut 150)
+   paralaks R = ∞: yalnız paralaks wander el 0.000 / xel 0.000 µrad (tepe 0.00 / 0.00); T1.3 wander el 8.061 / xel 5.819 µrad
+   paralaks R = 100 km (δ = f_c²/R = 23 µm): yalnız paralaks wander el 0.084 / xel 0.126 µrad (tepe 0.36 / 0.38); T1.3 wander el 8.077 / xel 5.869 µrad
+   paralaks R = 30 km (δ = f_c²/R = 75 µm): yalnız paralaks wander el 0.280 / xel 0.419 µrad (tepe 1.19 / 1.25); T1.3 wander el 8.119 / xel 5.994 µrad
+   paralaks R = 10 km (δ = f_c²/R = 225 µm): yalnız paralaks wander el 0.841 / xel 1.258 µrad (tepe 3.57 / 3.75); T1.3 wander el 8.262 / xel 6.412 µrad
+   paralaks R = 3 km (δ = f_c²/R = 750 µm): yalnız paralaks wander el 2.803 / xel 4.195 µrad (tepe 11.90 / 12.51); T1.3 wander el 9.022 / xel 8.387 µrad
+T0.3 uç poz +θ_test: en büyük yanal kayma 0.0 mm (yatay 0.0, düşey 0.0); vinyetleme süresi %NaN, en düşük örtüşme %100.0; gerekli D_c = k(D_p + 2e) = 110 mm (mevcut 150)
+T2.1 türü 1 Hz, erişim genliği (roll + yaw): en büyük yanal kayma 18.8 mm (yatay 13.2, düşey 13.3); vinyetleme süresi %0.0, en düşük örtüşme %100.0; gerekli D_c = k(D_p + 2e) = 151 mm (mevcut 150)
+T2.5 öteleme x ve z (1 ve 2 Hz, 2 m/s²): en büyük yanal kayma 50.7 mm (yatay 12.7, düşey 50.7); vinyetleme süresi %17.1, en düşük örtüşme %73.3; gerekli D_c = k(D_p + 2e) = 221 mm (mevcut 150)
+T2.3 (deniz + VIV): en büyük yanal kayma 37.2 mm (yatay 32.2, düşey 34.3); vinyetleme süresi %4.2, en düşük örtüşme %89.7; gerekli D_c = k(D_p + 2e) = 192 mm (mevcut 150)

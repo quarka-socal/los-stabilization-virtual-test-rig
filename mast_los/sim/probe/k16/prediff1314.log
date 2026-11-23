@@ -1,0 +1,33 @@
+FARK SAYISI 72 (6 grup)
+== play/off/metrics: 17
+    play/off/metrics/Tw : yalnız yeni
+    play/off/metrics/base[0]/al : 4.2688682312579695 → 3.685606637235281
+    play/off/metrics/base[0]/cmd : yalnız yeni
+    play/off/metrics/base[0]/fbw : yalnız yeni
+    play/off/metrics/base[0]/om : 4.363900575203044 → 4.363772368872532
+    play/off/metrics/base[0]/th : 5.3049268198525095 → 5.3049265433035675
+== play/off/scaleEff: 1
+    play/off/scaleEff : yalnız yeni
+== play/on/metrics: 17
+    play/on/metrics/Tw : yalnız yeni
+    play/on/metrics/base[0]/al : 4.2688682312579695 → 3.685606637235281
+    play/on/metrics/base[0]/cmd : yalnız yeni
+    play/on/metrics/base[0]/fbw : yalnız yeni
+    play/on/metrics/base[0]/om : 4.363900575203044 → 4.363772368872532
+    play/on/metrics/base[0]/th : 5.3049268198525095 → 5.3049265433035675
+== play/on/scaleEff: 1
+    play/on/scaleEff : yalnız yeni
+== ship/play/off: 18
+    ship/play/off/metrics/Tw : yalnız yeni
+    ship/play/off/metrics/base[0]/al : 4.2688682312579695 → 3.883935128592065
+    ship/play/off/metrics/base[0]/cmd : yalnız yeni
+    ship/play/off/metrics/base[0]/fbw : yalnız yeni
+    ship/play/off/metrics/base[0]/om : 5.118012823521293 → 5.117925553730657
+    ship/play/off/metrics/base[0]/th : 7.702702294025921 → 7.702702077903223
+== ship/play/on: 18
+    ship/play/on/metrics/Tw : yalnız yeni
+    ship/play/on/metrics/base[0]/al : 4.2688682312579695 → 3.883935128592065
+    ship/play/on/metrics/base[0]/cmd : yalnız yeni
+    ship/play/on/metrics/base[0]/fbw : yalnız yeni
+    ship/play/on/metrics/base[0]/om : 5.118012823521293 → 5.117925553730657
+    ship/play/on/metrics/base[0]/th : 7.702702294025921 → 7.702702077903223

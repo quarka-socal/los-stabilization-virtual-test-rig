@@ -1,0 +1,18 @@
+sub kestirim %0: T2.2 OK — Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.05 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.0 | T2.3 OK — Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+sub kestirim %5: T2.2 OK — Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.54 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.4 | T2.3 OK — Kombine artık 6.68 µrad; ayrı testlerin RSS'i 7.14 µrad → sapma -6.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+sub kestirim %-5: T2.2 OK — Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.64 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.4 | T2.3 OK — Kombine artık 6.68 µrad; ayrı testlerin RSS'i 7.14 µrad → sapma -6.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+sub kestirim %10: T2.2 AŞIM — Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 31.07 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 3. | T2.3 OK — Kombine artık 6.77 µrad; ayrı testlerin RSS'i 7.43 µrad → sapma -9.0 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+sub kestirim %20: T2.2 AŞIM — Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 31.07 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 5.
+ship kestirim %0: T2.2 AŞIM — Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 6.55 µrad RMS (tahsis 6.0); f_n = 4.10 Hz'de OFF 60.30 → ON 5.7
+ship kestirim %5: T2.2 AŞIM — Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 7.58 µrad RMS (tahsis 6.0); f_n = 4.10 Hz'de OFF 60.30 → ON 6.7
+ship kestirim %10: T2.2 AŞIM — Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 9.93 µrad RMS (tahsis 6.0); f_n = 4.10 Hz'de OFF 60.30 → ON 8.9
+gözlemci tam bilgi: T1.6 OK tepe 5.8 µrad | işletme B1-07 el 2.71 µrad
+gözlemci F_c × 0,9: T1.6 AŞIM tepe 13.8 µrad | işletme B1-07 el 7.04 µrad
+gözlemci F_c × 1,1: T1.6 OK tepe 8.8 µrad | işletme B1-07 el 2.85 µrad
+gözlemci F_c, F_s × 0,9: T1.6 AŞIM tepe 17.2 µrad | işletme B1-07 el 7.44 µrad
+gözlemci F_c, F_s × 1,1: T1.6 AŞIM tepe 10.9 µrad | işletme B1-07 el 3.23 µrad
+gözlemci F_s × 1,2: T1.6 OK tepe 7.8 µrad | işletme B1-07 el 2.61 µrad
+gözlemci v_s × 0,5: T1.6 OK tepe 7.6 µrad | işletme B1-07 el 2.95 µrad
+gözlemci v_s × 2: T1.6 OK tepe 4.6 µrad | işletme B1-07 el 2.29 µrad
+gözlemci σ0 × 0,5: T1.6 AŞIM tepe 58.4 µrad | işletme B1-07 el 18.85 µrad
+gözlemci σ0 × 2: T1.6 AŞIM tepe 58.0 µrad | işletme B1-07 el 16.74 µrad

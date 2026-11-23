@@ -1,0 +1,8 @@
+sub: f_v 3 Hz, taban roll RMS 617.1 µrad, öteleme 2.33 mm; döngü DRR -60.20 dB
+   tam: optik LOS el 2.105 µrad (-49.34 dB), mekanik 2.090 µrad (-49.40 dB)
+   öteleme yok: optik LOS el 2.016 µrad (-49.72 dB), mekanik 2.003 µrad (-49.77 dB)
+   modlar yok: optik LOS el 2.105 µrad (-49.34 dB), mekanik 2.090 µrad (-49.40 dB)
+ship: f_v 4.1 Hz, taban roll RMS 1941.7 µrad, öteleme 14.65 mm; döngü DRR -45.48 dB
+   tam: optik LOS el 5.784 µrad (-50.52 dB), mekanik 5.680 µrad (-50.68 dB)
+   öteleme yok: optik LOS el 5.205 µrad (-51.44 dB), mekanik 5.169 µrad (-51.50 dB)
+   modlar yok: optik LOS el 5.784 µrad (-50.52 dB), mekanik 5.680 µrad (-50.68 dB)

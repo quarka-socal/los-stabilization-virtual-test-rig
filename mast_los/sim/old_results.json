@@ -1,0 +1,168 @@
+{
+ "T0.1": {
+  "status": "OK",
+  "fill": {},
+  "measured": "IFOV_eff = 40.1588 µrad/px (nominale göre 0.397 %); ölçek belirsizliği 0.0018 %"
+ },
+ "T0.2": {
+  "status": "OK",
+  "fill": {
+   "B2-05": 3.011565245139017e-7
+  },
+  "measured": "σ_taban: stab ON 3.81 / 3.39 µrad, stab OFF 2.04 / 1.67 µrad (el / xel)"
+ },
+ "T0.3": {
+  "status": "OK",
+  "fill": {},
+  "measured": "Hexapod açısal gürültüsü (IMU): roll 2.05, pitch 2.05, yaw 2.05 µrad RMS"
+ },
+ "T0.4": {
+  "status": "OK",
+  "fill": {},
+  "measured": "Video − IMU gecikmesi -0.928 ± 0.032 ms (10 darbe); kompanze edilmezse f_bw'de 6.68°, kompanzasyon sonrası belirsizlik (2σ) 0.46°"
+ },
+ "T0.5": {
+  "status": "BİLGİ",
+  "fill": {},
+  "measured": "Kanal paralellik referansı kaydedildi (ölçüm doğruluğu ≈ 15 µrad)."
+ },
+ "T0.6": {
+  "status": "OK",
+  "fill": {
+   "B1-05": 0.0000012323058646949487,
+   "B1-06": 2.2343765018016726e-7
+  },
+  "measured": "ARW 0.00424 °/√h (sınır 0.005), bias kararsızlığı 0.0461 °/h (sınır 0.05)"
+ },
+ "T0.7": {
+  "status": "OK",
+  "fill": {
+   "H7": 0.0000013388427207447742
+  },
+  "measured": "KAPALI: yatay 47.10, düşey 55.67 µrad/s (hesap 46.9 / 55.9); AÇIK: 0.691 / 1.339 µrad/s (sınır 1.52)"
+ },
+ "T1.1": {
+  "status": "OK",
+  "fill": {
+   "B1-01": 0.0000045807290720076695,
+   "B1-03": 0.0000018250799710382164,
+   "B1-04": 0.0000021711429678013
+  },
+  "measured": "DRR(f) eğrisi: roll 0.050 Hz -84.6 dB; roll 0.083 Hz -81.4 dB; roll 0.100 Hz -80.3 dB; roll 0.125 Hz -78.4 dB*; roll 0.200 Hz -73.5 dB; yaw 0.050 Hz -79.8 dB; yaw 0.083 Hz -77.9 dB*; yaw 0.100 Hz -73.3 dB; yaw 0.125 Hz -73.1 dB; yaw 0.200 Hz -67.8 dB (* baskın frekans, kabul burada)"
+ },
+ "T1.2": {
+  "status": "OK",
+  "fill": {},
+  "measured": "En büyük |kazanç − 1| = 0.021 % (genlik 0.50° ≤ 0.94°)"
+ },
+ "T1.3": {
+  "status": "OK",
+  "fill": {
+   "T1.3": 0.000006957987379551335
+  },
+  "measured": "Wander (en kötü tohum) el 6.96 / xel 6.65 µrad RMS; P99 17.39 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %"
+ },
+ "T1.4": {
+  "status": "OK",
+  "fill": {},
+  "measured": "el 0°: roll→el -82.4 dB, yaw→xel -82.2 dB; el 30°: roll→el -81.5 dB, yaw→xel -88.9 dB; el 60°: roll→el -78.4 dB, yaw→xel -79.2 dB; el 75°: roll→el -80.3 dB, yaw→xel -79.6 dB (baskın frekanslarda)"
+ },
+ "T1.5": {
+  "status": "OK",
+  "fill": {
+   "R-01": 0.000012733100576071717
+  },
+  "measured": "Alan kenarı yer değiştirmesi: türetme OFF 473.8 µrad, ON 12.73 µrad RMS (sınır 20.0)"
+ },
+ "T1.6": {
+  "status": "OK",
+  "fill": {
+   "B1-07": 0.0000014507069148429808
+  },
+  "measured": "Yön değişimi geçişi (senkron ortalama): tepe 5.8 µrad (sınır 10.3), tekrarlanan bileşen el 1.45 µrad RMS; 40 sıfır geçişi"
+ },
+ "T1.7": {
+  "status": "OK",
+  "fill": {},
+  "measured": "Nişan noktası hatası el 3.46 / xel 2.08 µrad RMS, P99 9.51 µrad; kilit kaybı 0"
+ },
+ "T1.8": {
+  "status": "BİLGİ",
+  "fill": {},
+  "measured": "Oturma süresi (|hata| ≤ 20 µrad): en büyük 390 ms, ortalama 352 ms; aşma en büyük 0.13 mrad"
+ },
+ "T2.1": {
+  "status": "OK",
+  "fill": {},
+  "measured": "VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.2 dB (bilgi); 0 rezonans adayı"
+ },
+ "T2.2": {
+  "status": "OK",
+  "fill": {
+   "B2-01": 0.0000018351616347009964
+  },
+  "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 2.46 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 19.12 → ON 1.84 µrad"
+ },
+ "T2.3": {
+  "status": "OK",
+  "fill": {},
+  "measured": "Kombine artık 6.62 µrad; ayrı testlerin RSS'i 7.02 µrad → sapma -5.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad"
+ },
+ "T2.4": {
+  "status": "BİLGİ",
+  "fill": {
+   "B2-02": 0.000002692956456852862
+  },
+  "measured": "Tepe hata en büyük 127.6 µrad, oturma en uzun 2443 ms; işletme kestirimi B2-02: durgun gimbal 2.92 / deniz profili üzerinde 2.69 µrad RMS (tahsis 3)"
+ },
+ "T2.5": {
+  "status": "OK",
+  "fill": {
+   "B2-03": 0.0000016176696634944955
+  },
+  "measured": "İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.62 µrad RMS (tahsis 3); duyarlılık 1.879 µrad/(m/s²)"
+ },
+ "T3.1": {
+  "status": "OK",
+  "fill": {
+   "B2-06": 0.0000016439245945739107
+  },
+  "measured": "B2-06 ⊕ B3 LOS (taban + 3 öteleme ekseni): optik el 5.03 / xel 4.45 µrad; ayna kanalı el 3.13 / xel 2.32 µrad (sınır 6.5)"
+ },
+ "T3.2": {
+  "status": "OK",
+  "fill": {
+   "MTF": 0.9699114475471035
+  },
+  "measured": "MTF_titreşim/MTF_statik @ Nyquist en kötü 0.9699 (sınır 0.7346)"
+ },
+ "T3.3": {
+  "status": "OK",
+  "fill": {},
+  "measured": "Yüksek hızlı kanal TUR = 4.26 (hedef 4); ayna PSD'si: wander 2.01 / smear 0.55 µrad, gerçek optik: 2.12 / 0.92 µrad"
+ },
+ "T3.4": {
+  "status": "OK",
+  "fill": {
+   "B3-02": 0.0000014697440990152583
+  },
+  "measured": "Videoda 10.0 Hz'e katlanan ton → sinc düzeltmeli temel bileşen 1.47 µrad RMS (tahsis 2); ayna kanalı 0.002 µrad (görmez)"
+ },
+ "T3.5": {
+  "status": "OK",
+  "fill": {
+   "B3-03": 0.0000020678443934662966
+  },
+  "measured": "120 Hz: optik 26.30 / ayna 0.05 µrad RMS → Optik iç hareket (zoom grubu / FPA / ayna montajı) — aynada görünmez; 180 Hz: optik 17.37 / ayna 17.39 µrad RMS → Gimbal / taşıyıcı yapı — aynada görünür; işletmede B3-03 ≈ 2.07 µrad"
+ },
+ "T4.1": {
+  "status": "BİLGİ",
+  "fill": {},
+  "measured": "En büyük kanal kayması 51.3 µrad (ölçüm doğruluğu ≈ 15 µrad; gereksinim girilmedi)"
+ },
+ "T4.2": {
+  "status": "AŞIM",
+  "fill": {},
+  "measured": "Yapılandırılmış DUT (sabit FF): -20 °C sürtünme tepesi 82.0 µrad, 3 Hz artık 15.05 µrad; 20 °C sürtünme tepesi 5.5 µrad, 3 Hz artık 2.03 µrad; 55 °C sürtünme tepesi 13.2 µrad, 3 Hz artık 2.72 µrad"
+ }
+}

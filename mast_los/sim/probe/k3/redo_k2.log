@@ -1,0 +1,10 @@
+Varsayılan (dar): |a| 0.0254 m/s² (tam ilişkili 0.0254), B1-08 0.051 µrad | q analitik 0.900, koşu 0.885 (talep 0.113 m) | T1.3 OK: Wander (en kötü tohum) el 6.94 / xel 6.54 µrad RMS; P99 17.33 µrad; FO
+Roll genliği 6°: |a| 0.0490 m/s² (tam ilişkili 0.0490), B1-08 0.098 µrad | q analitik 0.450, koşu 0.445 (talep 0.225 m) | T1.3 OK: Wander (en kötü tohum) el 9.80 / xel 6.54 µrad RMS; P99 24.00 µrad; FO
+Roll periyodu 4 s: |a| 0.0971 m/s² (tam ilişkili 0.0971), B1-08 0.194 µrad | q analitik 0.900, koşu 0.761 (talep 0.131 m)
+Roll periyodu 16 s: |a| 0.0098 m/s² (tam ilişkili 0.0098), B1-08 0.020 µrad | q analitik 0.900, koşu 0.902 (talep 0.111 m)
+Yaw 2° / 6 s: |a| 0.0254 m/s² (tam ilişkili 0.0254), B1-08 0.051 µrad | q analitik 0.900, koşu 0.885 (talep 0.113 m)
+σ_ln 0,30: |a| 0.0344 m/s² (tam ilişkili 0.0344), B1-08 0.069 µrad | q analitik 0.900, koşu 0.839 (talep 0.119 m)
+6-DOF SS4, k_p = 2: |a| 0.9540 m/s² (tam ilişkili 1.0316), B1-08 1.908 µrad | q analitik 0.200, koşu 0.110 (talep 0.906 m)
+Roll genliği 20°: |a| 0.1615 m/s² (tam ilişkili 0.1615), B1-08 0.323 µrad | q analitik 0.135, koşu 0.146 (talep 0.685 m)
+Deniz frekansında DRR −75 dB: |a| 0.0254 m/s² (tam ilişkili 0.0254), B1-08 0.051 µrad | q analitik 0.900, koşu 0.885 (talep 0.113 m)
+6-DOF SS4 (h = 1 m): |a| 0.6360 m/s² (tam ilişkili 0.6877), B1-08 1.272 µrad | q analitik 0.200, koşu 0.166 (talep 0.604 m) | T1.3 OK: Wander (en kötü tohum) el 9.04 / xel 7.44 µrad RMS; P99 22.66 µrad; FO

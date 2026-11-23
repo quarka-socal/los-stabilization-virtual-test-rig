@@ -1,0 +1,54 @@
+[
+ {
+  "name": "Gemi varsayılanı (dar, h = 15 m)",
+  "id": "T1.3",
+  "status": "OK",
+  "measured": "Wander (en kötü tohum) el 8.03 / xel 5.80 µrad RMS; P99 20.62 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 11.13 / 9.44 µrad (gereksinim 120)",
+  "sec": 13.069,
+  "fill": {
+   "T1.3": 0.00000802890779610926
+  },
+  "q": "talep ±3.13 m → hexapod ±100 mm (q = 0.0319)",
+  "hex": "12.05° / 7.75°/s / 5.47°/s²",
+  "note": "Laboratuvar deniz ötelemesini (6-DOF ağırlık merkezi ve h = 15 m kaldıraç kolu) hexapod stroku içinde q = 0.0319 oranında üretir; ötelemenin LOS etkisi bu testte tam ölçekte yoktur. İşletme ivmesindeki etkisi T2.5'te ivme eşdeğeriyle ölçülür (B1-08)."
+ },
+ {
+  "name": "Roll 20° (hexapod sınırı)",
+  "id": "T1.3",
+  "status": "AŞIM",
+  "measured": "Wander (en kötü tohum) el 24.40 / xel 5.64 µrad RMS; P99 81.70 µrad; FOV'da kalma 100.00 %; kırpma 26.561 %; MWIR-WFOV: 25.74 / 9.44 µrad (gereksinim 120)",
+  "sec": 10.011,
+  "fill": {
+   "T1.3": 0.00002440277388326747
+  },
+  "q": "—",
+  "hex": "43.28° / 33.23°/s / 26.49°/s²",
+  "note": null
+ },
+ {
+  "name": "Roll genliği 6°",
+  "id": "T1.3",
+  "status": "OK",
+  "measured": "Wander (en kötü tohum) el 9.60 / xel 5.57 µrad RMS; P99 23.98 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 12.30 / 9.37 µrad (gereksinim 120)",
+  "sec": 10.013,
+  "fill": {
+   "T1.3": 0.000009602662557881576
+  },
+  "q": "—",
+  "hex": "12.99° / 9.97°/s / 7.95°/s²",
+  "note": null
+ },
+ {
+  "name": "Kaldıraç kolu h = 10 m (denizaltı, dar)",
+  "id": "T1.3",
+  "status": "OK",
+  "measured": "Wander (en kötü tohum) el 6.72 / xel 5.57 µrad RMS; P99 17.30 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 10.12 / 9.36 µrad (gereksinim 120)",
+  "sec": 12.629,
+  "fill": {
+   "T1.3": 0.0000067186124814035445
+  },
+  "q": "talep ±1.13 m → hexapod ±100 mm (q = 0.0884)",
+  "hex": "6.49° / 4.98°/s / 3.97°/s²",
+  "note": "Laboratuvar deniz ötelemesini (6-DOF ağırlık merkezi ve h = 10 m kaldıraç kolu) hexapod stroku içinde q = 0.0884 oranında üretir; ötelemenin LOS etkisi bu testte tam ölçekte yoktur. İşletme ivmesindeki etkisi T2.5'te ivme eşdeğeriyle ölçülür (B1-08)."
+ }
+]

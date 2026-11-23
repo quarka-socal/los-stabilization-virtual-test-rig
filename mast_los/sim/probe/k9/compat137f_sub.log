@@ -1,0 +1,39 @@
+T0.1 OK 3.5 s
+T0.2 OK 6.0 s
+T0.3 OK 8.4 s
+T0.4 OK 0.7 s
+T0.5 BİLGİ 0.0 s
+T0.6 OK 0.7 s
+T0.7 OK 6.3 s
+T1.1 OK 16.1 s
+T1.2 OK 1.8 s
+T1.3 OK 109.1 s
+T1.4 OK 155.9 s
+T1.5 OK 42.8 s
+T1.6 OK 40.4 s
+T1.7 OK 28.3 s
+T1.8 BİLGİ 8.5 s
+T1.9 BİLGİ 0.0 s
+T2.1 OK 51.4 s
+T2.2 OK 8.5 s
+T2.3 OK 6.8 s
+T2.4 BİLGİ 2.7 s
+T2.5 OK 0.9 s
+T3.1 OK 6.2 s
+T3.2 OK 0.0 s
+T3.3 OK 0.0 s
+T3.4 OK 2.0 s
+T3.5 OK 1.8 s
+T4.1 BİLGİ 0.0 s
+T4.2 AŞIM 9.8 s
+op 560 s
+FARK SAYISI 9
+{"path":"T0.1.notes","base":"[\"Kalibre IFOV, sonraki testlerde videonun açıya çevrilmesinde kullanılır (bağlam: IFOV_cal).\",\"Referans açı hexapod üstündeki IMU'dan alındı; IMU gürültüsü bekleme ortalamasında ihmal edilebilir.\",\"Simülasyonda hexapod histerezisi ve kinematik kalibrasyon hatası yoktur: gidiş-dönüş farkı yalnız taban gürültüsünü gösterir. Gerçek düzenekte bu fark hexapod tekrarlanabilirliğinin ölçüsüdür.\",\"Piksel","now":"[\"Kalibre IFOV, sonraki testlerde videonun açıya çevrilmesinde kullanılır (bağlam: IFOV_cal).\",\"Referans açı hexapod üstündeki IMU'dan alındı; IMU gürültüsü bekleme ortalamasında ihmal edilebilir.\",\"Simülasyonda hexapod histerezisi ve kinematik kalibrasyon hatası yoktur: gidiş-dönüş farkı yalnız taban gürültüsünü gösterir. Gerçek düzenekte bu fark hexapod tekrarlanabilirliğinin ölçüsüdür.\",\"Piksel"}
+{"path":"T0.2.kv","base":"[[\"Stab OFF σ (el / xel)\",\"2.04 / 1.67 µrad\"],[\"Stab ON σ (el / xel)\",\"3.81 / 3.39 µrad\"],[\"Beyaz (kareden kareye) kısım, OFF\",\"1.65 / 1.39 µrad\"],[\"Döngü kaynaklı (ON ⊖ OFF), video, 120 s pencere\",\"3.22 / 2.95 µrad\"],[\"Döngü kaynaklı, kapalı döngü bandı ≥ 1 Hz (otokolimatör PSD farkı) → B2-05\",\"0.30 / 0.30 µrad\"],[\"Kabul sınırı (seçili TUR tanımı)\",\"5.00 µrad\"],[\"Bütçe tabanı u_video (U-01…U-07; ","now":"[[\"Stab OFF σ (el / xel)\",\"2.04 / 1.67 µrad\"],[\"Stab ON σ (el / xel)\",\"3.81 / 3.39 µrad\"],[\"Beyaz (kareden kareye) kısım, OFF\",\"1.65 / 1.39 µrad\"],[\"Döngü kaynaklı (ON ⊖ OFF), video, 120 s pencere\",\"3.22 / 2.95 µrad\"],[\"Döngü kaynaklı, kapalı döngü bandı ≥ 1 Hz (otokolimatör PSD farkı) → B2-05\",\"0.30 / 0.30 µrad\"],[\"Kabul sınırı (seçili TUR tanımı)\",\"5.00 µrad\"],[\"Bütçe tabanı u_video (U-01…U-07; "}
+{"path":"T0.2.num","base":"{\"onEl\":0.000003810400353565165,\"onXel\":0.000003389476161824274,\"offEl\":0.0000020415621148279964,\"offXel\":0.0000016697625808770644,\"wOffEl\":0.0000016506741781875482,\"wOffXel\":0.000001388457865193972,\"hbEl\":3.016644645913153e-7,\"hbXel\":2.971017079741382e-7,\"expEl\":1.5991417804566612,\"expXel\":1.48481328396257,\"dutEl\":1.2691420073021225,\"dutXel\":0.7638302090553393,\"acOffEl\":0.000001114426506904065,\"a","now":"{\"onEl\":0.000003810400353565165,\"onXel\":0.000003389476161824274,\"offEl\":0.0000020415621148279964,\"offXel\":0.0000016697625808770644,\"wOffEl\":0.0000016506741781875482,\"wOffXel\":0.000001388457865193972,\"hbEl\":3.016644645913153e-7,\"hbXel\":2.971017079741382e-7,\"expEl\":1.5991417804566612,\"expXel\":1.48481328396257,\"dutEl\":1.2691420073021225,\"dutXel\":0.7638302090553393,\"acOffEl\":0.000001114426506904065,\"a"}
+{"path":"T0.7.kv","base":"[[\"KAPALI kayıt süresi\",\"120 s\"],[\"KAPALI yatay / düşey hız\",\"47.10 / 55.67 µrad/s\"],[\"Hesaplanan (Model → Dünya dönüşü)\",\"46.87 / 55.86 µrad/s\"],[\"Göreli fark\",\"0.48 % / -0.35 %\"],[\"AÇIK kayıt süresi\",\"900 s\"],[\"AÇIK yatay / düşey hız\",\"0.691 / 1.339 µrad/s\"],[\"AÇIK eşik (Ω·δ + bias)\",\"1.52 µrad/s\"],[\"Hedef alan dışına çıkma (KAPALI, hesap)\",\"367 s\"]]","now":"[[\"KAPALI kayıt süresi\",\"120 s\"],[\"KAPALI yatay / düşey hız\",\"47.10 / 55.67 µrad/s\"],[\"Hesaplanan (Model → Dünya dönüşü)\",\"46.87 / 55.86 µrad/s\"],[\"Göreli fark\",\"0.48 % / -0.35 %\"],[\"AÇIK kayıt süresi\",\"900 s\"],[\"AÇIK yatay / düşey hız\",\"0.691 / 1.339 µrad/s\"],[\"AÇIK eşik: Ω·δ + gyro bias payı (H.bias = 0.050 °/h; bütçe drift satırıyla aynı)\",\"1.273 + 0.242 = 1.52 µrad/s\"],[\"KAPALI tolerans (%10·h"}
+{"path":"T0.7.notes","base":"[\"AÇIK durumdaki artık, LOS'a ve Ω'ya dik yönde Ω·δ büyüklüğünde bir kompanzasyon hatası olarak modellenir; eksen başına izdüşümü Ω·δ sınırının altında kalır.\",\"Drift ölçümünde kör trend çıkarılmaz; burada eğim zaten ölçülen büyüklüktür.\"]","now":"[\"AÇIK durumdaki artık, LOS'a ve Ω'ya dik yönde Ω·δ büyüklüğünde bir kompanzasyon hatası olarak modellenir; eksen başına izdüşümü Ω·δ sınırının altında kalır.\",\"v13.7: AÇIK eşiği gyro bias payını bütçenin drift satırıyla aynı bileşimle alır (kararsızlık + sabit bias artığı + sıcaklık kayması); KAPALI ölçütü, hesaplanan hızın sıfır olduğu eksende de tanımlı olacak biçimde mutlak toleranslıdır. Ayrı"}
+{"path":"T0.7.num","base":"{\"offH\":-0.000047096064237398655,\"offV\":0.000055665846029170965,\"onH\":6.909100674120209e-7,\"onV\":0.000001338841094598454,\"calcH\":0.00004687281170409358,\"calcV\":0.00005586084174334546,\"limOn\":0.000001515121002395431}","now":"{\"offH\":-0.000047096064237398655,\"offV\":0.000055665846029170965,\"onH\":6.909100674120209e-7,\"onV\":0.000001338841094598454,\"calcH\":0.00004687281170409358,\"calcV\":0.00005586084174334546,\"limOn\":0.000001515121002395431,\"offTolH\":0.000004929688010964127,\"offTolV\":0.000005828491014889314,\"dec\":{\"eEl\":8.180846950869223e-7,\"eXel\":9.749553744124647e-7,\"bEl\":5.559078589712496e-7,\"bXel\":-2.719829232273538e-7"}
+{"path":"T1.3.kv","base":"[[\"Tohum başına wander el/xel (µrad)\",\"6.74/5.60 · 6.96/4.89 · 6.74/6.57\"],[\"Taban düzeltmesi\",\"kapalı: masa mikro-titreşimi (U-03, 2.0 µrad) düşülmez — örnek DUT'ta ölçüme karesel eklenmiyor (sürtünme ditheri, V&V M7); düşüm iyimser olurdu\"],[\"MWIR-WFOV (IFOV 240 µrad), tohum 1\",\"wander el/xel 10.16 / 9.40 µrad = 0.042 / 0.039 px; P99 26.09 µrad (gereksinim 120 / 309 µrad)\"],[\"Radyal wander (tohu","now":"[[\"Tohum başına wander el/xel (µrad)\",\"6.74/5.60 · 6.96/4.89 · 6.74/6.57\"],[\"Taban düzeltmesi\",\"kapalı: masa mikro-titreşimi (U-03, 2.0 µrad) düşülmez — örnek DUT'ta ölçüme karesel eklenmiyor (sürtünme ditheri, V&V M7); düşüm iyimser olurdu\"],[\"MWIR-WFOV (IFOV 240 µrad), tohum 1\",\"wander el/xel 10.16 / 9.40 µrad = 0.042 / 0.039 px; P99 26.09 µrad (gereksinim 120 / 309 µrad)\"],[\"Radyal wander (tohu"}
+{"path":"T1.3.num","base":"{\"pupil\":{\"eMax\":0.013602607863651344,\"hMax\":0.004707677640968142,\"vMax\":0.013568911218510957,\"thPerp\":0.11366037108633387,\"ovMin\":1,\"fVig\":0,\"req\":0.139925737300033,\"ok\":true,\"eFree\":0.018181818181818174,\"Dc\":0.15,\"Dp\":0.1,\"k\":1.1,\"stab\":true,\"hP\":0}}","now":"{\"pupil\":{\"eMax\":0.013602607863651344,\"hMax\":0.004707677640968142,\"vMax\":0.013568911218510957,\"thPerp\":0.11366037108633387,\"ovMin\":1,\"fVig\":0,\"req\":0.139925737300033,\"ok\":true,\"eFree\":0.018181818181818174,\"Dc\":0.15,\"Dp\":0.1,\"k\":1.1,\"stab\":true,\"hP\":0},\"guard\":[{\"label\":\"wander el\",\"x\":0.000006960255602413257,\"R\":0.00002,\"k\":2,\"uStat\":1.2736418172250777e-7,\"uRel\":0.00001440932764093663,\"uc\":1.27364"}
+{"path":"T3.3.notes","base":"[\"Ayna (otokolimatör) kanalı optik içi hareketi göremez: soğutucu (B3-02) ve optik alt montaj (B3-03) eksik kalır. ROI (pencere) yüksek kare hızı modu varsa optik LOS doğrudan ölçülür.\",\"Durum, bütçedeki u_h ile hesaplanan TUR'dan gelir (analitik). T0.2'nin stab OFF otokolimatör kaydı zincirin hava ⊕ gürültü kısmını ölçer; masa mikro-titreşimi (U-03), IMU (U-04) ve ölçek (U-05) bütçeden eklenerek ","now":"[\"Ayna (otokolimatör) kanalı optik içi hareketi göremez: soğutucu (B3-02) ve optik alt montaj (B3-03) eksik kalır. ROI (pencere) yüksek kare hızı modu optik LOS'u doğrudan görürdü; kullanıcı kararıyla (v13.7) T3.3'e eklenmedi.\",\"Durum, bütçedeki u_h ile hesaplanan TUR'dan gelir (analitik). T0.2'nin stab OFF otokolimatör kaydı zincirin hava ⊕ gürültü kısmını ölçer; masa mikro-titreşimi (U-03), IMU "}

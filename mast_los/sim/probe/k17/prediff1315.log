@@ -1,0 +1,17 @@
+FARK SAYISI 10 (6 grup)
+== tests/T1.9/notes[2]: 1
+    tests/T1.9/notes[2] : "PPV sınırı 6.5·σ_eksen: Gauss kalıntıda 60 s'lik tepe-tepe/σ ≈ 6–8,5'tir (Rice / Cartwrigh" → "PPV sınırı 6.5·σ_eksen. Gauss kalıntıda 60 s'lik tepe-tepe/σ'nın beklentisi kaydın tayfına"
+== tests/T1.9/num: 2
+    tests/T1.9/num/once/gauss : yalnız yeni
+    tests/T1.9/num/sonra/gauss : yalnız yeni
+== op/req/post: 1
+    op/req/post/gauss : yalnız yeni
+== op/req/pre: 1
+    op/req/pre/gauss : yalnız yeni
+== ship/op/req: 2
+    ship/op/req/post/gauss : yalnız yeni
+    ship/op/req/pre/gauss : yalnız yeni
+== ship/tests/T1.9: 3
+    ship/tests/T1.9/notes[2] : "PPV sınırı 6.5·σ_eksen: Gauss kalıntıda 60 s'lik tepe-tepe/σ ≈ 6–8,5'tir (Rice / Cartwrigh" → "PPV sınırı 6.5·σ_eksen. Gauss kalıntıda 60 s'lik tepe-tepe/σ'nın beklentisi kaydın tayfına"
+    ship/tests/T1.9/num/once/gauss : yalnız yeni
+    ship/tests/T1.9/num/sonra/gauss : yalnız yeni

@@ -1,0 +1,17 @@
+const L = require('./engine.js');
+const P = L.defaultParams();
+const t0 = Date.now();
+const S = L.opScenario(P, { T: 600, seed: 11, fs: 4000 });
+const R = L.runSim(P, S, null);
+console.log('sim time', ((Date.now() - t0) / 1000).toFixed(1), 's');
+const M = L.losMetrics(R, P, { skip: 20 });
+const u = (x) => (x * 1e6).toFixed(2);
+console.log('LOS RMS el', u(M.rms.el), 'xel', u(M.rms.xel), '| P99', u(M.p99.el), u(M.p99.xel));
+console.log('bands el', u(M.band.el.B1), u(M.band.el.B2), u(M.band.el.B3), ' xel', u(M.band.xel.B1), u(M.band.xel.B2), u(M.band.xel.B3));
+const v = M.video;
+console.log('wander (Tw=120, lin) el', u(v.wander.el), 'xel', u(v.wander.xel), 'radial', u(v.wander.radial), '| P99', u(v.p99.el), u(v.p99.xel));
+console.log('smear el', u(v.smear.el), 'xel', u(v.smear.xel), '| MTF true', v.mtf.el.toFixed(4), v.mtf.xel.toFixed(4), 'gauss', v.mtf.gaussEl.toFixed(4), v.mtf.gaussXel.toFixed(4));
+console.log('PDE(1 s) rms el', u(v.pde.el.rms), 'p99', u(v.pde.el.p99), ' xel', u(v.pde.xel.rms), u(v.pde.xel.p99));
+console.log('rot res mrad', (M.rotRes * 1e3).toFixed(3), 'edge µrad', u(M.rotRes * P.wb.channels[0].Nh * 0 + M.rotRes * (L.derive(P).FOVh / 2 * L.D2R)));
+const pw = L.psdWeighting(M.psd.f, M.psd.el, 0.005);
+console.log('PSD weighting el: total', u(pw.total), 'wander', u(pw.wander), 'smear', u(pw.smear), JSON.stringify(Object.fromEntries(Object.entries(pw.bands).map(([k, b]) => [k, [u(b.total), u(b.wander), u(b.smear)]]))));

@@ -1,0 +1,198 @@
+[
+ {
+  "id": "T0.1",
+  "st": "OK",
+  "base": "OK",
+  "measured": "IFOV_eff = 40.1587 µrad/px (nominale göre 0.397 %); ölçek belirsizliği 0.0014 % (sınır 0.50 %)",
+  "s": 4.532
+ },
+ {
+  "id": "T0.2",
+  "st": "OK",
+  "base": "OK",
+  "measured": "σ_taban (ölçüm zinciri, stab OFF): 2.04 / 1.67 µrad (sınır 5.00); stab ON 3.78 / 3.41 µrad — DUT döngü gürültüsü dahil, bilgi (el / xel)",
+  "s": 8.97
+ },
+ {
+  "id": "T0.3",
+  "st": "OK",
+  "base": "OK",
+  "measured": "Hexapod açısal gürültüsü (IMU, 6 koşunun en kötüsü) 2.08 µrad RMS (sınır 5.00); nominal pozda 3 tekrar: roll 2.06 ± 0.01, pitch 2.06 ± 0.01, yaw 2.06 ± 0.02 µrad",
+  "s": 12.616
+ },
+ {
+  "id": "T0.4",
+  "st": "OK",
+  "base": "OK",
+  "measured": "Video − IMU gecikmesi -0.927 ± 0.032 ms (10 darbe); kompanze edilmezse f_bw'de 6.68°, kompanzasyon sonrası belirsizlik (2σ) 0.46°",
+  "s": 0.565
+ },
+ {
+  "id": "T0.5",
+  "st": "BİLGİ",
+  "base": "BİLGİ",
+  "measured": "Kanal paralellik referansı kaydedildi (ölçüm doğruluğu ≈ 15 µrad).",
+  "s": 0.001
+ },
+ {
+  "id": "T0.6",
+  "st": "OK",
+  "base": "OK",
+  "measured": "ARW 0.00424 °/√h (sınır 0.005), bias kararsızlığı 0.0461 °/h (sınır 0.05)",
+  "s": 0.584
+ },
+ {
+  "id": "T0.7",
+  "st": "OK",
+  "base": "OK",
+  "measured": "KAPALI: yatay 47.10, düşey 55.67 µrad/s (hesap 46.9 / 55.9); AÇIK: 0.691 / 1.339 µrad/s (sınır 1.71)",
+  "s": 6.88
+ },
+ {
+  "id": "T1.1",
+  "st": "GEÇERSİZ",
+  "base": "OK",
+  "measured": "Kayıt geçersiz: hedef t = 369 s'de görüş alanından çıktı (geçerli kare %46.7); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: geçersiz eksen roll; DRR(f) eğrisi: roll 0.050 Hz -85.7 dB; ",
+  "s": 17.724
+ },
+ {
+  "id": "T1.2",
+  "st": "OK",
+  "base": "OK",
+  "measured": "En büyük |kazanç − 1| = 0.021 % (genlik 0.50° ≤ 0.94°)",
+  "s": 2.039
+ },
+ {
+  "id": "T1.3",
+  "st": "GEÇERSİZ",
+  "base": "OK",
+  "measured": "Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %59.1); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Wander (en kötü tohum) el 7.14 / xel 7.03 µrad RMS; P99 18.2",
+  "s": 20.129
+ },
+ {
+  "id": "T1.4",
+  "st": "GEÇERSİZ",
+  "base": "OK",
+  "measured": "Kayıt geçersiz: hedef t = 365 s'de görüş alanından çıktı (geçerli kare %73.2); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: geçersiz elevasyon 0°, 30°, 60°, 75°; el 0°: roll→el -82.3 d",
+  "s": 25.37
+ },
+ {
+  "id": "T1.5",
+  "st": "OK",
+  "base": "OK",
+  "measured": "Alan köşesi yer değiştirmesi (türetme ON): sinüs 16.31, deniz profili 16.86 µrad RMS (sınır 20.0); türetme OFF sinüs 606.7 µrad",
+  "s": 6.918
+ },
+ {
+  "id": "T1.6",
+  "st": "OK",
+  "base": "OK",
+  "measured": "Yön değişimi geçişi (senkron ortalama): tepe 5.5 µrad (sınır 10.3), tekrarlanan bileşen el 1.08 µrad RMS; 40 sıfır geçişi",
+  "s": 6.494
+ },
+ {
+  "id": "T1.7",
+  "st": "OK",
+  "base": "OK",
+  "measured": "Nişan noktası hatası el 3.47 / xel 2.09 µrad RMS, P99 9.54 µrad; kilit kaybı 0",
+  "s": 4.535
+ },
+ {
+  "id": "T1.8",
+  "st": "BİLGİ",
+  "base": "BİLGİ",
+  "measured": "Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad",
+  "s": 4.053
+ },
+ {
+  "id": "T1.9",
+  "st": "GEÇERSİZ",
+  "base": "AŞIM",
+  "measured": "Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %56.7); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Takip sonrası (pencere RMS'lerinin %95 üst güven sınırı): σ_",
+  "s": 12.418
+ },
+ {
+  "id": "T2.1",
+  "st": "GEÇERSİZ",
+  "base": "OK",
+  "measured": "Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %46.1); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR:",
+  "s": 18.417
+ },
+ {
+  "id": "T2.2",
+  "st": "OK",
+  "base": "OK",
+  "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.90 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.68 → ON 2.09 µrad; yalnız açısal uyarımla 1.88 µrad (öteleme ",
+  "s": 8.117
+ },
+ {
+  "id": "T2.3",
+  "st": "GEÇERSİZ",
+  "base": "OK",
+  "measured": "Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %59.1); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Kombine artık 6.58 µrad; ayrı testlerin RSS'i 6.96 µrad → sa",
+  "s": 9.271
+ },
+ {
+  "id": "T2.4",
+  "st": "BİLGİ",
+  "base": "BİLGİ",
+  "measured": "Tepe hata en büyük 140.4 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgu",
+  "s": 4.029
+ },
+ {
+  "id": "T2.5",
+  "st": "OK",
+  "base": "OK",
+  "measured": "İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.65 µrad RMS (tahsis 3); duyarlılık 1.913 µrad/(m/s²) (hexapod iletimi τ = 0.987: laboratuvar farkı 1.63 µrad komut düzeyine ölçeklendi)",
+  "s": 1.832
+ },
+ {
+  "id": "T3.1",
+  "st": "OK",
+  "base": "OK",
+  "measured": "B2-06 ⊕ B3 LOS (≥ 4 Hz; taban + 3 öteleme ekseni): optik el 4.47 / xel 4.22 µrad; ayna kanalı el 1.89 / xel 1.54 µrad (sınır 6.5)",
+  "s": 5.695
+ },
+ {
+  "id": "T3.2",
+  "st": "OK",
+  "base": "OK",
+  "measured": "MTF_titreşim/MTF_statik @ Nyquist en kötü 0.9793 (sınır 0.7346); eksen başına 3 ölçüm",
+  "s": 0.003
+ },
+ {
+  "id": "T3.3",
+  "st": "OK",
+  "base": "OK",
+  "measured": "Yüksek hızlı kanal TUR (bütçeden) = 4.25 (hedef 4); ayna PSD'si: wander 2.02 / smear 0.56 µrad, gerçek optik: 2.13 / 0.92 µrad",
+  "s": 0.022
+ },
+ {
+  "id": "T3.4",
+  "st": "OK",
+  "base": "OK",
+  "measured": "Videoda 10.0 Hz'e katlanan ton → sinc düzeltmeli temel bileşen 1.41 µrad RMS (tahsis 2); ayna kanalı 0.002 µrad (görmez)",
+  "s": 1.265
+ },
+ {
+  "id": "T3.5",
+  "st": "OK",
+  "base": "OK",
+  "measured": "120 Hz: optik 26.28 / ayna 0.05 µrad RMS → Optik iç hareket (zoom grubu / FPA / ayna montajı) — aynada görünmez; 180 Hz: optik 17.37 / ayna 17.39 µrad RMS → Gimbal / taşıyıcı yapı — aynada görünür; iş",
+  "s": 3.17
+ },
+ {
+  "id": "T4.1",
+  "st": "BİLGİ",
+  "base": "BİLGİ",
+  "measured": "En büyük kanal kayması 51.3 µrad (ölçüm doğruluğu ≈ 15 µrad; gereksinim girilmedi)",
+  "s": 0
+ },
+ {
+  "id": "T4.2",
+  "st": "AŞIM",
+  "base": "AŞIM",
+  "measured": "Yapılandırılmış DUT (sabit FF): -20 °C sürtünme tepesi 81.8 µrad, 3.00 Hz artık 15.00 µrad; 20 °C sürtünme tepesi 5.5 µrad, 3.00 Hz artık 1.95 µrad; 55 °C sürtünme tepesi 13.2 µrad, 3.00 Hz artık 2.66",
+  "s": 10.698
+ }
+]

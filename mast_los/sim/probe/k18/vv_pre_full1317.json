@@ -1,0 +1,763 @@
+{
+ "generated": "2026-11-10T10:49:06.649Z",
+ "engine": "v3",
+ "items": [
+  {
+   "grp": "W",
+   "id": "W1",
+   "name": "B\u00fct\u00e7e sat\u0131rlar\u0131: girdi d\u00fczeyi, tahmin, wander/smear ayr\u0131m\u0131, tahsis, EIS s\u00fctunlar\u0131",
+   "method": "4 durum (v10 uyum kipi, denizalt\u0131, gemi, HDTV-NFOV + Z540.3 + \u03c4 = 10 s + EIS kilit) \u00d7 her sat\u0131r \u00d7 14 s\u00fctun; v13.9: B1-05 wander penceresinde ARW\u00b7\u221a(T_w/15) ve G = 1/T_w, B1-06 ve B1-09 yaln\u0131z drift (uyum kipinde \u03c4 metri\u011fi); ikinci uygulama: base \u2192 10^(H/20), W_w = sinc\u00b2(\u03c0G\u00b7T_int), Q = q\u00b7IFOV, katlanma |G \u2212 fps\u00b7round(G/fps)|, EIS art\u0131k \u00e7arpan\u0131",
+   "exp": "\u00f6zde\u015f",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 3.2e-16 (gemi varsay\u0131lan\u0131 \u00b7 B1-01 AH); 1134 say\u0131 \u00b7 v10 uyum kipi: 1.6e-16 \u00b7 denizalt\u0131 varsay\u0131lan\u0131: 2.2e-16 \u00b7 gemi varsay\u0131lan\u0131: 3.2e-16 \u00b7 HDTV-NFOV, Z540.3, \u03c4 = 10 s: 2.2e-16; toplama s\u0131n\u0131f\u0131 (wander / yaln\u0131z drift / rotasyon) uyu\u015fmazl\u0131\u011f\u0131 yok",
+   "crit": "\u2264 1\u00b710\u207b\u00b9\u00b2, s\u0131n\u0131f uyu\u015fmazl\u0131\u011f\u0131 yok",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W2",
+   "name": "B\u00fct\u00e7e toplamlar\u0131: bant RSS, G1 do\u011frusal toplam\u0131, kullan\u0131m, MTF, tepe, drift, EIS, tahsis paylar\u0131, gerekli DRR",
+   "method": "4 durum; toplama kural\u0131 yaln\u0131z E s\u0131n\u0131f\u0131 sat\u0131rlar, G1 grubu \u00f6nce do\u011frusal; drift = \u221a(ARW\u221a\u03c4\u00b2 + (B\u03c4 + b0 art\u0131\u011f\u0131 + \u03a9\u00b7\u03b4\u00b7\u03c4)\u00b2); MTF = exp(\u2212\u03c0\u00b2(\u03c3/IFOV)\u00b2/2)",
+   "exp": "\u00f6zde\u015f",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 2.2e-16 (HDTV-NFOV, Z540.3, \u03c4 = 10 s \u00b7 radial); 156 say\u0131",
+   "crit": "\u2264 1\u00b710\u207b\u00b9\u00b2",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W3",
+   "name": "T\u00fcretilmi\u015f girdiler",
+   "method": "IFOV = p/f, FOV = 2\u00b7atan(N\u00b7p/2f), gereksinimler k\u00b7IFOV, roll s\u0131n\u0131r\u0131 k_roll\u00b7IFOV/\u03b8_ref (k\u00f6\u015fe ya da kenar), stab-OFF s\u0131n\u0131r\u0131, kompanzasyon art\u0131\u011f\u0131 \u03a9\u00b7\u03b4; 4 durum",
+   "exp": "\u00f6zde\u015f",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 1.4e-16 (v10 uyum kipi \u00b7 P99); 48 say\u0131",
+   "crit": "\u2264 1\u00b710\u207b\u00b9\u00b2",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W4",
+   "name": "D\u00fcnya d\u00f6n\u00fc\u015f\u00fcn\u00fcn g\u00f6r\u00fcnt\u00fc eksenlerine izd\u00fc\u015f\u00fcm\u00fc",
+   "method": "\u03a9_ENU = \u03a9(0, cos \u03c6, sin \u03c6); LOS u, yatay eksen h \u22a5 u, d\u00fc\u015fey eksen u \u00d7 h; h\u0131zlar |\u03a9\u00b7(u\u00d7h)|, |\u03a9\u00b7h|, |\u03a9\u00b7u|; alan d\u0131\u015f\u0131na \u00e7\u0131kma s\u00fcresi (v13.7: kenar pay\u0131yla), piksel kaymas\u0131, azimut tablosu (12 sat\u0131r); 5 durum",
+   "exp": "\u00f6zde\u015f",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 7.0e-16 (enlem 65\u00b0, el 30\u00b0 \u00b7 \u03b1=180 r); 245 say\u0131 (s\u0131f\u0131r de\u011ferlerde mutlak)",
+   "crit": "\u2264 1\u00b710\u207b\u00b9\u00b2 (g\u00f6reli; s\u0131f\u0131rda mutlak 1\u00b710\u207b\u2079)",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W5",
+   "name": "Hexapod eri\u015fimi",
+   "method": "\u03b8(f) = min(\u03b8_max, \u03c9_max/2\u03c0f, \u03b1_max/(2\u03c0f)\u00b2), s\u0131n\u0131rlayan etken, bant ve Nyquist s\u0131n\u0131f\u0131, W_w; 4 durum \u00d7 17 frekans",
+   "exp": "\u00f6zde\u015f",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 1.3e-16; 204 say\u0131, 0 metin uyu\u015fmazl\u0131\u011f\u0131",
+   "crit": "\u2264 1\u00b710\u207b\u00b9\u00b2, metin uyu\u015fmazl\u0131\u011f\u0131 0",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W6",
+   "name": "Hidrodinamik VIV taramas\u0131",
+   "method": "V (kn \u2192 m/s; zarf \u0131zgaras\u0131), Re = VD/\u03bd, f_v = St\u00b7V/D, K0 = f_v/f_n, U_r = V/(f_n D), tarama s\u0131n\u0131f\u0131 (marjl\u0131; v13.3: K0 \u00fcst s\u0131n\u0131r\u0131 \u00d7f*_alt(m*), m* \u2264 0,54 \u2192 s\u0131n\u0131rs\u0131z), hexapod eri\u015fimi, dwell aday\u0131; zarfta VIV varl\u0131\u011f\u0131 (s\u00fcrekli K0 aral\u0131\u011f\u0131 \u2229 payl\u0131 bant), T2.1 VIV band\u0131 (aday f_v \u222a f_n \u222a f*\u00b7f_n; alt dal yaln\u0131z f_v,maks\u00b7(1 + pay) \u2265 f_n,vak = f_n\u00b7\u221a((m* + 1)/m*) ise), B2-01 analitik tahmini (A/\u221a2\u00b710^(DRR/20); VIV yoksa 0), mast ba\u015f\u0131 \u00f6telemesi y = \u03b8\u00b7L/\u03ba (roll \u22121, y +1); 8 durum",
+   "exp": "\u00f6zde\u015f",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 2.3e-16; 487 say\u0131, 0 metin uyu\u015fmazl\u0131\u011f\u0131",
+   "crit": "\u2264 1\u00b710\u207b\u00b9\u00b2, metin uyu\u015fmazl\u0131\u011f\u0131 0",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W7",
+   "name": "\u00d6l\u00e7\u00fcm belirsizli\u011fi ve TUR",
+   "method": "U-01\u2026U-07 (v13.6: U-05 \u00e7arp\u0131msal, video \u03b5\u00b7W / y\u00fcksek h\u0131zl\u0131 \u03b5\u00b7S; v13.7: U-04 = yo\u011funluk \u00d7 \u221aENBW Butterworth, U-07 = yo\u011funluk \u00d7 \u221a(f_kay\u0131t/2)), u_video = RSS(U-01, 02, 03, 05, 06), u_y\u00fcksek h\u0131zl\u0131 = RSS(U-02, 03, 04, 05, 07), toplan\u0131r k\u0131s\u0131mlar (U-05 hari\u00e7), TUR (k = 1 ve Z540.3), taban s\u0131n\u0131r\u0131, taban d\u00fczeltmesi (toplan\u0131r k\u0131s\u0131mla), senkron faz hatas\u0131 ve IMU s\u00fczgecinin grup gecikmesi \u221a2/(2\u03c0\u00b7f_IMU), kay\u0131t istatisti\u011fi (\u03b5_r: 1/\u221an_d ve Hann %50 \u00f6rt\u00fc\u015fme d\u00fczeltmeli, \u03c1 say\u0131sal pencereden); 4 durum",
+   "exp": "\u00f6zde\u015f",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 3.5e-16 (HDTV-NFOV, Z540.3, \u03c4 = 10 s \u00b7 TUR_w); 136 say\u0131",
+   "crit": "\u2264 1\u00b710\u207b\u00b9\u00b2",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W12",
+   "name": "Karar belirsizli\u011fi ve koruma band\u0131 (v13.7)",
+   "method": "\u03a6(z): motorun Hart\u2013West yakla\u015f\u0131m\u0131 \u2194 erf Taylor serisi (|z| \u2264 2) ve erfc s\u00fcrekli kesiri (|z| > 2), 15 nokta; decisionGuard: u_c = \u221a(u_ist\u00b2 + (x\u00b7u_rel)\u00b2), U = k\u00b7u_c, KABUL/BEL\u0130RS\u0130Z/RED, uygunluk olas\u0131l\u0131\u011f\u0131, taban yanl\u0131l\u0131\u011f\u0131 (i\u00e7eren ve ekleyen kip), 6 durum",
+   "exp": "\u00f6zde\u015f",
+   "got": "\u03a6 en b\u00fcy\u00fck mutlak fark 1.1e-16; decisionGuard en b\u00fcy\u00fck g\u00f6reli fark 8.8e-10; 35 say\u0131, 0 karar uyu\u015fmazl\u0131\u011f\u0131",
+   "crit": "\u03a6 mutlak \u2264 1\u00b710\u207b\u00b9\u00b2, di\u011ferleri g\u00f6reli \u2264 1\u00b710\u207b\u2079 (u\u00e7 olas\u0131l\u0131klar dahil), karar uyu\u015fmazl\u0131\u011f\u0131 0",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W13",
+   "name": "B1-04 taban\u0131: ka\u00e7\u0131kl\u0131\u011f\u0131n s\u0131zd\u0131rd\u0131\u011f\u0131 LOS ekseni etraf\u0131ndaki d\u00f6nme (v13.8)",
+   "method": "15 durum (denizalt\u0131 ve gemi, a0 = 0\u2026180\u00b0, 6-DOF, roll taban\u0131); ba\u011f\u0131ms\u0131z: \u03c3_rot\u00b2 = (cos a0\u00b7\u03c3_roll)\u00b2 + (sin a0\u00b7\u03c3_pitch)\u00b2, bask\u0131n serbestlik derecesinin f_dom'u; b\u00fct\u00e7e B1-04 = \u03b5\u00b7\u221a2\u00b7\u03c3_rot (\u00b5rad genlik), G ve R-01'in G'si ayn\u0131 f",
+   "exp": "\u00f6zde\u015f",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 0.00 (); 75 say\u0131, 0 bask\u0131n eksen uyu\u015fmazl\u0131\u011f\u0131",
+   "crit": "\u2264 1\u00b710\u207b\u00b9\u00b2, uyu\u015fmazl\u0131k 0",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W14",
+   "name": "Stabilizasyon d\u00f6ng\u00fcs\u00fc: kesim, faz/kazan\u00e7 pay\u0131 ve DRR (v13.9, ikinci uygulama)",
+   "method": "9 durum (el/az, dar bant kapal\u0131 / 6 Hz, f_c 60, f_i 8, f_ctl 1 kHz, gyro gecikmesi 1 ms, elevasyon 60\u00b0); ba\u011f\u0131ms\u0131z: kendi karma\u015f\u0131k aritmeti\u011fi, RBJ biquad, geri Euler PII, z\u207b\u00b9\u00b7ZOH, K = 1/|C G P|(f_c) s\u00fcrekli tasar\u0131mdan; 10 frekansta DRR genlik/faz ve tork yolu",
+   "exp": "\u00f6zde\u015f",
+   "got": "K, kesim, PM, GM, GM frekans\u0131: en b\u00fcy\u00fck g\u00f6reli fark 1.3e-15 (el gyro gecikmesi 1 ms GM); DRR ve tork: 6.8e-15 dB/\u00b0 (el f_ctl 1 kHz @ 0.5 Hz); varsay\u0131lan el PM 52.35\u00b0, GM 12.16 dB @ 156.7 Hz",
+   "crit": "\u2264 1\u00b710\u207b\u2079; DRR \u2264 1\u00b710\u207b\u2078 dB",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W8",
+   "name": "PSD a\u011f\u0131rl\u0131kland\u0131rma (wander/smear ayr\u0131m\u0131)",
+   "method": "(a) 0\u2013200 Hz d\u00fcz PSD: toplam \u221a(S\u00b7200), wander \u221a\u222bS\u00b7sinc\u00b2(\u03c0fT)df (400 000 noktal\u0131 yamuk); (b) 3000 noktal\u0131 logaritmik \u0131zgarada al\u00e7ak ge\u00e7iren + 8 Hz tepe + taban PSD'si, ikinci uygulama (orta nokta \u0394f, bantlar < 1, 1\u201320, > 20 Hz)",
+   "exp": "(a) analitik, (b) \u00f6zde\u015f",
+   "got": "(a) toplam 5.1e-14, wander 4.9e-15; (b) en b\u00fcy\u00fck g\u00f6reli fark 0.00 ()",
+   "crit": "(a) \u2264 1\u00b710\u207b\u2076 (\u0131zgara), (b) \u2264 1\u00b710\u207b\u00b9\u00b2",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W9",
+   "name": "Tahsislerin tek kayna\u011f\u0131 ve IFOV \u00f6l\u00e7eklemesi",
+   "method": "testlerin kulland\u0131\u011f\u0131 tahsisler (budgetAlloc) \u2194 b\u00fct\u00e7e sat\u0131rlar\u0131n\u0131n Q s\u00fctunu; Q = q\u00b7IFOV (q = tablo/40 \u00b5rad), R-01 = k_roll\u00b7IFOV; varsay\u0131lan kanalda tablo de\u011ferleri tam (bit d\u00fczeyinde) korunur",
+   "exp": "\u00f6zde\u015f; varsay\u0131landa tam",
+   "got": "IFOV \u00f6l\u00e7eklemesinden en b\u00fcy\u00fck g\u00f6reli sapma 1.1e-16; varsay\u0131landa tam: evet \u00b7 varsay\u0131lan: B1-01 5.0000 \u00b5rad = 0.1250 IFOV \u00b7 HDTV-NFOV: B1-01 1.4375 \u00b5rad = 0.1250 IFOV \u00b7 f = 600 mm: B1-01 2.5000 \u00b5rad = 0.1250 IFOV",
+   "crit": "fark yok, sapma \u2264 1\u00b710\u207b\u00b9\u2075",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W10",
+   "name": "Kald\u0131ra\u00e7 kolu b\u00fct\u00e7esi: ivme terimleri, B1-08/B1-10, tam ili\u015fkili s\u0131n\u0131r, laboratuvar talebi",
+   "method": "5 durum (denizalt\u0131 ve gemi varsay\u0131lan\u0131; gemi r = (20, \u22124, 15) m dar ve SS4; denizalt\u0131 SS5, r = (\u22128, 3, \u22122) m; k_g > 0): ikinci uygulama \u03c3 ve bi\u00e7imleri parametrelerden kurar, spektral momentleri log-frekansta Simpson kural\u0131yla hesaplar; a_x = \u03b8\u0308\u00b7r_z \u2212 \u03c8\u0308\u00b7r_y, a_y = \u03c8\u0308\u00b7r_x \u2212 \u03c6\u0308\u00b7r_z, a_z = \u03c6\u0308\u00b7r_y \u2212 \u03b8\u0308\u00b7r_x, terimler karesel; f_a = \u221a(\u03a3\u03c3\u00b2f\u00b2/\u03a3\u03c3\u00b2); B1-10 = k_g\u00b7\u221a\u03a3(\u03c3_a/2\u03c0f)\u00b2/g; tam ili\u015fkili s\u0131n\u0131r = eksen ba\u015f\u0131na terimlerin toplam\u0131; laboratuvar \u03c3_k ve tepe \u2248 k_p\u00b7\u03c3 + \u00bd|r_k|(\u03c3_a\u00b2 + \u03c3_b\u00b2)",
+   "exp": "\u00f6zde\u015f (say\u0131sal integrasyon)",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 1.8e-7 (denizalt\u0131 SS5, r = (\u22128, 3, \u22122) m, k_g = 1 \u00b7 a_y); 85 say\u0131 \u00b7 denizalt\u0131 varsay\u0131lan\u0131 (h = 1 m): |a| 0.0254 m/s\u00b2, tam ili\u015fkili 0.0254, B1-08 0.051 \u00b5rad, B1-10 0.0000 \u00b5rad, q 0.9003 \u00b7 gemi varsay\u0131lan\u0131 (h = 15 m): |a| 0.5515 m/s\u00b2, tam ili\u015fkili 0.5515, B1-08 1.103 \u00b5rad, B1-10 0.0000 \u00b5rad, q 0.0318 \u00b7 gemi dar, r = (20, \u22124, 15) m, k_g = 0,5: |a| 0.7229 m/s\u00b2, tam ili\u015fkili 0.8363, B1-08 1.446 \u00b5rad, B1-10 0.2380 \u00b5rad, q 0.0309 \u00b7 gemi SS4, r = (20, \u22124, 15) m, k_g = 0,5: |a| 1.8704 m/s\u00b2, tam ili\u015fkili 2.6505, B1-08 3.741 \u00b5rad, B1-10 0.3812 \u00b5rad, q 0.0682 \u00b7 denizalt\u0131 SS5, r = (\u22128, 3, \u22122) m, k_g = 1: |a| 1.8760 m/s\u00b2, tam ili\u015fkili 2.8737, B1-08 3.752 \u00b5rad, B1-10 0.8190 \u00b5rad, q 0.0672",
+   "crit": "\u2264 1\u00b710\u207b\u2076",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W11",
+   "name": "Kolimat\u00f6r geometrisi, demet\u2013g\u00f6z bebe\u011fi \u00f6rt\u00fc\u015fmesi ve test hareketlerinden yanal kayma",
+   "method": "6 durum (denizalt\u0131 ve gemi varsay\u0131lan\u0131, HDTV-NFOV, f_c 900 mm + i\u011fne 100 \u00b5m, D_c 250 mm, L_off 0,15 m + \u03b8_test 10\u00b0): f_c/f, i\u011fne a\u00e7\u0131s\u0131 ve g\u00f6r\u00fcnt\u00fcs\u00fc, e_free, bayraklar; \u00f6rt\u00fc\u015fme kutupsal Simpson integraliyle (7 kayma); pupilShift 300 rastgele duru\u015f/\u00f6teleme (\u00b114\u00b0, \u00b1100 mm, stab ON/OFF) temel d\u00f6n\u00fc\u015f matrisleriyle; T0.3 ve T2.5 kapal\u0131 bi\u00e7im, T0.1 ve T1.3 profili 1 kHz ba\u011f\u0131ms\u0131z de\u011ferlendirme",
+   "exp": "\u00f6zde\u015f geometri; \u00f6rt\u00fc\u015fme ve kayma integral/\u00f6rnekleme duyarl\u0131\u011f\u0131nda",
+   "got": "geometri en b\u00fcy\u00fck g\u00f6reli fark 2.0e-16 (denizalt\u0131 varsay\u0131lan\u0131 \u00b7 i\u011fne a\u00e7\u0131s\u0131), bayrak uyu\u015fmazl\u0131\u011f\u0131 0; \u00f6rt\u00fc\u015fme mutlak fark 4.3e-7; pupilShift 2.8e-17 m; test kaymas\u0131 g\u00f6reli fark 1.2e-6, vinyetleme s\u00fcresi fark\u0131 0.00 puan, karar uyu\u015fmazl\u0131\u011f\u0131 0; \u00f6teleme s\u0131\u011fd\u0131rma uyu\u015fmazl\u0131\u011f\u0131 0 (denizalt\u0131 varsay\u0131lan\u0131: q_c 0.2994 \u2192 18.164 mm (\u00d71,01: 18.331 mm; s\u0131n\u0131r 18.182); HDTV-NFOV (D_p 75 mm): q_c 0.5213 \u2192 30.651 mm (\u00d71,01: 30.946 mm; s\u0131n\u0131r 30.682); f_c 900 mm, i\u011fne 100 \u00b5m: q_c 0.2994 \u2192 18.164 mm (\u00d71,01: 18.331 mm; s\u0131n\u0131r 18.182); L_off 0,15 m, \u03b8_test 10\u00b0: q_c 0.0000 \u2192 30.615 mm (\u00d71,01: 30.615 mm; s\u0131n\u0131r 18.182)); \u03b4_max g\u00f6reli fark 0.00; 1920 say\u0131 \u00b7 denizalt\u0131 varsay\u0131lan\u0131: e_free 18.18 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 18.16 mm (vinyetleme %0.0), T0.1 0.00 mm \u00b7 gemi varsay\u0131lan\u0131: e_free 40.91 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 40.23 mm (vinyetleme %0.0), T0.1 0.00 mm \u00b7 HDTV-NFOV (D_p 75 mm): e_free 30.68 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 30.65 mm (vinyetleme %0.0), T0.1 0.00 mm \u00b7 f_c 900 mm, i\u011fne 100 \u00b5m: e_free 18.18 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 18.16 mm (vinyetleme %0.0), T0.1 0.00 mm \u00b7 D_c 250 mm: e_free 63.64 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 57.74 mm (vinyetleme %0.0), T0.1 0.00 mm \u00b7 L_off 0,15 m, \u03b8_test 10\u00b0: e_free 18.18 mm, T0.3 63.27/68.29, T2.5 x 12.67, T1.3 30.61 mm (vinyetleme %1.8), T0.1 3.93 mm",
+   "crit": "geometri \u2264 1\u00b710\u207b\u00b9\u00b2, bayrak 0; \u00f6rt\u00fc\u015fme \u2264 1\u00b710\u207b\u2076; pupilShift \u2264 1\u00b710\u207b\u00b9\u00b2 m; kayma \u2264 1\u00b710\u207b\u00b3 (g\u00f6reli), vinyetleme s\u00fcresi \u2264 0,5 puan, karar uyu\u015fmazl\u0131\u011f\u0131 0; s\u0131\u011fd\u0131r\u0131lan oran s\u0131n\u0131r\u0131 tutar ve en b\u00fcy\u00fckt\u00fcr; \u03b4_max \u2264 1\u00b710\u207b\u00b9\u00b2",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N1",
+   "name": "Welch PSD, CSD ve koherans (scipy.signal)",
+   "method": "ayn\u0131 dizi (n = 32 891, Hann, %50 \u00f6rt\u00fc\u015fme, segment ortalamas\u0131 \u00e7\u0131kar\u0131l\u0131r) JS ve scipy.signal.welch/csd/coherence ile",
+   "exp": "\u00f6zde\u015f (yuvarlama)",
+   "got": "PSD 3.3e-11, CSD 1.4e-10 (g\u00f6reli), koherans 1.3e-12 (mutlak)",
+   "crit": "\u2264 1\u00b710\u207b\u2079",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N2",
+   "name": "Biquad s\u00fczge\u00e7ler (RBJ, bilineer + \u00f6n-b\u00fckme)",
+   "method": "AG (Q = 0,8): |H(f0)| = Q; YG (Q = 0,8): |H(f0)| = Q; BG (Q = 5): |H(f0)| = 1; Tepe +12 dB: |H(f0)| = 10^(12/20); \u00e7entik: |H(f0)| = 0",
+   "exp": "kapal\u0131 bi\u00e7im de\u011fer",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 4.2e-15; \u00e7entik 2.6e-15",
+   "crit": "\u2264 1\u00b710\u207b\u00b9\u00b2",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N3",
+   "name": "\u0130kinci derece mod modeli (Osc2, birinci derece tutma)",
+   "method": "ad\u0131m giri\u015fi (FOH: rampa) yan\u0131t\u0131 kapal\u0131 bi\u00e7imle; 120 Hz, \u03b6 = 0,02 modunda rezonans kazanc\u0131 ve faz\u0131",
+   "exp": "rampa yan\u0131t\u0131 tam; kazan\u00e7 1/(2\u03b6) = 25, faz \u221290\u00b0",
+   "got": "en b\u00fcy\u00fck mutlak fark 3.3e-13; kazan\u00e7 24.926, faz -90.00\u00b0",
+   "crit": "fark \u2264 1\u00b710\u207b\u00b9\u2070; kazan\u00e7 \u00b1%0,5; faz \u00b10,5\u00b0",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N4",
+   "name": "Birinci derece gecikme ve Gauss\u2013Markov s\u00fcreci",
+   "method": "ad\u0131m yan\u0131t\u0131 1 \u2212 e^(\u22122\u03c0f_c t); dura\u011fan \u03c3 (400 000 \u00f6rnek, T_c = 0,5 s)",
+   "exp": "tam; \u03c3 = 2,000",
+   "got": "en b\u00fcy\u00fck fark 3.8e-15; \u03c3 = 1.9929",
+   "crit": "fark \u2264 1\u00b710\u207b\u00b9\u00b2; \u03c3 \u00b1%3",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N5",
+   "name": "Deniz profili sentezi (spektral, log-Gauss)",
+   "method": "RMS hedefe normalize; Welch PSD / hedef bi\u00e7im oran\u0131 tepe band\u0131nda (\u00b11\u03c3_ln)",
+   "exp": "RMS 1,000; oran 1",
+   "got": "RMS 1.000000; ortalama |oran \u2212 1| = 0.015 (6 kutu)",
+   "crit": "RMS \u00b11\u00b710\u207b\u2079; |oran \u2212 1| \u2264 0,10 (Welch istatisti\u011fi, n_d \u2248 255)",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N6",
+   "name": "\u015eekillendirilmi\u015f g\u00fcr\u00fclt\u00fc (platform titre\u015fimi bi\u00e7imi)",
+   "method": "4\u201333 Hz, 4. derece YG/AG kesitler; hedef RMS d\u00fcrt\u00fc yan\u0131t\u0131 enerjisinden; 395 s \u00f6rnek",
+   "exp": "RMS 0,9066 m/s\u00b2",
+   "got": "RMS 0.9059",
+   "crit": "\u00b1%2",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N7",
+   "name": "Gyro g\u00fcr\u00fclt\u00fc modeli: ARW ve bias karars\u0131zl\u0131\u011f\u0131 (Allan)",
+   "method": "beyaz h\u0131z g\u00fcr\u00fclt\u00fcs\u00fc (1 sa, 100 Hz) \u03c3(\u03c4)\u221a\u03c4/N; bias modeli: kapal\u0131 bi\u00e7im Allan e\u011frisi ve 12 sa benzetimi",
+   "exp": "\u03c3(\u03c4)\u221a\u03c4 = N; d\u00fcz b\u00f6lge (20\u20131000 s) 0,664\u00b7B \u00b1%3; benzetim = kapal\u0131 bi\u00e7im",
+   "got": "\u03c4 0.1 s: 0.9953 (\u00b11.1 %), \u03c4 1 s: 0.9717 (\u00b13.5 %), \u03c4 10 s: 1.0161 (\u00b111.2 %); kapal\u0131 bi\u00e7im 20\u20131000 s: 0.647\u20130.672 B (2 s: 0.548, 3000 s: 0.699); benzetim \u03c4 5 s: 0.605/0.612 B, \u03c4 50 s: 0.677/0.655 B, \u03c4 500 s: 0.747/0.665 B",
+   "crit": "ARW ve benzetim: tahminin 3\u03c3 g\u00fcven aral\u0131\u011f\u0131 (1/\u221a(2(K\u22121))); d\u00fcz b\u00f6lge 0,644\u20130,684 B",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N8",
+   "name": "Sin\u00fcs + do\u011frusal trend uydurmas\u0131 (DRR ve dwell analizleri)",
+   "method": "400 Monte Carlo denemesi: A = 1, \u03c6 = 0,4 rad, \u03c3 = 0,5, n = 600",
+   "exp": "yans\u0131z A ve \u03c6; standart hata \u2248 \u00f6rnek sa\u00e7\u0131l\u0131m\u0131",
+   "got": "A 1.0002, \u03c6 0.4017; \u03c3_A \u00f6rnek 0.0283 / form\u00fcl 0.0289",
+   "crit": "|A\u22121| \u2264 %1; |\u03c6\u22120,4| \u2264 0,01; \u03c3 oran\u0131 0,85\u20131,15",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N9",
+   "name": "Senkron ortalama (TSA, T1.6/T4.2 s\u00fcrt\u00fcnme analizi)",
+   "method": "0,05 Hz uyar\u0131mda her y\u00f6n de\u011fi\u015fiminde 5 \u00b5rad, 0,5 s s\u00f6n\u00fcml\u00fc ge\u00e7i\u015f; \u00fcst\u00fcne 1,2 \u00b5rad/\u221as rastgele y\u00fcr\u00fcy\u00fc\u015f (ARW) ve 0,5 \u00b5rad beyaz g\u00fcr\u00fclt\u00fc; 10 periyot",
+   "exp": "g\u00fcr\u00fclt\u00fcs\u00fcz referans: tekrarlanan RMS 0.710 \u00b5rad, tepe 4.39 \u00b5rad",
+   "got": "g\u00fcr\u00fclt\u00fcl\u00fc: RMS 0.621 \u00b5rad, tepe 4.40 \u00b5rad",
+   "crit": "RMS \u00b1%15; tepe \u00b1%25",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N10",
+   "name": "Dalga \u00e7arpmas\u0131 modeli ve Campbell teoremi (T2.4 i\u015fletme kestirimi)",
+   "method": "3893 olay, 40000 s: Poisson (\u03bb = 0.1/s), Rayleigh genlik, T_p ~ U[0.05, 0.2] s",
+   "exp": "\u03c3 = \u221a(\u03bb\u00b7E[A\u00b2]\u00b7E[T_p]/2) = 166.02 \u00b5rad",
+   "got": "\u03c3 = 162.07 \u00b5rad",
+   "crit": "\u00b1%8 (\u2248 4000 olay\u0131n istatisti\u011fi)",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N11",
+   "name": "Gecikme kestirimi (T0.4)",
+   "method": "bant s\u0131n\u0131rl\u0131 g\u00fcr\u00fclt\u00fcye 0,93 ms gecikme; \u00e7apraz ilinti + parabolik tepe",
+   "exp": "0,930 ms",
+   "got": "0.9294 ms",
+   "crit": "\u00b10,01 ms",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N12",
+   "name": "EIS yol yumu\u015fatma (b\u00fct\u00e7enin s\u00fcrekli zaman art\u0131k \u00e7arpan\u0131 \u2194 kare dizisine uygulama)",
+   "method": "f_c = 0,5 Hz, \u03b7 = 0,8; 50 fps ayr\u0131k birinci derece yumu\u015fat\u0131c\u0131",
+   "exp": "s\u00fcrekli zaman art\u0131k \u00e7arpan\u0131 R(f_a)",
+   "got": "0.125 Hz: 0.9714/0.9714 \u00b7 0.5 Hz: 0.7211/0.7211 \u00b7 2 Hz: 0.3098/0.3106 \u00b7 5 Hz: 0.2211/0.2225 \u00b7 10 Hz: 0.2044/0.2059",
+   "crit": "\u00b1%2 (ayr\u0131k / s\u00fcrekli fark)",
+   "pass": true
+  },
+  {
+   "grp": "K",
+   "id": "K1",
+   "name": "B\u00fcy\u00fck a\u00e7\u0131l\u0131 kinematik (stab OFF)",
+   "method": "3 geometri (LOS az/el ve taban roll/pitch/yaw 3\u201312\u00b0): motorun LOS el/xel ve g\u00f6r\u00fcnt\u00fc rotasyonu, R = Rz(\u03b2)Rz(\u03c8)Ry(\u03b8)Rx(\u03c6) ile ba\u011f\u0131ms\u0131z hesap",
+   "exp": "\u00f6zde\u015f",
+   "got": "en b\u00fcy\u00fck fark 0.007 \u00b5rad",
+   "crit": "\u2264 0,05 \u00b5rad (kay\u0131t float32)",
+   "pass": true
+  },
+  {
+   "grp": "K",
+   "id": "K2",
+   "name": "D\u00fcnya d\u00f6n\u00fc\u015f\u00fc: eylemsiz LOS'un laboratuvara g\u00f6re kaymas\u0131",
+   "method": "ideal gimbal, kompanzasyon KAPALI, 3 geometri; \u00f6l\u00e7\u00fclen kayma h\u0131z\u0131 (sim / form\u00fcl): el \u2194 \u03a9\u00b7|cos \u03c6\u00b7sin \u03b1|, xel \u2194 \u03a9\u00b7|sin \u03c6\u00b7cos \u03b5 \u2212 cos \u03c6\u00b7cos \u03b1\u00b7sin \u03b5|, rot \u2194 h\u00b7tan \u03b5 (az gimbal hareketinin LOS bile\u015feni)",
+   "exp": "d\u00fcnya d\u00f6n\u00fc\u015f\u00fc izd\u00fc\u015f\u00fcm form\u00fclleri",
+   "got": "el/xel en b\u00fcy\u00fck g\u00f6reli fark 0.060 %; rot fark\u0131 0.056 % \u03a9",
+   "crit": "el/xel \u2264 %0,1; rot \u2264 %1 \u03a9",
+   "pass": true,
+   "detail": "\u03c6 40\u00b0, \u03b1 90\u00b0, \u03b5 0\u00b0: el 55.86/55.86, xel 46.87/46.87, rot 0.00/0.00 \u00b5rad/s \u00b7 \u03c6 40\u00b0, \u03b1 45\u00b0, \u03b5 30\u00b0: el 39.51/39.50, xel 20.83/20.84, rot 12.03/12.03 \u00b5rad/s \u00b7 \u03c6 -25\u00b0, \u03b1 200\u00b0, \u03b5 60\u00b0: el 22.62/22.60, xel 38.37/38.37, rot 66.43/66.47 \u00b5rad/s"
+  },
+  {
+   "grp": "K",
+   "id": "K3",
+   "name": "D\u00fcnya d\u00f6n\u00fc\u015f\u00fc kompanzasyon art\u0131\u011f\u0131",
+   "method": "kompanzasyon A\u00c7IK, y\u00f6nelim hatas\u0131 \u03b4 = 1\u00b0 (LOS'a ve \u03a9'ya dik): kayma h\u0131z\u0131n\u0131n b\u00fcy\u00fckl\u00fc\u011f\u00fc",
+   "exp": "\u03a9\u00b7\u03b4 = 1.273 \u00b5rad/s",
+   "got": "1.273 \u00b5rad/s",
+   "crit": "\u00b1%0,5",
+   "pass": true
+  },
+  {
+   "grp": "K",
+   "id": "K4",
+   "name": "Stabilizasyon geometrisi (gimbal a\u00e7\u0131lar\u0131)",
+   "method": "taban roll 4\u00b0, yaw 6\u00b0 (rampa) stab ON, ideal gimbal: enkoder a\u00e7\u0131lar\u0131 \u2194 R_LB\u1d40\u00b7l\u2080'dan ba\u011f\u0131ms\u0131z hesap; LOS sapmas\u0131",
+   "exp": "az -6.0145\u00b0, el -3.9781\u00b0",
+   "got": "az -6.0145\u00b0, el -3.9781\u00b0; LOS 0.016 \u00b5rad",
+   "crit": "a\u00e7\u0131 fark\u0131 \u2264 1 \u00b5rad; LOS \u2264 1 \u00b5rad",
+   "pass": true
+  },
+  {
+   "grp": "K",
+   "id": "K5",
+   "name": "Kayma ayr\u0131\u015f\u0131m\u0131 (d\u00fczenek oklar\u0131)",
+   "method": "t\u00fcm mekanizmalar a\u00e7\u0131k, sin\u00fcs senaryosu 60 s; kaydedilen katk\u0131lar\u0131n e\u011fimi (10\u201360 s) \u2194 (a) d\u00fcnya d\u00f6n\u00fc\u015f\u00fc art\u0131\u011f\u0131n\u0131n analitik izd\u00fc\u015f\u00fcm\u00fc (\u0394 \u00d7 l\u2080)\u00b7{z_r, y_r}, (b) gyro bias'\u0131 a\u00e7\u0131k \u2212 kapal\u0131 ko\u015fu fark\u0131, (c) \u03b4 = 0 ve bias = 0 ko\u015fusunun e\u011fimi (ayn\u0131 tohum)",
+   "exp": "(a) 0.8181 / 0.9750; (b) 0.3730 / 6.698e-4; (c) -0.0296 / -0.1068 \u00b5rad/s (el / xel)",
+   "got": "(a) 0.8181 / 0.9750; (b) 0.3730 / 6.702e-4; (c) -0.0297 / -0.1069 \u00b5rad/s",
+   "crit": "(a) \u2264 %0,1; (b) ve (c) \u2264 0,005 \u00b5rad/s",
+   "pass": true
+  },
+  {
+   "grp": "K",
+   "id": "K6",
+   "name": "G\u00f6r\u00fcnt\u00fc rotasyonu: k\u00f6\u015fe pikseli \u00f6l\u00e7\u00fct\u00fc (v11)",
+   "method": "MWIR-NFOV opti\u011fi (p = 12 \u00b5m, f = 300 mm), 640\u00d7512 / 1024\u00d7768 / 1280\u00d71024: motorun \u03c8_lim'i kadar d\u00f6nmede k\u00f6\u015fe pikselinin yer de\u011fi\u015ftirmesi \u2014 (a) g\u00f6r\u00fcnt\u00fc d\u00fczleminde 2B d\u00f6nme matrisiyle, (b) nesne uzay\u0131nda k\u00f6\u015fe y\u00f6n\u00fcn\u00fcn Rz(\u03c8) ile d\u00f6nmesiyle; (c) kenar/k\u00f6\u015fe oran\u0131 \u221a(1 + (Nv/Nh)\u00b2); (d) 0,5/r_px kesin de\u011ferleri 1220 / 781,25 / 610 \u00b5rad; (e) b\u00fct\u00e7e R-01 = roll art\u0131\u011f\u0131 \u00d7 atan(r\u00b7p/f)",
+   "exp": "(a) 0,5 px; (b) 0,5 IFOV; (c) \u221a(1 + (Nv/Nh)\u00b2); (d) 1220 / 781,25 / 610 \u00b5rad; (e) \u00f6zde\u015f",
+   "got": "(a) 0.036 %, (b) 0.018 %, (c) 0.014 %, (d) 0.045 %, (e) 2.22045e-14 % en b\u00fcy\u00fck g\u00f6reli fark",
+   "crit": "(a), (b), (d) \u2264 %0,1 (dar alanda tan \u03b8 \u2248 sin \u03b8 \u2248 \u03b8); (c) \u2264 %0,1; (e) \u2264 1\u00b710\u207b\u00b9\u2070",
+   "pass": true,
+   "detail": "640\u00d7512: r = 409.8 px, \u03c8_lim 1220.22 \u00b5rad (k/r 1220.11), k\u00f6\u015fe 0.50004 px, a\u00e7\u0131 0.49998 IFOV, kenar/k\u00f6\u015fe 1.28058 \u00b7 1024\u00d7768: r = 640.0 px, \u03c8_lim 781.42 \u00b5rad (k/r 781.25), k\u00f6\u015fe 0.50011 px, a\u00e7\u0131 0.49995 IFOV, kenar/k\u00f6\u015fe 1.24990 \u00b7 1280\u00d71024: r = 819.6 px, \u03c8_lim 610.27 \u00b5rad (k/r 610.05), k\u00f6\u015fe 0.50018 px, a\u00e7\u0131 0.49991 IFOV, kenar/k\u00f6\u015fe 1.28045"
+  },
+  {
+   "grp": "K",
+   "id": "K7",
+   "name": "Kolimat\u00f6r paralaks\u0131: hedef yolu \u2194 ba\u011f\u0131ms\u0131z kinematik (v13.5)",
+   "method": "iki platform, deniz profili 60 s (tohum 1701), \u03b4 = +200 / \u2212150 \u00b5m: kaydedilen paralaks a\u00e7\u0131s\u0131 \u2194 kaydedilen duru\u015f (temel d\u00f6n\u00fc\u015f matrisleri) ve \u00f6telemeden \u2212Rz(\u03b2)[t + (R \u2212 I)v]\u00b7\u03b4/f_c\u00b2 (yr, zr)",
+   "exp": "\u00f6zde\u015f (float32 kay\u0131t duyarl\u0131\u011f\u0131nda)",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 8.9e-8; 24000 \u00f6rnek \u00b7 denizalt\u0131 deniz profili, \u03b4 = 200 \u00b5m: tepe 1.615 \u00b5rad, en b\u00fcy\u00fck fark 1.43e-4 nrad \u00b7 gemi deniz profili, \u03b4 = \u2212150 \u00b5m: tepe 2.725 \u00b5rad, en b\u00fcy\u00fck fark 2.35e-4 nrad",
+   "crit": "\u2264 1\u00b710\u207b\u2075 (kay\u0131t float32)",
+   "pass": true
+  },
+  {
+   "grp": "D",
+   "id": "D1",
+   "name": "Kapal\u0131 d\u00f6ng\u00fc bozucu bast\u0131rma (DRR): zaman alan\u0131 \u2194 analitik model",
+   "method": "s\u00fcrt\u00fcnme, vuruntu, g\u00fcr\u00fclt\u00fc, dengesizlik kapal\u0131; b,k kuplaj\u0131 a\u00e7\u0131k; 0,05\u00b0 sin\u00fcs, 4 kHz, 0,125\u2013100 Hz (kesim \u2248 40 Hz); model: ayr\u0131k PII + bilineer AG/rezonans + hesap gecikmesi \u00d7 ZOH + ak\u0131m ve gyro bantlar\u0131 + mekanik",
+   "exp": "\u00f6yk\u00fcnme d\u00f6ng\u00fc modeli |DRR(f)|",
+   "got": "en b\u00fcy\u00fck fark \u2264 12 Hz: 0.02 dB; 20\u2013100 Hz dahil: 0.14 dB (3 yap\u0131land\u0131rma \u00d7 12 frekans)",
+   "crit": "\u2264 12 Hz: \u00b10,1 dB; t\u00fcm\u00fc \u00b10,25 dB",
+   "pass": true,
+   "detail": "el, rezonans A\u00c7IK [f Hz: sim/model dB] 0.125: -80.0/-80.0, 0.5: -65.3/-65.3, 1: -56.5/-56.5, 2: -51.7/-51.7, 3: -60.2/-60.2, 5: -40.4/-40.4, 8: -33.9/-33.9, 12: -31.2/-31.2, 20: -29.8/-29.8, 40: -30.6/-30.5, 60: -32.5/-32.3, 100: -36.3/-36.2 \u00b7 el, rezonans KAPALI [f Hz: sim/model dB] 0.125: -80.0/-80.0, 0.5: -65.0/-65.0, 1: -55.2/-55.2, 2: -45.2/-45.2, 3: -40.0/-40.0, 5: -35.2/-35.2, 8: -32.4/-32.4, 12: -31.2/-31.2, 20: -30.7/-30.6, 40: -31.5/-31.4, 60: -33.0/-32.9, 100: -36.4/-36.3 \u00b7 az, rezonans KAPALI [f Hz: sim/model dB] 0.125: -76.4/-76.4, 0.5: -62.9/-62.9, 1: -54.3/-54.3, 2: -44.8/-44.8, 3: -39.8/-39.8, 5: -34.9/-34.9, 8: -32.0/-32.0, 12: -30.8/-30.7, 20: -30.7/-30.7, 40: -33.1/-33.0, 60: -35.6/-35.5, 100: -39.8/-39.7"
+  },
+  {
+   "grp": "D",
+   "id": "D6",
+   "name": "Uyarlan\u0131r dar band\u0131n frekans kestirim hatas\u0131: zaman alan\u0131 \u2194 analitik (v13.10)",
+   "method": "ton 3 ve 4,1 Hz; kestirim hatas\u0131 0, +%5, \u2212%10, +%20, +%10; benzetimde dar bant f\u00b7(1 + e)'ye ayarl\u0131, analitik loopModel(f\u00b7(1 + e), K sabit); yaln\u0131z kuplaj, 0,05\u00b0 sin\u00fcs, 4 kHz",
+   "exp": "analitik DRR",
+   "got": "en b\u00fcy\u00fck fark 0.021 dB \u00b7 3 Hz, %0: -60.17/-60.20 \u00b7 3 Hz, %5: -58.82/-58.84 \u00b7 3 Hz, %-10: -55.88/-55.89 \u00b7 3 Hz, %20: -52.45/-52.45 \u00b7 4.1 Hz, %10: -53.39/-53.40 [dB: benzetim/analitik]",
+   "crit": "\u00b10,1 dB",
+   "pass": true
+  },
+  {
+   "grp": "D",
+   "id": "D2",
+   "name": "Tork bozucusu yolu (k\u00fctle dengesizli\u011fi \u00d7 do\u011frusal ivme)",
+   "method": "gimbal merkezinde 1 m/s\u00b2 d\u00fc\u015fey sin\u00fcs ivme; T = \u2212(U \u00d7 f)_y = U_x\u00b7a; mekanik LOS genli\u011fi",
+   "exp": "U_x\u00b7a\u00b7|\u03b8/T_d(f)| (analitik)",
+   "got": "1 Hz: 0.7808/0.7809 \u00b5rad \u00b7 3 Hz: 0.1850/0.1850 \u00b5rad \u00b7 8 Hz: 1.4448/1.4453 \u00b5rad \u00b7 15 Hz: 1.1641/1.1665 \u00b5rad \u00b7 en b\u00fcy\u00fck fark 0.02 dB",
+   "crit": "\u00b10,5 dB",
+   "pass": true
+  },
+  {
+   "grp": "D",
+   "id": "D3",
+   "name": "Gyro g\u00fcr\u00fclt\u00fcs\u00fcn\u00fcn d\u00f6ng\u00fcden ge\u00e7i\u015fi (B2-05 mekanizmas\u0131)",
+   "method": "300 s, yaln\u0131z ARW a\u00e7\u0131k (2 kHz h\u0131z\u0131nda ayr\u0131k beyaz dizi); Welch PSD / analitik 2\u00b7N\u00b2\u00b7|\u03b8/n|\u00b2 bant oranlar\u0131",
+   "exp": "oran 1",
+   "got": "2\u201310 Hz: 1.042 \u00b7 10\u201340 Hz: 0.980 \u00b7 40\u2013150 Hz: 0.961",
+   "crit": "\u00b1%6 (Welch istatisti\u011fi ve 1 kHz kay\u0131t \u00f6rt\u00fc\u015fmesi)",
+   "pass": true
+  },
+  {
+   "grp": "D",
+   "id": "D4",
+   "name": "LuGre s\u00fcrt\u00fcnme durumunun ayr\u0131kla\u015ft\u0131r\u0131lmas\u0131",
+   "method": "ad\u0131m i\u00e7inde sabit h\u0131zla tam \u00e7\u00f6z\u00fcm (motorun y\u00f6ntemi, 4 kHz) \u2194 RK4 (1 \u00b5s), 0,5 + 3,1 Hz ba\u011f\u0131l h\u0131z, 4 s",
+   "exp": "ayn\u0131 s\u00fcrt\u00fcnme torku",
+   "got": "en b\u00fcy\u00fck fark 0.217 % F_c",
+   "crit": "\u2264 %1 F_c",
+   "pass": true
+  },
+  {
+   "grp": "D",
+   "id": "D5",
+   "name": "Hexapod dinami\u011fi: Osc2 iletimi ve T2.5 duyarl\u0131l\u0131\u011f\u0131n\u0131n f_bw'den ba\u011f\u0131ms\u0131zl\u0131\u011f\u0131 (v13.4)",
+   "method": "Osc2 (f_bw 20 ve 10 Hz, \u03b6 0,7071, 4 kHz FOH) sin\u00fcs yan\u0131t\u0131 en k\u00fc\u00e7\u00fck kareler \u2194 1/\u221a((1 \u2212 r\u00b2)\u00b2 + (2\u03b6r)\u00b2) ve faz; T2.5 zaman alan\u0131 ko\u015fusunda IMU ile \u00f6l\u00e7\u00fclen iletim \u03c4 (8 Hz) \u2194 analitik; T2.5 duyarl\u0131l\u0131\u011f\u0131 f_bw = 20 \u2194 10 Hz",
+   "exp": "genlik ve faz analitikle ayn\u0131; duyarl\u0131l\u0131k hexapod band\u0131ndan ba\u011f\u0131ms\u0131z",
+   "got": "genlik fark\u0131 5.8e-5, faz fark\u0131 1.10e-7\u00b0; \u03c4(8 Hz) f_bw 20: 0.987 (analitik 0.987), f_bw 10: 0.842 (0.842); duyarl\u0131l\u0131k 1.906 \u2194 1.903 \u00b5rad/(m/s\u00b2) (g\u00f6reli fark %0.16); i\u015fletme d\u00fczeyi fark\u0131 1.641 \u2194 1.638 \u00b5rad",
+   "crit": "genlik \u2264 2\u00b710\u207b\u2074, faz \u2264 0,05\u00b0; |\u03c4 \u2212 \u03c4_analitik| \u2264 0,002; duyarl\u0131l\u0131k fark\u0131 \u2264 %0,5",
+   "pass": true
+  },
+  {
+   "grp": "C",
+   "id": "C1",
+   "name": "\u00d6rnekleme h\u0131z\u0131 yak\u0131nsamas\u0131 (laboratuvar, s\u00fcrt\u00fcnme dahil)",
+   "method": "roll 3\u00b0 @ 0,125 Hz + yaw 1\u00b0 @ 0,083 Hz; t\u00fcm mekanizmalar (g\u00fcr\u00fclt\u00fc/bias hari\u00e7); 2, 4, 8 kHz",
+   "exp": "8 kHz \u00e7\u00f6z\u00fcm\u00fc",
+   "got": "art\u0131k RMS el/xel (\u00b5rad): 2 kHz 5.331/2.923, 4 kHz 5.331/2.924, 8 kHz 5.329/2.924",
+   "crit": "2 kHz ve 4 kHz, 8 kHz'den \u2264 %3",
+   "pass": true
+  },
+  {
+   "grp": "C",
+   "id": "C2",
+   "name": "\u00d6rnekleme h\u0131z\u0131 yak\u0131nsamas\u0131 (i\u015fletme ayr\u0131\u015ft\u0131rmas\u0131)",
+   "method": "B1-01 (kuplaj), B1-07 (s\u00fcrt\u00fcnme), B2-03 (dengesizlik) sat\u0131rlar\u0131 200 s; 2 kHz (kullan\u0131lan) \u2194 8 kHz",
+   "exp": "8 kHz \u00e7\u00f6z\u00fcm\u00fc",
+   "got": "B1-01: 3.821 / 3.821 \u00b5rad \u00b7 B1-07: 2.699 / 2.694 \u00b5rad \u00b7 B2-03: 1.636 / 1.636 \u00b5rad",
+   "crit": "\u2264 %3",
+   "pass": true
+  },
+  {
+   "grp": "C",
+   "id": "C3",
+   "name": "\u00d6rnekleme h\u0131z\u0131 yak\u0131nsamas\u0131 (yap\u0131sal modlar, v13.11)",
+   "method": "optik alt montaj modu (1 m/s\u00b2 shaker) ve gimbal yap\u0131sal modu (5 rad/s\u00b2 a\u00e7\u0131sal uyar\u0131c\u0131) rezonansta; 4 kHz (kullan\u0131lan) ve 16 kHz",
+   "exp": "g\u00b7a/(2\u03b6) (s\u00fcrekli zaman)",
+   "got": "optik 120 Hz, 4 kHz: 37.266 / 37.500 \u00b5rad (-0.62 %) \u00b7 optik 120 Hz, 16 kHz: 37.482 / 37.500 \u00b5rad (-0.05 %) \u00b7 gimbal 180 Hz, 4 kHz: 24.649 / 25.000 \u00b5rad (-1.41 %) \u00b7 gimbal 180 Hz, 16 kHz: 24.972 / 25.000 \u00b5rad (-0.11 %)",
+   "crit": "16 kHz \u00b1%0,25; 4 kHz \u00b1%2",
+   "pass": true,
+   "detail": "Ayr\u0131kla\u015ft\u0131rma kayb\u0131 yakla\u015f\u0131k \u22120,18\u00b7(\u03c9\u00b7dt)\u00b2: 4 kHz'de 120 Hz %0,6, 180 Hz %1,4, 400 Hz %7. \u0130\u015fletme d\u00fczeyleri benzetimde kalibre edildi\u011fi i\u00e7in varsay\u0131lan b\u00fct\u00e7e etkilenmez; mod frekans\u0131 250 Hz'in \u00fcst\u00fcne al\u0131n\u0131rsa benzetim h\u0131z\u0131 art\u0131r\u0131lmal\u0131d\u0131r."
+  },
+  {
+   "grp": "M",
+   "id": "M1",
+   "name": "Plaka \u00f6l\u00e7e\u011fi kalibrasyonu (T0.1)",
+   "method": "5\u00d75 \u0131zgara \u00d7 3 ziyaret, stab OFF; IFOV ve radyal distorsiyonun geri kazan\u0131m\u0131",
+   "exp": "IFOV 40.1600 \u00b5rad, k1 -0.002",
+   "got": "IFOV 40.1587 \u00b1 5.787e-4 \u00b5rad, k1 -0.00208",
+   "crit": "IFOV fark\u0131 \u2264 3u ve \u2264 %0,05; k1 \u00b1%10",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M2",
+   "name": "Video \u00f6l\u00e7\u00fcm taban\u0131: centroid g\u00fcr\u00fclt\u00fcs\u00fc",
+   "method": "stab OFF, granit, so\u011futucu ve hava kapal\u0131, 120 s (6000 kare): \u03c3 = \u221a(\u03a3(\u0394x)\u00b2/2(n\u22121)); T0.2 tam zincirde 1.65 / 1.39 \u00b5rad (so\u011futucunun 10/20 Hz'e katlanan tonlar\u0131 ve hava dahil)",
+   "exp": "U-01 = 0.03 px \u00d7 IFOV = 1.205 \u00b5rad",
+   "got": "el 1.199, xel 1.237 \u00b5rad",
+   "crit": "\u00b12.7 % (3\u03c3)",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M3",
+   "name": "Senkronizasyon gecikmesi (T0.4)",
+   "method": "10 yar\u0131m-sin\u00fcs darbe, stab OFF; video \u2212 IMU gecikmesi",
+   "exp": "senkron kaymas\u0131 \u2212 IMU grup gecikmesi = -0.9502 ms",
+   "got": "-0.9285 \u00b1 0.0318 ms",
+   "crit": "\u2264 3\u03c3 veya \u2264 0,02 ms",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M4",
+   "name": "Gyro Allan karakterizasyonu (T0.6): kestiricinin da\u011f\u0131l\u0131m\u0131 (v13.11)",
+   "method": "4 sa, 100 Hz ham gyro; ARW (\u03c4 \u2248 1 s) ve bias karars\u0131zl\u0131\u011f\u0131 (taban/0,664); 40 tohum \u2194 ba\u011f\u0131ms\u0131z Monte Carlo (k13/gyro_ref.py, 200 ger\u00e7ekle\u015fme)",
+   "exp": "model ARW 0.0042 \u00b0/\u221ah, BI 0.042 \u00b0/h; kestirici ortalamas\u0131 (ba\u011f\u0131ms\u0131z MC) ARW 0.00421, BI 0.0339 (sd 0.0091)",
+   "got": "40 tohum: ARW 0.00421, BI 0.0356 (sd 0.0100); tek tohum (varsay\u0131lan) ARW 0.00424, BI 0.0461",
+   "crit": "ortalamalar 3\u03c3 i\u00e7inde (BI \u00b10.0047, ARW \u00b112.4\u00b710\u207b\u2076); tek tohum ARW \u00b1%5",
+   "pass": true,
+   "detail": "BI kestiricisi modelin %-19'i kadar d\u00fc\u015f\u00fck ortalamaya ve \u00b1%27 da\u011f\u0131l\u0131ma sahiptir: k\u0131sa kay\u0131tta yava\u015f Gauss\u2013Markov bile\u015fenleri tabanda g\u00f6r\u00fcnmez ve en k\u00fc\u00e7\u00fck de\u011fer se\u00e7imi a\u015fa\u011f\u0131 \u00e7eker (IEEE Std 952-1997, Ek C)."
+  },
+  {
+   "grp": "M",
+   "id": "M5",
+   "name": "D\u00fcnya d\u00f6n\u00fc\u015f\u00fc sa\u011flamas\u0131 (T0.7)",
+   "method": "kompanzasyon KAPALI 120 s / A\u00c7IK 900 s, t\u00fcm mekanizmalar ve \u00f6l\u00e7\u00fcm zinciri a\u00e7\u0131k",
+   "exp": "KAPALI 46.87 / 55.86 \u00b5rad/s; A\u00c7IK \u2264 1.52",
+   "got": "KAPALI 47.10 / 55.67; A\u00c7IK 0.691 / 1.339 \u00b5rad/s",
+   "crit": "KAPALI \u00b1%1 (gyro bias pay\u0131); A\u00c7IK s\u0131n\u0131r alt\u0131nda",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M6",
+   "name": "Stab OFF kazanc\u0131 (T1.2): \u00f6l\u00e7ek, i\u015faret ve eksen e\u015flemesi",
+   "method": "roll ve yaw, 0,05\u20131 Hz, video (kalibre IFOV) / IMU",
+   "exp": "kazan\u00e7 1",
+   "got": "en b\u00fcy\u00fck |kazan\u00e7 \u2212 1| = 0.021 %",
+   "crit": "\u2264 %0,5",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M7",
+   "name": "Taban d\u00fczeltmesi: \u00fc\u00e7 kipin masa titre\u015fimini d\u00fc\u015fmesi (v11; v13.5 ay\u0131rt edici)",
+   "method": "deniz profili 380 s, stab ON, ayn\u0131 tohum; masa mikro-titre\u015fimi KAPALI ve A\u00c7IK (2 ve 10 \u00b5rad); video wander el. Kipler: kapal\u0131 (s = 0), zincir (s = yal\u0131t\u0131lm\u0131\u015f ko\u015funun video pay\u0131), tam (s = masa d\u00fczeyi)",
+   "exp": "\u03c3_DUT \u2248 \u03c3_kapal\u0131 = 7.135 \u00b5rad; en k\u00fc\u00e7\u00fck hata varsay\u0131lan kipte (kapal\u0131)",
+   "got": "2 \u00b5rad masa: \u03c3_a\u00e7\u0131k 7.114 (s_zincir 0.410) \u2192 hata kapal\u0131 0.021, zincir 0.033, tam 0.308 \u00b5rad; en iyi kapal\u0131 \u00b7 10 \u00b5rad masa: \u03c3_a\u00e7\u0131k 7.152 (s_zincir 2.050) \u2192 hata kapal\u0131 0.017, zincir 0.283, tam 7.135 \u00b5rad; en iyi kapal\u0131",
+   "crit": "her iki d\u00fczeyde en k\u00fc\u00e7\u00fck hata varsay\u0131lan kipte ve \u2264 max(0,05 \u00b5rad, %1\u00b7\u03c3_kapal\u0131)",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M8",
+   "name": "Piksel faz\u0131 S-e\u011frisi kalibrasyonu (T0.1 sub-piksel taramas\u0131)",
+   "method": "stab OFF, merkezde 16 ad\u0131m \u00d7 1/16 px (iki eksen birlikte), bit-ters s\u0131rayla gidi\u015f + d\u00f6n\u00fc\u015f, 5 s bekleme; do\u011frusal model art\u0131\u011f\u0131na A\u00b7sin 2\u03c0\u03c6 + B\u00b7cos 2\u03c0\u03c6 + eksen sabiti + eksen zaman trendi uydurmas\u0131; \u00fc\u00e7 durum (varsay\u0131lan, pixlock 0,05 px, pixlock 0)",
+   "exp": "genlik a\u00b7exp(\u22122\u03c0\u00b2\u03c3\u00b2), a = \u221a2\u00b7pixlock; kazan\u00e7 1 + 2\u03c0\u00b7a_etkin\u00b7cos 2\u03c0\u03c6 (hedef noktas\u0131 x0, y0)",
+   "got": "varsay\u0131lan: genlik 0.0264 \u00b1 0.0017 (beklenen 0.0268, \u03c3 0.053 px); kazan\u00e7 0.877 / 1.054 \u00b1 0.010 (beklenen 0.885 / 1.042) \u00b7 pixlock 0,05 px: genlik 0.0679 \u00b1 0.0024 (beklenen 0.0669, \u03c3 0.053 px); kazan\u00e7 0.698 / 1.119 \u00b1 0.015 (beklenen 0.712 / 1.105) \u00b7 pixlock 0: genlik 0.0023 \u00b1 0.0017 (beklenen 0.0000, \u03c3 0.053 px); kazan\u00e7 0.993 / 1.012 \u00b1 0.010 (beklenen 1.000 / 1.000)",
+   "crit": "genlik ve kazan\u00e7 \u2264 3u (k = 1 kestirim belirsizli\u011fi); pixlock 0 durumunda genlik \u2264 3u",
+   "pass": true,
+   "detail": "Izgara noktalar\u0131 kullan\u0131lmaz: fazlar\u0131 konuma ba\u011fl\u0131d\u0131r (ad\u0131m 254,9 px; distorsiyon faz\u0131 konumla birlikte kayd\u0131r\u0131r, 25 noktada eksen ba\u015f\u0131na 13 farkl\u0131 de\u011fer) ve \u00f6l\u00e7ek + k1 modeli S-e\u011frisinin o noktalardaki de\u011ferinin bir k\u0131sm\u0131n\u0131 so\u011furur (\u0131zgarayla uydurulan genlik 0,0246 px, beklenen etkin 0,0268; \u0131zgara + tarama birlikte 0,0241). Kestirim, bekleme s\u0131ras\u0131ndaki titre\u015fimle s\u00f6nm\u00fc\u015f etkin genliktir; hedef sabitken (T1.9) ayn\u0131 mertebede titre\u015fim oldu\u011fundan kazan\u00e7 bu genlikle hesaplan\u0131r."
+  },
+  {
+   "grp": "M",
+   "id": "M9",
+   "name": "Piksel faz\u0131: k\u00fc\u00e7\u00fck hareket kazanc\u0131 ve sapma, zaman alan\u0131 \u2194 Bessel",
+   "method": "stab OFF, centroid g\u00fcr\u00fclt\u00fcs\u00fc ve hava kapal\u0131; hedef faz\u0131 \u03c6 \u2208 {0; 0,25; 0,5}, sin\u00fcs genli\u011fi A \u2208 {0,1; 0,5; 1} px (el 0,2 Hz, xel 0,31 Hz), 64 s; video \u2194 ger\u00e7ek optik LOS sin\u00fcs uydurmas\u0131",
+   "exp": "kazan\u00e7 1 + 2\u03c0a\u00b7cos 2\u03c0\u03c6\u00b72J1(2\u03c0A)/(2\u03c0A), sapma a\u00b7J0(2\u03c0A)\u00b7sin 2\u03c0\u03c6 (a = \u221a2\u00b7pixlock = 0,0283 px)",
+   "got": "kazan\u00e7 (\u00f6l\u00e7\u00fclen / beklenen, el): \u03c6 0, A 0.10 px: 1.1691 / 1.1691 \u00b7 \u03c6 0, A 0.50 px: 1.0318 / 1.0322 \u00b7 \u03c6 0, A 1.00 px: 0.9880 / 0.9880 \u00b7 \u03c6 0.25, A 0.10 px: 1.0005 / 1.0000 \u00b7 \u03c6 0.25, A 0.50 px: 1.0010 / 1.0000 \u00b7 \u03c6 0.25, A 1.00 px: 0.9996 / 1.0000 \u00b7 \u03c6 0.5, A 0.10 px: 0.8309 / 0.8309 \u00b7 \u03c6 0.5, A 0.50 px: 0.9682 / 0.9678 \u00b7 \u03c6 0.5, A 1.00 px: 1.0120 / 1.0120; en b\u00fcy\u00fck fark kazan\u00e7 0.00101, sapma 2.7412e-4 px",
+   "crit": "kazan\u00e7 \u00b10,002; sapma \u00b10,0005 px",
+   "pass": true,
+   "detail": "K\u00fc\u00e7\u00fck harekette (A = 0,1 px) piksel faz\u0131 hatas\u0131 \u00e7arp\u0131msald\u0131r: \u03c6 = 0'da kazan\u00e7 1,17, \u03c6 = 0,5'te 0,83. A = 0,5 px'te sapma %18'e iner (2J1(\u03c0)/\u03c0 = 0,181), 1 px'te i\u015faret de\u011fi\u015ftirir ve %7'de kal\u0131r: hedef \u2265 0,5 px gezindi\u011finde faz ortalan\u0131r, hata toplan\u0131r U-06 (a/\u221a2) olarak kal\u0131r. Hedefi sabit tutan \u00f6l\u00e7\u00fcmlerde (T1.9 takip, T0.2 dura\u011fan ko\u015fu) \u00e7arp\u0131msal bi\u00e7im ge\u00e7erlidir."
+  },
+  {
+   "grp": "M",
+   "id": "M10",
+   "name": "IMU ve otokolimat\u00f6r g\u00fcr\u00fclt\u00fc yo\u011funlu\u011fu (v13.7)",
+   "method": "hareketsiz masa, yaln\u0131z \u00f6l\u00e7\u00fcm g\u00fcr\u00fclt\u00fcs\u00fc, 120 s; f_IMU 500 Hz (fs 2 ve 4 kHz) ve 100 Hz; IMU g\u00fcr\u00fclt\u00fcs\u00fc s\u00fczge\u00e7ten ge\u00e7er, otokolimat\u00f6r kay\u0131t band\u0131nda beyaz; Welch 4096",
+   "exp": "IMU RMS = imu_asd\u00b7\u221aENBW (ayr\u0131k s\u00fczge\u00e7, say\u0131sal integral), yo\u011funluk = imu_asd; otokolimat\u00f6r RMS = ac_asd\u00b7\u221a500, yo\u011funluk = ac_asd (0,0224 \u00b5rad/\u221aHz)",
+   "got": "f_IMU 500 Hz, fs 2000: IMU RMS 0.5007 / 0.5009 \u00b5rad (ENBW 500.0 Hz), yo\u011funluk 1\u201350 Hz 0.02234; otokolimat\u00f6r RMS 0.5018 / 0.5009 \u00b7 f_IMU 500 Hz, fs 4000: IMU RMS 0.5139 / 0.5150 \u00b5rad (ENBW 528.6 Hz), yo\u011funluk 1\u201350 Hz 0.02291; otokolimat\u00f6r RMS 0.5018 / 0.5009 \u00b7 f_IMU 100 Hz, fs 2000: IMU RMS 0.2340 / 0.2347 \u00b5rad (ENBW 109.7 Hz), yo\u011funluk 1\u201350 Hz 0.02221; otokolimat\u00f6r RMS 0.5018 / 0.5009",
+   "crit": "RMS \u00b1%3, yo\u011funluk \u00b1%5 (120 s kay\u0131t istatisti\u011fi)",
+   "pass": true,
+   "detail": "B\u00fct\u00e7e U-04, analog ikinci derece Butterworth'\u00fcn ENBW'sini kullan\u0131r (1,111\u00b7f_IMU = 555 Hz \u2192 0,528 \u00b5rad): ayr\u0131k benzetimde ENBW fs 2 kHz'te 500, 4 kHz'te 529 Hz oldu\u011fundan kay\u0131ttaki IMU g\u00fcr\u00fclt\u00fcs\u00fc 0,501\u20130,515 \u00b5rad \u00e7\u0131kar; b\u00fct\u00e7e en \u00e7ok %5 temkinlidir. Kay\u0131t 1 kHz'e seyreltilirken s\u00fczgecin 500 Hz \u00fcst\u00fcndeki kuyru\u011fu banda katlan\u0131r (fs 4 kHz'te 1\u201350 Hz yo\u011funlu\u011fu %2 y\u00fcksek)."
+  },
+  {
+   "grp": "V",
+   "id": "V1",
+   "name": "Yakla\u015f\u0131m 1 (E.7) ve c_lat,0(Re): yay\u0131mlanm\u0131\u015f \u00f6rnek",
+   "method": "37,9 m ayd\u0131nlatma dire\u011fi, \u00fc\u00e7 durum: b = St\u00b7v_crit/n, c_lat motorun \u015eekil E.2 e\u011frisinden (Re = 1,2\u00b710\u2075 / 4,1\u00b710\u2075 / 1,1\u00b710\u2076), y_F = b\u00b7K\u00b7K_W\u00b7c_lat/(St\u00b2\u00b7Sc); makalenin Sc, K, K_W de\u011ferleriyle",
+   "exp": "Rako\u010devi\u0107 ve Popovi\u0107 (2018): 26,8 / 28,9 / 68,3 mm; c_lat 0,700 / 0,386 / 0,200",
+   "got": "26.82/26.8 mm (c_lat 0.700/0.7) \u00b7 28.97/28.9 mm (c_lat 0.386/0.386) \u00b7 68.42/68.3 mm (c_lat 0.200/0.2)",
+   "crit": "y \u00b1%0,5 (girdilerin yuvarlamas\u0131); c_lat \u00b10,001",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V2",
+   "name": "Mod bi\u00e7imi katsay\u0131lar\u0131 (konsol, \u03a6 = (z/l)\u00b2)",
+   "method": "K_W = \u222b_{L_j}\u03a6 / \u222b_l \u03a6 say\u0131sal integral (2\u00b710\u2075 nokta) \u2194 kapal\u0131 bi\u00e7im 3x(1 \u2212 x + x\u00b2/3), x = L_j/l \u2208 {0,05; 0,3; 0,75; 1}; K = \u222b\u03a6 / (4\u03c0\u222b\u03a6\u00b2)",
+   "exp": "K_W kapal\u0131 bi\u00e7imi; K \u2248 0,13 (Tablo E.5 konsol)",
+   "got": "K_W en b\u00fcy\u00fck fark 2.2e-12; K = 0.1326",
+   "crit": "K_W \u2264 1\u00b710\u207b\u2078; K 0,13 \u00b1 0,005",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V3",
+   "name": "Direk tepesi e\u011fim oran\u0131 \u03ba = \u03b8\u00b7l/y",
+   "method": "d\u00fczg\u00fcn konsol: cos \u03b2l\u00b7cosh \u03b2l = \u22121 (ikiye b\u00f6lme), \u03c6'(l)\u00b7l/\u03c6(l); tepe k\u00fctlesi bask\u0131n s\u0131n\u0131r: statik u\u00e7 y\u00fck\u00fc bi\u00e7imi (3\u03be\u00b2 \u2212 \u03be\u00b3)/2 \u2192 1,5; varsay\u0131lan \u03ba bu iki s\u0131n\u0131r aras\u0131nda olmal\u0131",
+   "exp": "\u03b2l = 1,8751; \u03ba = 1,3765 (d\u00fczg\u00fcn) \u2026 1,5 (tepe k\u00fctlesi)",
+   "got": "\u03b2l = 1.87510; \u03ba = 1.3765; varsay\u0131lan \u03ba = 1.5",
+   "crit": "\u03b2l \u00b11\u00b710\u207b\u2074; 1,37 \u2264 \u03ba_varsay\u0131lan \u2264 1,5",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V4",
+   "name": "\u0130\u015fletmede r\u00fczg\u00e2r VIV e\u015flemesi (a\u00e7\u0131 \u2194 \u00f6teleme)",
+   "method": "gemi varsay\u0131lan\u0131, \u03b2 = 30\u00b0, yaln\u0131z VIV kayna\u011f\u0131, 80 s: (a) \u00fcretilen ivme dizisi a\u00e7\u0131 dizisinin ikinci t\u00fcrevi mi (\u0131zgarada merkezi fark), (b) \u00f6l\u00e7ek oran\u0131 \u2212l/\u03ba, (c) benzetimde a_y/roll RMS oran\u0131 \u0131zgaradakiyle ayn\u0131 m\u0131, (d) roll/pitch = cot \u03b2, (e) roll\u2013a_y korelasyonu (tepe +y\u00b7n'e giderken direk o yana yatar)",
+   "exp": "(a) \u00f6zde\u015f, (b) 1, (c) ayn\u0131, (d) 1.7321, (e) +1",
+   "got": "(a) g\u00f6reli fark 0.258 %, (b) 1.000000000, (c) 3557.99 / 3557.99 m/s\u00b2/rad, (d) 1.732051, (e) 0.99980",
+   "crit": "(a) \u2264 %0,5; (b) \u00b11\u00b710\u207b\u2079; (c) \u00b1%0,3 (ara de\u011fer); (d) \u00b11\u00b710\u207b\u2076; (e) > 0,999",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V5",
+   "name": "Laboratuvar \u00f6teleme kanal\u0131 \u2192 dengesizlik torku \u2192 LOS",
+   "method": "hexapod y \u00f6telemesi (1 m/s\u00b2 genlik, LOS iskele y\u00f6n\u00fcnde \u2192 LOS boyunca), yaln\u0131z kuplaj + dengesizlik; mekanik LOS genli\u011fi (T2.2 gemi dwell'inin \u00f6teleme yolu)",
+   "exp": "U_z\u00b7a\u00b7|\u03b8/T_d(f)| (analitik)",
+   "got": "2 Hz: 0.9694/0.9695 \u00b5rad \u00b7 4.1 Hz: 0.9878/0.9879 \u00b5rad \u00b7 8 Hz: 1.9264/1.9270 \u00b5rad \u00b7 en b\u00fcy\u00fck fark 0.00 dB",
+   "crit": "\u00b10,5 dB",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V7",
+   "name": "\u0130\u015fletmede denizalt\u0131 VIV e\u015flemesi (a\u00e7\u0131 \u2194 mast ba\u015f\u0131 \u00f6telemesi)",
+   "method": "denizalt\u0131 varsay\u0131lan\u0131 (L = 4 m, \u03ba = 1,5), yaln\u0131z VIV kayna\u011f\u0131, 80 s: (a) ivme dizisi a\u00e7\u0131 dizisinin ikinci t\u00fcrevi mi (\u0131zgarada merkezi fark), (b) \u00f6l\u00e7ek oran\u0131 \u2212L/\u03ba, (c) benzetimde a_y/roll RMS oran\u0131 \u0131zgaradakiyle ayn\u0131 m\u0131, (d) pitch ve x bile\u015feni yok, (e) roll\u2013a_y korelasyonu (mast ba\u015f\u0131 +y'ye giderken roll \u2212), (f) roll RMS = A/\u221a2, (g) B2-01 sat\u0131r\u0131nda dengesizlik ve optik montaj a\u00e7\u0131k",
+   "exp": "(a) \u00f6zde\u015f, (b) 1, (c) ayn\u0131, (d) yok, (e) +1, (f) A/\u221a2, (g) a\u00e7\u0131k",
+   "got": "(a) g\u00f6reli fark 0.191 %, (b) 1.000000000, (c) 942.042 / 942.479 m/s\u00b2/rad, (d) yok, (e) 0.99993, (f) 590.3 / 617.1 \u00b5rad, (g) a\u00e7\u0131k",
+   "crit": "(a) \u2264 %0,5; (b) \u00b11\u00b710\u207b\u2079; (c) \u00b1%0,3; (e) > 0,999; (f) \u00b1%5 (80 s, dar bant s\u00fcre\u00e7)",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V6",
+   "name": "T2.2 yol ayr\u0131m\u0131 (gemi): ayna \u2194 video \u2212 ayna",
+   "method": "gemi, \u03b2 = 90\u00b0, f_n dwell (a\u00e7\u0131sal + \u00f6teleme), xel, dar bant OFF ve ON; ayn\u0131 tohumla t\u00fcm mekanizmalar \u2194 optik montaj kapal\u0131: (a) optik montaj kapal\u0131yken |video \u2212 ayna|, (b) |ayna(t\u00fcm) \u2212 video(optik kapal\u0131)| \u2014 ikisi de ayr\u0131\u015ft\u0131r\u0131lan yollar\u0131n b\u00fcy\u00fc\u011f\u00fcne g\u00f6re; (c) |video \u2212 ayna|(t\u00fcm) \u2194 ablasyon fark\u0131 |video(t\u00fcm) \u2212 video(optik kapal\u0131)|",
+   "exp": "(a) 0, (b) 0, (c) 0 (do\u011frusal \u00fcst \u00fcste binme; \u00f6l\u00e7\u00fcm g\u00fcr\u00fclt\u00fcs\u00fc ve s\u00fcrt\u00fcnme kadar sapma)",
+   "got": "OFF: video 4.952, ayna 15.435, video \u2212 ayna 10.498 / ablasyon 10.349 \u00b5rad (a 1.00 %, b 1.00 %, c 1.44 %) \u00b7 ON: video 8.480, ayna 1.704, video \u2212 ayna 10.183 / ablasyon 10.103 \u00b5rad (a 0.86 %, b 0.86 %, c 0.80 %)",
+   "crit": "(a) \u2264 %3; (b) \u2264 %5; (c) \u2264 %5",
+   "pass": true
+  },
+  {
+   "grp": "S",
+   "id": "S1",
+   "name": "Bant s\u0131n\u0131rl\u0131 deniz profili sentezi (6-DOF)",
+   "method": "SS5 roll: \u00b110\u00b0 tepe \u2192 \u03c3 = A/3, bant 0.1\u20130.25 Hz (4. derece Butterworth), 20 Hz, 7.28 saat. Ger\u00e7ekle\u015fme hedef RMS'e \u00f6l\u00e7eklenir (yap\u0131 gere\u011fi); s\u0131nanan: Gauss da\u011f\u0131l\u0131m\u0131 (|x| > 3\u03c3 oran\u0131, bas\u0131kl\u0131k), ivme/konum RMS oran\u0131 (synthSeriesDer'in spektral t\u00fcrevi) \u2194 (2\u03c0)\u00b2\u00b7\u221a(\u222bf\u2074S/\u222bS), varyans\u0131n [f1/1,5; 1,5\u00b7f2] i\u00e7indeki pay\u0131",
+   "exp": "RMS = \u03c3 (3.3333\u00b0), a\u015f\u0131m %0,270, bas\u0131kl\u0131k 3, ivme oran\u0131 2.0396 1/s\u00b2",
+   "got": "RMS 3.3333\u00b0, a\u015f\u0131m %0.263, bas\u0131kl\u0131k 2.983, ivme oran\u0131 2.0434 (0.19 %), bant i\u00e7i pay %98.5",
+   "crit": "a\u015f\u0131m %0,10\u20130,50 (N_eff \u2248 5686, \u2248 25 ba\u011f\u0131ms\u0131z olay); bas\u0131kl\u0131k 3 \u00b1 0,25; ivme oran\u0131 \u00b1%3 (RMS kestirim belirsizli\u011fi \u2248 0.66 %); bant i\u00e7i \u2265 %95",
+   "pass": true
+  },
+  {
+   "grp": "S",
+   "id": "S2",
+   "name": "Kald\u0131ra\u00e7 kolu ivmesi \u2194 tam rijit cisim kinemati\u011fi",
+   "method": "SS4 a\u00e7\u0131sal profil, 3000 s, \u00fc\u00e7 kol: (0, 0, 15), (20, \u22124, 15) ve (30, 0, 0) m. Motorun i\u015fletme ivme serisi (a = \u03c9\u0307_B \u00d7 r + \u03c9_B \u00d7 (\u03c9_B \u00d7 r), \u03c9_B = (\u03c6\u0307 \u2212 \u03c8\u0307s\u03b8, \u03b8\u0307c\u03c6 + \u03c8\u0307c\u03b8s\u03c6, \u2212\u03b8\u0307s\u03c6 + \u03c8\u0307c\u03b8c\u03c6)) \u2194 p = Rz(\u03c8)Ry(\u03b8)Rx(\u03c6)\u00b7r konumunun be\u015f noktal\u0131 merkezi farkla ikinci t\u00fcrevi, g\u00f6vdeye R\u1d40 ile; b\u00fct\u00e7e kestirimi (birinci derece, ba\u011f\u0131ms\u0131z terimler: a_x = \u03b8\u0308r_z \u2212 \u03c8\u0308r_y, a_y = \u03c8\u0308r_x \u2212 \u03c6\u0308r_z, a_z = \u03c6\u0308r_y \u2212 \u03b8\u0308r_x) \u2194 tam RMS. v13.1 bulgusu: \u00f6nceki k\u00fc\u00e7\u00fck a\u00e7\u0131 ifadesi (\u03c9 \u2248 Euler h\u0131zlar\u0131) boyuna kolda y ivmesini SS4'te %19 yanl\u0131\u015f veriyordu (probe/k3/exactacc.js)",
+   "exp": "\u00f6zde\u015f (say\u0131sal t\u00fcrev hatas\u0131 d\u00fczeyinde); b\u00fct\u00e7e \u00b1%10",
+   "got": "r = (0, 0, 15) m: fark x 0.272 %, y 0.166 %, z 0.023 %; tam RMS 0.8939 / 0.9210 / 0.0457 m/s\u00b2; b\u00fct\u00e7e 0.8918 / 0.8899 / 0.0000 (-0.2 % / -3.4 % / \u2014) \u00b7 r = (20, -4, 15) m: fark x 0.276 %, y 0.162 %, z 0.273 %; tam RMS 0.8955 / 0.9045 / 1.2112 m/s\u00b2; b\u00fct\u00e7e 0.8927 / 0.9132 / 1.2125 (-0.3 % / 1.0 % / 0.1 %) \u00b7 r = (30, 0, 0) m: fark x 0.043 %, y 0.124 %, z 0.273 %; tam RMS 0.0373 / 0.3121 / 1.7914 m/s\u00b2; b\u00fct\u00e7e 0.0000 / 0.3071 / 1.7835 (\u2014 / -1.6 % / -0.4 %)",
+   "crit": "fark \u2264 %0,5 (her eksen, her kol; referans\u0131n say\u0131sal t\u00fcrev hatas\u0131 \u2248 %0,02\u20130,3); b\u00fct\u00e7e kestirimi tam RMS'ten \u00b1%10 (kolun ivme \u00fcretti\u011fi eksenler, tek ger\u00e7ekle\u015fme)",
+   "pass": true
+  },
+  {
+   "grp": "S",
+   "id": "S3",
+   "name": "Laboratuvar \u00f6teleme talebi ve \u00f6l\u00e7ek q",
+   "method": "SS5, r = (20, \u22124, 15) m, 6000 s: hexapod yer de\u011fi\u015ftirmesi = a\u011f\u0131rl\u0131k merkezi \u00f6telemesi + (R \u2212 I)\u00b7r, R = Rz(\u03c8)Ry(\u03b8)Rx(\u03c6) \u2194 ba\u011f\u0131ms\u0131z matrislerle yeniden hesap (ayn\u0131 tohum: kolsuz ko\u015funun \u00f6telemesi + a\u00e7\u0131sal diziler); \u00f6l\u00e7ek sonras\u0131 tepe \u2194 strok; RMS \u2194 birinci derece analitik \u221a(\u03c3_\u00f6teleme\u00b2 + \u03a3(r\u00b7\u03c3_a\u00e7\u0131)\u00b2)",
+   "exp": "\u00f6zde\u015f; tepe = \u00b10.1 m; x 0.500, y 0.997, z 0.743 m RMS",
+   "got": "en b\u00fcy\u00fck fark 6.8e-15 m; q = 0.02481, \u00f6l\u00e7ek sonras\u0131 tepe 0.100000 m; x 0.496 (-0.7 %), y 0.993 (-0.5 %), z 0.738 (-0.7 %) m RMS; tepe/\u03c3 = 4.06",
+   "crit": "fark \u2264 1\u00b710\u207b\u00b9\u00b2 m; tepe \u00b11\u00b710\u207b\u00b9\u00b2 m; RMS \u00b1%5 (tek ger\u00e7ekle\u015fme, N_eff \u2248 900)",
+   "pass": true
+  },
+  {
+   "grp": "S",
+   "id": "S4",
+   "name": "T2.5 kestirimi \u2194 i\u015fletme benzetimi (B1-08)",
+   "method": "gemi, SS5 6-DOF, iki kald\u0131ra\u00e7 kolu (r = (0, 0, 15) m ve (20, \u22124, 15) m): T2.5 (x, y, z \u00f6teleme 2 ve 3 Hz, 2 m/s\u00b2 (v13.5; \u00f6nceden 1 ve 2 Hz); ayna ve video \u2212 ayna yollar\u0131 ayr\u0131, do\u011frusal toplam) \u00d7 i\u015fletme ivmesi \u2194 ayn\u0131 DUT'un i\u015fletme ayr\u0131\u015ft\u0131rmas\u0131ndaki B1-08 sat\u0131r\u0131 (600 s, \u00f6teleme + kald\u0131ra\u00e7 kolu, a\u00e7\u0131sal hareketin kendisi yok)",
+   "exp": "kestirim \u2265 i\u015fletme (muhafazak\u00e2r), \u2264 4 kat",
+   "got": "r = (0, 0, 15) m: kestirim el 3.246 / xel 4.294 \u00b5rad; i\u015fletme el 1.842 / xel 2.531 \u00b5rad; yol ayr\u0131m\u0131 olmadan 2.093 / 1.555 \u00b5rad \u00b7 r = (20, \u22124, 15) m: kestirim el 6.019 / xel 4.329 \u00b5rad; i\u015fletme el 3.862 / xel 2.541 \u00b5rad; yol ayr\u0131m\u0131 olmadan 3.020 / 1.585 \u00b5rad",
+   "crit": "i\u015fletme \u2264 kestirim \u2264 4 \u00d7 i\u015fletme (iki eksen, iki kol)",
+   "pass": true
+  },
+  {
+   "grp": "F",
+   "id": "F1",
+   "name": "FOG gecikmesi: DRR ve faz pay\u0131",
+   "method": "el d\u00f6ng\u00fcs\u00fc, 1 ms ek gecikme (benzetimde kontrol h\u0131z\u0131nda gecikme hatt\u0131); 0,05\u00b0 sin\u00fcs 1\u201360 Hz, zaman alan\u0131 \u2194 analitik model; faz pay\u0131 kayb\u0131 \u2194 360\u00b7f_c\u00b7\u03c4",
+   "exp": "|DRR| model; \u0394PM = 14.563\u00b0, f_c de\u011fi\u015fmez",
+   "got": "en b\u00fcy\u00fck fark 0.176 dB; \u0394PM 14.563\u00b0 (PM 52.35\u00b0 \u2192 37.79\u00b0), f_c fark\u0131 3.331e-14 %",
+   "crit": "DRR \u00b10,25 dB (D1 ile ayn\u0131); \u0394PM \u00b10,01\u00b0; f_c \u2264 %0,01",
+   "pass": true,
+   "detail": "1 Hz: -56.49/-56.49 dB (gecikmesiz -56.49) \u00b7 3 Hz: -60.17/-60.20 dB (gecikmesiz -60.20) \u00b7 8 Hz: -33.90/-33.90 dB (gecikmesiz -33.91) \u00b7 20 Hz: -29.15/-29.12 dB (gecikmesiz -29.77) \u00b7 40 Hz: -28.03/-27.88 dB (gecikmesiz -30.52) \u00b7 60 Hz: -29.03/-28.86 dB (gecikmesiz -32.34)"
+  },
+  {
+   "grp": "F",
+   "id": "F2",
+   "name": "FOG \u00f6l\u00e7ek hatas\u0131: bozucu bast\u0131rma ve d\u00f6n\u00fc\u015f",
+   "method": "(a) S_f = 0 \u2194 1000 ppm, 0,125 ve 3 Hz DRR (zaman alan\u0131); (b) T1.8 (10\u00b0 @ 30\u00b0/s): \u00f6l\u00e7ek hatas\u0131n\u0131n yal\u0131t\u0131lm\u0131\u015f pay\u0131 (ayn\u0131 tohum, S_f = S_nl = 0 ko\u015fusuyla fark) \u2194 \u2212S_etkin\u00b7\u03b8; S_etkin = S_f \u2212 1,5\u00b7S_nl + 2,5\u00b7S_nl\u00b7\u27e8\u03c9\u00b2\u27e9/FS\u00b2 (k\u00fcbik do\u011frusals\u0131zl\u0131k)",
+   "exp": "(a) -0.0087 dB; (b) S_f = 100 ppm: -17.45 \u00b5rad; + S_nl = 50 ppm\u00b7FS, FS = 300 \u00b0/s: -4.53 \u00b5rad",
+   "got": "(a) -0.0087 / -0.0087 dB; (b) -17.48 / -4.54 \u00b5rad",
+   "crit": "(a) |\u0394| \u2264 0,05 dB; (b) \u00b1%5 ya da \u00b10,3 \u00b5rad",
+   "pass": true
+  },
+  {
+   "grp": "F",
+   "id": "F3",
+   "name": "Gyro eksen ka\u00e7\u0131kl\u0131\u011f\u0131: LOS etraf\u0131ndaki d\u00f6nmenin s\u0131zmas\u0131",
+   "method": "yanal bak\u0131\u015f (pitch = LOS ekseni etraf\u0131nda d\u00f6nme: rot), 3\u00b0 @ 0,125 Hz, stab ON, yaln\u0131z kuplaj + eksen ka\u00e7\u0131kl\u0131\u011f\u0131 \u03b5 = 0.1 mrad; el genli\u011fi \u2194 \u03b5\u00b7\u03b8\u00b7\u03c9\u00b7|\u03b8/n(\u03c9)| (analitik gyro yolu)",
+   "exp": "5.2361 \u00b5rad (\u2248 \u03b5\u00b7\u03b8 = 5.2360; RMS \u03b5\u03b8/\u221a2 = 3.702)",
+   "got": "5.2343 \u00b5rad",
+   "crit": "\u00b1%1",
+   "pass": true
+  },
+  {
+   "grp": "F",
+   "id": "F4",
+   "name": "FOG s\u0131cakl\u0131k katsay\u0131s\u0131, doyma, g-duyarl\u0131l\u0131\u011f\u0131",
+   "method": "(a) b0 = 0, TC = 0,01 \u00b0/h/\u00b0C, T_op \u2212 T_cal = 35 \u00b0C, yaln\u0131z sabit bias: LOS kayma h\u0131z\u0131; (b) T1.8 menzil 20 \u00b0/s (d\u00f6n\u00fc\u015f 30 \u00b0/s) \u2194 varsay\u0131lan 1000 \u00b0/s; (c) k_g = 1 \u00b0/h/g, 2 m/s\u00b2 @ 2 Hz \u00fc\u00e7 eksende ayr\u0131: el genliklerinin karesel toplam\u0131",
+   "exp": "(a) 1.6968 \u00b5rad/s; (b) doyum > 0 / = 0; (c) 78.954 nrad",
+   "got": "(a) el 1.6967 / xel 1.6967 \u00b5rad/s; (b) 25741 / 0 \u00f6rnek, tepe 728.4 \u00b0/s; (c) 79.040 nrad",
+   "crit": "(a) \u00b1%0,5; (b) doyum yaln\u0131z dar menzilde; (c) \u00b1%2",
+   "pass": true
+  },
+  {
+   "grp": "G",
+   "id": "G1",
+   "name": "Proje metrik motoru: Gauss g\u00fcr\u00fclt\u00fc ve saf ton",
+   "method": "(a) iki eksende ba\u011f\u0131ms\u0131z beyaz Gauss g\u00fcr\u00fclt\u00fc \u03c3 = 2 \u00b5rad, 2 kHz, 620 s (ilk 20 s at\u0131l\u0131r): \u03c3, \u03c3_vek, P99,73 eksen ve radyal, bant RMS'leri, bantlar\u0131n toplam\u0131, ton yoklu\u011fu; (b) El'de 3 \u00b5rad @ 7,3 Hz saf ton: \u03c3, PPV, P99,73, pozlama i\u00e7i (PSD ve zaman alan\u0131), ton tespiti ve band\u0131",
+   "exp": "(a) \u03c3 2.000, \u03c3_vek 2.828, P99,73 3\u03c3 = 6.000, radyal \u221a(\u22122 ln 0,0027)\u00b7\u03c3 = 6.879; bantlar \u03c3\u00b7\u221a(\u0394f/f_N) = 0.098 / 0.265 / 0.566 / 1.265; ton yok \u00b7 (b) \u03c3 = A/\u221a2 = 2.121, PPV 2A = 6.000, P99,73 A\u00b7sin(0,9973\u00b7\u03c0/2) = 3.000, pozlama (A/\u221a2)\u00b7\u221a(1 \u2212 sinc\u00b2(\u03c0fT_e)) = 0.280 \u00b5rad; tek ton 7,3 Hz, 2,5\u201320 Hz band\u0131nda",
+   "got": "(a) \u03c3 1.999 / 2.000, \u03c3_vek 2.827, P99,73 5.994 / 6.008, radyal 6.876; bantlar 0.098 / 0.266 / 0.566 / 1.266; 0 ton \u00b7 (b) \u03c3 2.121, PPV 6.016 (PPV/\u03c3 2.836), P99,73 3.004, pozlama 0.280 (zaman alan\u0131 0.280); ton 7.294 Hz 2.121",
+   "crit": "(a) \u03c3 ve y\u00fczdelikler \u00b1%1, bantlar \u00b1%5, bant toplam\u0131 = toplam, ton yok; (b) \u00b1%0,5, ton frekans\u0131 \u00b11 kutu",
+   "pass": true,
+   "detail": "en b\u00fcy\u00fck g\u00f6reli fark (a) 0.134 %, bant 0.39 %; (b) 0.269 %. Kutu geni\u015fli\u011fi \u0394f = 0.0305 Hz (\u2265 30 s Welch segmenti). Bu kontrol bir hata yakalad\u0131: s\u0131f\u0131r fazl\u0131 y\u00fcksek ge\u00e7irenin ters ge\u00e7i\u015fi kayd\u0131n sonundaki de\u011ferin DC kararl\u0131 durumundan ba\u015flad\u0131\u011f\u0131 i\u00e7in son ~15 s'de ge\u00e7ici rejim b\u0131rak\u0131yordu ve son pencereye giriyordu (saf tonda PPV +%22, P99,73 +%1). Yans\u0131mal\u0131 dolgu sal\u0131n\u0131ml\u0131 sinyalde bunu gidermiyor; d\u00fczeltme: sondan da s\u00fczgecin s\u00f6n\u00fcm s\u00fcresi (0,1 Hz'de 21 s) at\u0131l\u0131r, T1.9 kayd\u0131 645 s'ye uzat\u0131ld\u0131 (10 \u00d7 60 s pencere korunur)."
+  },
+  {
+   "grp": "G",
+   "id": "G2",
+   "name": "S\u0131f\u0131r fazl\u0131 y\u00fcksek ge\u00e7iren (0,1 Hz)",
+   "method": "2 kHz (ger\u00e7ek LOS) ve 50 Hz (video) \u00f6rneklemede 0,05 / 0,1 / 0,3 / 1 Hz sin\u00fcs, 1200 s, u\u00e7lardan 200 s at\u0131larak sin\u00fcs uydurma; genlik oran\u0131 ve faz fark\u0131",
+   "exp": "|H|\u00b2 = r\u2074/(1 + r\u2074), r = tan(\u03c0f/f_s)/tan(\u03c0f_c/f_s): 0,1 Hz'de 0,5 (\u22126,02 dB), 0,3 Hz'de 0.9878; faz 0",
+   "got": "en b\u00fcy\u00fck g\u00f6reli fark 1.6e-9, en b\u00fcy\u00fck faz 2.303e-10\u00b0",
+   "crit": "\u00b1%0,2; |faz| \u2264 0,05\u00b0",
+   "pass": true,
+   "detail": "2000 Hz / 0.05 Hz: 0.05882 (0.05882), 2.303e-10\u00b0 \u00b7 2000 Hz / 0.1 Hz: 0.50000 (0.50000), 1.323e-10\u00b0 \u00b7 2000 Hz / 0.3 Hz: 0.98780 (0.98780), 7.958e-13\u00b0 \u00b7 2000 Hz / 1 Hz: 0.99990 (0.99990), 6.821e-12\u00b0 \u00b7 50 Hz / 0.05 Hz: 0.05882 (0.05882), 9.095e-13\u00b0 \u00b7 50 Hz / 0.1 Hz: 0.50000 (0.50000), 6.821e-13\u00b0 \u00b7 50 Hz / 0.3 Hz: 0.98781 (0.98781), 0.0000\u00b0 \u00b7 50 Hz / 1 Hz: 0.99990 (0.99990), 5.343e-12\u00b0"
+  },
+  {
+   "grp": "G",
+   "id": "G3",
+   "name": "D\u0131\u015f kamera takip d\u00f6ng\u00fcs\u00fc: duyarl\u0131l\u0131k |S(f)|",
+   "method": "bant 2.5 Hz, 2 kare gecikme; optik alt montaj\u0131n ivmeyle yar\u0131 statik sapmas\u0131 (gyro g\u00f6rmez), 2 m/s\u00b2 dikey sin\u00fcs, g\u00fcr\u00fclt\u00fcs\u00fcz video; takip a\u00e7\u0131k / kapal\u0131 El genlik oran\u0131 \u2194 analitik L(s) = K(1 + W_i/s)/s\u00b7e^(\u2212s\u03c4) (i\u00e7 d\u00f6ng\u00fc ideal)",
+   "exp": "|S| analitik; tepe 9.33 dB @ 3.46 Hz, |S| = 1 @ 1.69 Hz",
+   "got": "0.30 Hz: -25.28 (-25.26) dB \u00b7 1.00 Hz: -7.39 (-7.09) dB \u00b7 2.00 Hz: 2.03 (2.48) dB \u00b7 3.46 Hz: 9.34 (9.33) dB \u00b7 6.00 Hz: 4.02 (3.51) dB; kilit kayb\u0131 0",
+   "crit": "\u00b10,6 dB (\u00f6rneklemeli d\u00f6ng\u00fcn\u00fcn s\u00fcrekli yakla\u015f\u0131m\u0131); tepede \u00b10,3 dB",
+   "pass": true,
+   "detail": "Fark kesim civar\u0131nda (|S| \u2248 1) en b\u00fcy\u00fckt\u00fcr; orada |1 + L| faz hatas\u0131na duyarl\u0131d\u0131r: 2 Hz'de 2\u00b0 faz fark\u0131 \u2248 0,4 dB. Kaynaklar\u0131: kare ba\u015f\u0131na bir kez g\u00fcncellenen PI (geri Euler integral), ZOH'nin T_kare/2 gecikmeyle yakla\u015f\u0131m\u0131, i\u00e7 stabilizasyon d\u00f6ng\u00fcs\u00fcn\u00fcn komut yan\u0131t\u0131 (6\u20138 Hz'de |T_i\u00e7| 1,08\u20131,15)."
+  },
+  {
+   "grp": "G",
+   "id": "G4",
+   "name": "Pozlama i\u00e7i jitter: zaman alan\u0131 \u2194 PSD",
+   "method": "T_e = 10 ms, 50 fps, 2 kHz: (a) beyaz g\u00fcr\u00fclt\u00fc \u03c3 = 2 \u00b5rad; (b) 2 \u00b5rad, 49,3 Hz ton (kare h\u0131z\u0131na kilitli de\u011fil); (c) 2 \u00b5rad, 50 Hz ton, 12 faz (kare h\u0131z\u0131na kilitli)",
+   "exp": "(a) \u03c3\u00b7\u221a(1 \u2212 1/N) = 1.9494; (b) (A/\u221a2)\u00b7\u221a(1 \u2212 sinc\u00b2) = 1.0801; (c) PSD = faz ortalamas\u0131 1.0906, zaman alan\u0131 faza ba\u011fl\u0131 0.6155\u20261.4142 \u00b5rad",
+   "got": "(a) zaman 1.9466, PSD 1.9511; (b) 1.0793 / 1.0801; (c) zaman 0.6209\u20261.4107 (fazlar \u00fczerinden karesel ortalama 1.0898), PSD 1.0906\u20261.0906 \u00b5rad",
+   "crit": "\u00b1%1",
+   "pass": true,
+   "detail": "Kare h\u0131z\u0131na kilitli tonda (\u00f6r. 50 Hz yard\u0131mc\u0131 makine, 50 fps kamera) her kare tonun ayn\u0131 faz\u0131n\u0131 g\u00f6r\u00fcr; ger\u00e7ekle\u015fen pozlama i\u00e7i jitter faza g\u00f6re faz ortalamas\u0131n\u0131n 0,57\u20131,30 kat\u0131d\u0131r. Karar de\u011feri PSD'den (faz ortalamas\u0131) al\u0131n\u0131r; kilitli tonlarda en k\u00f6t\u00fc durum tonun tam RMS'idir. Bu, i\u015fletme kay\u0131tlar\u0131nda zaman alan\u0131 ile PSD kestirimi aras\u0131ndaki eksene g\u00f6re de\u011fi\u015fen \u00b1%5 fark\u0131n nedenidir."
+  },
+  {
+   "grp": "G",
+   "id": "G5",
+   "name": "PPV/\u03c3 i\u00e7in Gauss beklentisi (Rice) \u2194 Gauss s\u00fcre\u00e7 (v13.12)",
+   "method": "iki tayf (dar 0,2\u20132,5 Hz, geni\u015f 0,5\u2013400 Hz), \u03c3 = 3 \u00b5rad, 645 s, 2 kHz; T1.9 \u00f6n i\u015flemi (0,1 Hz s\u0131f\u0131r fazl\u0131 y\u00fcksek ge\u00e7iren, 60 s pencerede do\u011frusal trend); d\u00f6rt ger\u00e7ekle\u015fme",
+   "exp": "2\u00b7\u221a(2 ln(\u03bd0\u00b7n_W\u00b7T_w)), \u03bd0 = \u221a(m2/m0)",
+   "got": "dar 0,2\u20132,5 Hz: \u00f6l\u00e7\u00fclen 7.72 (7.20, 7.72, 8.02, 7.93) / Rice 7.67 (0.6 %) \u00b7 geni\u015f 0,5\u2013400 Hz: \u00f6l\u00e7\u00fclen 9.52 (8.95, 9.69, 9.75, 9.71) / Rice 9.79 (-2.7 %)",
+   "crit": "\u00b1%6",
+   "pass": true,
+   "detail": "Ba\u011f\u0131ms\u0131z numpy Monte Carlo (k14/limits_ref.py, 100 ger\u00e7ekle\u015fme) T1.9 takip sonras\u0131 tayf\u0131yla 9,14 / 9,24 (tonlu), tonsuz 9,39; yaln\u0131z 0,1\u20132,5 Hz band\u0131yla 7,24 verir. PPV s\u0131n\u0131r\u0131 6,5\u00b7\u03c3 oldu\u011fu i\u00e7in \u03c3 s\u0131n\u0131r\u0131nda Gauss bir art\u0131k PPV \u00f6l\u00e7\u00fct\u00fcn\u00fc ge\u00e7emez."
+  },
+  {
+   "grp": "G",
+   "id": "G6",
+   "name": "\u0130\u015fletme: \u00e7arpmas\u0131z ek ko\u015fu yaln\u0131z dalga \u00e7arpmas\u0131n\u0131 kald\u0131r\u0131r, kal\u0131nt\u0131 Gauss (v13.17)",
+   "method": "denizalt\u0131 varsay\u0131lan\u0131, 600 s, tohum 11, b\u00fct\u00fcn kaynaklar; ayn\u0131 tohumla slap kayna\u011f\u0131 kapal\u0131 ek ko\u015fu (takip \u00f6ncesi / sonras\u0131)",
+   "exp": "Az (yaln\u0131z \u00e7apraz kuplaj): \u2264 %0,1; \u00e7arpmas\u0131z PPV/\u03c3 El = Rice \u00b1 %15; \u00e7arpmal\u0131 PPV/\u03c3 El > 2 \u00d7 Rice",
+   "got": "takip \u00f6ncesi: PPV El 184.9 \u2192 55.9 \u00b5rad, PPV/\u03c3 El 26.82 \u2192 8.48 (Rice 9.11, -6.9 %), Az fark\u0131 2.9e-5 \u00b7 takip sonras\u0131: PPV El 192.5 \u2192 64.7 \u00b5rad, PPV/\u03c3 El 26.85 \u2192 9.84 (Rice 9.14, 7.7 %), Az fark\u0131 3.4e-4",
+   "crit": "%0,1 \u00b7 \u00b1%15 \u00b7 > 2\u00d7",
+   "pass": true,
+   "detail": "\u00c7arpmal\u0131 ko\u015fuda PPV/\u03c3 El en az Rice beklentisinin 2.94 kat\u0131: PPV ve P99,73'\u00fc seyrek ge\u00e7i\u015fler belirler. 60 s'lik pencereden \u00e7arpma i\u00e7erenleri atmak uygulanamaz (\u03bb\u00b7T_w = 6 olay, olays\u0131z pencere olas\u0131l\u0131\u011f\u0131 0.25 %); bu y\u00fczden ayn\u0131 tohumla \u00e7arpmas\u0131z ek ko\u015fu kullan\u0131l\u0131r."
+  },
+  {
+   "grp": "K",
+   "id": "K8",
+   "name": "D\u00fczenek: hexapod'un ger\u00e7ekle\u015ftirdi\u011fi darbe tepeleri (v13.14)",
+   "method": "yar\u0131m sin\u00fcs a\u00e7\u0131 darbesi (roll, T_p 50 / 100 / 200 ms, A = 0,9\u00b7min(\u03b8_max, \u03c9_max\u00b7T_p/\u03c0, \u03b1_max\u00b7(T_p/\u03c0)\u00b2)); hexapod 2. derece f_bw 20 Hz, \u03b6 0,7071: motorun oynatma metri\u011fi \u2194 s\u00fcrekli zaman RK4 (20 kHz)",
+   "exp": "T_p 50 ms: A 0.091\u00b0 \u2192 \u03b1 349 \u00b0/s\u00b2 \u00b7 T_p 100 ms: A 0.365\u00b0 \u2192 \u03b1 644 \u00b0/s\u00b2 \u00b7 T_p 200 ms: A 1.459\u00b0 \u2192 \u03b1 1306 \u00b0/s\u00b2; en b\u00fcy\u00fck \u03b8 1.459\u00b0, \u03c9 22.60 \u00b0/s, \u03b1 1306.4 \u00b0/s\u00b2",
+   "got": "\u03b8 1.459\u00b0, \u03c9 22.60 \u00b0/s, \u03b1 1305.7 \u00b0/s\u00b2 (komutun say\u0131sal t\u00fcrevi: 22917 \u00b0/s\u00b2)",
+   "crit": "\u00b1%1",
+   "pass": true,
+   "detail": "S\u0131n\u0131r \u03b1_max 400 \u00b0/s\u00b2: 200 ms'lik darbe s\u0131n\u0131r\u0131n 3.27 kat\u0131na \u00e7\u0131kar (i\u00e7 tepe kural\u0131 360 \u00b0/s\u00b2 verirdi); 100 ms 1.61 kat, 50 ms 0.87 kat. Komutun say\u0131sal t\u00fcrevi h\u0131z s\u0131\u00e7ramas\u0131nda \u00f6rnekleme h\u0131z\u0131na ba\u011fl\u0131d\u0131r (\u0394\u03c9\u00b7f_s). Ayn\u0131 profil T2.4'te kullan\u0131l\u0131r."
+  }
+ ],
+ "elapsed": 120.988
+}

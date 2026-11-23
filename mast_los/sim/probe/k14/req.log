@@ -1,0 +1,20 @@
+T1.7 trackErr_urad = null: OK — Nişan noktası hatası el 3.47 / xel 2.08 µrad RMS, P99 9.53 µrad; kilit kaybı 0
+T1.7 trackErr_urad = 5: OK — Nişan noktası hatası el 3.47 / xel 2.08 µrad RMS, P99 9.53 µrad; kilit kaybı 0
+T1.7 trackErr_urad = 50: OK — Nişan noktası hatası el 3.47 / xel 2.08 µrad RMS, P99 9.53 µrad; kilit kaybı 0
+T1.8 settle_ms = null: BİLGİ — Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad
+T1.8 settle_ms = 300: AŞIM — Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad
+T1.8 settle_ms = 500: OK — Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad
+T2.4 shockPeak_urad = null: BİLGİ — Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 3.01 / deniz profili üzerinde 2.77 µrad RMS (tahsis
+T2.4 shockPeak_urad = 100: AŞIM — Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 3.01 / deniz profili üzerinde 2.77 µrad RMS (tahsis
+T2.4 shockPeak_urad = 200: OK — Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 3.01 / deniz profili üzerinde 2.77 µrad RMS (tahsis
+T2.4 shockSettle_ms = 1000: AŞIM — Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 3.01 / deniz profili üzerinde 2.77 µrad RMS (tahsis
+T2.4 shockSettle_ms = 3000: AŞIM — Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 3.01 / deniz profili üzerinde 2.77 µrad RMS (tahsis
+T4.1 boresight_urad = null: BİLGİ — En büyük kanal kayması 51.3 µrad (ölçüm doğruluğu ≈ 15 µrad; gereksinim girilmedi)
+T4.1 boresight_urad = 20: AŞIM — En büyük kanal kayması 51.3 µrad (ölçüm doğruluğu ≈ 15 µrad; gereksinim 20 µrad)
+T4.1 boresight_urad = 100: OK — En büyük kanal kayması 51.3 µrad (ölçüm doğruluğu ≈ 15 µrad; gereksinim 100 µrad)
+sub T_w 60 s: bütçe wander 10.76 (B1-05 2.91; gereksinim 20.0) · işletme wander el 7.08 / xel 4.51 µrad
+sub T_w 120 s: bütçe wander 11.14 (B1-05 4.11; gereksinim 20.0) · işletme wander el 7.37 / xel 5.42 µrad
+sub T_w 240 s: bütçe wander 11.88 (B1-05 5.82; gereksinim 20.0) · işletme wander el 8.52 / xel 8.72 µrad
+ship T_w 60 s: bütçe wander 22.72 (B1-05 2.91; gereksinim 20.0) · işletme wander el 10.22 / xel 4.69 µrad
+ship T_w 120 s: bütçe wander 22.90 (B1-05 4.11; gereksinim 20.0) · işletme wander el 10.45 / xel 5.54 µrad
+ship T_w 240 s: bütçe wander 23.27 (B1-05 5.82; gereksinim 20.0) · işletme wander el 11.35 / xel 8.34 µrad

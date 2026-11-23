@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "playwright-core": "^1.47.2",
+    "three": "^0.128.0"
+  }
+}

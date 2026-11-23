@@ -1,0 +1,140 @@
+== sea_on (sub, {'kind': 'sea', 'stab': True, 'T': 60})
+  RMS el/xel  ref 6.2568 / 3.1121  motor 6.2568 / 3.1121 µrad;  P99 ref 16.752 / 8.194  motor 16.752 / 8.194
+  eğim ref 1.1516 / 0.8040  motor 1.1516 / 0.8040 µrad/s;  geçerli kare ref 1.0000 motor 1.0000
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(5.305), np.float64(4.364), np.float64(4.269)], [np.float64(2.968), np.float64(1.964), np.float64(1.708)], [np.float64(1.705), np.float64(0.913), np.float64(0.96)]]  motor [[5.305, 4.364, 4.27], [2.968, 1.964, 1.71], [1.705, 0.913, 0.96]]
+  wander (25 s) ref 6.1066 / 2.6161  motor 6.1066 / 2.6161 µrad
+  MTF@Nyq kareler ref 0.99145 / 0.99311  motor 0.99145 / 0.99311;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 1.675 / 1.504, tayf ayrık 1.665 / 1.514, tayf sürekli 1.668 / 1.515 µrad
+  MTF Gauss: benzetim yayılımından 0.99138 / 0.99305, sürekli pozlamadan 0.99146 / 0.99294
+  dedektör eşlemesi: kazanç el 1.0161 xel 1.0026, korelasyon 0.99777 / 0.99555, artık 1.385 / 1.429 µrad
+  kayma ayrışımı ref dünya 0.8181/0.9750 bias 0.3721/0.0012 kalan -0.0385/-0.1721;  motor 0.8181/0.9750 0.3721/0.0012 -0.0385/-0.1721
+  göz bebeği ref yatay/düşey tepe 16.031/12.668 mm, en düşük örtüşme 1.00000; motor 16.031/12.668 mm, eMax 18.163 (sınır 18.182 ↔ ref 18.182), örtüşme 1.00000
+== sea_off (sub, {'kind': 'sea', 'stab': False, 'T': 60})
+  RMS el/xel  ref 39702.8794 / 12612.1332  motor 39702.8794 / 12612.1332 µrad;  P99 ref 89832.231 / 30080.366  motor 89832.248 / 30080.393
+  eğim ref 70.4228 / 54.9407  motor 70.4228 / 54.9407 µrad/s;  geçerli kare ref 0.4543 motor 0.4543
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(5.305), np.float64(4.364), np.float64(4.269)], [np.float64(2.968), np.float64(1.964), np.float64(1.708)], [np.float64(1.705), np.float64(0.913), np.float64(0.96)]]  motor [[5.305, 4.364, 4.27], [2.968, 1.964, 1.71], [1.705, 0.913, 0.96]]
+  wander (25 s) ref 39339.4020 / 12612.0868  motor 39339.4020 / 12612.0868 µrad
+  MTF@Nyq kareler ref 0.31558 / 0.72514  motor 0.31558 / 0.72514;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 46.770 / 10.676, tayf ayrık 52.136 / 11.088, tayf sürekli 52.399 / 11.142 µrad
+  MTF Gauss: benzetim yayılımından 0.00118 / 0.70363, sürekli pozlamadan 0.00021 / 0.68187
+  dedektör eşlemesi: kazanç el 0.9992 xel 0.9990, korelasyon 1.00000 / 1.00000, artık 4.237 / 4.486 µrad
+  göz bebeği ref yatay/düşey tepe 17.208/1.687 mm, en düşük örtüşme 1.00000; motor 17.208/1.687 mm, eMax 17.217 (sınır 18.182 ↔ ref 18.182), örtüşme 1.00000
+== sine_on (sub, {'kind': 'sine', 'stab': True, 'T': 60})
+  RMS el/xel  ref 4.7245 / 2.5812  motor 4.7245 / 2.5812 µrad;  P99 ref 12.662 / 6.476  motor 12.662 / 6.476
+  eğim ref 1.1614 / 0.8688  motor 1.1614 / 0.8688 µrad/s;  geçerli kare ref 1.0000 motor 1.0000
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(2.0), np.float64(1.571), np.float64(2.134)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)]]  motor [[2.0, 1.571, 2.13], [0, 0, 0], [0, 0, 0]]
+  wander (25 s) ref 4.4067 / 1.9806  motor 4.4067 / 1.9806 µrad
+  MTF@Nyq kareler ref 0.99144 / 0.99310  motor 0.99144 / 0.99310;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 1.676 / 1.504, tayf ayrık 1.666 / 1.515, tayf sürekli 1.668 / 1.516 µrad
+  MTF Gauss: benzetim yayılımından 0.99137 / 0.99304, sürekli pozlamadan 0.99145 / 0.99294
+  dedektör eşlemesi: kazanç el 1.0141 xel 1.0002, korelasyon 0.99754 / 0.99575, artık 1.412 / 1.452 µrad
+  kayma ayrışımı ref dünya 0.8181/0.9750 bias 0.3730/0.0007 kalan -0.0297/-0.1069;  motor 0.8181/0.9750 0.3730/0.0007 -0.0297/-0.1069
+  sinüs 0,125 Hz: komut roll 1.8831°, taban 1.8834°, LOS el 4.259 µrad (oran 1.2957e-04), işaret -1.0
+  göz bebeği ref yatay/düşey tepe 0.000/4.188 mm, en düşük örtüşme 1.00000; motor 0.000/4.188 mm, eMax 4.188 (sınır 18.182 ↔ ref 18.182), örtüşme 1.00000
+== sine_off (sub, {'kind': 'sine', 'stab': False, 'T': 60})
+  RMS el/xel  ref 23929.2439 / 2.6536  motor 23929.2439 / 2.6536 µrad;  P99 ref 37418.659 / 6.770  motor 37418.660 / 6.770
+  eğim ref -153.6855 / 0.0000  motor -153.6855 / 0.0000 µrad/s;  geçerli kare ref 0.4697 motor 0.4697
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(2.0), np.float64(1.571), np.float64(2.134)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)]]  motor [[2.0, 1.571, 2.13], [0, 0, 0], [0, 0, 0]]
+  wander (25 s) ref 23898.6666 / 2.0720  motor 23898.6666 / 2.0720 µrad
+  MTF@Nyq kareler ref 0.37120 / 0.98843  motor 0.37120 / 0.98843;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 26.872 / 1.951, tayf ayrık 29.026 / 1.962, tayf sürekli 29.171 / 1.965 µrad
+  MTF Gauss: benzetim yayılımından 0.10783 / 0.98832, sürekli pozlamadan 0.07247 / 0.98816
+  dedektör eşlemesi: kazanç el 0.9995 xel 0.8638, korelasyon 1.00000 / 0.83058, artık 2.640 / 1.201 µrad
+  sinüs 0,125 Hz: komut roll 1.8831°, taban 1.8834°, LOS el 32871.344 µrad (oran 1.0000e+00), işaret 1.0
+  göz bebeği ref yatay/düşey tepe 0.000/0.000 mm, en düşük örtüşme 1.00000; motor 0.000/0.000 mm, eMax 0.000 (sınır 18.182 ↔ ref 18.182), örtüşme 1.00000
+== slap_on (sub, {'kind': 'slap', 'stab': True, 'T': 60})
+  RMS el/xel  ref 13.1045 / 2.5789  motor 13.1045 / 2.5789 µrad;  P99 ref 66.069 / 6.473  motor 66.069 / 6.473
+  eğim ref 1.1476 / 0.8687  motor 1.1476 / 0.8687 µrad/s;  geçerli kare ref 1.0000 motor 1.0000
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(1.459), np.float64(22.915), np.float64(22917.369)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)]]  motor [[1.459, 22.915, 22917.37], [0, 0, 0], [0, 0, 0]]
+  wander (25 s) ref 13.0576 / 1.9786  motor 13.0576 / 1.9786 µrad
+  MTF@Nyq kareler ref 0.98957 / 0.99310  motor 0.98957 / 0.99310;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 1.855 / 1.504, tayf ayrık 1.923 / 1.514, tayf sürekli 1.927 / 1.516 µrad
+  MTF Gauss: benzetim yayılımından 0.98944 / 0.99305, sürekli pozlamadan 0.98861 / 0.99294
+  dedektör eşlemesi: kazanç el 1.0097 xel 1.0002, korelasyon 0.99820 / 0.99575, artık 1.415 / 1.452 µrad
+  kayma ayrışımı ref dünya 0.8181/0.9750 bias 0.3730/0.0007 kalan -0.0435/-0.1069;  motor 0.8181/0.9750 0.3730/0.0007 -0.0435/-0.1069
+  darbe sınırları (T_p, A°, ω°/s, α°/s²): [[0.05, 0.091, 5.73, 360.0], [0.1, 0.365, 11.459, 360.0], [0.2, 1.459, 22.918, 360.0]]
+  göz bebeği ref yatay/düşey tepe 0.000/3.041 mm, en düşük örtüşme 1.00000; motor 0.000/3.041 mm, eMax 3.041 (sınır 18.182 ↔ ref 18.182), örtüşme 1.00000
+== still_on (sub, {'kind': 'still', 'stab': True, 'T': 60})
+  RMS el/xel  ref 2.8516 / 2.5789  motor 2.8516 / 2.5789 µrad;  P99 ref 7.074 / 6.472  motor 7.074 / 6.472
+  eğim ref 1.1477 / 0.8687  motor 1.1477 / 0.8687 µrad/s;  geçerli kare ref 1.0000 motor 1.0000
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(0.0), np.float64(0.0), np.float64(0.0)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)]]  motor [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+  wander (25 s) ref 2.2225 / 1.9788  motor 2.2225 / 1.9788 µrad
+  MTF@Nyq kareler ref 0.99143 / 0.99310  motor 0.99143 / 0.99310;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 1.677 / 1.504, tayf ayrık 1.667 / 1.514, tayf sürekli 1.669 / 1.516 µrad
+  MTF Gauss: benzetim yayılımından 0.99136 / 0.99305, sürekli pozlamadan 0.99144 / 0.99294
+  dedektör eşlemesi: kazanç el 1.0155 xel 1.0002, korelasyon 0.99749 / 0.99575, artık 1.402 / 1.452 µrad
+  kayma ayrışımı ref dünya 0.8181/0.9750 bias 0.3730/0.0007 kalan -0.0434/-0.1069;  motor 0.8181/0.9750 0.3730/0.0007 -0.0434/-0.1069
+  göz bebeği ref yatay/düşey tepe 0.000/0.000 mm, en düşük örtüşme 1.00000; motor 0.000/0.000 mm, eMax 0.000 (sınır 18.182 ↔ ref 18.182), örtüşme 1.00000
+== viv_on (sub, {'kind': 'viv', 'stab': True, 'T': 60})
+  RMS el/xel  ref 3.7246 / 2.5803  motor 3.7246 / 2.5803 µrad;  P99 ref 9.035 / 6.478  motor 9.035 / 6.478
+  eğim ref 1.1481 / 0.8687  motor 1.1481 / 0.8687 µrad/s;  geçerli kare ref 1.0000 motor 1.0000
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(0.05), np.float64(0.942), np.float64(17.766)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)]]  motor [[0.05, 0.942, 17.77], [0, 0, 0], [0, 0, 0]]
+  wander (25 s) ref 3.2848 / 1.9807  motor 3.2848 / 1.9807 µrad
+  MTF@Nyq kareler ref 0.99139 / 0.99310  motor 0.99139 / 0.99310;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 1.681 / 1.504, tayf ayrık 1.671 / 1.514, tayf sürekli 1.673 / 1.516 µrad
+  MTF Gauss: benzetim yayılımından 0.99132 / 0.99305, sürekli pozlamadan 0.99140 / 0.99294
+  dedektör eşlemesi: kazanç el 1.0151 xel 1.0002, korelasyon 0.99753 / 0.99575, artık 1.399 / 1.452 µrad
+  kayma ayrışımı ref dünya 0.8181/0.9750 bias 0.3730/0.0007 kalan -0.0430/-0.1069;  motor 0.8181/0.9750 0.3730/0.0007 -0.0430/-0.1069
+  VIV f 3 Hz: LOS el/xel ref 2.0550/0.0859 motor 2.0550/0.0859; taban motor 617.1 (komut roll/pitch ref 617.1/0.0); oran -49.55041747248417 dB ↔ döngü DRR -60.20 dB
+  göz bebeği ref yatay/düşey tepe 0.000/0.104 mm, en düşük örtüşme 1.00000; motor 0.000/0.104 mm, eMax 0.104 (sınır 18.182 ↔ ref 18.182), örtüşme 1.00000
+== sea_x2 (sub, {'kind': 'sea', 'stab': True, 'T': 60, 'scale': 2})
+  RMS el/xel  ref 10.0548 / 4.7555  motor 10.0548 / 4.7555 µrad;  P99 ref 25.667 / 12.516  motor 25.667 / 12.516
+  eğim ref 1.1745 / 0.6916  motor 1.1745 / 0.6916 µrad/s;  geçerli kare ref 1.0000 motor 1.0000
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(10.61), np.float64(8.728), np.float64(8.538)], [np.float64(5.937), np.float64(3.929), np.float64(3.415)], [np.float64(3.409), np.float64(1.827), np.float64(1.921)]]  motor [[10.61, 8.728, 8.54], [5.937, 3.929, 3.42], [3.409, 1.827, 1.92]]
+  wander (25 s) ref 9.8510 / 4.3383  motor 9.8510 / 4.3383 µrad
+  MTF@Nyq kareler ref 0.99146 / 0.99308  motor 0.99146 / 0.99308;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 1.675 / 1.506, tayf ayrık 1.666 / 1.517, tayf sürekli 1.668 / 1.518 µrad
+  MTF Gauss: benzetim yayılımından 0.99139 / 0.99303, sürekli pozlamadan 0.99146 / 0.99292
+  dedektör eşlemesi: kazanç el 1.0196 xel 1.0118, korelasyon 0.99817 / 0.99503, artık 1.362 / 1.419 µrad
+  kayma ayrışımı ref dünya 0.8181/0.9750 bias 0.3709/0.0016 kalan -0.0144/-0.2849;  motor 0.8181/0.9750 0.3709/0.0016 -0.0144/-0.2849
+  göz bebeği ref yatay/düşey tepe 7.139/22.055 mm, en düşük örtüşme 1.00000; motor 7.139/22.055 mm, eMax 22.271 (sınır 18.182 ↔ ref 18.182), örtüşme 1.00000
+== sea_120 (sub, {'kind': 'sea', 'stab': True, 'T': 120})
+  RMS el/xel  ref 5.6847 / 6.1862  motor 5.6847 / 6.1862 µrad;  P99 ref 14.406 / 15.157  motor 14.406 / 15.157
+  eğim ref 1.0250 / 1.3171  motor 1.0250 / 1.3171 µrad/s;  geçerli kare ref 1.0000 motor 1.0000
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(5.113), np.float64(4.101), np.float64(4.696)], [np.float64(2.094), np.float64(1.377), np.float64(1.281)], [np.float64(1.527), np.float64(0.812), np.float64(0.64)]]  motor [[5.113, 4.101, 4.7], [2.094, 1.377, 1.28], [1.527, 0.812, 0.64]]
+  wander (55 s) ref 5.3512 / 4.0953  motor 5.3512 / 4.0953 µrad
+  MTF@Nyq kareler ref 0.99154 / 0.99308  motor 0.99154 / 0.99308;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 1.667 / 1.507, tayf ayrık 1.654 / 1.522, tayf sürekli 1.656 / 1.523 µrad
+  MTF Gauss: benzetim yayılımından 0.99147 / 0.99302, sürekli pozlamadan 0.99157 / 0.99287
+  dedektör eşlemesi: kazanç el 1.0032 xel 0.9987, korelasyon 0.99923 / 0.99948, artık 1.429 / 1.437 µrad
+  kayma ayrışımı ref dünya 0.8181/0.9750 bias 0.3122/0.1326 kalan -0.1053/0.2095;  motor 0.8181/0.9750 0.3122/0.1326 -0.1053/0.2095
+  göz bebeği ref yatay/düşey tepe 17.808/12.671 mm, en düşük örtüşme 1.00000; motor 17.808/12.671 mm, eMax 18.164 (sınır 18.182 ↔ ref 18.182), örtüşme 1.00000
+== still_nocomp (sub, {'kind': 'still', 'stab': True, 'T': 60})
+  RMS el/xel  ref 2.8517 / 2.5794  motor 2.8517 / 2.5794 µrad;  P99 ref 7.079 / 6.480  motor 7.079 / 6.480
+  eğim ref 56.1849 / -46.9745  motor 56.1849 / -46.9745 µrad/s;  geçerli kare ref 1.0000 motor 1.0000
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(0.0), np.float64(0.0), np.float64(0.0)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)]]  motor [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+  wander (25 s) ref 2.2222 / 1.9795  motor 2.2222 / 1.9795 µrad
+  MTF@Nyq kareler ref 0.99141 / 0.99309  motor 0.99141 / 0.99309;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 1.680 / 1.506, tayf ayrık 1.667 / 1.514, tayf sürekli 1.669 / 1.516 µrad
+  MTF Gauss: benzetim yayılımından 0.99134 / 0.99303, sürekli pozlamadan 0.99144 / 0.99294
+  dedektör eşlemesi: kazanç el 1.0000 xel 1.0000, korelasyon 1.00000 / 1.00000, artık 1.428 / 1.451 µrad
+  kayma ayrışımı ref dünya 55.8606/-46.8726 bias 0.3730/0.0007 kalan -0.0487/-0.1025;  motor 55.8606/-46.8726 0.3730/0.0007 -0.0487/-0.1025
+  göz bebeği ref yatay/düşey tepe 0.000/0.000 mm, en düşük örtüşme 1.00000; motor 0.000/0.000 mm, eMax 0.000 (sınır 18.182 ↔ ref 18.182), örtüşme 1.00000
+== ship_sea_on (ship, {'kind': 'sea', 'stab': True, 'T': 60})
+  RMS el/xel  ref 6.8837 / 3.9199  motor 6.8837 / 3.9199 µrad;  P99 ref 15.148 / 11.005  motor 15.148 / 11.005
+  eğim ref 1.1456 / 0.8210  motor 1.1456 / 0.8210 µrad/s;  geçerli kare ref 1.0000 motor 1.0000
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(7.703), np.float64(5.118), np.float64(4.269)], [np.float64(3.282), np.float64(2.933), np.float64(2.988)], [np.float64(1.705), np.float64(0.913), np.float64(0.96)]]  motor [[7.703, 5.118, 4.27], [3.282, 2.933, 2.99], [1.705, 0.913, 0.96]]
+  wander (25 s) ref 6.7414 / 3.2919  motor 6.7414 / 3.2919 µrad
+  MTF@Nyq kareler ref 0.99144 / 0.99307  motor 0.99144 / 0.99307;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 1.676 / 1.508, tayf ayrık 1.666 / 1.516, tayf sürekli 1.668 / 1.517 µrad
+  MTF Gauss: benzetim yayılımından 0.99137 / 0.99301, sürekli pozlamadan 0.99145 / 0.99292
+  dedektör eşlemesi: kazanç el 1.0114 xel 1.0029, korelasyon 0.99780 / 0.99579, artık 1.376 / 1.420 µrad
+  kayma ayrışımı ref dünya 0.8181/0.9750 bias 0.3720/0.0010 kalan -0.0445/-0.1550;  motor 0.8181/0.9750 0.3720/0.0010 -0.0445/-0.1550
+  göz bebeği ref yatay/düşey tepe 40.721/21.733 mm, en düşük örtüşme 1.00000; motor 40.721/21.733 mm, eMax 40.867 (sınır 40.909 ↔ ref 40.909), örtüşme 1.00000
+== ship_viv_on (ship, {'kind': 'viv', 'stab': True, 'T': 60})
+  RMS el/xel  ref 8.3402 / 2.7247  motor 8.3402 / 2.7247 µrad;  P99 ref 16.694 / 6.855  motor 16.694 / 6.855
+  eğim ref 1.1497 / 0.8688  motor 1.1497 / 0.8688 µrad/s;  geçerli kare ref 1.0000 motor 1.0000
+  hexapod tepe (roll/pitch/yaw θ ω α) ref [[np.float64(0.157), np.float64(4.053), np.float64(104.494)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)], [np.float64(0.0), np.float64(0.0), np.float64(0.0)]]  motor [[0.157, 4.053, 104.49], [0, 0, 0], [0, 0, 0]]
+  wander (25 s) ref 8.1265 / 2.1750  motor 8.1265 / 2.1750 µrad
+  MTF@Nyq kareler ref 0.99008 / 0.99310  motor 0.99008 / 0.99310;  pozlama içi σ (τ 5.00 ms, 10 örnek): benzetim 1.806 / 1.505, tayf ayrık 1.793 / 1.515, tayf sürekli 1.796 / 1.516 µrad
+  MTF Gauss: benzetim yayılımından 0.98999 / 0.99304, sürekli pozlamadan 0.99010 / 0.99294
+  dedektör eşlemesi: kazanç el 1.0122 xel 1.0002, korelasyon 0.99781 / 0.99575, artık 1.403 / 1.454 µrad
+  kayma ayrışımı ref dünya 0.8181/0.9750 bias 0.3730/0.0007 kalan -0.0414/-0.1068;  motor 0.8181/0.9750 0.3730/0.0007 -0.0414/-0.1068
+  VIV f 4.1 Hz: LOS el/xel ref 5.7883/0.8790 motor 5.7883/0.8790; taban motor 1941.7 (komut roll/pitch ref 1941.7/0.0); oran -50.512485637393176 dB ↔ döngü DRR -45.48 dB
+  göz bebeği ref yatay/düşey tepe 0.000/0.326 mm, en düşük örtüşme 1.00000; motor 0.000/0.326 mm, eMax 0.326 (sınır 40.909 ↔ ref 40.909), örtüşme 1.00000
+== örtüşme (D_p, D_c, e → motor ↔ ref)
+  0.1 0.15 0: 1.000000 ↔ 1.000000
+  0.1 0.15 0.02: 1.000000 ↔ 1.000000
+  0.1 0.15 0.025: 1.000000 ↔ 1.000000
+  0.1 0.15 0.05: 0.741700 ↔ 0.741700
+  0.1 0.15 0.1: 0.158343 ↔ 0.158343
+  0.1 0.15 0.13: 0.000000 ↔ 0.000000
+  0.1 0.2 0.04: 1.000000 ↔ 1.000000
+  0.1 0.2 0.08: 0.699144 ↔ 0.699144
+== dünya dönüşü (still_nocomp, enlem 40°, az 90°, el 0°, komp False): Ω×LOS düşey 55.861, yatay -46.873 µrad/s (|·| 72.921); Ω·δ = 1.2727
+   motor earthSheet: {"Om": 72.92115, "vert": 46.87281170409358, "horiz": 55.86084174334546, "h": 46.872811704093586, "v": 55.86084174334546, "r": 3.4204900519332434e-15, "comp": 1.272714161840663, "tab": [{"az": 0, "h": 46.87281170409358, "v": 0, "r": 55.86084174334546, "max": 46.87281170409358, "px2": 140.61843511228074, "pxRec": 1054.6382633421056}, {"az": 30, "h": 46.87281170409358, "v": 27.930420871672727, "r": 4; off {"drift": 55.86084174334546, "exit": 365.19320803879924, "pxH": 1054.6382633421058, "pxV": 1256.868939225273, "px2": 167.5825252300364}; on {"drift": 1.272714161840663, "exit": 16028.736547172932, "pxH": 28.63606864141492, "px2": 3.8181424855219888}
+   oynatma eğimi el/xel 56.185/-46.974 µrad/s; dünya payı (dr_e) 55.861/-46.873
+   alanı terk (ref, kenar payısız): düşey 366 s, yatay 547 s; motor çıkış 365 s
+== dünya dönüşü (still_on, enlem 40°, az 90°, el 0°, komp True): Ω×LOS düşey 55.861, yatay -46.873 µrad/s (|·| 72.921); Ω·δ = 1.2727
+   motor earthSheet: {"Om": 72.92115, "vert": 46.87281170409358, "horiz": 55.86084174334546, "h": 46.872811704093586, "v": 55.86084174334546, "r": 3.4204900519332434e-15, "comp": 1.272714161840663, "tab": [{"az": 0, "h": 46.87281170409358, "v": 0, "r": 55.86084174334546, "max": 46.87281170409358, "px2": 140.61843511228074, "pxRec": 1054.6382633421056}, {"az": 30, "h": 46.87281170409358, "v": 27.930420871672727, "r": 4; off {"drift": 55.86084174334546, "exit": 365.19320803879924, "pxH": 1054.6382633421058, "pxV": 1256.868939225273, "px2": 167.5825252300364}; on {"drift": 1.272714161840663, "exit": 16028.736547172932, "pxH": 28.63606864141492, "px2": 3.8181424855219888}
+   oynatma eğimi el/xel 1.148/0.869 µrad/s; dünya payı (dr_e) 0.818/0.975
+   alanı terk (ref, kenar payısız): düşey 17923 s, yatay 29570 s; motor çıkış 16029 s

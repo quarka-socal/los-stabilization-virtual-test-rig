@@ -1,0 +1,68 @@
+W0 varsayılan [28 s]
+   T2.1 OK | Rüzgâr VIV bandında (f_n ± %15: 3.48–4.71 Hz) γ² ≥ 0.8 nokta yok (20 düşük koheranslı nokta); koherans üst sınırı: roll→el DRR ≤ -52.2 dB @ 4.64 Hz (gerekli -50.2 dB) → sınır gereksinimi sağlıyor; yaw→xel ≤ -50.9 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 7.13 µrad RMS (tahsis 6.0); f_n = 4.10 Hz'de OFF 64.35 → ON 6.13 µrad; yalnız açısal uyarımla 5.54 µrad (öteleme payı)
+      · 3.48 Hz · θ 0.157° · öteleme ±14.6 mm (7.00 m/s²): OFF el 54.72 / xel 6.40 µrad · ON el 5.67 / xel 0.61 µrad (açısal DRR karşılığı -50.7 dB)
+      · 4.10 Hz · θ 0.157° · öteleme ±14.6 mm (9.72 m/s²): OFF el 64.35 / xel 8.29 µrad · ON el 6.13 / xel 0.86 µrad (açısal DRR karşılığı -50.0 dB)
+      · 4.71 Hz · θ 0.157° · öteleme ±14.6 mm (12.83 m/s²): OFF el 73.58 / xel 11.51 µrad · ON el 7.13 / xel 1.17 µrad (açısal DRR karşılığı -48.7 dB)
+      · 4.10 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT: el 5.54 / xel 0.01 µrad → öteleme yolu karesel 2.63 µrad
+      · 4.10 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj: OFF: ayna el 64.56 / xel 8.91 · video − ayna el 0.27 / xel 0.62 → ON: ayna el 6.10 / xel 0.89 · video − ayna el 0.20 / xel 0.04
+      · Dar bant kontrol çalışma bandı: 1.2–6 Hz: bütün dwell frekansları bant içinde
+      · Uyarımın kaynağı (EN 1991-1-4 Ek E, yaklaşım 1): v_crit = 9.11 m/s (17.7 kn), Re = 2.43·10⁵ (alt-kritik), c_lat = 0.700, Sc = 50.4, K_W = 0.657 → y_F = 14.65 mm, θ = κ·y/l = 0.1573°
+      · Rüzgâr yönü ve eksenler: β = 0° (pruvadan): dönme roll -1.00 · pitch 0.00; öteleme x 0.00 · y 1.00
+      ~ Rüzgâr kuvvetinin kendisi değil, direk modunun direktör tabanında doğurduğu hareket yeniden üretilir: hexapod açısal sinüs + aynı fazda öteleme. Laboratuvarda sonsuzdaki hedefin görüntüsü ötelemeyle kaymaz; öteleme LOS'a gimbal kütle dengesizliği torku ve optik alt montajın esnemesiyle girer.
+      ~ Dwell frekansları f_n ve f_n ± 15 % (direk modunun belirsizliği) ile T2.1'in rezonans adaylarıdır; her frekansta 60 s. ON: uyarlanır dar bant (rezonans) kontrolcü dwell frekansına ayarlı (çalışma bandı 1.2–6 Hz; dışında devreye girmez).
+      ~ Artık, LOS'un el ve xel bileşenlerinin büyüğüdür: rüzgâr yönüne göre direk iki eksende de salınabilir. "Açısal DRR karşılığı" yalnız bilgi amaçlıdır; öteleme yolunun katkısını da içerir.
+      ~ Yol ayrımı (T2.5 ile aynı yöntem): referans aynası (otokolimatör) gimbalın mekanik açısını, yani gyro'nun algıladığı yolu (açısal artık + dengesizlik torku) ölçer; video − ayna fazör farkı optik alt montaj esnemesidir. Bu esnemeyi gyro görmez, dar bant kontrol de bastıramaz.
+   T2.3 OK | Kombine artık 10.68 µrad; ayrı testlerin RSS'i 10.09 µrad → sapma 5.8 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+      · Yalnız deniz profili (wander el): 8.03 µrad
+      · Yalnız rüzgâr VIV tonu (4.10 Hz, açısal + öteleme; artık RMS, el): 6.11 µrad
+      · RSS: 10.09 µrad
+      · Kombine (wander el): 10.68 µrad
+      · Sapma: 5.83 %
+      · Kabul (B1⊕B2 açısal tahsis; B2-06 hariç): 13.4 µrad
+W1 β = 90° [21 s]
+   T2.1 OK | Rüzgâr VIV bandında (f_n ± %15: 3.48–4.71 Hz) γ² ≥ 0.8 nokta yok (20 düşük koheranslı nokta); koherans üst sınırı: roll→el DRR ≤ -52.2 dB @ 4.64 Hz (gerekli -50.2 dB) → sınır gereksinimi sağlıyor; yaw→xel ≤ -50.9 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 11.52 µrad RMS (tahsis 6.0); f_n = 4.10 Hz'de OFF 4.63 → ON 8.62 µrad; yalnız açısal uyarımla 0.28 µrad (öteleme payı)
+      · 3.48 Hz · θ 0.157° · öteleme ±14.6 mm (7.00 m/s²): OFF el 0.24 / xel 3.68 µrad · ON el 0.14 / xel 6.04 µrad (açısal DRR karşılığı -50.1 dB)
+      · 4.10 Hz · θ 0.157° · öteleme ±14.6 mm (9.72 m/s²): OFF el 0.20 / xel 4.63 µrad · ON el 0.19 / xel 8.62 µrad (açısal DRR karşılığı -47.1 dB)
+      · 4.71 Hz · θ 0.157° · öteleme ±14.6 mm (12.83 m/s²): OFF el 0.22 / xel 7.04 µrad · ON el 0.24 / xel 11.52 µrad (açısal DRR karşılığı -44.5 dB)
+      · 4.10 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT: el 0.28 / xel 0.16 µrad → öteleme yolu karesel 8.61 µrad
+      · 4.10 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj: OFF: ayna el 0.24 / xel 15.41 · video − ayna el 0.05 / xel 10.80 → ON: ayna el 0.19 / xel 1.66 · video − ayna el 0.01 / xel 10.28
+      · Dar bant kontrol çalışma bandı: 1.2–6 Hz: bütün dwell frekansları bant içinde
+      · Uyarımın kaynağı (EN 1991-1-4 Ek E, yaklaşım 1): v_crit = 9.11 m/s (17.7 kn), Re = 2.43·10⁵ (alt-kritik), c_lat = 0.700, Sc = 50.4, K_W = 0.657 → y_F = 14.65 mm, θ = κ·y/l = 0.1573°
+      · Rüzgâr yönü ve eksenler: β = 90° (pruvadan): dönme roll -0.00 · pitch -1.00; öteleme x -1.00 · y 0.00
+      ~ Rüzgâr kuvvetinin kendisi değil, direk modunun direktör tabanında doğurduğu hareket yeniden üretilir: hexapod açısal sinüs + aynı fazda öteleme. Laboratuvarda sonsuzdaki hedefin görüntüsü ötelemeyle kaymaz; öteleme LOS'a gimbal kütle dengesizliği torku ve optik alt montajın esnemesiyle girer.
+      ~ Dwell frekansları f_n ve f_n ± 15 % (direk modunun belirsizliği) ile T2.1'in rezonans adaylarıdır; her frekansta 60 s. ON: uyarlanır dar bant (rezonans) kontrolcü dwell frekansına ayarlı (çalışma bandı 1.2–6 Hz; dışında devreye girmez).
+      ~ Artık, LOS'un el ve xel bileşenlerinin büyüğüdür: rüzgâr yönüne göre direk iki eksende de salınabilir. "Açısal DRR karşılığı" yalnız bilgi amaçlıdır; öteleme yolunun katkısını da içerir.
+      ~ Yol ayrımı (T2.5 ile aynı yöntem): referans aynası (otokolimatör) gimbalın mekanik açısını, yani gyro'nun algıladığı yolu (açısal artık + dengesizlik torku) ölçer; video − ayna fazör farkı optik alt montaj esnemesidir. Bu esnemeyi gyro görmez, dar bant kontrol de bastıramaz.
+      ~ Dar bant kontrol f_n'de artığı büyüttü (OFF 4.63 → ON 8.62 µrad). Yol ayrımı nedenini gösterir: kontrol gimbal yolunu bastırır (ayna xel 15.41 → 1.66 µrad), optik montaj yolu değişmez (10.80 → 10.28 µrad). OFF'ta iki yol ters fazda kısmen birbirini götürüyordu; ON'da optik yol açıkta kalır. Kabul ve bütçe yapılandırılmış DUT'un (ON) değerini kullanır; düzeltme optik montajın rijitliğinde ya da den
+   T2.3 OK | Kombine artık 10.50 µrad; ayrı testlerin RSS'i 10.12 µrad → sapma 3.8 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+      · Yalnız deniz profili (wander xel): 5.80 µrad
+      · Yalnız rüzgâr VIV tonu (4.10 Hz, açısal + öteleme; artık RMS, xel): 8.30 µrad
+      · RSS: 10.12 µrad
+      · Kombine (wander xel): 10.50 µrad
+      · Sapma: 3.76 %
+      · Kabul (B1⊕B2 açısal tahsis; B2-06 hariç): 13.4 µrad
+W13 ölçülmüş genlik 0,7° (erişim sınırı) [19 s]
+   T2.1 BİLGİ | Rüzgâr VIV bandında (f_n ± %15: 3.48–4.71 Hz) γ² ≥ 0.8 nokta yok (20 düşük koheranslı nokta); koherans üst sınırı: roll→el DRR ≤ -52.2 dB @ 4.64 Hz (gerekli -63.2 dB) → karar verilemez; bant kabulü T2.2 dwell'iyle; yaw→xel ≤ -50.9 dB (bilgi); 0 rezonans adayı
+   T2.2 GEÇERSİZ | Hexapod erişimi VIV uyarımını 4.10, 4.71 Hz'de küçültüyor (θ/ω/α ya da öteleme stroku): sonuç GEÇERSİZ. Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 16.31 µrad RMS (tahsis 6.0); f_n = 4.10 Hz'de OFF 170.28 → ON 16.31 µrad; yalnız açısal uyarımla 13.14 µrad (öteleme payı)
+      · 3.48 Hz · θ 0.700° · öteleme ±65.2 mm (31.15 m/s²): OFF el 156.02 / xel 27.71 µrad · ON el 15.28 / xel 2.68 µrad (açısal DRR karşılığı -55.0 dB)
+      · 4.10 Hz · θ 0.603° · öteleme ±56.1 mm (37.23 m/s²) (hexapod erişimiyle sınırlı): OFF el 170.28 / xel 33.75 µrad · ON el 16.31 / xel 3.31 µrad (açısal DRR karşılığı -53.2 dB)
+      · 4.71 Hz · θ 0.457° · öteleme ±42.5 mm (37.23 m/s²) (hexapod erişimiyle sınırlı): OFF el 160.47 / xel 33.89 µrad · ON el 15.21 / xel 3.31 µrad (açısal DRR karşılığı -51.4 dB)
+      · 4.10 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT: el 13.14 / xel 0.01 µrad → öteleme yolu karesel 9.67 µrad
+      · 4.10 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj: OFF: ayna el 170.76 / xel 34.07 · video − ayna el 0.89 / xel 0.32 → ON: ayna el 16.01 / xel 3.36 · video − ayna el 0.87 / xel 0.05
+      · Dar bant kontrol çalışma bandı: 1.2–6 Hz: bütün dwell frekansları bant içinde
+      · Uyarımın kaynağı (EN 1991-1-4 Ek E, yaklaşım 1): v_crit = 9.11 m/s (17.7 kn), Re = 2.43·10⁵ (alt-kritik), c_lat = 0.700, Sc = 50.4, K_W = 0.657 → y_F = 14.65 mm, θ = κ·y/l = 0.1573° (Model: ölçülmüş genlik 0.7° kullanıldı)
+      · Rüzgâr yönü ve eksenler: β = 0° (pruvadan): dönme roll -1.00 · pitch 0.00; öteleme x 0.00 · y 1.00
+      ~ Rüzgâr kuvvetinin kendisi değil, direk modunun direktör tabanında doğurduğu hareket yeniden üretilir: hexapod açısal sinüs + aynı fazda öteleme. Laboratuvarda sonsuzdaki hedefin görüntüsü ötelemeyle kaymaz; öteleme LOS'a gimbal kütle dengesizliği torku ve optik alt montajın esnemesiyle girer.
+      ~ Dwell frekansları f_n ve f_n ± 15 % (direk modunun belirsizliği) ile T2.1'in rezonans adaylarıdır; her frekansta 60 s. ON: uyarlanır dar bant (rezonans) kontrolcü dwell frekansına ayarlı (çalışma bandı 1.2–6 Hz; dışında devreye girmez).
+      ~ Artık, LOS'un el ve xel bileşenlerinin büyüğüdür: rüzgâr yönüne göre direk iki eksende de salınabilir. "Açısal DRR karşılığı" yalnız bilgi amaçlıdır; öteleme yolunun katkısını da içerir.
+      ~ Yol ayrımı (T2.5 ile aynı yöntem): referans aynası (otokolimatör) gimbalın mekanik açısını, yani gyro'nun algıladığı yolu (açısal artık + dengesizlik torku) ölçer; video − ayna fazör farkı optik alt montaj esnemesidir. Bu esnemeyi gyro görmez, dar bant kontrol de bastıramaz.
+      ~ Hexapod erişimi (θ 15° / ω 40°/s / α 400°/s²) ya da öteleme stroku (±100 mm) uyarımı 4.10, 4.71 Hz'de küçülttü (mod biçimi korunarak açı ve öteleme aynı oranda). VIV adaylarında uyarım üretilemediği için sonuç GEÇERSİZ: daha büyük erişimli düzenek gerekir.
+   T2.3 AŞIM | Kombine artık 20.86 µrad; ayrı testlerin RSS'i 18.15 µrad → sapma 14.9 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+      · Yalnız deniz profili (wander el): 8.03 µrad
+      · Yalnız rüzgâr VIV tonu (4.10 Hz, açısal + öteleme; artık RMS, el): 16.28 µrad
+      · RSS: 18.15 µrad
+      · Kombine (wander el): 20.86 µrad
+      · Sapma: 14.91 %
+      · Kabul (B1⊕B2 açısal tahsis; B2-06 hariç): 13.4 µrad

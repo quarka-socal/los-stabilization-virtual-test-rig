@@ -1,0 +1,759 @@
+[
+ {
+  "id": "S0",
+  "nm": "varsayılan",
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "30; üst sınır roll→el ≤ -51.5 dB @ 4.88 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ],
+   "notes": [
+    "H1 = S_xy/S_xx: girdi IMU, çıktı video (≤ 25 Hz) ve otokolimatör (≤ 500 Hz). Koherans eşiğinin altındaki noktalar raporlanmaz.",
+    "Süpürme genliği hexapod erişimi kadar büyüktür (f_n = 3,0 Hz'de ≈ 1,13°), VIV genliği ise 0,05°. Sürtünme genlikten bağımsız bir tork olduğu için küçük genlikte DRR kötüleşir: kabulü gerçek genlikteki dwell (T2.2) belirler.",
+    "Bant, taramanın aday f_v değerleri ile f_n'yi kapsar (kilitlenmede yanıt yapının kendi frekansındadır).",
+    "f > video Nyquist bölgesinde yalnız yüksek hızlı kanal geçerlidir; f > f_bw/2'de hexapod çıkışı komuttan sapar, bu yüzden girdi IMU'dan alınır."
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 2.59 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 19.72 → ON 1.90 µrad",
+   "fill": {
+    "B2-01": 0.000001895185060868155
+   },
+   "kv": [
+    [
+     "1.65 Hz",
+     "OFF 11.95 µrad (DRR -34.3 dB) · ON 1.20 µrad (DRR -54.2 dB)"
+    ],
+    [
+     "2.06 Hz",
+     "OFF 14.59 µrad (DRR -32.5 dB) · ON 1.52 µrad (DRR -52.2 dB)"
+    ],
+    [
+     "2.47 Hz",
+     "OFF 16.87 µrad (DRR -31.3 dB) · ON 1.71 µrad (DRR -51.2 dB)"
+    ],
+    [
+     "2.88 Hz",
+     "OFF 18.99 µrad (DRR -30.2 dB) · ON 1.79 µrad (DRR -50.7 dB)"
+    ],
+    [
+     "3.00 Hz",
+     "OFF 19.72 µrad (DRR -29.9 dB) · ON 1.90 µrad (DRR -50.3 dB)"
+    ],
+    [
+     "3.29 Hz",
+     "OFF 21.05 µrad (DRR -29.3 dB) · ON 2.05 µrad (DRR -49.6 dB)"
+    ],
+    [
+     "4.12 Hz",
+     "OFF 24.43 µrad (DRR -28.0 dB) · ON 2.38 µrad (DRR -48.3 dB)"
+    ],
+    [
+     "4.94 Hz",
+     "OFF 27.00 µrad (DRR -27.2 dB) · ON 2.59 µrad (DRR -47.5 dB)"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF) -29.9 dB"
+    ]
+   ],
+   "notes": [
+    "Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (0,05°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.",
+    "ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 6,17 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.",
+    "Kapalıyken artık, doğrusal modelin verdiği -40,0 dB'den (f_n = 3,00 Hz) kötüdür (ölçülen -29,9 dB): 0,05° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir."
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.61 µrad; ayrı testlerin RSS'i 7.01 µrad → sapma -5.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.72 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, artık RMS)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.01 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.61 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.66 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ],
+   "notes": [
+    "Sürtünme, doygunluk ve kazanç programlama süperpozisyonu bozabilir. Sapma büyükse doğrusal (RSS) bütçe geçersizdir.",
+    "Sapma sınır içinde: bu DUT ve uyarım düzeyinde doğrusal toplama (RSS) savunulabilir. Dar bant kontrol kapatılırsa (Model) 3,00 Hz artığı sürtünme baskın hale gelir ve sapma büyür."
+   ]
+  }
+ },
+ {
+  "id": "S2",
+  "nm": "St = 0,25",
+  "T2.1": {
+   "status": "AŞIM",
+   "measured": "VIV bandında (1.54–6.17 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -33.7 dB @ 6.10 Hz (gerekli -40.2 dB); yaw→xel -32.7 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "28"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "48; üst sınır roll→el ≤ -37.5 dB @ 5.98 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ],
+   "notes": [
+    "H1 = S_xy/S_xx: girdi IMU, çıktı video (≤ 25 Hz) ve otokolimatör (≤ 500 Hz). Koherans eşiğinin altındaki noktalar raporlanmaz.",
+    "Süpürme genliği hexapod erişimi kadar büyüktür (f_n = 3,0 Hz'de ≈ 1,13°), VIV genliği ise 0,05°. Sürtünme genlikten bağımsız bir tork olduğu için küçük genlikte DRR kötüleşir: kabulü gerçek genlikteki dwell (T2.2) belirler.",
+    "Bant, taramanın aday f_v değerleri ile f_n'yi kapsar (kilitlenmede yanıt yapının kendi frekansındadır).",
+    "f > video Nyquist bölgesinde yalnız yüksek hızlı kanal geçerlidir; f > f_bw/2'de hexapod çıkışı komuttan sapar, bu yüzden girdi IMU'dan alınır."
+   ]
+  },
+  "T2.2": {
+   "status": "AŞIM",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 30.31 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 19.59 → ON 1.90 µrad",
+   "fill": {
+    "B2-01": 0.000001895185060868155
+   },
+   "kv": [
+    [
+     "1.54 Hz",
+     "OFF 11.16 µrad (DRR -34.9 dB) · ON 1.08 µrad (DRR -55.1 dB)"
+    ],
+    [
+     "2.06 Hz",
+     "OFF 14.59 µrad (DRR -32.5 dB) · ON 1.53 µrad (DRR -52.1 dB)"
+    ],
+    [
+     "2.57 Hz",
+     "OFF 17.49 µrad (DRR -31.0 dB) · ON 1.74 µrad (DRR -51.0 dB)"
+    ],
+    [
+     "3.00 Hz",
+     "OFF 19.59 µrad (DRR -30.0 dB) · ON 1.90 µrad (DRR -50.3 dB)"
+    ],
+    [
+     "3.09 Hz",
+     "OFF 20.25 µrad (DRR -29.7 dB) · ON 1.97 µrad (DRR -49.9 dB)"
+    ],
+    [
+     "3.60 Hz",
+     "OFF 22.44 µrad (DRR -28.8 dB) · ON 2.23 µrad (DRR -48.8 dB)"
+    ],
+    [
+     "4.12 Hz",
+     "OFF 24.43 µrad (DRR -28.0 dB) · ON 2.35 µrad (DRR -48.4 dB)"
+    ],
+    [
+     "5.14 Hz",
+     "OFF 27.61 µrad (DRR -27.0 dB) · ON 2.65 µrad (DRR -47.3 dB)"
+    ],
+    [
+     "6.17 Hz",
+     "OFF 30.15 µrad (DRR -26.2 dB) · ON 30.31 µrad (DRR -26.1 dB)"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bandın DIŞINDAKİ dwell frekansları 6.17 Hz (ON = OFF)"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF) -30.0 dB"
+    ]
+   ],
+   "notes": [
+    "Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (0,05°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.",
+    "ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 6,17 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.",
+    "Kapalıyken artık, doğrusal modelin verdiği -40,0 dB'den (f_n = 3,00 Hz) kötüdür (ölçülen -30,0 dB): 0,05° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir."
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.61 µrad; ayrı testlerin RSS'i 7.01 µrad → sapma -5.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.72 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, artık RMS)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.01 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.61 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.66 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ],
+   "notes": [
+    "Sürtünme, doygunluk ve kazanç programlama süperpozisyonu bozabilir. Sapma büyükse doğrusal (RSS) bütçe geçersizdir.",
+    "Sapma sınır içinde: bu DUT ve uyarım düzeyinde doğrusal toplama (RSS) savunulabilir. Dar bant kontrol kapatılırsa (Model) 3,00 Hz artığı sürtünme baskın hale gelir ve sapma büyür."
+   ]
+  }
+ },
+ {
+  "id": "S3",
+  "nm": "f_n = 2 Hz",
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.23–4.12 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "26"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "20; üst sınır roll→el ≤ -53.9 dB @ 4.03 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ],
+   "notes": [
+    "H1 = S_xy/S_xx: girdi IMU, çıktı video (≤ 25 Hz) ve otokolimatör (≤ 500 Hz). Koherans eşiğinin altındaki noktalar raporlanmaz.",
+    "Süpürme genliği hexapod erişimi kadar büyüktür (f_n = 2,0 Hz'de ≈ 2,53°), VIV genliği ise 0,05°. Sürtünme genlikten bağımsız bir tork olduğu için küçük genlikte DRR kötüleşir: kabulü gerçek genlikteki dwell (T2.2) belirler.",
+    "Bant, taramanın aday f_v değerleri ile f_n'yi kapsar (kilitlenmede yanıt yapının kendi frekansındadır).",
+    "f > video Nyquist bölgesinde yalnız yüksek hızlı kanal geçerlidir; f > f_bw/2'de hexapod çıkışı komuttan sapar, bu yüzden girdi IMU'dan alınır."
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 2.35 µrad RMS (tahsis 6.0); f_n = 2 Hz'de OFF 14.28 → ON 1.52 µrad",
+   "fill": {
+    "B2-01": 0.0000015201474717719206
+   },
+   "kv": [
+    [
+     "1.23 Hz",
+     "OFF 9.19 µrad (DRR -36.5 dB) · ON 0.84 µrad (DRR -57.3 dB)"
+    ],
+    [
+     "1.65 Hz",
+     "OFF 11.93 µrad (DRR -34.3 dB) · ON 1.19 µrad (DRR -54.3 dB)"
+    ],
+    [
+     "2.00 Hz",
+     "OFF 14.28 µrad (DRR -32.7 dB) · ON 1.52 µrad (DRR -52.2 dB)"
+    ],
+    [
+     "2.06 Hz",
+     "OFF 14.65 µrad (DRR -32.5 dB) · ON 1.43 µrad (DRR -52.7 dB)"
+    ],
+    [
+     "2.47 Hz",
+     "OFF 16.95 µrad (DRR -31.2 dB) · ON 1.78 µrad (DRR -50.8 dB)"
+    ],
+    [
+     "2.88 Hz",
+     "OFF 19.16 µrad (DRR -30.2 dB) · ON 1.81 µrad (DRR -50.6 dB)"
+    ],
+    [
+     "3.29 Hz",
+     "OFF 21.06 µrad (DRR -29.3 dB) · ON 2.09 µrad (DRR -49.4 dB)"
+    ],
+    [
+     "4.12 Hz",
+     "OFF 24.30 µrad (DRR -28.1 dB) · ON 2.35 µrad (DRR -48.4 dB)"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 2 Hz",
+     "-45.2 dB; ölçülen (OFF) -32.7 dB"
+    ]
+   ],
+   "notes": [
+    "Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (0,05°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.",
+    "ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 6,17 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.",
+    "Kapalıyken artık, doğrusal modelin verdiği -45,2 dB'den (f_n = 2,00 Hz) kötüdür (ölçülen -32,7 dB): 0,05° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir."
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.59 µrad; ayrı testlerin RSS'i 6.87 µrad → sapma -4.1 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.72 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 2.00 Hz, artık RMS)",
+     "1.45 µrad"
+    ],
+    [
+     "RSS",
+     "6.87 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.59 µrad"
+    ],
+    [
+     "Sapma",
+     "-4.13 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ],
+   "notes": [
+    "Sürtünme, doygunluk ve kazanç programlama süperpozisyonu bozabilir. Sapma büyükse doğrusal (RSS) bütçe geçersizdir.",
+    "Sapma sınır içinde: bu DUT ve uyarım düzeyinde doğrusal toplama (RSS) savunulabilir. Dar bant kontrol kapatılırsa (Model) 2,00 Hz artığı sürtünme baskın hale gelir ve sapma büyür."
+   ]
+  }
+ },
+ {
+  "id": "S5",
+  "nm": "f_n = 8 Hz",
+  "T2.1": {
+   "status": "AŞIM",
+   "measured": "VIV bandında (4.12–8.00 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -28.1 dB @ 7.93 Hz (gerekli -40.2 dB); yaw→xel -26.8 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "32"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "32; üst sınır roll→el ≤ -37.5 dB @ 5.98 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ],
+   "notes": [
+    "H1 = S_xy/S_xx: girdi IMU, çıktı video (≤ 25 Hz) ve otokolimatör (≤ 500 Hz). Koherans eşiğinin altındaki noktalar raporlanmaz.",
+    "Süpürme genliği hexapod erişimi kadar büyüktür (f_n = 8,0 Hz'de ≈ 0,16°), VIV genliği ise 0,05°. Sürtünme genlikten bağımsız bir tork olduğu için küçük genlikte DRR kötüleşir: kabulü gerçek genlikteki dwell (T2.2) belirler.",
+    "Bant, taramanın aday f_v değerleri ile f_n'yi kapsar (kilitlenmede yanıt yapının kendi frekansındadır).",
+    "f > video Nyquist bölgesinde yalnız yüksek hızlı kanal geçerlidir; f > f_bw/2'de hexapod çıkışı komuttan sapar, bu yüzden girdi IMU'dan alınır."
+   ]
+  },
+  "T2.2": {
+   "status": "AŞIM",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 33.10 µrad RMS (tahsis 6.0); f_n = 8 Hz'de OFF 32.91 → ON 33.10 µrad",
+   "fill": {
+    "B2-01": 0.00003309804645430323
+   },
+   "kv": [
+    [
+     "4.12 Hz",
+     "OFF 24.62 µrad (DRR -28.0 dB) · ON 2.66 µrad (DRR -47.3 dB)"
+    ],
+    [
+     "4.94 Hz",
+     "OFF 27.16 µrad (DRR -27.1 dB) · ON 2.57 µrad (DRR -47.6 dB)"
+    ],
+    [
+     "8.00 Hz",
+     "OFF 32.91 µrad (DRR -25.3 dB) · ON 33.10 µrad (DRR -25.3 dB)"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bandın DIŞINDAKİ dwell frekansları 8.00 Hz (ON = OFF)"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 8 Hz",
+     "-32.4 dB; ölçülen (OFF) -25.3 dB"
+    ]
+   ],
+   "notes": [
+    "Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (0,05°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.",
+    "ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 6,17 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.",
+    "Kapalıyken artık, doğrusal modelin verdiği -32,4 dB'den (f_n = 8,00 Hz) kötüdür (ölçülen -25,3 dB): 0,05° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir."
+   ]
+  },
+  "T2.3": {
+   "status": "AŞIM",
+   "measured": "Kombine artık 27.00 µrad; ayrı testlerin RSS'i 33.78 µrad → sapma -20.1 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.72 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 8.00 Hz, artık RMS)",
+     "33.10 µrad"
+    ],
+    [
+     "RSS",
+     "33.78 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "27.00 µrad"
+    ],
+    [
+     "Sapma",
+     "-20.06 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ],
+   "notes": [
+    "Sürtünme, doygunluk ve kazanç programlama süperpozisyonu bozabilir. Sapma büyükse doğrusal (RSS) bütçe geçersizdir.",
+    "Kombine < RSS: deniz hareketi gimbalı sürekli kayma rejiminde tutar; tonun tek başına ürettiği sürtünme yön değişimleri (ve onların tondaki temel bileşeni) kaybolur. Ayrı testler bu DUT için muhafazakârdır, ama RSS bütçesi de doğru değildir."
+   ]
+  }
+ },
+ {
+  "id": "S11",
+  "nm": "genlik 1,5° (erişim sınırı)",
+  "T2.1": {
+   "status": "AŞIM",
+   "measured": "VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -69.8 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 1,5° → 6 µrad)",
+     "-69.79 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "30; üst sınır roll→el ≤ -51.5 dB @ 4.88 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ],
+   "notes": [
+    "H1 = S_xy/S_xx: girdi IMU, çıktı video (≤ 25 Hz) ve otokolimatör (≤ 500 Hz). Koherans eşiğinin altındaki noktalar raporlanmaz.",
+    "Süpürme genliği hexapod erişimi kadar büyüktür (f_n = 3,0 Hz'de ≈ 1,13°), VIV genliği ise 1,5°. Sürtünme genlikten bağımsız bir tork olduğu için küçük genlikte DRR kötüleşir: kabulü gerçek genlikteki dwell (T2.2) belirler.",
+    "Bant, taramanın aday f_v değerleri ile f_n'yi kapsar (kilitlenmede yanıt yapının kendi frekansındadır).",
+    "f > video Nyquist bölgesinde yalnız yüksek hızlı kanal geçerlidir; f > f_bw/2'de hexapod çıkışı komuttan sapar, bu yüzden girdi IMU'dan alınır."
+   ]
+  },
+  "T2.2": {
+   "status": "GEÇERSİZ",
+   "measured": "Hexapod erişimi VIV genliğini (1,5°) 2.88, 3.00, 3.29, 4.12, 4.94 Hz'de küçültüyor: sonuç GEÇERSİZ. Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 16.08 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 160.97 → ON 15.82 µrad",
+   "fill": {
+    "B2-01": 0.00001582036056935295
+   },
+   "kv": [
+    [
+     "1.65 Hz",
+     "OFF 90.78 µrad (DRR -46.2 dB) · ON 9.10 µrad (DRR -66.2 dB)"
+    ],
+    [
+     "2.06 Hz",
+     "OFF 125.54 µrad (DRR -43.4 dB) · ON 12.58 µrad (DRR -63.4 dB)"
+    ],
+    [
+     "2.47 Hz",
+     "OFF 161.23 µrad (DRR -41.2 dB) · ON 16.07 µrad (DRR -61.2 dB)"
+    ],
+    [
+     "2.88 Hz (hexapod erişimiyle sınırlı: θ 1.222°)",
+     "OFF 164.33 µrad (DRR -39.2 dB) · ON 16.08 µrad (DRR -59.4 dB)"
+    ],
+    [
+     "3.00 Hz (hexapod erişimiyle sınırlı: θ 1.126°)",
+     "OFF 160.97 µrad (DRR -38.7 dB) · ON 15.82 µrad (DRR -58.9 dB)"
+    ],
+    [
+     "3.29 Hz (hexapod erişimiyle sınırlı: θ 0.936°)",
+     "OFF 153.36 µrad (DRR -37.5 dB) · ON 14.93 µrad (DRR -57.8 dB)"
+    ],
+    [
+     "4.12 Hz (hexapod erişimiyle sınırlı: θ 0.597°)",
+     "OFF 133.37 µrad (DRR -34.8 dB) · ON 12.80 µrad (DRR -55.2 dB)"
+    ],
+    [
+     "4.94 Hz (hexapod erişimiyle sınırlı: θ 0.415°)",
+     "OFF 116.59 µrad (DRR -32.8 dB) · ON 11.00 µrad (DRR -53.3 dB)"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF) -38.7 dB"
+    ]
+   ],
+   "notes": [
+    "Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (1,5°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.",
+    "ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 185,12 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.",
+    "Kapalıyken artık, doğrusal modelin verdiği -40,0 dB'den (f_n = 3,00 Hz) kötüdür (ölçülen -38,7 dB): 1,5° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir.",
+    "Hexapod erişimi (θ 15° / ω 40°/s / α 400°/s²) uyarımı 2.88, 3.00, 3.29, 4.12, 4.94 Hz'de küçülttü. VIV adaylarında uyarım üretilemediği için sonuç GEÇERSİZ: daha büyük erişimli düzenek gerekir."
+   ]
+  },
+  "T2.3": {
+   "status": "AŞIM",
+   "measured": "Kombine artık 24.41 µrad; ayrı testlerin RSS'i 21.48 µrad → sapma 13.6 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.72 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, artık RMS)",
+     "20.41 µrad"
+    ],
+    [
+     "RSS",
+     "21.48 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "24.41 µrad"
+    ],
+    [
+     "Sapma",
+     "13.62 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ],
+   "notes": [
+    "Sürtünme, doygunluk ve kazanç programlama süperpozisyonu bozabilir. Sapma büyükse doğrusal (RSS) bütçe geçersizdir.",
+    "Sapma sınır içinde: bu DUT ve uyarım düzeyinde doğrusal toplama (RSS) savunulabilir. Dar bant kontrol kapatılırsa (Model) 3,00 Hz artığı sürtünme baskın hale gelir ve sapma büyür."
+   ]
+  }
+ },
+ {
+  "id": "S12",
+  "nm": "f_n = 12 Hz (taramada risk yok)",
+  "T2.1": {
+   "status": "AŞIM",
+   "measured": "VIV bandında (11.88–12.13 Hz; taramada riskli hız yok, yalnız f_n çevresi) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -25.1 dB @ 12.08 Hz (gerekli -40.2 dB); yaw→xel -23.5 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "4"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ],
+   "notes": [
+    "H1 = S_xy/S_xx: girdi IMU, çıktı video (≤ 25 Hz) ve otokolimatör (≤ 500 Hz). Koherans eşiğinin altındaki noktalar raporlanmaz.",
+    "Süpürme genliği hexapod erişimi kadar büyüktür (f_n = 12,0 Hz'de ≈ 0,07°), VIV genliği ise 0,05°. Sürtünme genlikten bağımsız bir tork olduğu için küçük genlikte DRR kötüleşir: kabulü gerçek genlikteki dwell (T2.2) belirler.",
+    "Bant, taramanın aday f_v değerleri ile f_n'yi kapsar (kilitlenmede yanıt yapının kendi frekansındadır); taramada riskli ya da sınırda hız yok, bant yalnız f_n çevresidir.",
+    "f > video Nyquist bölgesinde yalnız yüksek hızlı kanal geçerlidir; f > f_bw/2'de hexapod çıkışı komuttan sapar, bu yüzden girdi IMU'dan alınır."
+   ]
+  },
+  "T2.2": {
+   "status": "AŞIM",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 34.50 µrad RMS (tahsis 6.0); f_n = 12 Hz'de OFF 34.22 → ON 34.50 µrad",
+   "fill": {
+    "B2-01": 0.000034503871495398665
+   },
+   "kv": [
+    [
+     "12.00 Hz",
+     "OFF 34.22 µrad (DRR -24.6 dB) · ON 34.50 µrad (DRR -24.5 dB)"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bandın DIŞINDAKİ dwell frekansları 12.00 Hz (ON = OFF)"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 12 Hz",
+     "-31.2 dB; ölçülen (OFF) -24.6 dB"
+    ]
+   ],
+   "notes": [
+    "Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (0,05°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.",
+    "ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 6,17 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.",
+    "Kapalıyken artık, doğrusal modelin verdiği -31,2 dB'den (f_n = 12,00 Hz) kötüdür (ölçülen -24,6 dB): 0,05° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir."
+   ]
+  },
+  "T2.3": {
+   "status": "AŞIM",
+   "measured": "Kombine artık 30.34 µrad; ayrı testlerin RSS'i 35.07 µrad → sapma -13.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.72 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 12.00 Hz, artık RMS)",
+     "34.42 µrad"
+    ],
+    [
+     "RSS",
+     "35.07 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "30.34 µrad"
+    ],
+    [
+     "Sapma",
+     "-13.47 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ],
+   "notes": [
+    "Sürtünme, doygunluk ve kazanç programlama süperpozisyonu bozabilir. Sapma büyükse doğrusal (RSS) bütçe geçersizdir.",
+    "Sapma sınır içinde: bu DUT ve uyarım düzeyinde doğrusal toplama (RSS) savunulabilir. Dar bant kontrol kapatılırsa (Model) 12,00 Hz artığı sürtünme baskın hale gelir ve sapma büyür."
+   ]
+  }
+ }
+]

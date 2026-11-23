@@ -1,0 +1,29 @@
+el varsayılan                K    61.831 (motor    61.831)  f_kesim  40.45/ 40.45  PM  52.35/ 52.35°  GM  12.16/ 12.16 dB @  156.7  |S|max  3.33/ 3.33
+az varsayılan (ε 0°)         K   109.743 (motor   109.743)  f_kesim  30.34/ 30.34  PM  52.05/ 52.05°  GM  14.77/ 14.77 dB @  156.5  |S|max  2.53/ 2.53
+el dar bant kapalı           K    62.275 (motor    62.275)  f_kesim  40.46/ 40.46  PM  58.46/ 58.46°  GM  12.27/ 12.27 dB @  159.5  |S|max  3.17/ 3.17
+az dar bant kapalı           K   111.152 (motor   111.152)  f_kesim  30.35/ 30.35  PM  60.21/ 60.21°  GM  14.83/ 14.83 dB @  159.3  |S|max  2.36/ 2.36
+el f_c 20 Hz                 K    29.357 (motor    29.357)  f_kesim  20.21/ 20.21  PM  47.60/ 47.60°  GM  18.63/ 18.63 dB @  156.7  |S|max  2.01/ 2.01
+el f_c 60 Hz                 K    93.760 (motor    93.760)  f_kesim  60.65/ 60.65  PM  46.68/ 46.68°  GM   8.55/  8.55 dB @  156.7  |S|max  5.14/ 5.14
+el f_i 2 Hz                  K    62.294 (motor    62.294)  f_kesim  40.22/ 40.22  PM  57.99/ 57.99°  GM  12.31/ 12.31 dB @  159.3  |S|max  3.16/ 3.16
+el f_i 8 Hz                  K    60.047 (motor    60.047)  f_kesim  40.86/ 40.86  PM  41.53/ 41.53°  GM  11.96/ 11.96 dB @  151.3  |S|max  3.85/ 3.85
+el dar bant 10 dB            K    62.234 (motor    62.234)  f_kesim  40.46/ 40.46  PM  56.99/ 56.99°  GM  12.24/ 12.24 dB @  158.9  |S|max  3.20/ 3.20
+el dar bant 30 dB            K    58.187 (motor    58.187)  f_kesim  40.40/ 40.40  PM  38.49/ 38.49°  GM  12.21/ 12.21 dB @  149.5  |S|max  4.11/ 4.11
+el dar bant @ 1,2 Hz         K    62.204 (motor    62.204)  f_kesim  40.46/ 40.46  PM  56.02/ 56.02°  GM  12.22/ 12.22 dB @  158.4  |S|max  3.23/ 3.23
+el dar bant @ 6 Hz           K    60.497 (motor    60.497)  f_kesim  40.43/ 40.43  PM  46.23/ 46.23°  GM  12.16/ 12.16 dB @  153.8  |S|max  3.52/ 3.52
+az elevasyon 60°             K   102.884 (motor   102.884)  f_kesim  30.34/ 30.34  PM  52.15/ 52.15°  GM  14.78/ 14.78 dB @  156.6  |S|max  2.52/ 2.52
+el f_ctl 1 kHz               K    61.831 (motor    61.831)  f_kesim  40.85/ 40.85  PM  45.15/ 45.15°  GM   9.56/  9.56 dB @  117.6  |S|max  4.68/ 4.68
+el f_ctl 4 kHz               K    61.831 (motor    61.831)  f_kesim  40.23/ 40.23  PM  56.94/ 56.94°  GM  14.43/ 14.43 dB @  197.9  |S|max  2.54/ 2.54
+el gyro ek gecikmesi 1 ms    K    61.831 (motor    61.831)  f_kesim  40.45/ 40.45  PM  37.79/ 37.79°  GM   7.33/  7.33 dB @   92.1  |S|max  6.29/ 6.29
+az f_c 45 Hz                 K   167.563 (motor   167.563)  f_kesim  45.51/ 45.51  PM  51.03/ 51.03°  GM  11.10/ 11.10 dB @  156.5  |S|max  3.77/ 3.77
+
+en büyük fark — K (göreli): 3.33e-16
+en büyük fark — f_kesim (göreli): 2.66e-15
+en büyük fark — PM (°): 3.13e-13
+en büyük fark — GM (dB): 1.42e-14
+en büyük fark — GM frekansı (göreli): 1.11e-15
+en büyük fark — |S|max (dB; 0,5 % ızgara): 1.07e-14
+en büyük fark — DRR genlik (dB): 1.76e-10
+en büyük fark — DRR faz (°): 1.62e-09
+en büyük fark — tork yolu (dB): 1.76e-10
+en büyük fark — gyro gürültü yolu (dB): 1.49e-13
+en büyük fark — L(jω) (göreli): 2.08e-12

@@ -1,0 +1,10 @@
+S0 Varsayılan [41 s] | bant 1.65–5.48 Hz (9) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.19 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.00 → ON 2.10 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.653 / xel 0.073 µrad · bütçeye (T2.2 fill) 2.10 µrad
+S14 Mast başı ötelemesi kapalı [23 s] | bant 1.65–5.48 Hz (9) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 2.87 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 19.79 → ON 1.92 µrad
+   T2.3 GEÇERSİZ | Deniz + VIV ötelemesi hexapod strokunu aşıyor (tepe 100.0 mm > ±100 mm): sonuç GEÇERSİZ. Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.04 µrad → sapma -5.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.610 / xel 0.000 µrad · bütçeye (T2.2 fill) 1.92 µrad

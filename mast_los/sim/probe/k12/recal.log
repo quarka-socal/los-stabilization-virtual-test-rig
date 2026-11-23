@@ -1,0 +1,8 @@
+işletme B1-07 el 3.00 / xel 2.23 µrad
+işletme B2-03 el 2.01 / xel 1.04 µrad
+işletme B2-04 el 1.51 / xel 0.95 µrad
+T1.6 OK: Yön değişimi geçişi (senkron ortalama): tepe 6.6 µrad (sınır 10.3), tekrarlanan bileşen el 2.15 µrad RMS; 40 sıfır geçişi
+T2.5 OK: İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 2.00 µrad RMS (tahsis 3); duyarlılık 2.320 µrad/(m/s²) (hexapod iletimi τ = 0.987: laboratuvar farkı 1.97 µrad komut düzeyine ölçeklendi)
+T2.4 BİLGİ: Tepe hata en büyük 144.8 µrad; oturma en uzun 2202 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 3.15 / deniz profili üzerinde 2.90 µrad RMS (tahsis
+T4.2 AŞIM: Yapılandırılmış DUT (sabit FF): -20 °C sürtünme tepesi 91.0 µrad, 3.00 Hz artık 16.75 µrad; 20 °C sürtünme tepesi 6.1 µrad, 3.00 Hz artık 2.40 µrad; 55 °C sürtünme tepesi 14.5 µrad, 3.00 Hz artık 2.79 µrad
+T2.3 OK: Kombine artık 6.88 µrad; ayrı testlerin RSS'i 7.33 µrad → sapma -6.2 % (sınır ±20 %); tahsis sınırı 13.4 µrad

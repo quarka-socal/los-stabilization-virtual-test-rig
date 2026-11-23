@@ -1,0 +1,254 @@
+OK  W1 Bütçe satırları: girdi düzeyi, tahmin, wander/smear ayrımı, tahsis, EIS sütunları
+     beklenen: özdeş
+     elde:     en büyük göreli fark 3.2e-16 (gemi varsayılanı · B1-01 AH); 1053 sayı · v10 uyum kipi: 1.6e-16 · denizaltı varsayılanı: 2.0e-16 · gemi varsayılanı: 3.2e-16 · HDTV-NFOV, Z540.3, τ = 10 s: 2.2e-16
+     ölçüt:    ≤ 1·10⁻¹²
+OK  W2 Bütçe toplamları: bant RSS, G1 doğrusal toplamı, kullanım, MTF, tepe, drift, EIS, tahsis payları, gerekli DRR
+     beklenen: özdeş
+     elde:     en büyük göreli fark 2.2e-16 (HDTV-NFOV, Z540.3, τ = 10 s · smearUse); 156 sayı
+     ölçüt:    ≤ 1·10⁻¹²
+OK  W3 Türetilmiş girdiler
+     beklenen: özdeş
+     elde:     en büyük göreli fark 1.4e-16 (v10 uyum kipi · P99); 48 sayı
+     ölçüt:    ≤ 1·10⁻¹²
+OK  W4 Dünya dönüşünün görüntü eksenlerine izdüşümü
+     beklenen: özdeş
+     elde:     en büyük göreli fark 7.0e-16 (enlem 65°, el 30° · α=180 r); 245 sayı (sıfır değerlerde mutlak)
+     ölçüt:    ≤ 1·10⁻¹² (göreli; sıfırda mutlak 1·10⁻⁹)
+OK  W5 Hexapod erişimi
+     beklenen: özdeş
+     elde:     en büyük göreli fark 1.3e-16; 204 sayı, 0 metin uyuşmazlığı
+     ölçüt:    ≤ 1·10⁻¹², metin uyuşmazlığı 0
+OK  W6 Hidrodinamik VIV taraması
+     beklenen: özdeş
+     elde:     en büyük göreli fark 2.3e-16; 487 sayı, 0 metin uyuşmazlığı
+     ölçüt:    ≤ 1·10⁻¹², metin uyuşmazlığı 0
+OK  W7 Ölçüm belirsizliği ve TUR
+     beklenen: özdeş
+     elde:     en büyük göreli fark 1.2e-16 (HDTV-NFOV, Z540.3, τ = 10 s · U-05); 108 sayı
+     ölçüt:    ≤ 1·10⁻¹²
+OK  W8 PSD ağırlıklandırma (wander/smear ayrımı)
+     beklenen: (a) analitik, (b) özdeş
+     elde:     (a) toplam 5.1e-14, wander 4.9e-15; (b) en büyük göreli fark 0.00 ()
+     ölçüt:    (a) ≤ 1·10⁻⁶ (ızgara), (b) ≤ 1·10⁻¹²
+OK  W9 Tahsislerin tek kaynağı ve IFOV ölçeklemesi
+     beklenen: özdeş; varsayılanda tam
+     elde:     IFOV ölçeklemesinden en büyük göreli sapma 1.1e-16; varsayılanda tam: evet · varsayılan: B1-01 5.0000 µrad = 0.1250 IFOV · HDTV-NFOV: B1-01 1.4375 µrad = 0.1250 IFOV · f = 600 mm: B1-01 2.5000 µrad = 0.1250 IFOV
+     ölçüt:    fark yok, sapma ≤ 1·10⁻¹⁵
+OK  W10 Kaldıraç kolu bütçesi: ivme terimleri, B1-08/B1-10, tam ilişkili sınır, laboratuvar talebi
+     beklenen: özdeş (sayısal integrasyon)
+     elde:     en büyük göreli fark 1.8e-7 (denizaltı SS5, r = (−8, 3, −2) m, k_g = 1 · a_y); 85 sayı · denizaltı varsayılanı (h = 1 m): |a| 0.0254 m/s², tam ilişkili 0.0254, B1-08 0.051 µrad, B1-10 0.0000 µrad, q 0.9003 · gemi varsayılanı (h = 15 m): |a| 0.5515 m/s², tam ilişkili 0.5515, B1-08 1.103 µrad, B1-10 0.0000 µrad, q 0.0318 · gemi dar, r = (20, −4, 15) m, k_g = 0,5: |a| 0.7229 m/s², tam ilişkili 0.8363, B1-08 1.446 µrad, B1-10 0.2380 µrad, q 0.0309 · gemi SS4, r = (20, −4, 15) m, k_g = 0,5: |a| 1.8704 m/s², tam ilişkili 2.6505, B1-08 3.741 µrad, B1-10 0.3812 µrad, q 0.0682 · denizaltı SS5, r = (−8, 3, −2) m, k_g = 1: |a| 1.8760 m/s², tam ilişkili 2.8737, B1-08 3.752 µrad, B1-10 0.8190 µrad, q 0.0672
+     ölçüt:    ≤ 1·10⁻⁶
+OK  W11 Kolimatör geometrisi, demet–göz bebeği örtüşmesi ve test hareketlerinden yanal kayma
+     beklenen: özdeş geometri; örtüşme ve kayma integral/örnekleme duyarlığında
+     elde:     geometri en büyük göreli fark 2.0e-16 (denizaltı varsayılanı · iğne açısı), bayrak uyuşmazlığı 0; örtüşme mutlak fark 4.3e-7; pupilShift 2.8e-17 m; test kayması göreli fark 1.2e-6, vinyetleme süresi farkı 0.00 puan, karar uyuşmazlığı 0; öteleme sığdırma uyuşmazlığı 0 (denizaltı varsayılanı: q_c 0.2994 → 18.164 mm (×1,01: 18.331 mm; sınır 18.182); HDTV-NFOV (D_p 75 mm): q_c 0.5213 → 30.651 mm (×1,01: 30.946 mm; sınır 30.682); f_c 900 mm, iğne 100 µm: q_c 0.2994 → 18.164 mm (×1,01: 18.331 mm; sınır 18.182); L_off 0,15 m, θ_test 10°: q_c 0.0000 → 30.615 mm (×1,01: 30.615 mm; sınır 18.182)); δ_max göreli fark 0.00; 1920 sayı · denizaltı varsayılanı: e_free 18.18 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 18.16 mm (vinyetleme %0.0), T0.1 0.00 mm · gemi varsayılanı: e_free 40.91 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 40.23 mm (vinyetleme %0.0), T0.1 0.00 mm · HDTV-NFOV (D_p 75 mm): e_free 30.68 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 30.65 mm (vinyetleme %0.0), T0.1 0.00 mm · f_c 900 mm, iğne 100 µm: e_free 18.18 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 18.16 mm (vinyetleme %0.0), T0.1 0.00 mm · D_c 250 mm: e_free 63.64 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 57.74 mm (vinyetleme %0.0), T0.1 0.00 mm · L_off 0,15 m, θ_test 10°: e_free 18.18 mm, T0.3 63.27/68.29, T2.5 x 12.67, T1.3 30.61 mm (vinyetleme %1.8), T0.1 3.93 mm
+     ölçüt:    geometri ≤ 1·10⁻¹², bayrak 0; örtüşme ≤ 1·10⁻⁶; pupilShift ≤ 1·10⁻¹² m; kayma ≤ 1·10⁻³ (göreli), vinyetleme süresi ≤ 0,5 puan, karar uyuşmazlığı 0; sığdırılan oran sınırı tutar ve en büyüktür; δ_max ≤ 1·10⁻¹²
+OK  N1 Welch PSD, CSD ve koherans (scipy.signal)
+     beklenen: özdeş (yuvarlama)
+     elde:     PSD 3.3e-11, CSD 1.4e-10 (göreli), koherans 1.3e-12 (mutlak)
+     ölçüt:    ≤ 1·10⁻⁹
+OK  N2 Biquad süzgeçler (RBJ, bilineer + ön-bükme)
+     beklenen: kapalı biçim değer
+     elde:     en büyük göreli fark 4.2e-15; çentik 2.6e-15
+     ölçüt:    ≤ 1·10⁻¹²
+OK  N3 İkinci derece mod modeli (Osc2, birinci derece tutma)
+     beklenen: rampa yanıtı tam; kazanç 1/(2ζ) = 25, faz −90°
+     elde:     en büyük mutlak fark 3.3e-13; kazanç 24.926, faz -90.00°
+     ölçüt:    fark ≤ 1·10⁻¹⁰; kazanç ±%0,5; faz ±0,5°
+OK  N4 Birinci derece gecikme ve Gauss–Markov süreci
+     beklenen: tam; σ = 2,000
+     elde:     en büyük fark 3.8e-15; σ = 1.9929
+     ölçüt:    fark ≤ 1·10⁻¹²; σ ±%3
+OK  N5 Deniz profili sentezi (spektral, log-Gauss)
+     beklenen: RMS 1,000; oran 1
+     elde:     RMS 1.000000; ortalama |oran − 1| = 0.015 (6 kutu)
+     ölçüt:    RMS ±1·10⁻⁹; |oran − 1| ≤ 0,10 (Welch istatistiği, n_d ≈ 255)
+OK  N6 Şekillendirilmiş gürültü (platform titreşimi biçimi)
+     beklenen: RMS 0,9066 m/s²
+     elde:     RMS 0.9059
+     ölçüt:    ±%2
+OK  N7 Gyro gürültü modeli: ARW ve bias kararsızlığı (Allan)
+     beklenen: σ(τ)√τ = N; düz bölge (20–1000 s) 0,664·B ±%3; benzetim = kapalı biçim
+     elde:     τ 0.1 s: 0.9953 (±1.1 %), τ 1 s: 0.9717 (±3.5 %), τ 10 s: 1.0161 (±11.2 %); kapalı biçim 20–1000 s: 0.647–0.672 B (2 s: 0.548, 3000 s: 0.699); benzetim τ 5 s: 0.605/0.612 B, τ 50 s: 0.677/0.655 B, τ 500 s: 0.747/0.665 B
+     ölçüt:    ARW ve benzetim: tahminin 3σ güven aralığı (1/√(2(K−1))); düz bölge 0,644–0,684 B
+OK  N8 Sinüs + doğrusal trend uydurması (DRR ve dwell analizleri)
+     beklenen: yansız A ve φ; standart hata ≈ örnek saçılımı
+     elde:     A 1.0002, φ 0.4017; σ_A örnek 0.0283 / formül 0.0289
+     ölçüt:    |A−1| ≤ %1; |φ−0,4| ≤ 0,01; σ oranı 0,85–1,15
+OK  N9 Senkron ortalama (TSA, T1.6/T4.2 sürtünme analizi)
+     beklenen: gürültüsüz referans: tekrarlanan RMS 0.710 µrad, tepe 4.39 µrad
+     elde:     gürültülü: RMS 0.621 µrad, tepe 4.40 µrad
+     ölçüt:    RMS ±%15; tepe ±%25
+OK  N10 Dalga çarpması modeli ve Campbell teoremi (T2.4 işletme kestirimi)
+     beklenen: σ = √(λ·E[A²]·E[T_p]/2) = 194.32 µrad
+     elde:     σ = 189.70 µrad
+     ölçüt:    ±%8 (≈ 4000 olayın istatistiği)
+OK  N11 Gecikme kestirimi (T0.4)
+     beklenen: 0,930 ms
+     elde:     0.9294 ms
+     ölçüt:    ±0,01 ms
+OK  N12 EIS yol yumuşatma (bütçenin sürekli zaman artık çarpanı ↔ kare dizisine uygulama)
+     beklenen: sürekli zaman artık çarpanı R(f_a)
+     elde:     0.125 Hz: 0.9714/0.9714 · 0.5 Hz: 0.7211/0.7211 · 2 Hz: 0.3098/0.3106 · 5 Hz: 0.2211/0.2225 · 10 Hz: 0.2044/0.2059
+     ölçüt:    ±%2 (ayrık / sürekli fark)
+OK  K1 Büyük açılı kinematik (stab OFF)
+     beklenen: özdeş
+     elde:     en büyük fark 0.007 µrad
+     ölçüt:    ≤ 0,05 µrad (kayıt float32)
+OK  K2 Dünya dönüşü: eylemsiz LOS'un laboratuvara göre kayması
+     beklenen: dünya dönüşü izdüşüm formülleri
+     elde:     el/xel en büyük göreli fark 0.060 %; rot farkı 0.056 % Ω
+     ölçüt:    el/xel ≤ %0,1; rot ≤ %1 Ω
+OK  K3 Dünya dönüşü kompanzasyon artığı
+     beklenen: Ω·δ = 1.273 µrad/s
+     elde:     1.273 µrad/s
+     ölçüt:    ±%0,5
+OK  K4 Stabilizasyon geometrisi (gimbal açıları)
+     beklenen: az -6.0145°, el -3.9781°
+     elde:     az -6.0145°, el -3.9781°; LOS 0.016 µrad
+     ölçüt:    açı farkı ≤ 1 µrad; LOS ≤ 1 µrad
+OK  K5 Kayma ayrışımı (düzenek okları)
+     beklenen: (a) 0.8181 / 0.9750; (b) 0.3730 / 6.698e-4; (c) -0.0296 / -0.1068 µrad/s (el / xel)
+     elde:     (a) 0.8181 / 0.9750; (b) 0.3730 / 6.702e-4; (c) -0.0297 / -0.1069 µrad/s
+     ölçüt:    (a) ≤ %0,1; (b) ve (c) ≤ 0,005 µrad/s
+OK  K6 Görüntü rotasyonu: köşe pikseli ölçütü (v11)
+     beklenen: (a) 0,5 px; (b) 0,5 IFOV; (c) √(1 + (Nv/Nh)²); (d) 1220 / 781,25 / 610 µrad; (e) özdeş
+     elde:     (a) 0.036 %, (b) 0.018 %, (c) 0.014 %, (d) 0.045 %, (e) 2.22045e-14 % en büyük göreli fark
+     ölçüt:    (a), (b), (d) ≤ %0,1 (dar alanda tan θ ≈ sin θ ≈ θ); (c) ≤ %0,1; (e) ≤ 1·10⁻¹⁰
+OK  K7 Kolimatör paralaksı: hedef yolu ↔ bağımsız kinematik (v13.5)
+     beklenen: özdeş (float32 kayıt duyarlığında)
+     elde:     en büyük göreli fark 8.9e-8; 24000 örnek · denizaltı deniz profili, δ = 200 µm: tepe 1.615 µrad, en büyük fark 1.43e-4 nrad · gemi deniz profili, δ = −150 µm: tepe 2.725 µrad, en büyük fark 2.35e-4 nrad
+     ölçüt:    ≤ 1·10⁻⁵ (kayıt float32)
+OK  D1 Kapalı döngü bozucu bastırma (DRR): zaman alanı ↔ analitik model
+     beklenen: öykünme döngü modeli |DRR(f)|
+     elde:     en büyük fark ≤ 12 Hz: 0.02 dB; 20–100 Hz dahil: 0.14 dB (3 yapılandırma × 12 frekans)
+     ölçüt:    ≤ 12 Hz: ±0,1 dB; tümü ±0,25 dB
+OK  D2 Tork bozucusu yolu (kütle dengesizliği × doğrusal ivme)
+     beklenen: U_x·a·|θ/T_d(f)| (analitik)
+     elde:     1 Hz: 0.7808/0.7809 µrad · 3 Hz: 0.1850/0.1850 µrad · 8 Hz: 1.4448/1.4453 µrad · 15 Hz: 1.1641/1.1665 µrad · en büyük fark 0.02 dB
+     ölçüt:    ±0,5 dB
+OK  D3 Gyro gürültüsünün döngüden geçişi (B2-05 mekanizması)
+     beklenen: oran 1
+     elde:     2–10 Hz: 1.042 · 10–40 Hz: 0.980 · 40–150 Hz: 0.961
+     ölçüt:    ±%6 (Welch istatistiği ve 1 kHz kayıt örtüşmesi)
+OK  D4 LuGre sürtünme durumunun ayrıklaştırılması
+     beklenen: aynı sürtünme torku
+     elde:     en büyük fark 0.217 % F_c
+     ölçüt:    ≤ %1 F_c
+OK  D5 Hexapod dinamiği: Osc2 iletimi ve T2.5 duyarlılığının f_bw'den bağımsızlığı (v13.4)
+     beklenen: genlik ve faz analitikle aynı; duyarlılık hexapod bandından bağımsız
+     elde:     genlik farkı 5.8e-5, faz farkı 1.10e-7°; τ(8 Hz) f_bw 20: 0.987 (analitik 0.987), f_bw 10: 0.842 (0.842); duyarlılık 1.906 ↔ 1.903 µrad/(m/s²) (göreli fark %0.16); işletme düzeyi farkı 1.641 ↔ 1.638 µrad
+     ölçüt:    genlik ≤ 2·10⁻⁴, faz ≤ 0,05°; |τ − τ_analitik| ≤ 0,002; duyarlılık farkı ≤ %0,5
+OK  C1 Örnekleme hızı yakınsaması (laboratuvar, sürtünme dahil)
+     beklenen: 8 kHz çözümü
+     elde:     artık RMS el/xel (µrad): 2 kHz 5.331/2.923, 4 kHz 5.331/2.924, 8 kHz 5.329/2.924
+     ölçüt:    2 kHz ve 4 kHz, 8 kHz'den ≤ %3
+OK  C2 Örnekleme hızı yakınsaması (işletme ayrıştırması)
+     beklenen: 8 kHz çözümü
+     elde:     B1-01: 3.821 / 3.821 µrad · B1-07: 2.699 / 2.694 µrad · B2-03: 1.636 / 1.636 µrad
+     ölçüt:    ≤ %3
+OK  M1 Plaka ölçeği kalibrasyonu (T0.1)
+     beklenen: IFOV 40.1600 µrad, k1 -0.002
+     elde:     IFOV 40.1587 ± 5.787e-4 µrad, k1 -0.00208
+     ölçüt:    IFOV farkı ≤ 3u ve ≤ %0,05; k1 ±%10
+OK  M2 Video ölçüm tabanı: centroid gürültüsü
+     beklenen: U-01 = 0.03 px × IFOV = 1.205 µrad
+     elde:     el 1.199, xel 1.237 µrad
+     ölçüt:    ±2.7 % (3σ)
+OK  M3 Senkronizasyon gecikmesi (T0.4)
+     beklenen: senkron kayması − IMU grup gecikmesi = -0.9502 ms
+     elde:     -0.9285 ± 0.0318 ms
+     ölçüt:    ≤ 3σ veya ≤ 0,02 ms
+OK  M4 Gyro Allan karakterizasyonu (T0.6)
+     beklenen: ARW 0.0042 °/√h, BI 0.042 °/h
+     elde:     ARW 0.00424 (±0.6 %), BI 0.0461 (±12.3 %)
+     ölçüt:    ARW ±%5; BI ±%15 (taban kestirimi ve kayıt uzunluğu)
+OK  M5 Dünya dönüşü sağlaması (T0.7)
+     beklenen: KAPALI 46.87 / 55.86 µrad/s; AÇIK ≤ 1.52
+     elde:     KAPALI 47.10 / 55.67; AÇIK 0.691 / 1.339 µrad/s
+     ölçüt:    KAPALI ±%1 (gyro bias payı); AÇIK sınır altında
+OK  M6 Stab OFF kazancı (T1.2): ölçek, işaret ve eksen eşlemesi
+     beklenen: kazanç 1
+     elde:     en büyük |kazanç − 1| = 0.021 %
+     ölçüt:    ≤ %0,5
+OK  M7 Taban düzeltmesi: üç kipin masa titreşimini düşmesi (v11; v13.5 ayırt edici)
+     beklenen: σ_DUT ≈ σ_kapalı = 7.135 µrad; en küçük hata varsayılan kipte (kapalı)
+     elde:     2 µrad masa: σ_açık 7.114 (s_zincir 0.410) → hata kapalı 0.021, zincir 0.033, tam 0.308 µrad; en iyi kapalı · 10 µrad masa: σ_açık 7.152 (s_zincir 2.050) → hata kapalı 0.017, zincir 0.283, tam 7.135 µrad; en iyi kapalı
+     ölçüt:    her iki düzeyde en küçük hata varsayılan kipte ve ≤ max(0,05 µrad, %1·σ_kapalı)
+OK  V1 Yaklaşım 1 (E.7) ve c_lat,0(Re): yayımlanmış örnek
+     beklenen: Rakočević ve Popović (2018): 26,8 / 28,9 / 68,3 mm; c_lat 0,700 / 0,386 / 0,200
+     elde:     26.82/26.8 mm (c_lat 0.700/0.7) · 28.97/28.9 mm (c_lat 0.386/0.386) · 68.42/68.3 mm (c_lat 0.200/0.2)
+     ölçüt:    y ±%0,5 (girdilerin yuvarlaması); c_lat ±0,001
+OK  V2 Mod biçimi katsayıları (konsol, Φ = (z/l)²)
+     beklenen: K_W kapalı biçimi; K ≈ 0,13 (Tablo E.5 konsol)
+     elde:     K_W en büyük fark 2.2e-12; K = 0.1326
+     ölçüt:    K_W ≤ 1·10⁻⁸; K 0,13 ± 0,005
+OK  V3 Direk tepesi eğim oranı κ = θ·l/y
+     beklenen: βl = 1,8751; κ = 1,3765 (düzgün) … 1,5 (tepe kütlesi)
+     elde:     βl = 1.87510; κ = 1.3765; varsayılan κ = 1.5
+     ölçüt:    βl ±1·10⁻⁴; 1,37 ≤ κ_varsayılan ≤ 1,5
+OK  V4 İşletmede rüzgâr VIV eşlemesi (açı ↔ öteleme)
+     beklenen: (a) özdeş, (b) 1, (c) aynı, (d) 1.7321, (e) +1
+     elde:     (a) göreli fark 0.258 %, (b) 1.000000000, (c) 3557.99 / 3557.99 m/s²/rad, (d) 1.732051, (e) 0.99980
+     ölçüt:    (a) ≤ %0,5; (b) ±1·10⁻⁹; (c) ±%0,3 (ara değer); (d) ±1·10⁻⁶; (e) > 0,999
+OK  V5 Laboratuvar öteleme kanalı → dengesizlik torku → LOS
+     beklenen: U_z·a·|θ/T_d(f)| (analitik)
+     elde:     2 Hz: 0.9694/0.9695 µrad · 4.1 Hz: 0.9878/0.9879 µrad · 8 Hz: 1.9264/1.9270 µrad · en büyük fark 0.00 dB
+     ölçüt:    ±0,5 dB
+OK  V7 İşletmede denizaltı VIV eşlemesi (açı ↔ mast başı ötelemesi)
+     beklenen: (a) özdeş, (b) 1, (c) aynı, (d) yok, (e) +1, (f) A/√2, (g) açık
+     elde:     (a) göreli fark 0.191 %, (b) 1.000000000, (c) 942.042 / 942.479 m/s²/rad, (d) yok, (e) 0.99993, (f) 590.3 / 617.1 µrad, (g) açık
+     ölçüt:    (a) ≤ %0,5; (b) ±1·10⁻⁹; (c) ±%0,3; (e) > 0,999; (f) ±%5 (80 s, dar bant süreç)
+OK  V6 T2.2 yol ayrımı (gemi): ayna ↔ video − ayna
+     beklenen: (a) 0, (b) 0, (c) 0 (doğrusal üst üste binme; ölçüm gürültüsü ve sürtünme kadar sapma)
+     elde:     OFF: video 4.952, ayna 15.435, video − ayna 10.498 / ablasyon 10.349 µrad (a 1.00 %, b 1.00 %, c 1.44 %) · ON: video 8.480, ayna 1.704, video − ayna 10.183 / ablasyon 10.103 µrad (a 0.86 %, b 0.86 %, c 0.80 %)
+     ölçüt:    (a) ≤ %3; (b) ≤ %5; (c) ≤ %5
+OK  S1 Bant sınırlı deniz profili sentezi (6-DOF)
+     beklenen: RMS = σ (3.3333°), aşım %0,270, basıklık 3, ivme oranı 2.0396 1/s²
+     elde:     RMS 3.3333°, aşım %0.263, basıklık 2.983, ivme oranı 2.0434 (0.19 %), bant içi pay %98.5
+     ölçüt:    aşım %0,10–0,50 (N_eff ≈ 5686, ≈ 25 bağımsız olay); basıklık 3 ± 0,25; ivme oranı ±%3 (RMS kestirim belirsizliği ≈ 0.66 %); bant içi ≥ %95
+OK  S2 Kaldıraç kolu ivmesi ↔ tam rijit cisim kinematiği
+     beklenen: özdeş (sayısal türev hatası düzeyinde); bütçe ±%10
+     elde:     r = (0, 0, 15) m: fark x 0.272 %, y 0.166 %, z 0.023 %; tam RMS 0.8939 / 0.9210 / 0.0457 m/s²; bütçe 0.8918 / 0.8899 / 0.0000 (-0.2 % / -3.4 % / —) · r = (20, -4, 15) m: fark x 0.276 %, y 0.162 %, z 0.273 %; tam RMS 0.8955 / 0.9045 / 1.2112 m/s²; bütçe 0.8927 / 0.9132 / 1.2125 (-0.3 % / 1.0 % / 0.1 %) · r = (30, 0, 0) m: fark x 0.043 %, y 0.124 %, z 0.273 %; tam RMS 0.0373 / 0.3121 / 1.7914 m/s²; bütçe 0.0000 / 0.3071 / 1.7835 (— / -1.6 % / -0.4 %)
+     ölçüt:    fark ≤ %0,5 (her eksen, her kol; referansın sayısal türev hatası ≈ %0,02–0,3); bütçe kestirimi tam RMS'ten ±%10 (kolun ivme ürettiği eksenler, tek gerçekleşme)
+OK  S3 Laboratuvar öteleme talebi ve ölçek q
+     beklenen: özdeş; tepe = ±0.1 m; x 0.500, y 0.997, z 0.743 m RMS
+     elde:     en büyük fark 6.8e-15 m; q = 0.02481, ölçek sonrası tepe 0.100000 m; x 0.496 (-0.7 %), y 0.993 (-0.5 %), z 0.738 (-0.7 %) m RMS; tepe/σ = 4.06
+     ölçüt:    fark ≤ 1·10⁻¹² m; tepe ±1·10⁻¹² m; RMS ±%5 (tek gerçekleşme, N_eff ≈ 900)
+OK  S4 T2.5 kestirimi ↔ işletme benzetimi (B1-08)
+     beklenen: kestirim ≥ işletme (muhafazakâr), ≤ 4 kat
+     elde:     r = (0, 0, 15) m: kestirim el 3.246 / xel 4.294 µrad; işletme el 1.842 / xel 2.531 µrad; yol ayrımı olmadan 2.093 / 1.555 µrad · r = (20, −4, 15) m: kestirim el 6.019 / xel 4.329 µrad; işletme el 3.862 / xel 2.541 µrad; yol ayrımı olmadan 3.020 / 1.585 µrad
+     ölçüt:    işletme ≤ kestirim ≤ 4 × işletme (iki eksen, iki kol)
+OK  F1 FOG gecikmesi: DRR ve faz payı
+     beklenen: |DRR| model; ΔPM = 14.563°, f_c değişmez
+     elde:     en büyük fark 0.176 dB; ΔPM 14.563° (PM 52.35° → 37.79°), f_c farkı 3.331e-14 %
+     ölçüt:    DRR ±0,25 dB (D1 ile aynı); ΔPM ±0,01°; f_c ≤ %0,01
+OK  F2 FOG ölçek hatası: bozucu bastırma ve dönüş
+     beklenen: (a) -0.0087 dB; (b) S_f = 100 ppm: -17.45 µrad; + S_nl = 50 ppm·FS, FS = 300 °/s: -4.53 µrad
+     elde:     (a) -0.0087 / -0.0087 dB; (b) -17.48 / -4.54 µrad
+     ölçüt:    (a) |Δ| ≤ 0,05 dB; (b) ±%5 ya da ±0,3 µrad
+OK  F3 Gyro eksen kaçıklığı: LOS etrafındaki dönmenin sızması
+     beklenen: 5.2361 µrad (≈ ε·θ = 5.2360; RMS εθ/√2 = 3.702)
+     elde:     5.2343 µrad
+     ölçüt:    ±%1
+OK  F4 FOG sıcaklık katsayısı, doyma, g-duyarlılığı
+     beklenen: (a) 1.6968 µrad/s; (b) doyum > 0 / = 0; (c) 78.954 nrad
+     elde:     (a) el 1.6967 / xel 1.6967 µrad/s; (b) 25741 / 0 örnek, tepe 728.4 °/s; (c) 79.040 nrad
+     ölçüt:    (a) ±%0,5; (b) doyum yalnız dar menzilde; (c) ±%2
+OK  G1 Proje metrik motoru: Gauss gürültü ve saf ton
+     beklenen: (a) σ 2.000, σ_vek 2.828, P99,73 3σ = 6.000, radyal √(−2 ln 0,0027)·σ = 6.879; bantlar σ·√(Δf/f_N) = 0.098 / 0.265 / 0.566 / 1.265; ton yok · (b) σ = A/√2 = 2.121, PPV 2A = 6.000, P99,73 A·sin(0,9973·π/2) = 3.000, pozlama (A/√2)·√(1 − sinc²(πfT_e)) = 0.280 µrad; tek ton 7,3 Hz, 2,5–20 Hz bandında
+     elde:     (a) σ 1.999 / 2.000, σ_vek 2.827, P99,73 5.994 / 6.008, radyal 6.876; bantlar 0.098 / 0.266 / 0.566 / 1.266; 0 ton · (b) σ 2.121, PPV 6.016 (PPV/σ 2.836), P99,73 3.004, pozlama 0.280 (zaman alanı 0.280); ton 7.294 Hz 2.121
+     ölçüt:    (a) σ ve yüzdelikler ±%1, bantlar ±%5, bant toplamı = toplam, ton yok; (b) ±%0,5, ton frekansı ±1 kutu
+OK  G2 Sıfır fazlı yüksek geçiren (0,1 Hz)
+     beklenen: |H|² = r⁴/(1 + r⁴), r = tan(πf/f_s)/tan(πf_c/f_s): 0,1 Hz'de 0,5 (−6,02 dB), 0,3 Hz'de 0.9878; faz 0
+     elde:     en büyük göreli fark 1.6e-9, en büyük faz 2.303e-10°
+     ölçüt:    ±%0,2; |faz| ≤ 0,05°
+OK  G3 Dış kamera takip döngüsü: duyarlılık |S(f)|
+     beklenen: |S| analitik; tepe 9.33 dB @ 3.46 Hz, |S| = 1 @ 1.69 Hz
+     elde:     0.30 Hz: -25.28 (-25.26) dB · 1.00 Hz: -7.39 (-7.09) dB · 2.00 Hz: 2.03 (2.48) dB · 3.46 Hz: 9.34 (9.33) dB · 6.00 Hz: 4.02 (3.51) dB; kilit kaybı 0
+     ölçüt:    ±0,6 dB (örneklemeli döngünün sürekli yaklaşımı); tepede ±0,3 dB
+OK  G4 Pozlama içi jitter: zaman alanı ↔ PSD
+     beklenen: (a) σ·√(1 − 1/N) = 1.9494; (b) (A/√2)·√(1 − sinc²) = 1.0801; (c) PSD = faz ortalaması 1.0906, zaman alanı faza bağlı 0.6155…1.4142 µrad
+     elde:     (a) zaman 1.9466, PSD 1.9511; (b) 1.0793 / 1.0801; (c) zaman 0.6209…1.4107 (fazlar üzerinden karesel ortalama 1.0898), PSD 1.0906…1.0906 µrad
+     ölçüt:    ±%1
+
+63/63 doğrulama geçti (98 s)

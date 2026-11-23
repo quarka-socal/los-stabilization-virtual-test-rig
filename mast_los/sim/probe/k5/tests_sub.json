@@ -1,0 +1,3271 @@
+[
+ {
+  "id": "S0",
+  "nm": "Varsayılan",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 5.477225575051661,
+   "nCand": 9,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "38; üst sınır roll→el ≤ -49.1 dB @ 5.37 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.19 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.00 → ON 2.10 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000020999333752169015
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±2.33 mm (0.25 m/s²)",
+     "OFF el 12.23 / xel 0.14 µrad · ON el 1.20 / xel 0.07 µrad (açısal DRR karşılığı -54.2 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 15.08 / xel 0.24 µrad · ON el 1.57 / xel 0.08 µrad (açısal DRR karşılığı -51.9 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.77 / xel 0.41 µrad · ON el 1.75 / xel 0.12 µrad (açısal DRR karşılığı -50.9 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.07 / xel 0.65 µrad · ON el 2.08 / xel 0.12 µrad (açısal DRR karşılığı -49.5 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²)",
+     "OFF el 21.00 / xel 0.76 µrad · ON el 2.10 / xel 0.06 µrad (açısal DRR karşılığı -49.4 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.48 / xel 0.89 µrad · ON el 2.22 / xel 0.14 µrad (açısal DRR karşılığı -48.9 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.75 / xel 1.37 µrad · ON el 2.66 / xel 0.07 µrad (açısal DRR karşılığı -47.3 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.25 / xel 2.01 µrad · ON el 2.96 / xel 0.21 µrad (açısal DRR karşılığı -46.4 dB)"
+    ],
+    [
+     "5.48 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (2.76 m/s²)",
+     "OFF el 32.38 / xel 2.43 µrad · ON el 3.19 / xel 0.26 µrad (açısal DRR karşılığı -45.7 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.34 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.89 / xel 0.78 · video − ayna el 0.12 / xel 0.07 → ON: ayna el 2.06 / xel 0.11 · video − ayna el 0.06 / xel 0.05"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.4 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.03 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.65 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.52 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.653241563640042,
+   "xel": 0.07270804567832535
+  }
+ },
+ {
+  "id": "S1",
+  "nm": "D = 0,40 m",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.543332,
+   "fHi": 3.086664,
+   "nCand": 6,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.54–3.09 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "26"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.13 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.00 → ON 2.13 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000021284804486744303
+   },
+   "kv": [
+    [
+     "1.54 Hz · θ 0.050° · öteleme ±2.33 mm (0.22 m/s²)",
+     "OFF el 11.50 / xel 0.16 µrad · ON el 1.13 / xel 0.04 µrad (açısal DRR karşılığı -54.7 dB)"
+    ],
+    [
+     "1.80 Hz · θ 0.050° · öteleme ±2.33 mm (0.30 m/s²)",
+     "OFF el 13.30 / xel 0.21 µrad · ON el 1.43 / xel 0.04 µrad (açısal DRR karşılığı -52.7 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 15.13 / xel 0.29 µrad · ON el 1.48 / xel 0.09 µrad (açısal DRR karşılığı -52.4 dB)"
+    ],
+    [
+     "2.57 Hz · θ 0.050° · öteleme ±2.33 mm (0.61 m/s²)",
+     "OFF el 18.24 / xel 0.47 µrad · ON el 1.77 / xel 0.14 µrad (açısal DRR karşılığı -50.8 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²)",
+     "OFF el 21.00 / xel 0.76 µrad · ON el 2.13 / xel 0.10 µrad (açısal DRR karşılığı -49.2 dB)"
+    ],
+    [
+     "3.09 Hz · θ 0.050° · öteleme ±2.33 mm (0.88 m/s²)",
+     "OFF el 21.34 / xel 0.80 µrad · ON el 2.11 / xel 0.09 µrad (açısal DRR karşılığı -49.3 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.48 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.89 / xel 0.78 · video − ayna el 0.12 / xel 0.07 → ON: ayna el 1.98 / xel 0.11 · video − ayna el 0.17 / xel 0.06"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.4 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz (zarfta erişilmez: en yüksek hızda f_v·(1 + pay) 3.70 Hz < f_n,vak 4.06 Hz; aday değil) · hız zarfı 2.0–12.0 kn (K0 0.17–1.03)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.03 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.65 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.52 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.653241563640042,
+   "xel": 0.07270804567832535
+  }
+ },
+ {
+  "id": "S2",
+  "nm": "St = 0,25 (transkritik)",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.543332,
+   "fHi": 6.173328,
+   "nCand": 10,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "AŞIM",
+   "measured": "VIV bandında (1.54–6.17 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -33.7 dB @ 6.10 Hz (gerekli -40.2 dB); yaw→xel -32.7 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "28"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "48; üst sınır roll→el ≤ -37.5 dB @ 5.98 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "AŞIM",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 35.08 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.71 → ON 2.10 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000020999333752169015
+   },
+   "kv": [
+    [
+     "1.54 Hz · θ 0.050° · öteleme ±2.33 mm (0.22 m/s²)",
+     "OFF el 11.50 / xel 0.16 µrad · ON el 1.22 / xel 0.07 µrad (açısal DRR karşılığı -54.1 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 15.08 / xel 0.24 µrad · ON el 1.51 / xel 0.10 µrad (açısal DRR karşılığı -52.2 dB)"
+    ],
+    [
+     "2.57 Hz · θ 0.050° · öteleme ±2.33 mm (0.61 m/s²)",
+     "OFF el 18.32 / xel 0.42 µrad · ON el 1.99 / xel 0.03 µrad (açısal DRR karşılığı -49.8 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²)",
+     "OFF el 20.71 / xel 0.66 µrad · ON el 2.10 / xel 0.06 µrad (açısal DRR karşılığı -49.4 dB)"
+    ],
+    [
+     "3.09 Hz · θ 0.050° · öteleme ±2.33 mm (0.88 m/s²)",
+     "OFF el 21.42 / xel 0.77 µrad · ON el 2.07 / xel 0.04 µrad (açısal DRR karşılığı -49.5 dB)"
+    ],
+    [
+     "3.60 Hz · θ 0.050° · öteleme ±2.33 mm (1.19 m/s²)",
+     "OFF el 24.07 / xel 1.03 µrad · ON el 2.39 / xel 0.12 µrad (açısal DRR karşılığı -48.2 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.75 / xel 1.37 µrad · ON el 2.64 / xel 0.19 µrad (açısal DRR karşılığı -47.4 dB)"
+    ],
+    [
+     "5.14 Hz · θ 0.050° · öteleme ±2.33 mm (2.43 m/s²)",
+     "OFF el 31.04 / xel 2.10 µrad · ON el 3.10 / xel 0.22 µrad (açısal DRR karşılığı -46.0 dB)"
+    ],
+    [
+     "5.48 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (2.76 m/s²)",
+     "OFF el 32.38 / xel 2.43 µrad · ON el 3.12 / xel 0.24 µrad (açısal DRR karşılığı -45.9 dB)"
+    ],
+    [
+     "6.17 Hz · θ 0.050° · öteleme ±2.33 mm (3.50 m/s²)",
+     "OFF el 34.74 / xel 2.93 µrad · ON el 35.08 / xel 3.16 µrad (açısal DRR karşılığı -24.9 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.34 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.92 / xel 0.74 · video − ayna el 0.24 / xel 0.08 → ON: ayna el 2.06 / xel 0.11 · video − ayna el 0.06 / xel 0.05"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bandın DIŞINDAKİ dwell frekansları 6.17 Hz (ON = OFF)"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.5 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz · hız zarfı 2.0–12.0 kn (K0 0.34–2.06)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.03 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.65 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.52 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.653241563640042,
+   "xel": 0.07270804567832535
+  }
+ },
+ {
+  "id": "S3",
+  "nm": "f_n = 2 Hz",
+  "an": {
+   "A": 0.05,
+   "f": 2,
+   "H": -40,
+   "present": true,
+   "fLo": 1.2346656,
+   "fHi": 4.9386624,
+   "nCand": 10,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 2.5330295910584444
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.23–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "26"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "34; üst sınır roll→el ≤ -51.5 dB @ 4.88 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.89 µrad RMS (tahsis 6.0); f_n = 2.00 Hz'de OFF 14.65 → ON 1.48 µrad; yalnız açısal uyarımla 1.55 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000014837624610335185
+   },
+   "kv": [
+    [
+     "1.23 Hz · θ 0.050° · öteleme ±2.33 mm (0.14 m/s²)",
+     "OFF el 9.08 / xel 0.09 µrad · ON el 0.90 / xel 0.06 µrad (açısal DRR karşılığı -56.8 dB)"
+    ],
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±2.33 mm (0.25 m/s²)",
+     "OFF el 12.38 / xel 0.13 µrad · ON el 1.31 / xel 0.08 µrad (açısal DRR karşılığı -53.5 dB)"
+    ],
+    [
+     "2.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.37 m/s²)",
+     "OFF el 14.65 / xel 0.30 µrad · ON el 1.48 / xel 0.10 µrad (açısal DRR karşılığı -52.4 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 15.25 / xel 0.27 µrad · ON el 1.54 / xel 0.03 µrad (açısal DRR karşılığı -52.0 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.72 / xel 0.49 µrad · ON el 1.84 / xel 0.04 µrad (açısal DRR karşılığı -50.5 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.10 / xel 0.68 µrad · ON el 2.07 / xel 0.02 µrad (açısal DRR karşılığı -49.5 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.52 / xel 0.87 µrad · ON el 2.24 / xel 0.10 µrad (açısal DRR karşılığı -48.8 dB)"
+    ],
+    [
+     "3.65 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (1.22 m/s²)",
+     "OFF el 24.25 / xel 1.14 µrad · ON el 2.47 / xel 0.08 µrad (açısal DRR karşılığı -48.0 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.71 / xel 1.40 µrad · ON el 2.62 / xel 0.13 µrad (açısal DRR karşılığı -47.5 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.31 / xel 1.90 µrad · ON el 2.89 / xel 0.19 µrad (açısal DRR karşılığı -46.6 dB)"
+    ],
+    [
+     "2.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 1.55 / xel 0.08 µrad → öteleme yolu karesel 0.00 µrad"
+    ],
+    [
+     "2.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 14.59 / xel 0.32 · video − ayna el 0.07 / xel 0.08 → ON: ayna el 1.44 / xel 0.04 · video − ayna el 0.04 / xel 0.09"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 2 Hz",
+     "-45.2 dB; ölçülen (OFF, açısal + öteleme) -32.5 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 2.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.367 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 3.65 Hz · hız zarfı 2.0–12.0 kn (K0 0.41–2.47)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.60 µrad; ayrı testlerin RSS'i 6.89 µrad → sapma -4.2 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 2.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "1.41 µrad"
+    ],
+    [
+     "RSS",
+     "6.89 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.60 µrad"
+    ],
+    [
+     "Sapma",
+     "-4.19 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.35717037591709827,
+   "xel": 0.02743490825145995
+  }
+ },
+ {
+  "id": "S4",
+  "nm": "f_n = 5 Hz",
+  "an": {
+   "A": 0.05,
+   "f": 5,
+   "H": -40,
+   "present": true,
+   "fLo": 2.4693312,
+   "fHi": 5,
+   "nCand": 6,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 0.4052847345693511
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (2.47–5.00 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "10"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "30; üst sınır roll→el ≤ -51.5 dB @ 4.88 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.01 µrad RMS (tahsis 6.0); f_n = 5.00 Hz'de OFF 30.50 → ON 2.95 µrad; yalnız açısal uyarımla 2.89 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000029470975524556403
+   },
+   "kv": [
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.71 / xel 0.53 µrad · ON el 1.81 / xel 0.06 µrad (açısal DRR karşılığı -50.6 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.21 / xel 0.59 µrad · ON el 2.12 / xel 0.06 µrad (açısal DRR karşılığı -49.3 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.38 / xel 0.88 µrad · ON el 2.21 / xel 0.04 µrad (açısal DRR karşılığı -48.9 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.41 / xel 1.42 µrad · ON el 2.56 / xel 0.09 µrad (açısal DRR karşılığı -47.7 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.32 / xel 2.00 µrad · ON el 3.01 / xel 0.21 µrad (açısal DRR karşılığı -46.2 dB)"
+    ],
+    [
+     "5.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (2.30 m/s²)",
+     "OFF el 30.50 / xel 2.09 µrad · ON el 2.95 / xel 0.21 µrad (açısal DRR karşılığı -46.4 dB)"
+    ],
+    [
+     "5.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.89 / xel 0.00 µrad → öteleme yolu karesel 0.59 µrad"
+    ],
+    [
+     "5.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 30.49 / xel 2.10 · video − ayna el 0.07 / xel 0.01 → ON: ayna el 2.85 / xel 0.19 · video − ayna el 0.11 / xel 0.03"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 5 Hz",
+     "-35.2 dB; ölçülen (OFF, açısal + öteleme) -26.1 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 5.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 2.297 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 9.13 Hz (zarfta erişilmez: en yüksek hızda f_v·(1 + pay) 5.93 Hz < f_n,vak 6.77 Hz; aday değil) · hız zarfı 2.0–12.0 kn (K0 0.16–0.99)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.81 µrad; ayrı testlerin RSS'i 7.33 µrad → sapma -7.0 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 5.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.86 µrad"
+    ],
+    [
+     "RSS",
+     "7.33 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.81 µrad"
+    ],
+    [
+     "Sapma",
+     "-7.02 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 1.2004200960295655,
+   "xel": 0.20354691904940644
+  }
+ },
+ {
+  "id": "S5",
+  "nm": "f_n = 8 Hz",
+  "an": {
+   "A": 0.05,
+   "f": 8,
+   "H": -40,
+   "present": true,
+   "fLo": 4.115552,
+   "fHi": 8,
+   "nCand": 3,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 0.15831434944115277
+  },
+  "T2.1": {
+   "status": "AŞIM",
+   "measured": "VIV bandında (4.12–8.00 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -28.1 dB @ 7.93 Hz (gerekli -40.2 dB); yaw→xel -26.8 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "32"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "32; üst sınır roll→el ≤ -37.5 dB @ 5.98 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "AŞIM",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 40.53 µrad RMS (tahsis 6.0); f_n = 8.00 Hz'de OFF 40.19 → ON 40.53 µrad; yalnız açısal uyarımla 33.28 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.00004053191418119642
+   },
+   "kv": [
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.61 / xel 1.37 µrad · ON el 2.76 / xel 0.19 µrad (açısal DRR karşılığı -47.0 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.25 / xel 1.78 µrad · ON el 2.86 / xel 0.16 µrad (açısal DRR karşılığı -46.7 dB)"
+    ],
+    [
+     "8.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (5.88 m/s²)",
+     "OFF el 40.19 / xel 4.45 µrad · ON el 40.53 / xel 4.66 µrad (açısal DRR karşılığı -23.7 dB)"
+    ],
+    [
+     "8.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 33.28 / xel 0.04 µrad → öteleme yolu karesel 23.13 µrad"
+    ],
+    [
+     "8.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 39.99 / xel 4.67 · video − ayna el 0.24 / xel 0.23 → ON: ayna el 40.31 / xel 4.74 · video − ayna el 0.24 / xel 0.09"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bandın DIŞINDAKİ dwell frekansları 8.00 Hz (ON = OFF)"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 8 Hz",
+     "-32.4 dB; ölçülen (OFF, açısal + öteleme) -23.7 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 8.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 5.880 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 14.61 Hz (zarfta erişilmez: en yüksek hızda f_v·(1 + pay) 5.93 Hz < f_n,vak 10.83 Hz; aday değil) · hız zarfı 2.0–12.0 kn (K0 0.10–0.62)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "AŞIM",
+   "measured": "Kombine artık 33.63 µrad; ayrı testlerin RSS'i 40.97 µrad → sapma -17.9 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 8.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "40.42 µrad"
+    ],
+    [
+     "RSS",
+     "40.97 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "33.63 µrad"
+    ],
+    [
+     "Sapma",
+     "-17.92 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 18.349172401635897,
+   "xel": 4.969457174079282
+  }
+ },
+ {
+  "id": "S12",
+  "nm": "f_n = 12 Hz (riskli hız yok)",
+  "an": {
+   "A": 0.05,
+   "f": 12,
+   "H": -40,
+   "present": false,
+   "fLo": 11.875,
+   "fHi": 12.125,
+   "nCand": 1,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 0.0703619330849568
+  },
+  "T2.1": {
+   "status": "BİLGİ",
+   "measured": "İşletme hız zarfında (2.0–12.0 kn) riskli ya da sınırda hız yok: K0 0.07–0.41, tarama bandı (paylı) 0.48–4.38; VIV oluşmaz, B2-01 = 0. Bant kabulü uygulanmaz, değerler bilgi amaçlı. VIV bandında (11.88–12.13 Hz; taramada riskli hız yok, yalnız f_n çevresi) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -25.1 dB @ 12.08 Hz (gerekli -40.2 dB); yaw→xel -23.5 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "— (VIV yok)"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "4"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "BİLGİ",
+   "measured": "İşletme hız zarfında (2.0–12.0 kn) riskli ya da sınırda hız yok: K0 0.07–0.41, tarama bandı (paylı) 0.48–4.38; VIV oluşmaz, B2-01 = 0. Dwell uygulanmaz; bütçeye ölçüm aktarılmaz.",
+   "fill": {},
+   "kv": []
+  },
+  "T2.3": {
+   "status": "BİLGİ",
+   "measured": "İşletme hız zarfında (2.0–12.0 kn) riskli ya da sınırda hız yok: K0 0.07–0.41, tarama bandı (paylı) 0.48–4.38; VIV oluşmaz, B2-01 = 0. Deniz profili + VIV doğrusallık sınaması uygulanmaz.",
+   "fill": {},
+   "kv": []
+  },
+  "op": {
+   "el": 4.7758438036560824e-8,
+   "xel": 4.317394070924395e-8
+  }
+ },
+ {
+  "id": "S6",
+  "nm": "Genlik 0,10°",
+  "an": {
+   "A": 0.1,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 5.477225575051661,
+   "nCand": 9,
+   "est": 12.341341494884352,
+   "req": -46.26422238750387,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -46.3 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,1° → 6 µrad)",
+     "-46.26 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "38; üst sınır roll→el ≤ -49.1 dB @ 5.37 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 5.33 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 34.29 → ON 3.39 µrad; yalnız açısal uyarımla 3.39 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000033939675722693316
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 0.100° · öteleme ±4.65 mm (0.50 m/s²)",
+     "OFF el 19.15 / xel 0.30 µrad · ON el 1.90 / xel 0.06 µrad (açısal DRR karşılığı -56.2 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.100° · öteleme ±4.65 mm (0.78 m/s²)",
+     "OFF el 23.93 / xel 0.50 µrad · ON el 2.48 / xel 0.11 µrad (açısal DRR karşılığı -53.9 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.100° · öteleme ±4.65 mm (1.12 m/s²)",
+     "OFF el 28.67 / xel 0.84 µrad · ON el 2.82 / xel 0.15 µrad (açısal DRR karşılığı -52.8 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.100° · öteleme ±4.65 mm (1.52 m/s²)",
+     "OFF el 33.14 / xel 1.28 µrad · ON el 3.36 / xel 0.19 µrad (açısal DRR karşılığı -51.3 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.100° · öteleme ±4.65 mm (1.65 m/s²)",
+     "OFF el 34.29 / xel 1.48 µrad · ON el 3.39 / xel 0.13 µrad (açısal DRR karşılığı -51.2 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.100° · öteleme ±4.65 mm (1.99 m/s²)",
+     "OFF el 37.21 / xel 1.77 µrad · ON el 3.63 / xel 0.23 µrad (açısal DRR karşılığı -50.6 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.100° · öteleme ±4.65 mm (3.12 m/s²)",
+     "OFF el 44.71 / xel 2.76 µrad · ON el 4.37 / xel 0.20 µrad (açısal DRR karşılığı -49.0 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.100° · öteleme ±4.65 mm (4.48 m/s²)",
+     "OFF el 51.01 / xel 4.02 µrad · ON el 4.91 / xel 0.41 µrad (açısal DRR karşılığı -48.0 dB)"
+    ],
+    [
+     "5.48 Hz (alt dal f*·f_n) · θ 0.100° · öteleme ±4.65 mm (5.52 m/s²)",
+     "OFF el 54.87 / xel 4.85 µrad · ON el 5.33 / xel 0.50 µrad (açısal DRR karşılığı -47.3 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 3.39 / xel 0.08 µrad → öteleme yolu karesel 0.00 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 34.22 / xel 1.50 · video − ayna el 0.07 / xel 0.07 → ON: ayna el 3.36 / xel 0.18 · video − ayna el 0.10 / xel 0.05"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -31.1 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.100° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±4.65 mm (L = 4 m, κ = 1.5), 1.654 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 7.37 µrad; ayrı testlerin RSS'i 7.50 µrad → sapma -1.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "3.28 µrad"
+    ],
+    [
+     "RSS",
+     "7.50 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "7.37 µrad"
+    ],
+    [
+     "Sapma",
+     "-1.72 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 1.3064840744271486,
+   "xel": 0.14541588761519833
+  }
+ },
+ {
+  "id": "S11",
+  "nm": "Genlik 1,5°",
+  "an": {
+   "A": 1.5,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 5.477225575051661,
+   "nCand": 9,
+   "est": 185.12012242326526,
+   "req": -69.78604756861749,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "AŞIM",
+   "measured": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -69.8 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 1,5° → 6 µrad)",
+     "-69.79 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "38; üst sınır roll→el ≤ -49.1 dB @ 5.37 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "GEÇERSİZ",
+   "measured": "Hexapod erişimi VIV uyarımını 2.88, 3.00, 3.29, 4.12, 4.94, 5.48 Hz'de küçültüyor (θ/ω/α ya da öteleme stroku): sonuç GEÇERSİZ. Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 17.51 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 174.23 → ON 17.12 µrad; yalnız açısal uyarımla 16.08 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.000017121829138239936
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 1.500° · öteleme ±69.81 mm (7.50 m/s²)",
+     "OFF el 94.74 / xel 4.91 µrad · ON el 9.51 / xel 0.38 µrad (açısal DRR karşılığı -65.8 dB)"
+    ],
+    [
+     "2.06 Hz · θ 1.500° · öteleme ±69.81 mm (11.70 m/s²)",
+     "OFF el 132.48 / xel 8.01 µrad · ON el 13.34 / xel 0.90 µrad (açısal DRR karşılığı -62.8 dB)"
+    ],
+    [
+     "2.47 Hz · θ 1.500° · öteleme ±69.81 mm (16.81 m/s²)",
+     "OFF el 172.40 / xel 13.34 µrad · ON el 17.07 / xel 1.36 µrad (açısal DRR karşılığı -60.7 dB)"
+    ],
+    [
+     "2.88 Hz · θ 1.222° · öteleme ±56.85 mm (18.62 m/s²) (hexapod erişimiyle sınırlı)",
+     "OFF el 177.22 / xel 15.86 µrad · ON el 17.51 / xel 1.62 µrad (açısal DRR karşılığı -58.7 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 1.126° · öteleme ±52.40 mm (18.62 m/s²) (hexapod erişimiyle sınırlı)",
+     "OFF el 174.23 / xel 16.14 µrad · ON el 17.12 / xel 1.60 µrad (açısal DRR karşılığı -58.2 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.936° · öteleme ±43.57 mm (18.62 m/s²) (hexapod erişimiyle sınırlı)",
+     "OFF el 167.01 / xel 16.50 µrad · ON el 16.28 / xel 1.68 µrad (açısal DRR karşılığı -57.0 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.597° · öteleme ±27.78 mm (18.62 m/s²) (hexapod erişimiyle sınırlı)",
+     "OFF el 149.37 / xel 17.03 µrad · ON el 14.35 / xel 1.58 µrad (açısal DRR karşılığı -54.2 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.415° · öteleme ±19.32 mm (18.62 m/s²) (hexapod erişimiyle sınırlı)",
+     "OFF el 134.39 / xel 17.01 µrad · ON el 12.70 / xel 1.64 µrad (açısal DRR karşılığı -52.1 dB)"
+    ],
+    [
+     "5.48 Hz (alt dal f*·f_n) · θ 0.337° · öteleme ±15.70 mm (18.62 m/s²) (hexapod erişimiyle sınırlı)",
+     "OFF el 125.61 / xel 16.77 µrad · ON el 11.84 / xel 1.62 µrad (açısal DRR karşılığı -50.9 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 16.08 / xel 0.10 µrad → öteleme yolu karesel 5.89 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 174.20 / xel 16.16 · video − ayna el 0.83 / xel 0.07 → ON: ayna el 17.16 / xel 1.64 · video − ayna el 0.90 / xel 0.06"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -38.0 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 1.500° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±69.81 mm (L = 4 m, κ = 1.5), 24.805 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "GEÇERSİZ",
+   "measured": "Deniz profili + VIV tonu hexapodun θ/ω/α sınırlarını aşıyor (aşım süresi oranı %2.0): sonuç GEÇERSİZ. Kombine artık 21.54 µrad; ayrı testlerin RSS'i 18.30 µrad → sapma 17.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "17.01 µrad"
+    ],
+    [
+     "RSS",
+     "18.30 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "21.54 µrad"
+    ],
+    [
+     "Sapma",
+     "17.72 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 19.601283511962837,
+   "xel": 2.18032703844586
+  }
+ },
+ {
+  "id": "S7",
+  "nm": "K0 üst sınırı 2,7",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 5.477225575051661,
+   "nCand": 9,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "38; üst sınır roll→el ≤ -49.1 dB @ 5.37 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.19 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.00 → ON 2.10 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000020999333752169015
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±2.33 mm (0.25 m/s²)",
+     "OFF el 12.23 / xel 0.14 µrad · ON el 1.20 / xel 0.07 µrad (açısal DRR karşılığı -54.2 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 15.08 / xel 0.24 µrad · ON el 1.57 / xel 0.08 µrad (açısal DRR karşılığı -51.9 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.77 / xel 0.41 µrad · ON el 1.75 / xel 0.12 µrad (açısal DRR karşılığı -50.9 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.07 / xel 0.65 µrad · ON el 2.08 / xel 0.12 µrad (açısal DRR karşılığı -49.5 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²)",
+     "OFF el 21.00 / xel 0.76 µrad · ON el 2.10 / xel 0.06 µrad (açısal DRR karşılığı -49.4 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.48 / xel 0.89 µrad · ON el 2.22 / xel 0.14 µrad (açısal DRR karşılığı -48.9 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.75 / xel 1.37 µrad · ON el 2.66 / xel 0.07 µrad (açısal DRR karşılığı -47.3 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.25 / xel 2.01 µrad · ON el 2.96 / xel 0.21 µrad (açısal DRR karşılığı -46.4 dB)"
+    ],
+    [
+     "5.48 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (2.76 m/s²)",
+     "OFF el 32.38 / xel 2.43 µrad · ON el 3.19 / xel 0.26 µrad (açısal DRR karşılığı -45.7 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.34 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.89 / xel 0.78 · video − ayna el 0.12 / xel 0.07 → ON: ayna el 2.06 / xel 0.11 · video − ayna el 0.06 / xel 0.05"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.4 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 4.93, alt dal 5.48 Hz · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.03 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.65 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.52 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.653241563640042,
+   "xel": 0.07270804567832535
+  }
+ },
+ {
+  "id": "S8",
+  "nm": "Tarama payı 0",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 2.057776,
+   "fHi": 5.477225575051661,
+   "nCand": 8,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (2.06–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "18"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "38; üst sınır roll→el ≤ -49.1 dB @ 5.37 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.11 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.71 → ON 1.99 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000019896788795764147
+   },
+   "kv": [
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 14.94 / xel 0.40 µrad · ON el 1.48 / xel 0.09 µrad (açısal DRR karşılığı -52.4 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.69 / xel 0.41 µrad · ON el 1.71 / xel 0.05 µrad (açısal DRR karşılığı -51.2 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.16 / xel 0.65 µrad · ON el 2.14 / xel 0.06 µrad (açısal DRR karşılığı -49.2 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²)",
+     "OFF el 20.71 / xel 0.66 µrad · ON el 1.99 / xel 0.09 µrad (açısal DRR karşılığı -49.8 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.56 / xel 0.89 µrad · ON el 2.33 / xel 0.11 µrad (açısal DRR karşılığı -48.5 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.66 / xel 1.48 µrad · ON el 2.56 / xel 0.12 µrad (açısal DRR karşılığı -47.7 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.26 / xel 1.99 µrad · ON el 2.87 / xel 0.22 µrad (açısal DRR karşılığı -46.7 dB)"
+    ],
+    [
+     "5.48 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (2.76 m/s²)",
+     "OFF el 32.41 / xel 2.42 µrad · ON el 3.11 / xel 0.23 µrad (açısal DRR karşılığı -46.0 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.00 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.92 / xel 0.74 · video − ayna el 0.24 / xel 0.08 → ON: ayna el 1.98 / xel 0.11 · video − ayna el 0.02 / xel 0.02"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.5 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.03 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.65 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.52 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.653241563640042,
+   "xel": 0.07270804567832535
+  }
+ },
+ {
+  "id": "S13",
+  "nm": "DRR varsayımı −46 dB",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -46,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 5.477225575051661,
+   "nCand": 9,
+   "est": 3.0926614015352776,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "38; üst sınır roll→el ≤ -49.1 dB @ 5.37 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.19 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.00 → ON 2.10 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000020999333752169015
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±2.33 mm (0.25 m/s²)",
+     "OFF el 12.23 / xel 0.14 µrad · ON el 1.20 / xel 0.07 µrad (açısal DRR karşılığı -54.2 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 15.08 / xel 0.24 µrad · ON el 1.57 / xel 0.08 µrad (açısal DRR karşılığı -51.9 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.77 / xel 0.41 µrad · ON el 1.75 / xel 0.12 µrad (açısal DRR karşılığı -50.9 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.07 / xel 0.65 µrad · ON el 2.08 / xel 0.12 µrad (açısal DRR karşılığı -49.5 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²)",
+     "OFF el 21.00 / xel 0.76 µrad · ON el 2.10 / xel 0.06 µrad (açısal DRR karşılığı -49.4 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.48 / xel 0.89 µrad · ON el 2.22 / xel 0.14 µrad (açısal DRR karşılığı -48.9 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.75 / xel 1.37 µrad · ON el 2.66 / xel 0.07 µrad (açısal DRR karşılığı -47.3 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.25 / xel 2.01 µrad · ON el 2.96 / xel 0.21 µrad (açısal DRR karşılığı -46.4 dB)"
+    ],
+    [
+     "5.48 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (2.76 m/s²)",
+     "OFF el 32.38 / xel 2.43 µrad · ON el 3.19 / xel 0.26 µrad (açısal DRR karşılığı -45.7 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.34 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.89 / xel 0.78 · video − ayna el 0.12 / xel 0.07 → ON: ayna el 2.06 / xel 0.11 · video − ayna el 0.06 / xel 0.05"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.4 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.03 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.65 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.52 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.653241563640042,
+   "xel": 0.07270804567832535
+  }
+ },
+ {
+  "id": "S14",
+  "nm": "Mast başı ötelemesi kapalı",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 5.477225575051661,
+   "nCand": 9,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "38; üst sınır roll→el ≤ -49.1 dB @ 5.37 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 2.87 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 19.79 → ON 1.92 µrad",
+   "fill": {
+    "B2-01": 0.000001922055528902285
+   },
+   "kv": [
+    [
+     "1.65 Hz",
+     "OFF 11.99 µrad (DRR -34.2 dB) · ON 1.19 µrad (DRR -54.3 dB)"
+    ],
+    [
+     "2.06 Hz",
+     "OFF 14.65 µrad (DRR -32.5 dB) · ON 1.53 µrad (DRR -52.1 dB)"
+    ],
+    [
+     "2.47 Hz",
+     "OFF 16.94 µrad (DRR -31.2 dB) · ON 1.69 µrad (DRR -51.2 dB)"
+    ],
+    [
+     "2.88 Hz",
+     "OFF 19.06 µrad (DRR -30.2 dB) · ON 1.97 µrad (DRR -49.9 dB)"
+    ],
+    [
+     "3.00 Hz",
+     "OFF 19.79 µrad (DRR -29.9 dB) · ON 1.92 µrad (DRR -50.1 dB)"
+    ],
+    [
+     "3.29 Hz",
+     "OFF 21.13 µrad (DRR -29.3 dB) · ON 2.10 µrad (DRR -49.4 dB)"
+    ],
+    [
+     "4.12 Hz",
+     "OFF 24.53 µrad (DRR -28.0 dB) · ON 2.36 µrad (DRR -48.3 dB)"
+    ],
+    [
+     "4.94 Hz",
+     "OFF 27.11 µrad (DRR -27.1 dB) · ON 2.59 µrad (DRR -47.5 dB)"
+    ],
+    [
+     "5.48 Hz",
+     "OFF 28.76 µrad (DRR -26.6 dB) · ON 2.87 µrad (DRR -46.6 dB)"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF) -29.9 dB"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.04 µrad → sapma -5.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz; artık RMS, el)",
+     "2.01 µrad"
+    ],
+    [
+     "RSS",
+     "7.04 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.64 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.66 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.6104084235085466,
+   "xel": 4.186228842218222e-7
+  }
+ },
+ {
+  "id": "S15",
+  "nm": "L = 2 m",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 5.477225575051661,
+   "nCand": 9,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "38; üst sınır roll→el ≤ -49.1 dB @ 5.37 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.01 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.45 → ON 2.05 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.000002045692141110814
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±1.16 mm (0.13 m/s²)",
+     "OFF el 12.10 / xel 0.06 µrad · ON el 1.19 / xel 0.08 µrad (açısal DRR karşılığı -54.3 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±1.16 mm (0.19 m/s²)",
+     "OFF el 14.86 / xel 0.13 µrad · ON el 1.55 / xel 0.07 µrad (açısal DRR karşılığı -52.0 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±1.16 mm (0.28 m/s²)",
+     "OFF el 17.43 / xel 0.21 µrad · ON el 1.72 / xel 0.12 µrad (açısal DRR karşılığı -51.1 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±1.16 mm (0.38 m/s²)",
+     "OFF el 19.59 / xel 0.34 µrad · ON el 2.02 / xel 0.09 µrad (açısal DRR karşılığı -49.7 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±1.16 mm (0.41 m/s²)",
+     "OFF el 20.45 / xel 0.41 µrad · ON el 2.05 / xel 0.03 µrad (açısal DRR karşılığı -49.6 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±1.16 mm (0.50 m/s²)",
+     "OFF el 21.82 / xel 0.45 µrad · ON el 2.16 / xel 0.11 µrad (açısal DRR karşılığı -49.1 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±1.16 mm (0.78 m/s²)",
+     "OFF el 25.68 / xel 0.67 µrad · ON el 2.56 / xel 0.04 µrad (açısal DRR karşılığı -47.6 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±1.16 mm (1.12 m/s²)",
+     "OFF el 28.68 / xel 1.02 µrad · ON el 2.82 / xel 0.12 µrad (açısal DRR karşılığı -46.8 dB)"
+    ],
+    [
+     "5.48 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±1.16 mm (1.38 m/s²)",
+     "OFF el 30.52 / xel 1.23 µrad · ON el 3.01 / xel 0.15 µrad (açısal DRR karşılığı -46.2 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.00 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.34 / xel 0.43 · video − ayna el 0.12 / xel 0.07 → ON: ayna el 2.01 / xel 0.08 · video − ayna el 0.06 / xel 0.05"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.6 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±1.16 mm (L = 2 m, κ = 1.5), 0.413 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.02 µrad → sapma -5.4 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "1.94 µrad"
+    ],
+    [
+     "RSS",
+     "7.02 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.64 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.41 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.626137451280938,
+   "xel": 0.03672661086474904
+  }
+ },
+ {
+  "id": "S16",
+  "nm": "L = 6 m",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 5.477225575051661,
+   "nCand": 9,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "38; üst sınır roll→el ≤ -49.1 dB @ 5.37 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.38 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.56 → ON 2.16 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000021552008279577417
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±3.49 mm (0.38 m/s²)",
+     "OFF el 12.36 / xel 0.21 µrad · ON el 1.21 / xel 0.06 µrad (açısal DRR karşılığı -54.1 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±3.49 mm (0.58 m/s²)",
+     "OFF el 15.30 / xel 0.37 µrad · ON el 1.60 / xel 0.09 µrad (açısal DRR karşılığı -51.7 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±3.49 mm (0.84 m/s²)",
+     "OFF el 18.12 / xel 0.63 µrad · ON el 1.79 / xel 0.13 µrad (açısal DRR karşılığı -50.8 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±3.49 mm (1.14 m/s²)",
+     "OFF el 20.56 / xel 0.96 µrad · ON el 2.13 / xel 0.15 µrad (açısal DRR karşılığı -49.2 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±3.49 mm (1.24 m/s²)",
+     "OFF el 21.56 / xel 1.12 µrad · ON el 2.16 / xel 0.10 µrad (açısal DRR karşılığı -49.1 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±3.49 mm (1.49 m/s²)",
+     "OFF el 23.16 / xel 1.32 µrad · ON el 2.29 / xel 0.18 µrad (açısal DRR karşılığı -48.6 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±3.49 mm (2.34 m/s²)",
+     "OFF el 27.85 / xel 2.06 µrad · ON el 2.77 / xel 0.13 µrad (açısal DRR karşılığı -47.0 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±3.49 mm (3.36 m/s²)",
+     "OFF el 31.90 / xel 3.01 µrad · ON el 3.11 / xel 0.31 µrad (açısal DRR karşılığı -45.9 dB)"
+    ],
+    [
+     "5.48 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±3.49 mm (4.14 m/s²)",
+     "OFF el 34.33 / xel 3.64 µrad · ON el 3.38 / xel 0.38 µrad (açısal DRR karşılığı -45.2 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.59 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 21.44 / xel 1.14 · video − ayna el 0.12 / xel 0.07 → ON: ayna el 2.12 / xel 0.14 · video − ayna el 0.06 / xel 0.05"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.1 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±3.49 mm (L = 6 m, κ = 1.5), 1.240 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.05 µrad → sapma -5.6 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.05 µrad"
+    ],
+    [
+     "RSS",
+     "7.05 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.65 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.63 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.687049210518137,
+   "xel": 0.10868948266558935
+  }
+ },
+ {
+  "id": "S17",
+  "nm": "m* = 10 (ağır mast)",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 4.9386624,
+   "nCand": 9,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "30; üst sınır roll→el ≤ -51.5 dB @ 4.88 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.08 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.00 → ON 2.10 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000020999333752169015
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±2.33 mm (0.25 m/s²)",
+     "OFF el 12.23 / xel 0.14 µrad · ON el 1.20 / xel 0.07 µrad (açısal DRR karşılığı -54.2 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 15.08 / xel 0.24 µrad · ON el 1.57 / xel 0.08 µrad (açısal DRR karşılığı -51.9 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.77 / xel 0.41 µrad · ON el 1.75 / xel 0.12 µrad (açısal DRR karşılığı -50.9 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.07 / xel 0.65 µrad · ON el 2.08 / xel 0.12 µrad (açısal DRR karşılığı -49.5 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²)",
+     "OFF el 21.00 / xel 0.76 µrad · ON el 2.10 / xel 0.06 µrad (açısal DRR karşılığı -49.4 dB)"
+    ],
+    [
+     "3.23 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (0.96 m/s²)",
+     "OFF el 22.10 / xel 0.84 µrad · ON el 2.18 / xel 0.01 µrad (açısal DRR karşılığı -49.0 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.52 / xel 0.87 µrad · ON el 2.33 / xel 0.03 µrad (açısal DRR karşılığı -48.5 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.60 / xel 1.34 µrad · ON el 2.64 / xel 0.19 µrad (açısal DRR karşılığı -47.4 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.29 / xel 1.93 µrad · ON el 3.08 / xel 0.16 µrad (açısal DRR karşılığı -46.0 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.34 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.89 / xel 0.78 · video − ayna el 0.12 / xel 0.07 → ON: ayna el 2.06 / xel 0.11 · video − ayna el 0.06 / xel 0.05"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.4 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · kütle oranı m* = 10: f*_alt = 1.078 → K0 üst 2.16, alt dal 3.23 Hz · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.03 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.65 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.52 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.653241563640042,
+   "xel": 0.07270804567832535
+  }
+ },
+ {
+  "id": "S18",
+  "nm": "m* = 0,5 (< 0,54)",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 4.9386624,
+   "nCand": 8,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "30; üst sınır roll→el ≤ -51.5 dB @ 4.88 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.94 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.00 → ON 2.27 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000022733492029186105
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±2.33 mm (0.25 m/s²)",
+     "OFF el 12.23 / xel 0.14 µrad · ON el 1.24 / xel 0.06 µrad (açısal DRR karşılığı -54.0 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 15.08 / xel 0.24 µrad · ON el 1.40 / xel 0.06 µrad (açısal DRR karşılığı -52.9 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.77 / xel 0.41 µrad · ON el 1.90 / xel 0.05 µrad (açısal DRR karşılığı -50.2 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.07 / xel 0.65 µrad · ON el 2.09 / xel 0.01 µrad (açısal DRR karşılığı -49.4 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²)",
+     "OFF el 21.00 / xel 0.76 µrad · ON el 2.27 / xel 0.04 µrad (açısal DRR karşılığı -48.7 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.48 / xel 0.89 µrad · ON el 2.24 / xel 0.10 µrad (açısal DRR karşılığı -48.8 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.75 / xel 1.37 µrad · ON el 2.60 / xel 0.14 µrad (açısal DRR karşılığı -47.5 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.25 / xel 2.01 µrad · ON el 2.94 / xel 0.20 µrad (açısal DRR karşılığı -46.4 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.93 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.89 / xel 0.78 · video − ayna el 0.12 / xel 0.07 → ON: ayna el 2.03 / xel 0.09 · video − ayna el 0.26 / xel 0.05"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.4 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · kütle oranı m* = 0.5: m* ≤ 0,54, kilitlenme üst sınırı yok · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.03 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.65 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.52 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.653241563640042,
+   "xel": 0.07270804567832535
+  }
+ },
+ {
+  "id": "S19",
+  "nm": "m* kapalı (sabit K0 kuralı)",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 4.9386624,
+   "nCand": 8,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "30; üst sınır roll→el ≤ -51.5 dB @ 4.88 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.94 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.00 → ON 2.27 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000022733492029186105
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±2.33 mm (0.25 m/s²)",
+     "OFF el 12.23 / xel 0.14 µrad · ON el 1.24 / xel 0.06 µrad (açısal DRR karşılığı -54.0 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 15.08 / xel 0.24 µrad · ON el 1.40 / xel 0.06 µrad (açısal DRR karşılığı -52.9 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.77 / xel 0.41 µrad · ON el 1.90 / xel 0.05 µrad (açısal DRR karşılığı -50.2 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.07 / xel 0.65 µrad · ON el 2.09 / xel 0.01 µrad (açısal DRR karşılığı -49.4 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²)",
+     "OFF el 21.00 / xel 0.76 µrad · ON el 2.27 / xel 0.04 µrad (açısal DRR karşılığı -48.7 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.48 / xel 0.89 µrad · ON el 2.24 / xel 0.10 µrad (açısal DRR karşılığı -48.8 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.75 / xel 1.37 µrad · ON el 2.60 / xel 0.14 µrad (açısal DRR karşılığı -47.5 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.25 / xel 2.01 µrad · ON el 2.94 / xel 0.20 µrad (açısal DRR karşılığı -46.4 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.93 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.89 / xel 0.78 · video − ayna el 0.12 / xel 0.07 → ON: ayna el 2.03 / xel 0.09 · video − ayna el 0.26 / xel 0.05"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.4 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.03 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.65 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.52 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.653241563640042,
+   "xel": 0.07270804567832535
+  }
+ },
+ {
+  "id": "S20",
+  "nm": "Hız zarfı 2–4 kn",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 3,
+   "nCand": 2,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.65–3.00 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -59.0 dB @ 2.93 Hz (gerekli -40.2 dB); yaw→xel -58.6 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "22"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.26 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.86 → ON 2.26 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000022587588548765473
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±2.33 mm (0.25 m/s²)",
+     "OFF el 12.23 / xel 0.14 µrad · ON el 1.25 / xel 0.03 µrad (açısal DRR karşılığı -53.9 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²)",
+     "OFF el 20.86 / xel 0.62 µrad · ON el 2.26 / xel 0.04 µrad (açısal DRR karşılığı -48.7 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.90 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.82 / xel 0.77 · video − ayna el 0.05 / xel 0.14 → ON: ayna el 2.08 / xel 0.10 · video − ayna el 0.18 / xel 0.06"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.4 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz (zarfta erişilmez: en yüksek hızda f_v·(1 + pay) 1.98 Hz < f_n,vak 4.06 Hz; aday değil) · hız zarfı 2.0–4.0 kn (K0 0.27–0.55)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.00 µrad"
+    ],
+    [
+     "RSS",
+     "7.03 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.65 µrad"
+    ],
+    [
+     "Sapma",
+     "-5.52 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.653241563640042,
+   "xel": 0.07270804567832535
+  }
+ },
+ {
+  "id": "S21",
+  "nm": "f_n = 2 Hz, m* kapalı (12 kn K0 2,47 eski kuralla Düşük)",
+  "an": {
+   "A": 0.05,
+   "f": 2,
+   "H": -40,
+   "present": true,
+   "fLo": 1.2346656,
+   "fHi": 4.115552,
+   "nCand": 8,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 2.5330295910584444
+  },
+  "T2.1": {
+   "status": "OK",
+   "measured": "VIV bandında (1.23–4.12 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "26"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "20; üst sınır roll→el ≤ -53.9 dB @ 4.03 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "OK",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.66 µrad RMS (tahsis 6.0); f_n = 2.00 Hz'de OFF 14.65 → ON 1.50 µrad; yalnız açısal uyarımla 1.55 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.0000014982946902383906
+   },
+   "kv": [
+    [
+     "1.23 Hz · θ 0.050° · öteleme ±2.33 mm (0.14 m/s²)",
+     "OFF el 9.08 / xel 0.09 µrad · ON el 1.00 / xel 0.04 µrad (açısal DRR karşılığı -55.8 dB)"
+    ],
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±2.33 mm (0.25 m/s²)",
+     "OFF el 12.38 / xel 0.13 µrad · ON el 1.20 / xel 0.07 µrad (açısal DRR karşılığı -54.2 dB)"
+    ],
+    [
+     "2.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.37 m/s²)",
+     "OFF el 14.65 / xel 0.30 µrad · ON el 1.50 / xel 0.08 µrad (açısal DRR karşılığı -52.3 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 15.25 / xel 0.27 µrad · ON el 1.51 / xel 0.10 µrad (açısal DRR karşılığı -52.2 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.72 / xel 0.49 µrad · ON el 1.80 / xel 0.01 µrad (açısal DRR karşılığı -50.7 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.10 / xel 0.68 µrad · ON el 2.08 / xel 0.09 µrad (açısal DRR karşılığı -49.4 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.52 / xel 0.87 µrad · ON el 2.22 / xel 0.14 µrad (açısal DRR karşılığı -48.9 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.60 / xel 1.34 µrad · ON el 2.66 / xel 0.07 µrad (açısal DRR karşılığı -47.3 dB)"
+    ],
+    [
+     "2.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 1.55 / xel 0.08 µrad → öteleme yolu karesel 0.00 µrad"
+    ],
+    [
+     "2.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 14.59 / xel 0.32 · video − ayna el 0.07 / xel 0.08 → ON: ayna el 1.47 / xel 0.05 · video − ayna el 0.04 / xel 0.04"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 2 Hz",
+     "-45.2 dB; ölçülen (OFF, açısal + öteleme) -32.5 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 2.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.367 m/s² · hız zarfı 2.0–12.0 kn (K0 0.41–2.47)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.60 µrad; ayrı testlerin RSS'i 6.89 µrad → sapma -4.2 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 2.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "1.41 µrad"
+    ],
+    [
+     "RSS",
+     "6.89 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.60 µrad"
+    ],
+    [
+     "Sapma",
+     "-4.19 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.35717037591709827,
+   "xel": 0.02743490825145995
+  }
+ },
+ {
+  "id": "S22",
+  "nm": "f_n = 4 Hz (alt dal 7,30 Hz erişilir)",
+  "an": {
+   "A": 0.05,
+   "f": 4,
+   "H": -40,
+   "present": true,
+   "fLo": 2.057776,
+   "fHi": 7.302967433402215,
+   "nCand": 8,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 0.6332573977646111
+  },
+  "T2.1": {
+   "status": "AŞIM",
+   "measured": "VIV bandında (2.06–7.30 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -29.0 dB @ 7.20 Hz (gerekli -40.2 dB); yaw→xel -27.8 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "38"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "48; üst sınır roll→el ≤ -37.5 dB @ 5.98 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "AŞIM",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 38.55 µrad RMS (tahsis 6.0); f_n = 4.00 Hz'de OFF 26.24 → ON 2.68 µrad; yalnız açısal uyarımla 2.58 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.000002684381863482669
+   },
+   "kv": [
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 14.94 / xel 0.40 µrad · ON el 1.48 / xel 0.09 µrad (açısal DRR karşılığı -52.4 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.69 / xel 0.41 µrad · ON el 1.71 / xel 0.05 µrad (açısal DRR karşılığı -51.2 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.16 / xel 0.65 µrad · ON el 2.14 / xel 0.06 µrad (açısal DRR karşılığı -49.2 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.26 / xel 0.89 µrad · ON el 2.20 / xel 0.13 µrad (açısal DRR karşılığı -48.9 dB)"
+    ],
+    [
+     "4.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (1.47 m/s²)",
+     "OFF el 26.24 / xel 1.34 µrad · ON el 2.68 / xel 0.16 µrad (açısal DRR karşılığı -47.2 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.66 / xel 1.48 µrad · ON el 2.56 / xel 0.12 µrad (açısal DRR karşılığı -47.7 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.26 / xel 1.99 µrad · ON el 2.87 / xel 0.22 µrad (açısal DRR karşılığı -46.7 dB)"
+    ],
+    [
+     "7.30 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (4.90 m/s²)",
+     "OFF el 38.44 / xel 3.92 µrad · ON el 38.55 / xel 4.14 µrad (açısal DRR karşılığı -24.1 dB)"
+    ],
+    [
+     "4.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 2.58 / xel 0.03 µrad → öteleme yolu karesel 0.74 µrad"
+    ],
+    [
+     "4.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 26.16 / xel 1.33 · video − ayna el 0.09 / xel 0.03 → ON: ayna el 2.51 / xel 0.10 · video − ayna el 0.19 / xel 0.12"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bandın DIŞINDAKİ dwell frekansları 7.30 Hz (ON = OFF)"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 4 Hz",
+     "-37.1 dB; ölçülen (OFF, açısal + öteleme) -27.4 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 4.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 1.470 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 7.30 Hz · hız zarfı 2.0–12.0 kn (K0 0.21–1.23)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "OK",
+   "measured": "Kombine artık 6.72 µrad; ayrı testlerin RSS'i 7.19 µrad → sapma -6.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.75 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 4.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "2.48 µrad"
+    ],
+    [
+     "RSS",
+     "7.19 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "6.72 µrad"
+    ],
+    [
+     "Sapma",
+     "-6.53 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 0.9269195599639702,
+   "xel": 0.13215401765265283
+  }
+ },
+ {
+  "id": "S10",
+  "nm": "Dar bant kontrol kapalı",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": true,
+   "fLo": 1.6462208,
+   "fHi": 5.477225575051661,
+   "nCand": 9,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "AŞIM",
+   "measured": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -32.0 dB @ 5.37 Hz (gerekli -40.2 dB); yaw→xel -31.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "-40.24 dB"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "62"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "kapalı"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "AŞIM",
+   "measured": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol OFF; el ve xel'in büyüğü): en kötü 32.38 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.00 → ON 2.10 µrad; yalnız açısal uyarımla 19.55 µrad (öteleme payı)",
+   "fill": {
+    "B2-01": 0.000020995284096732665
+   },
+   "kv": [
+    [
+     "1.65 Hz · θ 0.050° · öteleme ±2.33 mm (0.25 m/s²)",
+     "OFF el 12.23 / xel 0.14 µrad · ON el 1.20 / xel 0.07 µrad (açısal DRR karşılığı -54.2 dB)"
+    ],
+    [
+     "2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²)",
+     "OFF el 15.08 / xel 0.24 µrad · ON el 1.57 / xel 0.08 µrad (açısal DRR karşılığı -51.9 dB)"
+    ],
+    [
+     "2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²)",
+     "OFF el 17.77 / xel 0.41 µrad · ON el 1.75 / xel 0.12 µrad (açısal DRR karşılığı -50.9 dB)"
+    ],
+    [
+     "2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²)",
+     "OFF el 20.07 / xel 0.65 µrad · ON el 2.08 / xel 0.12 µrad (açısal DRR karşılığı -49.5 dB)"
+    ],
+    [
+     "3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²)",
+     "OFF el 21.00 / xel 0.76 µrad · ON el 2.10 / xel 0.06 µrad (açısal DRR karşılığı -49.4 dB)"
+    ],
+    [
+     "3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²)",
+     "OFF el 22.48 / xel 0.89 µrad · ON el 2.22 / xel 0.14 µrad (açısal DRR karşılığı -48.9 dB)"
+    ],
+    [
+     "4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²)",
+     "OFF el 26.75 / xel 1.37 µrad · ON el 2.66 / xel 0.07 µrad (açısal DRR karşılığı -47.3 dB)"
+    ],
+    [
+     "4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²)",
+     "OFF el 30.25 / xel 2.01 µrad · ON el 2.96 / xel 0.21 µrad (açısal DRR karşılığı -46.4 dB)"
+    ],
+    [
+     "5.48 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (2.76 m/s²)",
+     "OFF el 32.38 / xel 2.43 µrad · ON el 3.19 / xel 0.26 µrad (açısal DRR karşılığı -45.7 dB)"
+    ],
+    [
+     "3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT",
+     "el 19.55 / xel 0.09 µrad → öteleme yolu karesel 7.65 µrad"
+    ],
+    [
+     "3.00 Hz yol ayrımı (µrad RMS): ayna = gimbal yolu (açısal artık + dengesizlik torku), video − ayna = optik alt montaj",
+     "OFF: ayna el 20.89 / xel 0.78 · video − ayna el 0.12 / xel 0.07 → ON: ayna el 2.06 / xel 0.11 · video − ayna el 0.06 / xel 0.05"
+    ],
+    [
+     "Dar bant kontrol çalışma bandı",
+     "1.2–6 Hz: bütün dwell frekansları bant içinde"
+    ],
+    [
+     "Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz",
+     "-40.0 dB; ölçülen (OFF, açısal + öteleme) -29.4 dB"
+    ],
+    [
+     "Uyarımın kaynağı (senaryo, denizaltı)",
+     "θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)"
+    ],
+    [
+     "Eksenler",
+     "ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda"
+    ]
+   ]
+  },
+  "T2.3": {
+   "status": "AŞIM",
+   "measured": "Kombine artık 13.40 µrad; ayrı testlerin RSS'i 22.00 µrad → sapma -39.1 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "fill": {},
+   "kv": [
+    [
+     "Yalnız deniz profili (wander el)",
+     "6.93 µrad"
+    ],
+    [
+     "Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el)",
+     "20.88 µrad"
+    ],
+    [
+     "RSS",
+     "22.00 µrad"
+    ],
+    [
+     "Kombine (wander el)",
+     "13.40 µrad"
+    ],
+    [
+     "Sapma",
+     "-39.10 %"
+    ],
+    [
+     "Kabul (B1⊕B2 açısal tahsis; B2-06 hariç)",
+     "13.4 µrad"
+    ]
+   ]
+  },
+  "op": {
+   "el": 6.541139156293668,
+   "xel": 0.73535563627569
+  }
+ },
+ {
+  "id": "S9",
+  "nm": "VIV kapalı",
+  "an": {
+   "A": 0.05,
+   "f": 3,
+   "H": -40,
+   "present": false,
+   "fLo": 1.6462208,
+   "fHi": 5.477225575051661,
+   "nCand": 9,
+   "est": 6.170670747442176,
+   "req": -40.243622474224246,
+   "reach": 1.1257909293593087
+  },
+  "T2.1": {
+   "status": "BİLGİ",
+   "measured": "VIV kapalı: VIV bandı kabulü uygulanmaz, değerler bilgi amaçlı. VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "fill": {},
+   "kv": [
+    [
+     "Gerekli DRR (B2-01: 0,05° → 6 µrad)",
+     "— (VIV yok)"
+    ],
+    [
+     "Geçerli nokta sayısı (γ² ≥ 0.8)",
+     "24"
+    ],
+    [
+     "Bantta koherans eşiğinin altında kalan nokta (karara girmez)",
+     "38; üst sınır roll→el ≤ -49.1 dB @ 5.37 Hz (koherans üst sınırı) — bu kısım T2.2 dwell'iyle doğrulanır"
+    ],
+    [
+     "Dar bant (adaptif rezonans) kontrol",
+     "açık, 1.2–6 Hz bandında süpürme frekansını izler (ideal frekans kestirimi)"
+    ],
+    [
+     "Stab OFF ortalama kazanç (1–10 Hz)",
+     "roll -0.00 dB, yaw -0.00 dB"
+    ],
+    [
+     "Rezonans adayları",
+     "yok (1–20 Hz)"
+    ],
+    [
+     "Süpürme",
+     "1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme"
+    ]
+   ]
+  },
+  "T2.2": {
+   "status": "BİLGİ",
+   "measured": "VIV kapalı: VIV dwell testi uygulanmaz; B2-01 = 0 ve bütçeye ölçüm aktarılmaz.",
+   "fill": {},
+   "kv": []
+  },
+  "T2.3": {
+   "status": "BİLGİ",
+   "measured": "VIV kapalı: deniz profili + VIV doğrusallık sınaması uygulanmaz.",
+   "fill": {},
+   "kv": []
+  },
+  "op": {
+   "el": 4.7758438071740856e-8,
+   "xel": 4.3173940751433805e-8
+  }
+ }
+]

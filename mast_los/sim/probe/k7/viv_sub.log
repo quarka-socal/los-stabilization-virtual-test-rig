@@ -1,0 +1,115 @@
+S0 Varsayılan [64 s] | bant 1.65–5.48 Hz (9) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.05 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.08 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.653 / xel 0.073 µrad · bütçeye (T2.2 fill) 2.08 µrad
+S1 D = 0,40 m [27 s] | bant 1.54–3.09 Hz (6) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.54–3.09 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.11 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.11 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.653 / xel 0.073 µrad · bütçeye (T2.2 fill) 2.11 µrad
+S2 St = 0,25 (transkritik) [26 s] | bant 1.54–6.17 Hz (10) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 AŞIM | VIV bandında (1.54–6.17 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -33.7 dB @ 6.10 Hz (gerekli -40.2 dB); yaw→xel -32.7 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 33.01 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.50 → ON 2.08 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.653 / xel 0.073 µrad · bütçeye (T2.2 fill) 2.08 µrad
+S3 f_n = 2 Hz [27 s] | bant 1.23–4.94 Hz (10) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 2.533°
+   T2.1 OK | VIV bandında (1.23–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.79 µrad RMS (tahsis 6.0); f_n = 2.00 Hz'de OFF 14.61 → ON 1.48 µrad; yalnız açısal uyarımla 1.55 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.60 µrad; ayrı testlerin RSS'i 6.89 µrad → sapma -4.2 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.357 / xel 0.027 µrad · bütçeye (T2.2 fill) 1.48 µrad
+S4 f_n = 5 Hz [24 s] | bant 2.47–5.00 Hz (6) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 0.405°
+   T2.1 OK | VIV bandında (2.47–5.00 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.90 µrad RMS (tahsis 6.0); f_n = 5.00 Hz'de OFF 29.35 → ON 2.84 µrad; yalnız açısal uyarımla 2.89 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.78 µrad; ayrı testlerin RSS'i 7.28 µrad → sapma -6.9 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 1.200 / xel 0.204 µrad · bütçeye (T2.2 fill) 2.84 µrad
+S5 f_n = 8 Hz [23 s] | bant 4.12–8.00 Hz (3) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 0.158°
+   T2.1 AŞIM | VIV bandında (4.12–8.00 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -28.1 dB @ 7.93 Hz (gerekli -40.2 dB); yaw→xel -26.8 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 36.48 µrad RMS (tahsis 6.0); f_n = 8.00 Hz'de OFF 36.18 → ON 36.48 µrad; yalnız açısal uyarımla 33.28 µrad (öteleme payı)
+   T2.3 AŞIM | Kombine artık 29.80 µrad; ayrı testlerin RSS'i 37.02 µrad → sapma -19.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 18.349 / xel 4.969 µrad · bütçeye (T2.2 fill) 36.48 µrad
+S12 f_n = 12 Hz (riskli hız yok) [14 s] | bant 11.88–12.13 Hz (1) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 0.070°
+   T2.1 BİLGİ | İşletme hız zarfında (2.0–12.0 kn) riskli ya da sınırda hız yok: K0 0.07–0.41, tarama bandı (paylı) 0.48–4.38; VIV oluşmaz, B2-01 = 0. Bant kabulü uygulanmaz, değerler bilgi amaçlı. VIV bandında (11.88–12.13 Hz; taramada riskli hız yok, yalnız f_n çevresi) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -25.1 dB @ 12.08 Hz (gerekli -40.2 dB); yaw→xel -23.5 dB (bilg
+   T2.2 BİLGİ | İşletme hız zarfında (2.0–12.0 kn) riskli ya da sınırda hız yok: K0 0.07–0.41, tarama bandı (paylı) 0.48–4.38; VIV oluşmaz, B2-01 = 0. Dwell uygulanmaz; bütçeye ölçüm aktarılmaz.
+   T2.3 BİLGİ | İşletme hız zarfında (2.0–12.0 kn) riskli ya da sınırda hız yok: K0 0.07–0.41, tarama bandı (paylı) 0.48–4.38; VIV oluşmaz, B2-01 = 0. Deniz profili + VIV doğrusallık sınaması uygulanmaz.
+   işletme B2-01 el 0.000 / xel 0.000 µrad · bütçeye (T2.2 fill) — µrad
+S6 Genlik 0,10° [26 s] | bant 1.65–5.48 Hz (9) · tahmin 12.34 µrad · gerekli -46.3 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -46.3 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 5.01 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 33.79 → ON 3.35 µrad; yalnız açısal uyarımla 3.39 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 7.36 µrad; ayrı testlerin RSS'i 7.48 µrad → sapma -1.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 1.306 / xel 0.145 µrad · bütçeye (T2.2 fill) 3.35 µrad
+S11 Genlik 1,5° [26 s] | bant 1.65–5.48 Hz (9) · tahmin 185.12 µrad · gerekli -69.8 dB · erişim@f 1.126°
+   T2.1 AŞIM | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -69.8 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 GEÇERSİZ | Hexapod erişimi VIV uyarımını 2.88, 3.00, 3.29, 4.12, 4.94, 5.48 Hz'de küçültüyor (θ/ω/α ya da öteleme stroku): sonuç GEÇERSİZ. Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 16.94 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 167.94 → ON 16.50 µrad; yalnız açısal uyarımla 16.08 µrad (öteleme payı)
+   T2.3 GEÇERSİZ | VIV tonu hexapod erişimiyle küçültüldü (1.500° → 1.126° @ 3.00 Hz); deniz profili + VIV tonu hexapodun θ/ω/α sınırlarını aşıyor (aşım süresi oranı %2.0): sonuç GEÇERSİZ. Kombine artık 21.06 µrad; ayrı testlerin RSS'i 17.72 µrad → sapma 18.8 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 19.601 / xel 2.180 µrad · bütçeye (T2.2 fill) 16.50 µrad
+S7 K0 üst sınırı 2,7 [28 s] | bant 1.65–5.48 Hz (9) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.05 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.08 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.653 / xel 0.073 µrad · bütçeye (T2.2 fill) 2.08 µrad
+S8 Tarama payı 0 [27 s] | bant 2.06–5.48 Hz (8) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (2.06–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.96 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.50 → ON 1.97 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.653 / xel 0.073 µrad · bütçeye (T2.2 fill) 1.97 µrad
+S13 DRR varsayımı −46 dB [27 s] | bant 1.65–5.48 Hz (9) · tahmin 3.09 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.05 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.08 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.653 / xel 0.073 µrad · bütçeye (T2.2 fill) 2.08 µrad
+S14 Mast başı ötelemesi kapalı [27 s] | bant 1.65–5.48 Hz (9) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 2.87 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 19.79 → ON 1.92 µrad
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.04 µrad → sapma -5.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.610 / xel 0.000 µrad · bütçeye (T2.2 fill) 1.92 µrad
+S15 L = 2 m [29 s] | bant 1.65–5.48 Hz (9) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.94 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.33 → ON 2.03 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.01 µrad → sapma -5.4 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.626 / xel 0.037 µrad · bütçeye (T2.2 fill) 2.03 µrad
+S16 L = 6 m [29 s] | bant 1.65–5.48 Hz (9) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.17 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.24 → ON 2.12 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.04 µrad → sapma -5.6 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.687 / xel 0.109 µrad · bütçeye (T2.2 fill) 2.12 µrad
+S17 m* = 10 (ağır mast) [28 s] | bant 1.65–4.94 Hz (9) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.97 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.08 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.653 / xel 0.073 µrad · bütçeye (T2.2 fill) 2.08 µrad
+S18 m* = 0,5 (< 0,54) [26 s] | bant 1.65–4.94 Hz (8) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.84 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.25 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.653 / xel 0.073 µrad · bütçeye (T2.2 fill) 2.25 µrad
+S19 m* kapalı (sabit K0 kuralı) [27 s] | bant 1.65–4.94 Hz (8) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.84 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.25 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.653 / xel 0.073 µrad · bütçeye (T2.2 fill) 2.25 µrad
+S20 Hız zarfı 2–4 kn [23 s] | bant 1.65–3.00 Hz (2) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 OK | VIV bandında (1.65–3.00 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -59.0 dB @ 2.93 Hz (gerekli -40.2 dB); yaw→xel -58.6 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.24 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.65 → ON 2.24 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.653 / xel 0.073 µrad · bütçeye (T2.2 fill) 2.24 µrad
+S21 f_n = 2 Hz, m* kapalı (12 kn K0 2,47 eski kuralla Düşük) [25 s] | bant 1.23–4.12 Hz (8) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 2.533°
+   T2.1 OK | VIV bandında (1.23–4.12 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.60 µrad RMS (tahsis 6.0); f_n = 2.00 Hz'de OFF 14.61 → ON 1.49 µrad; yalnız açısal uyarımla 1.55 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.60 µrad; ayrı testlerin RSS'i 6.89 µrad → sapma -4.2 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.357 / xel 0.027 µrad · bütçeye (T2.2 fill) 1.49 µrad
+S22 f_n = 4 Hz (alt dal 7,30 Hz erişilir) [25 s] | bant 2.06–7.30 Hz (8) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 0.633°
+   T2.1 AŞIM | VIV bandında (2.06–7.30 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -29.0 dB @ 7.20 Hz (gerekli -40.2 dB); yaw→xel -27.8 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 35.33 µrad RMS (tahsis 6.0); f_n = 4.00 Hz'de OFF 25.67 → ON 2.63 µrad; yalnız açısal uyarımla 2.58 µrad (öteleme payı)
+   T2.3 OK | Kombine artık 6.70 µrad; ayrı testlerin RSS'i 7.17 µrad → sapma -6.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.927 / xel 0.132 µrad · bütçeye (T2.2 fill) 2.63 µrad
+S10 Dar bant kontrol kapalı [27 s] | bant 1.65–5.48 Hz (9) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 AŞIM | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -32.0 dB @ 5.37 Hz (gerekli -40.2 dB); yaw→xel -31.1 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol OFF; el ve xel'in büyüğü): en kötü 30.90 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.08 µrad; yalnız açısal uyarımla 19.55 µrad (öteleme payı)
+   T2.3 AŞIM | Kombine artık 13.20 µrad; ayrı testlerin RSS'i 21.79 µrad → sapma -39.4 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 6.541 / xel 0.735 µrad · bütçeye (T2.2 fill) 20.78 µrad
+S9 VIV kapalı [13 s] | bant 1.65–5.48 Hz (9) · tahmin 6.17 µrad · gerekli -40.2 dB · erişim@f 1.126°
+   T2.1 BİLGİ | VIV kapalı: VIV bandı kabulü uygulanmaz, değerler bilgi amaçlı. VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 BİLGİ | VIV kapalı: VIV dwell testi uygulanmaz; B2-01 = 0 ve bütçeye ölçüm aktarılmaz.
+   T2.3 BİLGİ | VIV kapalı: deniz profili + VIV doğrusallık sınaması uygulanmaz.
+   işletme B2-01 el 0.000 / xel 0.000 µrad · bütçeye (T2.2 fill) — µrad

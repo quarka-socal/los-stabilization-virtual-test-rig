@@ -1,0 +1,62 @@
+
+K0 Varsayılan [47 s]
+   T0.1 OK | IFOV_eff = 40.1587 µrad/px (nominale göre 0.397 %); ölçek belirsizliği 0.0014 % (sınır 0.50 %)
+      · Göz bebeği ↔ kolimatör demeti (stab OFF): en büyük yanal kayma 0.0 mm (yatay 0.0, düşey 0.0; sınır (D_c/k − D_p)/2 = 18.2 mm) → gerekli D_c 110 mm (mevcut 150); en düşük örtüşme %100.0, vinyetleme süresi %0.0
+      ⟂ göz bebeği e 0.00 mm, örtüşme %100.0, vinyetleme %0.0, OK
+   T0.3 OK | Hexapod açısal gürültüsü (IMU, 6 koşunun en kötüsü) 2.08 µrad RMS (sınır 5.00); nominal pozda 3 tekrar: roll 2.06 ± 0.01, pitch 2.05 ± 0.01, yaw 2.06 ± 0.02 µrad
+      · nominal, stab ON: IMU r/p/y 2.05 / 2.05 / 2.05 µrad · video el/xel 3.87 / 3.63 · otokolimatör el 3.55 µrad
+      · nominal (tekrar 2), stab ON: IMU r/p/y 2.07 / 2.06 / 2.04 µrad · video el/xel 5.11 / 3.59 · otokolimatör el 4.78 µrad
+      · nominal (tekrar 3), stab ON: IMU r/p/y 2.06 / 2.05 / 2.08 µrad · video el/xel 4.30 / 3.25 · otokolimatör el 4.47 µrad
+      · uç +, stab ON: IMU r/p/y 2.05 / 2.05 / 2.05 µrad · video el/xel 4.48 / 4.12 · otokolimatör el 4.11 µrad
+      · uç −, stab ON: IMU r/p/y 2.05 / 2.07 / 2.06 µrad · video el/xel 5.76 / 4.95 · otokolimatör el 5.83 µrad
+      · nominal, stab OFF: IMU r/p/y 2.04 / 2.06 / 2.07 µrad · video el/xel 2.64 / 2.18 · otokolimatör el 2.56 µrad
+      · Uç poz: roll, pitch, yaw = ±θ_test (5°)
+      · Göz bebeği ↔ kolimatör demeti (stab ON), en kötü poz: uç −, stab ON: en büyük yanal kayma 15.4 mm (yatay 11.3, düşey 10.4; sınır (D_c/k − D_p)/2 = 18.2 mm) → gerekli D_c 144 mm (mevcut 150); en düşük örtüşme %100.0, vinyetleme süresi %0.0
+      · Masa titreşiminin ölçüme geçen payı, stab ON (yalıtılmış koşu, el / xel): video 0.41 / 0.37 · otokolimatör 1.32 / 1.31 · gerçek LOS 1.51 / 1.48 µrad
+      · Masa titreşiminin ölçüme geçen payı, stab OFF: video 1.55 / 1.54 · otokolimatör 2.33 / 2.32 · gerçek LOS 2.47 / 2.44 µrad
+      · Taban düzeltmesinde düşülecek masa payı (zincire özgü pay): stab ON: video 0.41, yüksek hızlı 1.32 µrad; stab OFF: video 1.55 µrad
+      ⟂ göz bebeği e 15.39 mm, örtüşme %100.0, vinyetleme %0.0, OK
+   T0.4 OK | Video − IMU gecikmesi -0.928 ± 0.032 ms (10 darbe); kompanze edilmezse f_bw'de 6.68°, kompanzasyon sonrası belirsizlik (2σ) 0.46°
+      · Fark-tabanlı artıkta göreli hata 2·sin(πfΔt) @ 0,125 Hz: 0.0729 %
+   T1.3 OK | Wander (en kötü tohum) el 6.96 / xel 6.57 µrad RMS; P99 17.40 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 10.16 / 9.39 µrad (gereksinim 120)
+      · Masa mikro-titreşiminin video zincirine geçen payı (stab ON, yalıtılmış koşu): el 0.41 / xel 0.37 µrad (tabla 2.02 µrad, masa parametresi 2.00 µrad)
+      · Taban düzeltmeli wander σ = √(σ_ölç² − s²), zincire özgü pay: el 6.95 / xel 6.56 µrad (s = 0.41 / 0.37); 2.00 µrad tam düşülseydi el 6.67 µrad
+      · Hexapod tepe θ/ω/α (roll): 6.49° / 4.98°/s / 3.97°/s²
+      · Göz bebeği ↔ kolimatör demeti (stab ON): en büyük yanal kayma 57.7 mm (yatay 57.7, düşey 19.3; sınır (D_c/k − D_p)/2 = 18.2 mm) → gerekli D_c 237 mm (mevcut 150); en düşük örtüşme %64.3, vinyetleme süresi %14.5
+      · Deniz ötelemesi (laboratuvar, tohum 1): talep ±0.11 m → hexapod ±100 mm (q = 0.8849)
+      ⟂ göz bebeği e 57.74 mm, örtüşme %64.3, vinyetleme %14.5, YETERSİZ
+   T2.1 OK | VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+      · Süpürme: 1 → 20 Hz, 1 oktav/dk; stab ON genliği hexapod erişimi, stab OFF ≤ 0.84°; yapılandırılmış DUT eksen başına 3 süpürme (H1 üçünün ortalaması), karşılaştırma koşuları 1 süpürme
+      · Göz bebeği ↔ kolimatör demeti (stab ON), roll süpürmesi: en büyük yanal kayma 13.0 mm (yatay 0.0, düşey 13.0; sınır (D_c/k − D_p)/2 = 18.2 mm) → gerekli D_c 139 mm (mevcut 150); en düşük örtüşme %100.0, vinyetleme süresi %0.0
+      ⟂ göz bebeği e 12.97 mm, örtüşme %100.0, vinyetleme %0.0, OK
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.19 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.00 → ON 2.10 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+      · 1.65 Hz · θ 0.050° · öteleme ±2.33 mm (0.25 m/s²): OFF el 12.23 / xel 0.14 µrad · ON el 1.20 / xel 0.07 µrad (açısal DRR karşılığı -54.2 dB)
+      · 2.06 Hz · θ 0.050° · öteleme ±2.33 mm (0.39 m/s²): OFF el 15.08 / xel 0.24 µrad · ON el 1.57 / xel 0.08 µrad (açısal DRR karşılığı -51.9 dB)
+      · 2.47 Hz · θ 0.050° · öteleme ±2.33 mm (0.56 m/s²): OFF el 17.77 / xel 0.41 µrad · ON el 1.75 / xel 0.12 µrad (açısal DRR karşılığı -50.9 dB)
+      · 2.88 Hz · θ 0.050° · öteleme ±2.33 mm (0.76 m/s²): OFF el 20.07 / xel 0.65 µrad · ON el 2.08 / xel 0.12 µrad (açısal DRR karşılığı -49.5 dB)
+      · 3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²): OFF el 21.00 / xel 0.76 µrad · ON el 2.10 / xel 0.06 µrad (açısal DRR karşılığı -49.4 dB)
+      · 3.29 Hz · θ 0.050° · öteleme ±2.33 mm (0.99 m/s²): OFF el 22.48 / xel 0.89 µrad · ON el 2.22 / xel 0.14 µrad (açısal DRR karşılığı -48.9 dB)
+      · 4.12 Hz · θ 0.050° · öteleme ±2.33 mm (1.56 m/s²): OFF el 26.75 / xel 1.37 µrad · ON el 2.66 / xel 0.07 µrad (açısal DRR karşılığı -47.3 dB)
+      · 4.94 Hz · θ 0.050° · öteleme ±2.33 mm (2.24 m/s²): OFF el 30.25 / xel 2.01 µrad · ON el 2.96 / xel 0.21 µrad (açısal DRR karşılığı -46.4 dB)
+      · 5.48 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (2.76 m/s²): OFF el 32.38 / xel 2.43 µrad · ON el 3.19 / xel 0.26 µrad (açısal DRR karşılığı -45.7 dB)
+      · 3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT: el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.34 µrad
+      · Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz: -40.0 dB; ölçülen (OFF, açısal + öteleme) -29.4 dB
+      · Uyarımın kaynağı (senaryo, denizaltı): θ = 0.050° (f_n = 3.00 Hz) · mast başı ötelemesi y = θ·L/κ = ±2.33 mm (L = 4 m, κ = 1.5), 0.827 m/s² · kütle oranı m* = 1.2: f*_alt = 1.826 → K0 üst 3.65, alt dal 5.48 Hz · hız zarfı 2.0–12.0 kn (K0 0.27–1.65)
+      · Eksenler: ileri harekette akış pruvadan: kuvvet ve öteleme y (iskele) yönünde, dönme roll (−x); açı ve öteleme aynı modda, aynı fazda
+      · Göz bebeği ↔ kolimatör demeti (stab ON), en kötü dwell 1.65 Hz: en büyük yanal kayma 0.1 mm (yatay 0.0, düşey 0.1; sınır (D_c/k − D_p)/2 = 18.2 mm) → gerekli D_c 110 mm (mevcut 150); en düşük örtüşme %100.0, vinyetleme süresi %0.0
+      ⟂ göz bebeği e 0.10 mm, örtüşme %100.0, vinyetleme %0.0, OK
+   T2.3 OK | Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+      · Yalnız VIV tonu (f_n = 3.00 Hz, açısal + mast başı ötelemesi; artık RMS, el): 2.00 µrad
+      · Göz bebeği ↔ kolimatör demeti (stab ON): en büyük yanal kayma 56.4 mm (yatay 56.4, düşey 19.1; sınır (D_c/k − D_p)/2 = 18.2 mm) → gerekli D_c 234 mm (mevcut 150); en düşük örtüşme %66.0, vinyetleme süresi %13.4
+      ⟂ göz bebeği e 56.41 mm, örtüşme %66.0, vinyetleme %13.4, YETERSİZ
+   T2.5 OK | İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.62 µrad RMS (tahsis 3); duyarlılık 1.882 µrad/(m/s²)
+      · Pivotlar: göz bebeği / 1 m aşağıda (ölçekli gövde dönme merkezi)
+      · Öteleme stroku sınırı: r·θ ≤ 100 mm
+      · Öteleme x (surge), 1 Hz, ±50.7 mm (2.00 m/s²): optik LOS el 0.094 / xel 0.904 µrad per m/s² (±0.103) · yollar: ayna (dengesizlik) el 0.102 / xel 0.952, optik montaj (video − ayna) el 0.044 / xel 1.509
+      · Öteleme x (surge), 2 Hz, ±12.7 mm (2.00 m/s²): optik LOS el 0.088 / xel 0.674 µrad per m/s² (±0.112) · yollar: ayna (dengesizlik) el 0.110 / xel 0.793, optik montaj (video − ayna) el 0.113 / xel 1.446
+      · Öteleme y (sway), 1 Hz, ±50.7 mm (2.00 m/s²): optik LOS el 0.993 / xel 0.420 µrad per m/s² (±0.107) · yollar: ayna (dengesizlik) el 0.998 / xel 0.537, optik montaj (video − ayna) el 0.019 / xel 0.147
+      · Öteleme y (sway), 2 Hz, ±12.7 mm (2.00 m/s²): optik LOS el 0.753 / xel 0.549 µrad per m/s² (±0.106) · yollar: ayna (dengesizlik) el 0.904 / xel 0.477, optik montaj (video − ayna) el 0.157 / xel 0.091
+      · Öteleme z (heave), 1 Hz, ±50.7 mm (2.00 m/s²): optik LOS el 1.002 / xel 0.058 µrad per m/s² (±0.117) · yollar: ayna (dengesizlik) el 0.850 / xel 0.139, optik montaj (video − ayna) el 1.625 / xel 0.117
+      · Öteleme z (heave), 2 Hz, ±12.7 mm (2.00 m/s²): optik LOS el 0.812 / xel 0.068 µrad per m/s² (±0.114) · yollar: ayna (dengesizlik) el 0.684 / xel 0.047, optik montaj (video − ayna) el 1.462 / xel 0.088
+      · Göz bebeği ↔ kolimatör demeti (stab ON), en kötü koşu: öteleme x: en büyük yanal kayma 50.7 mm (yatay 50.7, düşey 0.0; sınır (D_c/k − D_p)/2 = 18.2 mm) → gerekli D_c 221 mm (mevcut 150); en düşük örtüşme %73.3, vinyetleme süresi %34.5 · koşular: pivot göz bebeğinde 12.0 mm, pivot 1 m aşağıda 17.0 mm, öteleme x 50.7 mm, ötele
+      ⟂ göz bebeği e 50.66 mm, örtüşme %73.3, vinyetleme %34.5, YETERSİZ

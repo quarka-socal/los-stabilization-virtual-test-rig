@@ -1,0 +1,132 @@
+[
+ {
+  "name": "Roll periyodu 4 s",
+  "id": "T1.1",
+  "status": "AŞIM",
+  "measured": "DRR(f) eğrisi: roll 0.050 Hz -84.6 dB; roll 0.083 Hz -81.5 dB; roll 0.100 Hz -80.3 dB; roll 0.200 Hz -73.7 dB; roll 0.250 Hz -72.1 dB*; yaw 0.050 Hz -79.8 dB; yaw 0.083 Hz -78.0 dB*; yaw 0.100 Hz -73.4 dB; yaw 0.200 Hz -67.7 dB; yaw 0.250 Hz -65.9 dB (* baskın frekans, kabul burada); her frekansta DRR ≤ gerekli: 6/14 nokta",
+  "sec": 17.059,
+  "fill": {
+   "B1-01": 0.000009650674605376283,
+   "B1-03": 0.0000018277782906670434,
+   "B1-04": 0.0000018183434199163656
+  },
+  "domRoll": "-72.1 dB (gerçek LOS -71.7 dB)",
+  "twoAmp": "-76.3 / -77.4 dB",
+  "wres": "9.65 µrad RMS (tahsis 5)",
+  "wresYaw": "1.83 µrad RMS (tahsis 3)",
+  "analytic": [
+   {
+    "k": "roll",
+    "los": "el",
+    "req": -77.39027240284962,
+    "dom": -73.21491865440832,
+    "wres": 8.27528932680541
+   },
+   {
+    "k": "pitch",
+    "los": "rot",
+    "req": -75.80664748189712,
+    "dom": null,
+    "wres": null
+   },
+   {
+    "k": "yaw",
+    "los": "xel",
+    "req": -72.2848223007835,
+    "dom": -79.8977293244189,
+    "wres": 1.2674675414897454
+   }
+  ]
+ },
+ {
+  "name": "6-DOF SS4 (denizaltı)",
+  "id": "T1.1",
+  "status": "OK",
+  "measured": "DRR(f) eğrisi: roll 0.050 Hz -86.2 dB; roll 0.100 Hz -81.5 dB; roll 0.150 Hz -77.3 dB; roll 0.158 Hz -76.9 dB*; roll 0.200 Hz -74.5 dB; roll 0.229 Hz -73.0 dB; roll 0.250 Hz -72.2 dB; yaw 0.050 Hz -80.9 dB; yaw 0.100 Hz -75.2 dB*; yaw 0.150 Hz -71.3 dB; yaw 0.158 Hz -71.1 dB; yaw 0.200 Hz -69.4 dB; yaw 0.229 Hz -67.9 dB; yaw 0.250 Hz -66.9 dB (* baskın frekans, kabul burada); her frekansta DRR ≤ gerekli: 9/20 nokta",
+  "sec": 16.773,
+  "fill": {
+   "B1-01": 0.000005672262257662058,
+   "B1-03": 0.0000022541895136898515,
+   "B1-04": 0.0000014102757727373437
+  },
+  "domRoll": "-76.9 dB (gerçek LOS -76.7 dB)",
+  "twoAmp": "-78.2 / -75.3 dB",
+  "wres": "5.67 µrad RMS (tahsis 5)",
+  "wresYaw": "2.25 µrad RMS (tahsis 3)",
+  "analytic": [
+   {
+    "k": "roll",
+    "los": "el",
+    "req": -75.29512225742332,
+    "dom": -77.75920658249647,
+    "wres": 5.120862288594109
+   },
+   {
+    "k": "pitch",
+    "los": "rot",
+    "req": -73.71149733647081,
+    "dom": null,
+    "wres": null
+   },
+   {
+    "k": "yaw",
+    "los": "xel",
+    "req": -69.27452234414369,
+    "dom": -78.29391753048036,
+    "wres": 1.6005982558010046
+   }
+  ]
+ },
+ {
+  "name": "6-DOF SS4 (denizaltı)",
+  "id": "T1.3",
+  "status": "OK",
+  "measured": "Wander (en kötü tohum) el 8.66 / xel 6.44 µrad RMS; P99 21.20 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 11.57 / 9.86 µrad (gereksinim 120)",
+  "sec": 12.694,
+  "fill": {
+   "T1.3": 0.000008657290497197625
+  },
+  "q": "talep ±0.60 m → hexapod ±100 mm (q = 0.1656)",
+  "hex": "5.81° / 7.52°/s / 11.79°/s²",
+  "note": "Laboratuvar deniz ötelemesini (6-DOF ağırlık merkezi) hexapod stroku içinde q = 0.1656 oranında üretir; ötelemenin LOS etkisi bu testte tam ölçekte yoktur. İşletme ivmesindeki etkisi T2.5'te ivme eşdeğeriyle ölçülür (B1-08)."
+ },
+ {
+  "name": "Roll genliği 6°",
+  "id": "T1.1",
+  "status": "AŞIM",
+  "measured": "DRR(f) eğrisi: roll 0.050 Hz -86.7 dB; roll 0.083 Hz -82.8 dB; roll 0.100 Hz -81.4 dB; roll 0.125 Hz -79.5 dB*; roll 0.200 Hz -74.6 dB; yaw 0.050 Hz -79.8 dB; yaw 0.083 Hz -78.0 dB*; yaw 0.100 Hz -73.4 dB; yaw 0.125 Hz -73.1 dB; yaw 0.200 Hz -67.9 dB (* baskın frekans, kabul burada); her frekansta DRR ≤ gerekli: 5/14 nokta",
+  "sec": 15.156,
+  "fill": {
+   "B1-01": 0.000008096669320893745,
+   "B1-03": 0.0000018160099400258874,
+   "B1-04": 0.000002028950162772028
+  },
+  "domRoll": "-79.5 dB (gerçek LOS -79.3 dB)",
+  "twoAmp": "-80.5 / -83.4 dB",
+  "wres": "8.10 µrad RMS (tahsis 5)",
+  "wresYaw": "1.82 µrad RMS (tahsis 3)",
+  "analytic": [
+   {
+    "k": "roll",
+    "los": "el",
+    "req": -83.41087231612924,
+    "dom": -79.95711959936,
+    "wres": 7.570176718729202
+   },
+   {
+    "k": "pitch",
+    "los": "rot",
+    "req": -75.80664748189712,
+    "dom": null,
+    "wres": null
+   },
+   {
+    "k": "yaw",
+    "los": "xel",
+    "req": -72.2848223007835,
+    "dom": -79.8977293244189,
+    "wres": 1.2674675414897454
+   }
+  ]
+ }
+]

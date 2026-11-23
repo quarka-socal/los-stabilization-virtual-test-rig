@@ -1,0 +1,13 @@
+FARK SAYISI 6 (6 grup)
+== extra/est: 1
+    extra/est : yalnız yeni
+== extra/mount: 1
+    extra/mount : yalnız yeni
+== extra/obs: 1
+    extra/obs : yalnız yeni
+== extra/resOff/t23: 1
+    extra/resOff/t23 : "Kombine artık 13.15 µrad; ayrı testlerin RSS'i 21.71 µrad → sapma -39.4 % (sınır ±20 %); t" → "Kombine artık 13.20 µrad; ayrı testlerin RSS'i 21.79 µrad → sapma -39.4 % (sınır ±20 %); t"
+== extra/s0: 1
+    extra/s0 : yalnız yeni
+== extra/t42sched/m: 1
+    extra/t42sched/m : 'Yapılandırılmış DUT (sıcaklık programlı FF): -20 °C sürtünme tepesi 8.7 µrad, 3.00 Hz artı' → 'Yapılandırılmış DUT (sıcaklık programlı FF): -20 °C sürtünme tepesi 8.7 µrad, 3.00 Hz artı'

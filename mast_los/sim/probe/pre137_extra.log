@@ -1,0 +1,10 @@
+{
+ "resOff": {
+  "t23dev": -39.4,
+  "t23": "Kombine artık 13.15 µrad; ayrı testlerin RSS'i 21.71 µrad → sapma -39.4 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+  "opAll": 0.00001506188163980794,
+  "opRss": 0.000009897015767785053,
+  "opDev": 52.186093194219296
+ },
+ "elapsed": 93.041
+}

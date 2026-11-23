@@ -1,0 +1,19 @@
+# Kaynak paketi depoda açılmış hâliyle (mast_los/) durur; zip yalnız yerel kopya
+*.zip
+
+# LibreOffice / Office kilit ve geçici dosyaları
+.~lock.*#
+~$*
+
+# Yerel araç ayarları ve bağımlılıklar
+.claude/
+node_modules/
+__pycache__/
+*.pyc
+
+# Yeniden üretilebilir büyük ara çıktılar (HANDOFF.md: "pakette yok, yeniden üretilir")
+*.bin
+
+# İşletim sistemi
+.DS_Store
+Thumbs.db

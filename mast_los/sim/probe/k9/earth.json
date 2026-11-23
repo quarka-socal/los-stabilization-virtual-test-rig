@@ -1,0 +1,349 @@
+{
+ "t07": [
+  {
+   "nm": "varsayılan (φ 40°, α 90°, ε 0°, δ 1°)",
+   "st": "OK",
+   "offH": 0.000046909944062037,
+   "offV": 0.000055445858707673865,
+   "calcH": 0.00004687281170409358,
+   "calcV": 0.00005586084174334546,
+   "onH": 6.88179641738705e-7,
+   "onV": 0.0000013335500932516742,
+   "limOn": 0.000001515121002395431,
+   "X": {
+    "offH": 0.00004687281170409358,
+    "offV": 0.00005586084174334546,
+    "roll": 3.4204900519332435e-21,
+    "resH": 9.749556113568677e-7,
+    "resV": 8.180848939037672e-7,
+    "resMag": 0.0000012727141618406632
+   },
+   "dec": {
+    "eEl": 8.180846951371985e-7,
+    "eXel": 9.749553745438473e-7,
+    "bEl": 5.55900190185602e-7,
+    "bXel": -2.719943053548265e-7,
+    "optEl": 0.0000013389778860891312,
+    "optXel": 6.909926224903657e-7
+   },
+   "s": 9.37
+  },
+  {
+   "nm": "δ 0,1°",
+   "st": "AŞIM",
+   "offH": 0.000046909944062037,
+   "offV": 0.000055445858707673865,
+   "calcH": 0.00004687281170409358,
+   "calcV": 0.00005586084174334546,
+   "onH": 1.858427273529355e-7,
+   "onV": 6.006310351677815e-7,
+   "limOn": 3.696782567388343e-7,
+   "X": {
+    "offH": 0.00004687281170409358,
+    "offV": 0.00005586084174334546,
+    "roll": 3.4204900519332435e-21,
+    "resH": 9.749556113568677e-8,
+    "resV": 8.180848939037672e-8,
+    "resMag": 1.2727141618406632e-7
+   },
+   "dec": {
+    "eEl": 8.1808486285705e-8,
+    "eXel": 9.749555744547941e-8,
+    "bEl": 5.559002829335744e-7,
+    "bXel": -2.719941804165243e-7,
+    "optEl": 6.027707647460881e-7,
+    "optXel": -1.8637700037549026e-7
+   },
+   "s": 8.166
+  },
+  {
+   "nm": "δ 5°",
+   "st": "OK",
+   "offH": 0.000046909944062037,
+   "offV": 0.000055445858707673865,
+   "calcH": 0.00004687281170409358,
+   "calcV": 0.00005586084174334546,
+   "onH": 0.000004572005224225553,
+   "onV": 0.000004592395644637696,
+   "limOn": 0.000006605977649758083,
+   "X": {
+    "offH": 0.00004687281170409358,
+    "offV": 0.00005586084174334546,
+    "roll": 3.4204900519332435e-21,
+    "resH": 0.0000048747780567843384,
+    "resV": 0.000004090424469518836,
+    "resMag": 0.000006363570809203316
+   },
+   "dec": {
+    "eEl": 0.000004090403799034919,
+    "eXel": 0.000004874753421705673,
+    "bEl": 5.558988184567301e-7,
+    "bXel": -2.7199666486026283e-7,
+    "optEl": 0.000004611000189239876,
+    "optXel": 0.000004590432363470313
+   },
+   "s": 9.432
+  },
+  {
+   "nm": "enlem 0°",
+   "st": "AŞIM",
+   "offH": 2.4542231441483747e-7,
+   "offV": 0.00007243643990961192,
+   "calcH": 0,
+   "calcV": 0.00007292115,
+   "onH": 9.894572603190061e-7,
+   "onV": 5.212717721988913e-7,
+   "limOn": 0.000001515121002395431,
+   "X": {
+    "offH": 0,
+    "offV": 0.00007292115,
+    "roll": 4.4651326468822006e-21,
+    "resH": 0.000001272714161840663,
+    "resV": 0,
+    "resMag": 0.000001272714161840663
+   },
+   "dec": {
+    "eEl": 0,
+    "eXel": 0.000001272713988430612,
+    "bEl": 5.559002884757268e-7,
+    "bXel": -2.719942331209328e-7,
+    "optEl": 5.226789902203971e-7,
+    "optXel": 9.934095281290202e-7
+   },
+   "s": 7.776
+  },
+  {
+   "nm": "enlem 80°",
+   "st": "AŞIM",
+   "offH": 0.00007174758076498157,
+   "offV": 0.000012425881915734008,
+   "calcH": 0.00007181331387856618,
+   "calcV": 0.000012662624810876882,
+   "onH": 6.506765261350482e-8,
+   "onV": 0.0000017628178536488056,
+   "limOn": 0.000001515121002395431,
+   "X": {
+    "offH": 0.00007181331387856618,
+    "offV": 0.000012662624810876882,
+    "roll": 7.753621471722117e-22,
+    "resH": 2.2100449489452588e-7,
+    "resV": 0.0000012533787739491192,
+    "resMag": 0.000001272714161840663
+   },
+   "dec": {
+    "eEl": 0.0000012533783416441455,
+    "eXel": 2.2100441863753062e-7,
+    "bEl": 5.559000989499283e-7,
+    "bXel": -2.719941732497312e-7,
+    "optEl": 0.0000017699102351712861,
+    "optXel": -6.537904100016379e-8
+   },
+   "s": 5.89
+  },
+  {
+   "nm": "kolimatör yönü α 0° (kuzey)",
+   "st": "AŞIM",
+   "offH": 0.0000469191124241223,
+   "offV": 1.0712039006367247e-8,
+   "calcH": 0.00004687281170409358,
+   "calcV": 0,
+   "onH": 2.883743421323905e-7,
+   "onV": 0.0000017863521879457788,
+   "limOn": 0.000001515121002395431,
+   "X": {
+    "offH": 0.00004687281170409358,
+    "offV": 0,
+    "roll": 0.00005586084174334546,
+    "resH": 0,
+    "resV": 0.000001272714161840663,
+    "resMag": 0.000001272714161840663
+   },
+   "dec": {
+    "eEl": 0.000001272713695549789,
+    "eXel": 1.5758983049851302e-32,
+    "bEl": 5.559000932769902e-7,
+    "bXel": -2.719941149644981e-7,
+    "optEl": 0.0000017935626952893498,
+    "optXel": -2.894481189046131e-7
+   },
+   "s": 7.155
+  },
+  {
+   "nm": "α 45°",
+   "st": "OK",
+   "offH": 0.00004681819079523105,
+   "offV": 0.00003927455892191515,
+   "calcH": 0.00004687281170409358,
+   "calcV": 0.00003949957999950814,
+   "onH": 5.301117571500949e-7,
+   "onV": 0.0000014904600362305275,
+   "limOn": 0.000001515121002395431,
+   "X": {
+    "offH": 0.00004687281170409358,
+    "offV": 0.000039499579999508134,
+    "roll": 0.00003949957999950814,
+    "resH": 8.201376137024805e-7,
+    "resV": 9.73229485959084e-7,
+    "resMag": 0.000001272714161840663
+   },
+   "dec": {
+    "eEl": 9.732292217922622e-7,
+    "eXel": 8.201373911207179e-7,
+    "bEl": 5.559001597432401e-7,
+    "bXel": -2.719942926150006e-7,
+    "optEl": 0.0000014964197721676368,
+    "optXel": 5.322428442525357e-7
+   },
+   "s": 7.383
+  },
+  {
+   "nm": "LOS elevasyonu 45°",
+   "st": "OK",
+   "offH": 0.00003312321059283583,
+   "offV": 0.00005551711260681144,
+   "calcH": 0.00003314408300924474,
+   "calcV": 0.00005586084174334546,
+   "onH": 8.054401688232583e-7,
+   "onV": 0.0000011692126426024203,
+   "limOn": 0.000001515121002395431,
+   "X": {
+    "offH": 0.00003314408300924475,
+    "offV": 0.00005586084174334546,
+    "roll": 0.00003314408300924474,
+    "resH": 0.0000010945496053006646,
+    "resV": 6.494324439739217e-7,
+    "resMag": 0.0000012727141618406632
+   },
+   "dec": {
+    "eEl": 6.494323032881684e-7,
+    "eXel": 0.0000010945493682797392,
+    "bEl": 5.558177034596816e-7,
+    "bXel": -2.7220292118025245e-7,
+    "optEl": 0.000001173631224486442,
+    "optXel": 8.08351948501835e-7
+   },
+   "s": 7.575
+  },
+  {
+   "nm": "gyro sabit bias 0",
+   "st": "OK",
+   "offH": 0.00004671735350781483,
+   "offV": 0.00005563892683193058,
+   "calcH": 0.00004687281170409358,
+   "calcV": 0.00005586084174334546,
+   "onH": 8.816225079695947e-7,
+   "onV": 0.0000011404606221682195,
+   "limOn": 0.000001515121002395431,
+   "X": {
+    "offH": 0.00004687281170409358,
+    "offV": 0.00005586084174334546,
+    "roll": 3.4204900519332435e-21,
+    "resH": 9.749556113568677e-7,
+    "resV": 8.180848939037672e-7,
+    "resMag": 0.0000012727141618406632
+   },
+   "dec": {
+    "eEl": 8.180847102372221e-7,
+    "eXel": 9.749553922808382e-7,
+    "bEl": 3.6197477642183513e-7,
+    "bXel": -7.806881106246812e-8,
+    "optEl": 0.0000011450717095434822,
+    "optXel": 8.848989005487481e-7
+   },
+   "s": 7.39
+  },
+  {
+   "nm": "kayıt 300 s",
+   "st": "OK",
+   "offH": 0.000046909944062037,
+   "offV": 0.000055445858707673865,
+   "calcH": 0.00004687281170409358,
+   "calcV": 0.00005586084174334546,
+   "onH": 6.639458288371011e-7,
+   "onV": 9.382436205354358e-7,
+   "limOn": 0.000001515121002395431,
+   "X": {
+    "offH": 0.00004687281170409358,
+    "offV": 0.00005586084174334546,
+    "roll": 3.4204900519332435e-21,
+    "resH": 9.749556113568677e-7,
+    "resV": 8.180848939037672e-7,
+    "resMag": 0.0000012727141618406632
+   },
+   "dec": {
+    "eEl": 8.180848771117996e-7,
+    "eXel": 9.749555915590724e-7,
+    "bEl": 2.0063098269900897e-7,
+    "bXel": -3.791212183403478e-7,
+    "optEl": 9.421259415917033e-7,
+    "optXel": 6.667108981350168e-7
+   },
+   "s": 2.657
+  }
+ ],
+ "longOff": [
+  {
+   "nm": "kompanzasyon KAPALI",
+   "id": "T1.1",
+   "st": "GEÇERSİZ",
+   "measured": "Kayıt geçersiz: hedef t = 369 s'de görüş alanından çıktı (geçerli kare %46.7); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: geçersiz eksen roll; DRR(f) eğrisi: roll 0.050 Hz -85.7 dB; roll 0.083 Hz -81.8 dB; roll 0.100 Hz geçersiz; roll 0.125 Hz geçersiz*; roll 0.200 Hz geçersiz; yaw 0.050 Hz -79.3 dB; yaw 0.083 Hz -77.1 dB*; yaw 0.100 Hz geçersiz; yaw 0.125 Hz geçersiz; yaw 0.200 Hz geçersiz (* baskın frekans, kabul burada); her frekansta DRR ≤ gerekli: 4/4 nokta",
+   "kv": "",
+   "notes": [
+    "Hedef t = 369 s'de görüş alanından çıktı (T1.1 yaw: geçerli kare %46.7). Dünya dönüşü kompanzasyonu kapalı (Model → Dünya dönüşü): eylemsiz LOS laboratuvara göre yatay 46.9 / düşey 55.9 µrad/s kayar ve hedef ≈ 367 s'de alanı terk eder. Uzun kayıtlarda kompanzasyon açık olmalı; T0.7 bu testin ön şartıdır.",
+    "Giriş referans IMU'dan (komuttan değil), çıkış sonsuzdaki hedefi izleyen videodan alındı; her segmentte sinüs + doğrusal trend uyduruldu (dünya dönüşü rampası)."
+   ]
+  },
+  {
+   "nm": "kompanzasyon KAPALI",
+   "id": "T1.3",
+   "st": "GEÇERSİZ",
+   "measured": "Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %59.1); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Wander (en kötü tohum) el 7.14 / xel 7.03 µrad RMS; P99 18.23 µrad; FOV'da kalma 57.70 %; kırpma 0.000 %; MWIR-WFOV: 10.91 / 10.22 µrad (gereksinim 120)",
+   "kv": "MWIR-WFOV (IFOV 240 µrad), tohum 1: wander el/xel 10.91 / 10.22 µrad = 0.045 / 0.043 px; P99 27.86 µrad (gereksinim 120 / 309 µrad)",
+   "notes": [
+    "Hedef t = 366 s'de görüş alanından çıktı (Deniz profili: geçerli kare %59.1). Dünya dönüşü kompanzasyonu kapalı (Model → Dünya dönüşü): eylemsiz LOS laboratuvara göre yatay 46.9 / düşey 55.9 µrad/s kayar ve hedef ≈ 367 s'de alanı terk eder. Uzun kayıtlarda kompanzasyon açık olmalı; T0.7 bu testin ön şartıdır.",
+    "WFOV: aynı taban hareketiyle (tohum 1) ayrı koşu. LOS hareketi kanaldan bağımsızdır; px cinsinden tanımlı ölçüm tabanı (centroid, piksel fazı) µrad cinsinden IFOV oranında büyür. Gereksinim kanalın IFOV'una ölçeklenir (k_wander·IFOV, k_conf·k_wander·IFOV)."
+   ]
+  },
+  {
+   "nm": "kompanzasyon KAPALI",
+   "id": "T1.4",
+   "st": "GEÇERSİZ",
+   "measured": "Kayıt geçersiz: hedef t = 365 s'de görüş alanından çıktı (geçerli kare %73.2); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: geçersiz elevasyon 0°, 30°, 60°, 75°; el 0°: roll→el -82.3 dB, yaw→xel — dB; el 30°: roll→el -78.5 dB, yaw→xel — dB; el 60°: roll→el -79.0 dB, yaw→xel — dB; el 75°: roll→el -80.2 dB, yaw→xel — dB (baskın frekanslarda)",
+   "kv": "",
+   "notes": [
+    "Hedef t = 365 s'de görüş alanından çıktı (T1.4 el=60: geçerli kare %73.2). Dünya dönüşü kompanzasyonu kapalı (Model → Dünya dönüşü): eylemsiz LOS laboratuvara göre yatay 46.9 / düşey 55.9 µrad/s kayar ve hedef ≈ 367 s'de alanı terk eder. Uzun kayıtlarda kompanzasyon açık olmalı; T0.7 bu testin ön şartıdır."
+   ]
+  },
+  {
+   "nm": "kompanzasyon KAPALI",
+   "id": "T2.3",
+   "st": "GEÇERSİZ",
+   "measured": "Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %59.1); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Kombine artık 6.58 µrad; ayrı testlerin RSS'i 6.96 µrad → sapma -5.4 % (sınır ±20 %); tahsis sınırı 13.4 µrad",
+   "kv": "",
+   "notes": [
+    "Hedef t = 366 s'de görüş alanından çıktı (Deniz profili: geçerli kare %59.1). Dünya dönüşü kompanzasyonu kapalı (Model → Dünya dönüşü): eylemsiz LOS laboratuvara göre yatay 46.9 / düşey 55.9 µrad/s kayar ve hedef ≈ 367 s'de alanı terk eder. Uzun kayıtlarda kompanzasyon açık olmalı; T0.7 bu testin ön şartıdır."
+   ]
+  },
+  {
+   "nm": "kompanzasyon KAPALI",
+   "id": "T1.9",
+   "st": "GEÇERSİZ",
+   "measured": "Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %56.7); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Takip sonrası (pencere RMS'lerinin %95 üst güven sınırı): σ_vek 4.00 µrad (sınır 4.00), σ_El 3.11 / σ_Az 2.53, PPV 27.2 / 22.2, P99,73 9.8, pozlama içi 1.96 / 1.71 µrad; aşan: σ_El, PPV El, PPV Az, Bant 0.1–2.5 Hz El, Bant 2.5–20 Hz El, Bant 20–100 Hz El, Bant 100–500 Hz El, Bant 100–500 Hz Az, Ton El 60.00 Hz",
+   "kv": "Gereksinim seti (IFOV = 40.00 µrad): σ_vek ≤ 4.00, σ_El ≤ 2.50, σ_Az ≤ 3.10 (√(El² + Az²) = 3.98), PPV ≤ 16.3 / 20.2 (6.5·σ), geçiş PPV ≤ 16.0 (T1.6), P99,73 radyal ≤ 12.0, pozlama içi ≤ 2.00 µrad (MTF_jitter ≥ 0.988)",
+   "notes": [
+    "Hedef t = 366 s'de görüş alanından çıktı (Deniz profili: geçerli kare %56.7). Dünya dönüşü kompanzasyonu kapalı (Model → Dünya dönüşü): eylemsiz LOS laboratuvara göre yatay 46.9 / düşey 55.9 µrad/s kayar ve hedef ≈ 367 s'de alanı terk eder. Uzun kayıtlarda kompanzasyon açık olmalı; T0.7 bu testin ön şartıdır.",
+    "Takip sonrası koşuda hedef noktası aynı piksel konumunda tutulur; piksel fazı (S-eğrisi) yanlılığı ortalanmaz, çarpımsal olur. Noktanın sub-piksel konumu hem video ölçümünü hem takip döngüsünün kazancını değiştirir. Kullanıcı kararı (v13.7): yalnız raporlanır; sınıra yakın sonuçlarda hedef noktasının fazı ve bu kazanç kararla birlikte verilir."
+   ]
+  },
+  {
+   "nm": "kompanzasyon KAPALI",
+   "id": "T1.7",
+   "st": "OK",
+   "measured": "Nişan noktası hatası el 3.47 / xel 2.09 µrad RMS, P99 9.54 µrad; kilit kaybı 0",
+   "kv": "",
+   "notes": [
+    "İzleyici döngüsü düşük frekanslı artığı ve dünya dönüşü/bias rampasını da taşır; trend çıkarılmadan raporlandı."
+   ]
+  }
+ ]
+}

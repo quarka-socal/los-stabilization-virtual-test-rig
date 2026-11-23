@@ -1,0 +1,5 @@
+sayfa (11 nokta, uçlar dahil, eşit ağırlık; f 4000): dar bant kapalı 2.3321, yapılandırılmış 1.6343 µrad (A 2458)
+orta nokta 11; f 4000: dar bant kapalı 2.3419, yapılandırılmış 1.6181 µrad (A 2458)
+yamuk 61; f 20000: dar bant kapalı 2.3412, yapılandırılmış 1.6184 µrad (A 2458)
+orta nokta 41; f 20000: dar bant kapalı 2.3413, yapılandırılmış 1.6184 µrad (A 2458)
+yeni A = 2458 · 2 / 2.3412 = 2099.8 µrad → 2101: dar bant kapalı 2.0012, yapılandırılmış 1.3834

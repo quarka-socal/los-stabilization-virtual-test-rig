@@ -1,0 +1,4 @@
+varsayılan (scaleErr 0,004, k1 −0,002): n 30 · IFOV hatası ort -0.0023 %, sd 0.0006 %, belirtilen u ort 0.0015 % · z ort -1.60, z RMS 1.67, |z| > 2 oranı 27 % · k1 -0.00206 ± 0.00001 (model -0.002) [57 s]
+scaleErr 0,02: n 12 · IFOV hatası ort -0.0040 %, sd 0.0006 %, belirtilen u ort 0.0014 % · z ort -2.79, z RMS 2.82, |z| > 2 oranı 100 % · k1 -0.00202 ± 0.00001 (model -0.002) [22 s]
+k1 −0,02: n 12 · IFOV hatası ort 0.0010 %, sd 0.0006 %, belirtilen u ort 0.0014 % · z ort 0.71, z RMS 0.82, |z| > 2 oranı 0 % · k1 -0.01985 ± 0.00001 (model -0.02) [22 s]
+k1 0: n 12 · IFOV hatası ort -0.0007 %, sd 0.0006 %, belirtilen u ort 0.0016 % · z ort -0.45, z RMS 0.57, |z| > 2 oranı 0 % · k1 0.00002 ± 0.00001 (model 0) [19 s]

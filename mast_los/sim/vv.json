@@ -1,0 +1,763 @@
+{
+ "generated": "2026-11-10T10:58:51.192Z",
+ "engine": "v3",
+ "items": [
+  {
+   "grp": "W",
+   "id": "W1",
+   "name": "Bütçe satırları: girdi düzeyi, tahmin, wander/smear ayrımı, tahsis, EIS sütunları",
+   "method": "4 durum (v10 uyum kipi, denizaltı, gemi, HDTV-NFOV + Z540.3 + τ = 10 s + EIS kilit) × her satır × 14 sütun; v13.9: B1-05 wander penceresinde ARW·√(T_w/15) ve G = 1/T_w, B1-06 ve B1-09 yalnız drift (uyum kipinde τ metriği); ikinci uygulama: base → 10^(H/20), W_w = sinc²(πG·T_int), Q = q·IFOV, katlanma |G − fps·round(G/fps)|, EIS artık çarpanı",
+   "exp": "özdeş",
+   "got": "en büyük göreli fark 3.2e-16 (gemi varsayılanı · B1-01 AH); 1134 sayı · v10 uyum kipi: 1.6e-16 · denizaltı varsayılanı: 2.2e-16 · gemi varsayılanı: 3.2e-16 · HDTV-NFOV, Z540.3, τ = 10 s: 2.2e-16; toplama sınıfı (wander / yalnız drift / rotasyon) uyuşmazlığı yok",
+   "crit": "≤ 1·10⁻¹², sınıf uyuşmazlığı yok",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W2",
+   "name": "Bütçe toplamları: bant RSS, G1 doğrusal toplamı, kullanım, MTF, tepe, drift, EIS, tahsis payları, gerekli DRR",
+   "method": "4 durum; toplama kuralı yalnız E sınıfı satırlar, G1 grubu önce doğrusal; drift = √(ARW√τ² + (Bτ + b0 artığı + Ω·δ·τ)²); MTF = exp(−π²(σ/IFOV)²/2)",
+   "exp": "özdeş",
+   "got": "en büyük göreli fark 2.2e-16 (HDTV-NFOV, Z540.3, τ = 10 s · radial); 156 sayı",
+   "crit": "≤ 1·10⁻¹²",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W3",
+   "name": "Türetilmiş girdiler",
+   "method": "IFOV = p/f, FOV = 2·atan(N·p/2f), gereksinimler k·IFOV, roll sınırı k_roll·IFOV/θ_ref (köşe ya da kenar), stab-OFF sınırı, kompanzasyon artığı Ω·δ; 4 durum",
+   "exp": "özdeş",
+   "got": "en büyük göreli fark 1.4e-16 (v10 uyum kipi · P99); 48 sayı",
+   "crit": "≤ 1·10⁻¹²",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W4",
+   "name": "Dünya dönüşünün görüntü eksenlerine izdüşümü",
+   "method": "Ω_ENU = Ω(0, cos φ, sin φ); LOS u, yatay eksen h ⊥ u, düşey eksen u × h; hızlar |Ω·(u×h)|, |Ω·h|, |Ω·u|; alan dışına çıkma süresi (v13.7: kenar payıyla), piksel kayması, azimut tablosu (12 satır); 5 durum",
+   "exp": "özdeş",
+   "got": "en büyük göreli fark 7.0e-16 (enlem 65°, el 30° · α=180 r); 245 sayı (sıfır değerlerde mutlak)",
+   "crit": "≤ 1·10⁻¹² (göreli; sıfırda mutlak 1·10⁻⁹)",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W5",
+   "name": "Hexapod erişimi",
+   "method": "θ(f) = min(θ_max, ω_max/2πf, α_max/(2πf)²), sınırlayan etken, bant ve Nyquist sınıfı, W_w; 4 durum × 17 frekans",
+   "exp": "özdeş",
+   "got": "en büyük göreli fark 1.3e-16; 204 sayı, 0 metin uyuşmazlığı",
+   "crit": "≤ 1·10⁻¹², metin uyuşmazlığı 0",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W6",
+   "name": "Hidrodinamik VIV taraması",
+   "method": "V (kn → m/s; zarf ızgarası), Re = VD/ν, f_v = St·V/D, K0 = f_v/f_n, U_r = V/(f_n D), tarama sınıfı (marjlı; v13.3: K0 üst sınırı ×f*_alt(m*), m* ≤ 0,54 → sınırsız), hexapod erişimi, dwell adayı; zarfta VIV varlığı (sürekli K0 aralığı ∩ paylı bant), T2.1 VIV bandı (aday f_v ∪ f_n ∪ f*·f_n; alt dal yalnız f_v,maks·(1 + pay) ≥ f_n,vak = f_n·√((m* + 1)/m*) ise), B2-01 analitik tahmini (A/√2·10^(DRR/20); VIV yoksa 0), mast başı ötelemesi y = θ·L/κ (roll −1, y +1); 8 durum",
+   "exp": "özdeş",
+   "got": "en büyük göreli fark 2.3e-16; 487 sayı, 0 metin uyuşmazlığı",
+   "crit": "≤ 1·10⁻¹², metin uyuşmazlığı 0",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W7",
+   "name": "Ölçüm belirsizliği ve TUR",
+   "method": "U-01…U-07 (v13.6: U-05 çarpımsal, video ε·W / yüksek hızlı ε·S; v13.7: U-04 = yoğunluk × √ENBW Butterworth, U-07 = yoğunluk × √(f_kayıt/2)), u_video = RSS(U-01, 02, 03, 05, 06), u_yüksek hızlı = RSS(U-02, 03, 04, 05, 07), toplanır kısımlar (U-05 hariç), TUR (k = 1 ve Z540.3), taban sınırı, taban düzeltmesi (toplanır kısımla), senkron faz hatası ve IMU süzgecinin grup gecikmesi √2/(2π·f_IMU), kayıt istatistiği (ε_r: 1/√n_d ve Hann %50 örtüşme düzeltmeli, ρ sayısal pencereden); 4 durum",
+   "exp": "özdeş",
+   "got": "en büyük göreli fark 3.5e-16 (HDTV-NFOV, Z540.3, τ = 10 s · TUR_w); 136 sayı",
+   "crit": "≤ 1·10⁻¹²",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W12",
+   "name": "Karar belirsizliği ve koruma bandı (v13.7)",
+   "method": "Φ(z): motorun Hart–West yaklaşımı ↔ erf Taylor serisi (|z| ≤ 2) ve erfc sürekli kesiri (|z| > 2), 15 nokta; decisionGuard: u_c = √(u_ist² + (x·u_rel)²), U = k·u_c, KABUL/BELİRSİZ/RED, uygunluk olasılığı, taban yanlılığı (içeren ve ekleyen kip), 6 durum",
+   "exp": "özdeş",
+   "got": "Φ en büyük mutlak fark 1.1e-16; decisionGuard en büyük göreli fark 8.8e-10; 35 sayı, 0 karar uyuşmazlığı",
+   "crit": "Φ mutlak ≤ 1·10⁻¹², diğerleri göreli ≤ 1·10⁻⁹ (uç olasılıklar dahil), karar uyuşmazlığı 0",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W13",
+   "name": "B1-04 tabanı: kaçıklığın sızdırdığı LOS ekseni etrafındaki dönme (v13.8)",
+   "method": "15 durum (denizaltı ve gemi, a0 = 0…180°, 6-DOF, roll tabanı); bağımsız: σ_rot² = (cos a0·σ_roll)² + (sin a0·σ_pitch)², baskın serbestlik derecesinin f_dom'u; bütçe B1-04 = ε·√2·σ_rot (µrad genlik), G ve R-01'in G'si aynı f",
+   "exp": "özdeş",
+   "got": "en büyük göreli fark 0.00 (); 75 sayı, 0 baskın eksen uyuşmazlığı",
+   "crit": "≤ 1·10⁻¹², uyuşmazlık 0",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W14",
+   "name": "Stabilizasyon döngüsü: kesim, faz/kazanç payı ve DRR (v13.9, ikinci uygulama)",
+   "method": "9 durum (el/az, dar bant kapalı / 6 Hz, f_c 60, f_i 8, f_ctl 1 kHz, gyro gecikmesi 1 ms, elevasyon 60°); bağımsız: kendi karmaşık aritmetiği, RBJ biquad, geri Euler PII, z⁻¹·ZOH, K = 1/|C G P|(f_c) sürekli tasarımdan; 10 frekansta DRR genlik/faz ve tork yolu",
+   "exp": "özdeş",
+   "got": "K, kesim, PM, GM, GM frekansı: en büyük göreli fark 1.3e-15 (el gyro gecikmesi 1 ms GM); DRR ve tork: 6.8e-15 dB/° (el f_ctl 1 kHz @ 0.5 Hz); varsayılan el PM 52.35°, GM 12.16 dB @ 156.7 Hz",
+   "crit": "≤ 1·10⁻⁹; DRR ≤ 1·10⁻⁸ dB",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W8",
+   "name": "PSD ağırlıklandırma (wander/smear ayrımı)",
+   "method": "(a) 0–200 Hz düz PSD: toplam √(S·200), wander √∫S·sinc²(πfT)df (400 000 noktalı yamuk); (b) 3000 noktalı logaritmik ızgarada alçak geçiren + 8 Hz tepe + taban PSD'si, ikinci uygulama (orta nokta Δf, bantlar < 1, 1–20, > 20 Hz)",
+   "exp": "(a) analitik, (b) özdeş",
+   "got": "(a) toplam 5.1e-14, wander 4.9e-15; (b) en büyük göreli fark 0.00 ()",
+   "crit": "(a) ≤ 1·10⁻⁶ (ızgara), (b) ≤ 1·10⁻¹²",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W9",
+   "name": "Tahsislerin tek kaynağı ve IFOV ölçeklemesi",
+   "method": "testlerin kullandığı tahsisler (budgetAlloc) ↔ bütçe satırlarının Q sütunu; Q = q·IFOV (q = tablo/40 µrad), R-01 = k_roll·IFOV; varsayılan kanalda tablo değerleri tam (bit düzeyinde) korunur",
+   "exp": "özdeş; varsayılanda tam",
+   "got": "IFOV ölçeklemesinden en büyük göreli sapma 1.1e-16; varsayılanda tam: evet · varsayılan: B1-01 5.0000 µrad = 0.1250 IFOV · HDTV-NFOV: B1-01 1.4375 µrad = 0.1250 IFOV · f = 600 mm: B1-01 2.5000 µrad = 0.1250 IFOV",
+   "crit": "fark yok, sapma ≤ 1·10⁻¹⁵",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W10",
+   "name": "Kaldıraç kolu bütçesi: ivme terimleri, B1-08/B1-10, tam ilişkili sınır, laboratuvar talebi",
+   "method": "5 durum (denizaltı ve gemi varsayılanı; gemi r = (20, −4, 15) m dar ve SS4; denizaltı SS5, r = (−8, 3, −2) m; k_g > 0): ikinci uygulama σ ve biçimleri parametrelerden kurar, spektral momentleri log-frekansta Simpson kuralıyla hesaplar; a_x = θ̈·r_z − ψ̈·r_y, a_y = ψ̈·r_x − φ̈·r_z, a_z = φ̈·r_y − θ̈·r_x, terimler karesel; f_a = √(Σσ²f²/Σσ²); B1-10 = k_g·√Σ(σ_a/2πf)²/g; tam ilişkili sınır = eksen başına terimlerin toplamı; laboratuvar σ_k ve tepe ≈ k_p·σ + ½|r_k|(σ_a² + σ_b²)",
+   "exp": "özdeş (sayısal integrasyon)",
+   "got": "en büyük göreli fark 1.8e-7 (denizaltı SS5, r = (−8, 3, −2) m, k_g = 1 · a_y); 85 sayı · denizaltı varsayılanı (h = 1 m): |a| 0.0254 m/s², tam ilişkili 0.0254, B1-08 0.051 µrad, B1-10 0.0000 µrad, q 0.9003 · gemi varsayılanı (h = 15 m): |a| 0.5515 m/s², tam ilişkili 0.5515, B1-08 1.103 µrad, B1-10 0.0000 µrad, q 0.0318 · gemi dar, r = (20, −4, 15) m, k_g = 0,5: |a| 0.7229 m/s², tam ilişkili 0.8363, B1-08 1.446 µrad, B1-10 0.2380 µrad, q 0.0309 · gemi SS4, r = (20, −4, 15) m, k_g = 0,5: |a| 1.8704 m/s², tam ilişkili 2.6505, B1-08 3.741 µrad, B1-10 0.3812 µrad, q 0.0682 · denizaltı SS5, r = (−8, 3, −2) m, k_g = 1: |a| 1.8760 m/s², tam ilişkili 2.8737, B1-08 3.752 µrad, B1-10 0.8190 µrad, q 0.0672",
+   "crit": "≤ 1·10⁻⁶",
+   "pass": true
+  },
+  {
+   "grp": "W",
+   "id": "W11",
+   "name": "Kolimatör geometrisi, demet–göz bebeği örtüşmesi ve test hareketlerinden yanal kayma",
+   "method": "6 durum (denizaltı ve gemi varsayılanı, HDTV-NFOV, f_c 900 mm + iğne 100 µm, D_c 250 mm, L_off 0,15 m + θ_test 10°): f_c/f, iğne açısı ve görüntüsü, e_free, bayraklar; örtüşme kutupsal Simpson integraliyle (7 kayma); pupilShift 300 rastgele duruş/öteleme (±14°, ±100 mm, stab ON/OFF) temel dönüş matrisleriyle; T0.3 ve T2.5 kapalı biçim, T0.1 ve T1.3 profili 1 kHz bağımsız değerlendirme",
+   "exp": "özdeş geometri; örtüşme ve kayma integral/örnekleme duyarlığında",
+   "got": "geometri en büyük göreli fark 2.0e-16 (denizaltı varsayılanı · iğne açısı), bayrak uyuşmazlığı 0; örtüşme mutlak fark 4.3e-7; pupilShift 2.8e-17 m; test kayması göreli fark 1.2e-6, vinyetleme süresi farkı 0.00 puan, karar uyuşmazlığı 0; öteleme sığdırma uyuşmazlığı 0 (denizaltı varsayılanı: q_c 0.2994 → 18.164 mm (×1,01: 18.331 mm; sınır 18.182); HDTV-NFOV (D_p 75 mm): q_c 0.5213 → 30.651 mm (×1,01: 30.946 mm; sınır 30.682); f_c 900 mm, iğne 100 µm: q_c 0.2994 → 18.164 mm (×1,01: 18.331 mm; sınır 18.182); L_off 0,15 m, θ_test 10°: q_c 0.0000 → 30.615 mm (×1,01: 30.615 mm; sınır 18.182)); δ_max göreli fark 0.00; 1920 sayı · denizaltı varsayılanı: e_free 18.18 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 18.16 mm (vinyetleme %0.0), T0.1 0.00 mm · gemi varsayılanı: e_free 40.91 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 40.23 mm (vinyetleme %0.0), T0.1 0.00 mm · HDTV-NFOV (D_p 75 mm): e_free 30.68 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 30.65 mm (vinyetleme %0.0), T0.1 0.00 mm · f_c 900 mm, iğne 100 µm: e_free 18.18 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 18.16 mm (vinyetleme %0.0), T0.1 0.00 mm · D_c 250 mm: e_free 63.64 mm, T0.3 14.11/15.39, T2.5 x 12.67, T1.3 57.74 mm (vinyetleme %0.0), T0.1 0.00 mm · L_off 0,15 m, θ_test 10°: e_free 18.18 mm, T0.3 63.27/68.29, T2.5 x 12.67, T1.3 30.61 mm (vinyetleme %1.8), T0.1 3.93 mm",
+   "crit": "geometri ≤ 1·10⁻¹², bayrak 0; örtüşme ≤ 1·10⁻⁶; pupilShift ≤ 1·10⁻¹² m; kayma ≤ 1·10⁻³ (göreli), vinyetleme süresi ≤ 0,5 puan, karar uyuşmazlığı 0; sığdırılan oran sınırı tutar ve en büyüktür; δ_max ≤ 1·10⁻¹²",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N1",
+   "name": "Welch PSD, CSD ve koherans (scipy.signal)",
+   "method": "aynı dizi (n = 32 891, Hann, %50 örtüşme, segment ortalaması çıkarılır) JS ve scipy.signal.welch/csd/coherence ile",
+   "exp": "özdeş (yuvarlama)",
+   "got": "PSD 3.3e-11, CSD 1.4e-10 (göreli), koherans 1.3e-12 (mutlak)",
+   "crit": "≤ 1·10⁻⁹",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N2",
+   "name": "Biquad süzgeçler (RBJ, bilineer + ön-bükme)",
+   "method": "AG (Q = 0,8): |H(f0)| = Q; YG (Q = 0,8): |H(f0)| = Q; BG (Q = 5): |H(f0)| = 1; Tepe +12 dB: |H(f0)| = 10^(12/20); çentik: |H(f0)| = 0",
+   "exp": "kapalı biçim değer",
+   "got": "en büyük göreli fark 4.2e-15; çentik 2.6e-15",
+   "crit": "≤ 1·10⁻¹²",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N3",
+   "name": "İkinci derece mod modeli (Osc2, birinci derece tutma)",
+   "method": "adım girişi (FOH: rampa) yanıtı kapalı biçimle; 120 Hz, ζ = 0,02 modunda rezonans kazancı ve fazı",
+   "exp": "rampa yanıtı tam; kazanç 1/(2ζ) = 25, faz −90°",
+   "got": "en büyük mutlak fark 3.3e-13; kazanç 24.926, faz -90.00°",
+   "crit": "fark ≤ 1·10⁻¹⁰; kazanç ±%0,5; faz ±0,5°",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N4",
+   "name": "Birinci derece gecikme ve Gauss–Markov süreci",
+   "method": "adım yanıtı 1 − e^(−2πf_c t); durağan σ (400 000 örnek, T_c = 0,5 s)",
+   "exp": "tam; σ = 2,000",
+   "got": "en büyük fark 3.8e-15; σ = 1.9929",
+   "crit": "fark ≤ 1·10⁻¹²; σ ±%3",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N5",
+   "name": "Deniz profili sentezi (spektral, log-Gauss)",
+   "method": "RMS hedefe normalize; Welch PSD / hedef biçim oranı tepe bandında (±1σ_ln)",
+   "exp": "RMS 1,000; oran 1",
+   "got": "RMS 1.000000; ortalama |oran − 1| = 0.015 (6 kutu)",
+   "crit": "RMS ±1·10⁻⁹; |oran − 1| ≤ 0,10 (Welch istatistiği, n_d ≈ 255)",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N6",
+   "name": "Şekillendirilmiş gürültü (platform titreşimi biçimi)",
+   "method": "4–33 Hz, 4. derece YG/AG kesitler; hedef RMS dürtü yanıtı enerjisinden; 395 s örnek",
+   "exp": "RMS 0,9066 m/s²",
+   "got": "RMS 0.9059",
+   "crit": "±%2",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N7",
+   "name": "Gyro gürültü modeli: ARW ve bias kararsızlığı (Allan)",
+   "method": "beyaz hız gürültüsü (1 sa, 100 Hz) σ(τ)√τ/N; bias modeli: kapalı biçim Allan eğrisi ve 12 sa benzetimi",
+   "exp": "σ(τ)√τ = N; düz bölge (20–1000 s) 0,664·B ±%3; benzetim = kapalı biçim",
+   "got": "τ 0.1 s: 0.9953 (±1.1 %), τ 1 s: 0.9717 (±3.5 %), τ 10 s: 1.0161 (±11.2 %); kapalı biçim 20–1000 s: 0.647–0.672 B (2 s: 0.548, 3000 s: 0.699); benzetim τ 5 s: 0.605/0.612 B, τ 50 s: 0.677/0.655 B, τ 500 s: 0.747/0.665 B",
+   "crit": "ARW ve benzetim: tahminin 3σ güven aralığı (1/√(2(K−1))); düz bölge 0,644–0,684 B",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N8",
+   "name": "Sinüs + doğrusal trend uydurması (DRR ve dwell analizleri)",
+   "method": "400 Monte Carlo denemesi: A = 1, φ = 0,4 rad, σ = 0,5, n = 600",
+   "exp": "yansız A ve φ; standart hata ≈ örnek saçılımı",
+   "got": "A 1.0002, φ 0.4017; σ_A örnek 0.0283 / formül 0.0289",
+   "crit": "|A−1| ≤ %1; |φ−0,4| ≤ 0,01; σ oranı 0,85–1,15",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N9",
+   "name": "Senkron ortalama (TSA, T1.6/T4.2 sürtünme analizi)",
+   "method": "0,05 Hz uyarımda her yön değişiminde 5 µrad, 0,5 s sönümlü geçiş; üstüne 1,2 µrad/√s rastgele yürüyüş (ARW) ve 0,5 µrad beyaz gürültü; 10 periyot",
+   "exp": "gürültüsüz referans: tekrarlanan RMS 0.710 µrad, tepe 4.39 µrad",
+   "got": "gürültülü: RMS 0.621 µrad, tepe 4.40 µrad",
+   "crit": "RMS ±%15; tepe ±%25",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N10",
+   "name": "Dalga çarpması modeli ve Campbell teoremi (T2.4 işletme kestirimi)",
+   "method": "3893 olay, 40000 s: Poisson (λ = 0.1/s), Rayleigh genlik, T_p ~ U[0.05, 0.2] s",
+   "exp": "σ = √(λ·E[A²]·E[T_p]/2) = 166.02 µrad",
+   "got": "σ = 162.07 µrad",
+   "crit": "±%8 (≈ 4000 olayın istatistiği)",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N11",
+   "name": "Gecikme kestirimi (T0.4)",
+   "method": "bant sınırlı gürültüye 0,93 ms gecikme; çapraz ilinti + parabolik tepe",
+   "exp": "0,930 ms",
+   "got": "0.9294 ms",
+   "crit": "±0,01 ms",
+   "pass": true
+  },
+  {
+   "grp": "N",
+   "id": "N12",
+   "name": "EIS yol yumuşatma (bütçenin sürekli zaman artık çarpanı ↔ kare dizisine uygulama)",
+   "method": "f_c = 0,5 Hz, η = 0,8; 50 fps ayrık birinci derece yumuşatıcı",
+   "exp": "sürekli zaman artık çarpanı R(f_a)",
+   "got": "0.125 Hz: 0.9714/0.9714 · 0.5 Hz: 0.7211/0.7211 · 2 Hz: 0.3098/0.3106 · 5 Hz: 0.2211/0.2225 · 10 Hz: 0.2044/0.2059",
+   "crit": "±%2 (ayrık / sürekli fark)",
+   "pass": true
+  },
+  {
+   "grp": "K",
+   "id": "K1",
+   "name": "Büyük açılı kinematik (stab OFF)",
+   "method": "3 geometri (LOS az/el ve taban roll/pitch/yaw 3–12°): motorun LOS el/xel ve görüntü rotasyonu, R = Rz(β)Rz(ψ)Ry(θ)Rx(φ) ile bağımsız hesap",
+   "exp": "özdeş",
+   "got": "en büyük fark 0.007 µrad",
+   "crit": "≤ 0,05 µrad (kayıt float32)",
+   "pass": true
+  },
+  {
+   "grp": "K",
+   "id": "K2",
+   "name": "Dünya dönüşü: eylemsiz LOS'un laboratuvara göre kayması",
+   "method": "ideal gimbal, kompanzasyon KAPALI, 3 geometri; ölçülen kayma hızı (sim / formül): el ↔ Ω·|cos φ·sin α|, xel ↔ Ω·|sin φ·cos ε − cos φ·cos α·sin ε|, rot ↔ h·tan ε (az gimbal hareketinin LOS bileşeni)",
+   "exp": "dünya dönüşü izdüşüm formülleri",
+   "got": "el/xel en büyük göreli fark 0.060 %; rot farkı 0.056 % Ω",
+   "crit": "el/xel ≤ %0,1; rot ≤ %1 Ω",
+   "pass": true,
+   "detail": "φ 40°, α 90°, ε 0°: el 55.86/55.86, xel 46.87/46.87, rot 0.00/0.00 µrad/s · φ 40°, α 45°, ε 30°: el 39.51/39.50, xel 20.83/20.84, rot 12.03/12.03 µrad/s · φ -25°, α 200°, ε 60°: el 22.62/22.60, xel 38.37/38.37, rot 66.43/66.47 µrad/s"
+  },
+  {
+   "grp": "K",
+   "id": "K3",
+   "name": "Dünya dönüşü kompanzasyon artığı",
+   "method": "kompanzasyon AÇIK, yönelim hatası δ = 1° (LOS'a ve Ω'ya dik): kayma hızının büyüklüğü",
+   "exp": "Ω·δ = 1.273 µrad/s",
+   "got": "1.273 µrad/s",
+   "crit": "±%0,5",
+   "pass": true
+  },
+  {
+   "grp": "K",
+   "id": "K4",
+   "name": "Stabilizasyon geometrisi (gimbal açıları)",
+   "method": "taban roll 4°, yaw 6° (rampa) stab ON, ideal gimbal: enkoder açıları ↔ R_LBᵀ·l₀'dan bağımsız hesap; LOS sapması",
+   "exp": "az -6.0145°, el -3.9781°",
+   "got": "az -6.0145°, el -3.9781°; LOS 0.016 µrad",
+   "crit": "açı farkı ≤ 1 µrad; LOS ≤ 1 µrad",
+   "pass": true
+  },
+  {
+   "grp": "K",
+   "id": "K5",
+   "name": "Kayma ayrışımı (düzenek okları)",
+   "method": "tüm mekanizmalar açık, sinüs senaryosu 60 s; kaydedilen katkıların eğimi (10–60 s) ↔ (a) dünya dönüşü artığının analitik izdüşümü (Δ × l₀)·{z_r, y_r}, (b) gyro bias'ı açık − kapalı koşu farkı, (c) δ = 0 ve bias = 0 koşusunun eğimi (aynı tohum)",
+   "exp": "(a) 0.8181 / 0.9750; (b) 0.3730 / 6.698e-4; (c) -0.0296 / -0.1068 µrad/s (el / xel)",
+   "got": "(a) 0.8181 / 0.9750; (b) 0.3730 / 6.702e-4; (c) -0.0297 / -0.1069 µrad/s",
+   "crit": "(a) ≤ %0,1; (b) ve (c) ≤ 0,005 µrad/s",
+   "pass": true
+  },
+  {
+   "grp": "K",
+   "id": "K6",
+   "name": "Görüntü rotasyonu: köşe pikseli ölçütü (v11)",
+   "method": "MWIR-NFOV optiği (p = 12 µm, f = 300 mm), 640×512 / 1024×768 / 1280×1024: motorun ψ_lim'i kadar dönmede köşe pikselinin yer değiştirmesi — (a) görüntü düzleminde 2B dönme matrisiyle, (b) nesne uzayında köşe yönünün Rz(ψ) ile dönmesiyle; (c) kenar/köşe oranı √(1 + (Nv/Nh)²); (d) 0,5/r_px kesin değerleri 1220 / 781,25 / 610 µrad; (e) bütçe R-01 = roll artığı × atan(r·p/f)",
+   "exp": "(a) 0,5 px; (b) 0,5 IFOV; (c) √(1 + (Nv/Nh)²); (d) 1220 / 781,25 / 610 µrad; (e) özdeş",
+   "got": "(a) 0.036 %, (b) 0.018 %, (c) 0.014 %, (d) 0.045 %, (e) 2.22045e-14 % en büyük göreli fark",
+   "crit": "(a), (b), (d) ≤ %0,1 (dar alanda tan θ ≈ sin θ ≈ θ); (c) ≤ %0,1; (e) ≤ 1·10⁻¹⁰",
+   "pass": true,
+   "detail": "640×512: r = 409.8 px, ψ_lim 1220.22 µrad (k/r 1220.11), köşe 0.50004 px, açı 0.49998 IFOV, kenar/köşe 1.28058 · 1024×768: r = 640.0 px, ψ_lim 781.42 µrad (k/r 781.25), köşe 0.50011 px, açı 0.49995 IFOV, kenar/köşe 1.24990 · 1280×1024: r = 819.6 px, ψ_lim 610.27 µrad (k/r 610.05), köşe 0.50018 px, açı 0.49991 IFOV, kenar/köşe 1.28045"
+  },
+  {
+   "grp": "K",
+   "id": "K7",
+   "name": "Kolimatör paralaksı: hedef yolu ↔ bağımsız kinematik (v13.5)",
+   "method": "iki platform, deniz profili 60 s (tohum 1701), δ = +200 / −150 µm: kaydedilen paralaks açısı ↔ kaydedilen duruş (temel dönüş matrisleri) ve ötelemeden −Rz(β)[t + (R − I)v]·δ/f_c² (yr, zr)",
+   "exp": "özdeş (float32 kayıt duyarlığında)",
+   "got": "en büyük göreli fark 8.9e-8; 24000 örnek · denizaltı deniz profili, δ = 200 µm: tepe 1.615 µrad, en büyük fark 1.43e-4 nrad · gemi deniz profili, δ = −150 µm: tepe 2.725 µrad, en büyük fark 2.35e-4 nrad",
+   "crit": "≤ 1·10⁻⁵ (kayıt float32)",
+   "pass": true
+  },
+  {
+   "grp": "D",
+   "id": "D1",
+   "name": "Kapalı döngü bozucu bastırma (DRR): zaman alanı ↔ analitik model",
+   "method": "sürtünme, vuruntu, gürültü, dengesizlik kapalı; b,k kuplajı açık; 0,05° sinüs, 4 kHz, 0,125–100 Hz (kesim ≈ 40 Hz); model: ayrık PII + bilineer AG/rezonans + hesap gecikmesi × ZOH + akım ve gyro bantları + mekanik",
+   "exp": "öykünme döngü modeli |DRR(f)|",
+   "got": "en büyük fark ≤ 12 Hz: 0.02 dB; 20–100 Hz dahil: 0.14 dB (3 yapılandırma × 12 frekans)",
+   "crit": "≤ 12 Hz: ±0,1 dB; tümü ±0,25 dB",
+   "pass": true,
+   "detail": "el, rezonans AÇIK [f Hz: sim/model dB] 0.125: -80.0/-80.0, 0.5: -65.3/-65.3, 1: -56.5/-56.5, 2: -51.7/-51.7, 3: -60.2/-60.2, 5: -40.4/-40.4, 8: -33.9/-33.9, 12: -31.2/-31.2, 20: -29.8/-29.8, 40: -30.6/-30.5, 60: -32.5/-32.3, 100: -36.3/-36.2 · el, rezonans KAPALI [f Hz: sim/model dB] 0.125: -80.0/-80.0, 0.5: -65.0/-65.0, 1: -55.2/-55.2, 2: -45.2/-45.2, 3: -40.0/-40.0, 5: -35.2/-35.2, 8: -32.4/-32.4, 12: -31.2/-31.2, 20: -30.7/-30.6, 40: -31.5/-31.4, 60: -33.0/-32.9, 100: -36.4/-36.3 · az, rezonans KAPALI [f Hz: sim/model dB] 0.125: -76.4/-76.4, 0.5: -62.9/-62.9, 1: -54.3/-54.3, 2: -44.8/-44.8, 3: -39.8/-39.8, 5: -34.9/-34.9, 8: -32.0/-32.0, 12: -30.8/-30.7, 20: -30.7/-30.7, 40: -33.1/-33.0, 60: -35.6/-35.5, 100: -39.8/-39.7"
+  },
+  {
+   "grp": "D",
+   "id": "D6",
+   "name": "Uyarlanır dar bandın frekans kestirim hatası: zaman alanı ↔ analitik (v13.10)",
+   "method": "ton 3 ve 4,1 Hz; kestirim hatası 0, +%5, −%10, +%20, +%10; benzetimde dar bant f·(1 + e)'ye ayarlı, analitik loopModel(f·(1 + e), K sabit); yalnız kuplaj, 0,05° sinüs, 4 kHz",
+   "exp": "analitik DRR",
+   "got": "en büyük fark 0.021 dB · 3 Hz, %0: -60.17/-60.20 · 3 Hz, %5: -58.82/-58.84 · 3 Hz, %-10: -55.88/-55.89 · 3 Hz, %20: -52.45/-52.45 · 4.1 Hz, %10: -53.39/-53.40 [dB: benzetim/analitik]",
+   "crit": "±0,1 dB",
+   "pass": true
+  },
+  {
+   "grp": "D",
+   "id": "D2",
+   "name": "Tork bozucusu yolu (kütle dengesizliği × doğrusal ivme)",
+   "method": "gimbal merkezinde 1 m/s² düşey sinüs ivme; T = −(U × f)_y = U_x·a; mekanik LOS genliği",
+   "exp": "U_x·a·|θ/T_d(f)| (analitik)",
+   "got": "1 Hz: 0.7808/0.7809 µrad · 3 Hz: 0.1850/0.1850 µrad · 8 Hz: 1.4448/1.4453 µrad · 15 Hz: 1.1641/1.1665 µrad · en büyük fark 0.02 dB",
+   "crit": "±0,5 dB",
+   "pass": true
+  },
+  {
+   "grp": "D",
+   "id": "D3",
+   "name": "Gyro gürültüsünün döngüden geçişi (B2-05 mekanizması)",
+   "method": "300 s, yalnız ARW açık (2 kHz hızında ayrık beyaz dizi); Welch PSD / analitik 2·N²·|θ/n|² bant oranları",
+   "exp": "oran 1",
+   "got": "2–10 Hz: 1.042 · 10–40 Hz: 0.980 · 40–150 Hz: 0.961",
+   "crit": "±%6 (Welch istatistiği ve 1 kHz kayıt örtüşmesi)",
+   "pass": true
+  },
+  {
+   "grp": "D",
+   "id": "D4",
+   "name": "LuGre sürtünme durumunun ayrıklaştırılması",
+   "method": "adım içinde sabit hızla tam çözüm (motorun yöntemi, 4 kHz) ↔ RK4 (1 µs), 0,5 + 3,1 Hz bağıl hız, 4 s",
+   "exp": "aynı sürtünme torku",
+   "got": "en büyük fark 0.217 % F_c",
+   "crit": "≤ %1 F_c",
+   "pass": true
+  },
+  {
+   "grp": "D",
+   "id": "D5",
+   "name": "Hexapod dinamiği: Osc2 iletimi ve T2.5 duyarlılığının f_bw'den bağımsızlığı (v13.4)",
+   "method": "Osc2 (f_bw 20 ve 10 Hz, ζ 0,7071, 4 kHz FOH) sinüs yanıtı en küçük kareler ↔ 1/√((1 − r²)² + (2ζr)²) ve faz; T2.5 zaman alanı koşusunda IMU ile ölçülen iletim τ (8 Hz) ↔ analitik; T2.5 duyarlılığı f_bw = 20 ↔ 10 Hz",
+   "exp": "genlik ve faz analitikle aynı; duyarlılık hexapod bandından bağımsız",
+   "got": "genlik farkı 5.8e-5, faz farkı 1.10e-7°; τ(8 Hz) f_bw 20: 0.987 (analitik 0.987), f_bw 10: 0.842 (0.842); duyarlılık 1.906 ↔ 1.903 µrad/(m/s²) (göreli fark %0.16); işletme düzeyi farkı 1.641 ↔ 1.638 µrad",
+   "crit": "genlik ≤ 2·10⁻⁴, faz ≤ 0,05°; |τ − τ_analitik| ≤ 0,002; duyarlılık farkı ≤ %0,5",
+   "pass": true
+  },
+  {
+   "grp": "C",
+   "id": "C1",
+   "name": "Örnekleme hızı yakınsaması (laboratuvar, sürtünme dahil)",
+   "method": "roll 3° @ 0,125 Hz + yaw 1° @ 0,083 Hz; tüm mekanizmalar (gürültü/bias hariç); 2, 4, 8 kHz",
+   "exp": "8 kHz çözümü",
+   "got": "artık RMS el/xel (µrad): 2 kHz 5.331/2.923, 4 kHz 5.331/2.924, 8 kHz 5.329/2.924",
+   "crit": "2 kHz ve 4 kHz, 8 kHz'den ≤ %3",
+   "pass": true
+  },
+  {
+   "grp": "C",
+   "id": "C2",
+   "name": "Örnekleme hızı yakınsaması (işletme ayrıştırması)",
+   "method": "B1-01 (kuplaj), B1-07 (sürtünme), B2-03 (dengesizlik) satırları 200 s; 2 kHz (kullanılan) ↔ 8 kHz",
+   "exp": "8 kHz çözümü",
+   "got": "B1-01: 3.821 / 3.821 µrad · B1-07: 2.699 / 2.694 µrad · B2-03: 1.636 / 1.636 µrad",
+   "crit": "≤ %3",
+   "pass": true
+  },
+  {
+   "grp": "C",
+   "id": "C3",
+   "name": "Örnekleme hızı yakınsaması (yapısal modlar, v13.11)",
+   "method": "optik alt montaj modu (1 m/s² shaker) ve gimbal yapısal modu (5 rad/s² açısal uyarıcı) rezonansta; 4 kHz (kullanılan) ve 16 kHz",
+   "exp": "g·a/(2ζ) (sürekli zaman)",
+   "got": "optik 120 Hz, 4 kHz: 37.266 / 37.500 µrad (-0.62 %) · optik 120 Hz, 16 kHz: 37.482 / 37.500 µrad (-0.05 %) · gimbal 180 Hz, 4 kHz: 24.649 / 25.000 µrad (-1.41 %) · gimbal 180 Hz, 16 kHz: 24.972 / 25.000 µrad (-0.11 %)",
+   "crit": "16 kHz ±%0,25; 4 kHz ±%2",
+   "pass": true,
+   "detail": "Ayrıklaştırma kaybı yaklaşık −0,18·(ω·dt)²: 4 kHz'de 120 Hz %0,6, 180 Hz %1,4, 400 Hz %7. İşletme düzeyleri benzetimde kalibre edildiği için varsayılan bütçe etkilenmez; mod frekansı 250 Hz'in üstüne alınırsa benzetim hızı artırılmalıdır."
+  },
+  {
+   "grp": "M",
+   "id": "M1",
+   "name": "Plaka ölçeği kalibrasyonu (T0.1)",
+   "method": "5×5 ızgara × 3 ziyaret, stab OFF; IFOV ve radyal distorsiyonun geri kazanımı",
+   "exp": "IFOV 40.1600 µrad, k1 -0.002",
+   "got": "IFOV 40.1587 ± 5.787e-4 µrad, k1 -0.00208",
+   "crit": "IFOV farkı ≤ 3u ve ≤ %0,05; k1 ±%10",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M2",
+   "name": "Video ölçüm tabanı: centroid gürültüsü",
+   "method": "stab OFF, granit, soğutucu ve hava kapalı, 120 s (6000 kare): σ = √(Σ(Δx)²/2(n−1)); T0.2 tam zincirde 1.65 / 1.39 µrad (soğutucunun 10/20 Hz'e katlanan tonları ve hava dahil)",
+   "exp": "U-01 = 0.03 px × IFOV = 1.205 µrad",
+   "got": "el 1.199, xel 1.237 µrad",
+   "crit": "±2.7 % (3σ)",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M3",
+   "name": "Senkronizasyon gecikmesi (T0.4)",
+   "method": "10 yarım-sinüs darbe, stab OFF; video − IMU gecikmesi",
+   "exp": "senkron kayması − IMU grup gecikmesi = -0.9502 ms",
+   "got": "-0.9285 ± 0.0318 ms",
+   "crit": "≤ 3σ veya ≤ 0,02 ms",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M4",
+   "name": "Gyro Allan karakterizasyonu (T0.6): kestiricinin dağılımı (v13.11)",
+   "method": "4 sa, 100 Hz ham gyro; ARW (τ ≈ 1 s) ve bias kararsızlığı (taban/0,664); 40 tohum ↔ bağımsız Monte Carlo (k13/gyro_ref.py, 200 gerçekleşme)",
+   "exp": "model ARW 0.0042 °/√h, BI 0.042 °/h; kestirici ortalaması (bağımsız MC) ARW 0.00421, BI 0.0339 (sd 0.0091)",
+   "got": "40 tohum: ARW 0.00421, BI 0.0356 (sd 0.0100); tek tohum (varsayılan) ARW 0.00424, BI 0.0461",
+   "crit": "ortalamalar 3σ içinde (BI ±0.0047, ARW ±12.4·10⁻⁶); tek tohum ARW ±%5",
+   "pass": true,
+   "detail": "BI kestiricisi modelin %-19'i kadar düşük ortalamaya ve ±%27 dağılıma sahiptir: kısa kayıtta yavaş Gauss–Markov bileşenleri tabanda görünmez ve en küçük değer seçimi aşağı çeker (IEEE Std 952-1997, Ek C)."
+  },
+  {
+   "grp": "M",
+   "id": "M5",
+   "name": "Dünya dönüşü sağlaması (T0.7)",
+   "method": "kompanzasyon KAPALI 120 s / AÇIK 900 s, tüm mekanizmalar ve ölçüm zinciri açık",
+   "exp": "KAPALI 46.87 / 55.86 µrad/s; AÇIK ≤ 1.52",
+   "got": "KAPALI 47.10 / 55.67; AÇIK 0.691 / 1.339 µrad/s",
+   "crit": "KAPALI ±%1 (gyro bias payı); AÇIK sınır altında",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M6",
+   "name": "Stab OFF kazancı (T1.2): ölçek, işaret ve eksen eşlemesi",
+   "method": "roll ve yaw, 0,05–1 Hz, video (kalibre IFOV) / IMU",
+   "exp": "kazanç 1",
+   "got": "en büyük |kazanç − 1| = 0.021 %",
+   "crit": "≤ %0,5",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M7",
+   "name": "Taban düzeltmesi: üç kipin masa titreşimini düşmesi (v11; v13.5 ayırt edici)",
+   "method": "deniz profili 380 s, stab ON, aynı tohum; masa mikro-titreşimi KAPALI ve AÇIK (2 ve 10 µrad); video wander el. Kipler: kapalı (s = 0), zincir (s = yalıtılmış koşunun video payı), tam (s = masa düzeyi)",
+   "exp": "σ_DUT ≈ σ_kapalı = 7.135 µrad; en küçük hata varsayılan kipte (kapalı)",
+   "got": "2 µrad masa: σ_açık 7.114 (s_zincir 0.410) → hata kapalı 0.021, zincir 0.033, tam 0.308 µrad; en iyi kapalı · 10 µrad masa: σ_açık 7.152 (s_zincir 2.050) → hata kapalı 0.017, zincir 0.283, tam 7.135 µrad; en iyi kapalı",
+   "crit": "her iki düzeyde en küçük hata varsayılan kipte ve ≤ max(0,05 µrad, %1·σ_kapalı)",
+   "pass": true
+  },
+  {
+   "grp": "M",
+   "id": "M8",
+   "name": "Piksel fazı S-eğrisi kalibrasyonu (T0.1 sub-piksel taraması)",
+   "method": "stab OFF, merkezde 16 adım × 1/16 px (iki eksen birlikte), bit-ters sırayla gidiş + dönüş, 5 s bekleme; doğrusal model artığına A·sin 2πφ + B·cos 2πφ + eksen sabiti + eksen zaman trendi uydurması; üç durum (varsayılan, pixlock 0,05 px, pixlock 0)",
+   "exp": "genlik a·exp(−2π²σ²), a = √2·pixlock; kazanç 1 + 2π·a_etkin·cos 2πφ (hedef noktası x0, y0)",
+   "got": "varsayılan: genlik 0.0264 ± 0.0017 (beklenen 0.0268, σ 0.053 px); kazanç 0.877 / 1.054 ± 0.010 (beklenen 0.885 / 1.042) · pixlock 0,05 px: genlik 0.0679 ± 0.0024 (beklenen 0.0669, σ 0.053 px); kazanç 0.698 / 1.119 ± 0.015 (beklenen 0.712 / 1.105) · pixlock 0: genlik 0.0023 ± 0.0017 (beklenen 0.0000, σ 0.053 px); kazanç 0.993 / 1.012 ± 0.010 (beklenen 1.000 / 1.000)",
+   "crit": "genlik ve kazanç ≤ 3u (k = 1 kestirim belirsizliği); pixlock 0 durumunda genlik ≤ 3u",
+   "pass": true,
+   "detail": "Izgara noktaları kullanılmaz: fazları konuma bağlıdır (adım 254,9 px; distorsiyon fazı konumla birlikte kaydırır, 25 noktada eksen başına 13 farklı değer) ve ölçek + k1 modeli S-eğrisinin o noktalardaki değerinin bir kısmını soğurur (ızgarayla uydurulan genlik 0,0246 px, beklenen etkin 0,0268; ızgara + tarama birlikte 0,0241). Kestirim, bekleme sırasındaki titreşimle sönmüş etkin genliktir; hedef sabitken (T1.9) aynı mertebede titreşim olduğundan kazanç bu genlikle hesaplanır."
+  },
+  {
+   "grp": "M",
+   "id": "M9",
+   "name": "Piksel fazı: küçük hareket kazancı ve sapma, zaman alanı ↔ Bessel",
+   "method": "stab OFF, centroid gürültüsü ve hava kapalı; hedef fazı φ ∈ {0; 0,25; 0,5}, sinüs genliği A ∈ {0,1; 0,5; 1} px (el 0,2 Hz, xel 0,31 Hz), 64 s; video ↔ gerçek optik LOS sinüs uydurması",
+   "exp": "kazanç 1 + 2πa·cos 2πφ·2J1(2πA)/(2πA), sapma a·J0(2πA)·sin 2πφ (a = √2·pixlock = 0,0283 px)",
+   "got": "kazanç (ölçülen / beklenen, el): φ 0, A 0.10 px: 1.1691 / 1.1691 · φ 0, A 0.50 px: 1.0318 / 1.0322 · φ 0, A 1.00 px: 0.9880 / 0.9880 · φ 0.25, A 0.10 px: 1.0005 / 1.0000 · φ 0.25, A 0.50 px: 1.0010 / 1.0000 · φ 0.25, A 1.00 px: 0.9996 / 1.0000 · φ 0.5, A 0.10 px: 0.8309 / 0.8309 · φ 0.5, A 0.50 px: 0.9682 / 0.9678 · φ 0.5, A 1.00 px: 1.0120 / 1.0120; en büyük fark kazanç 0.00101, sapma 2.7412e-4 px",
+   "crit": "kazanç ±0,002; sapma ±0,0005 px",
+   "pass": true,
+   "detail": "Küçük harekette (A = 0,1 px) piksel fazı hatası çarpımsaldır: φ = 0'da kazanç 1,17, φ = 0,5'te 0,83. A = 0,5 px'te sapma %18'e iner (2J1(π)/π = 0,181), 1 px'te işaret değiştirir ve %7'de kalır: hedef ≥ 0,5 px gezindiğinde faz ortalanır, hata toplanır U-06 (a/√2) olarak kalır. Hedefi sabit tutan ölçümlerde (T1.9 takip, T0.2 durağan koşu) çarpımsal biçim geçerlidir."
+  },
+  {
+   "grp": "M",
+   "id": "M10",
+   "name": "IMU ve otokolimatör gürültü yoğunluğu (v13.7)",
+   "method": "hareketsiz masa, yalnız ölçüm gürültüsü, 120 s; f_IMU 500 Hz (fs 2 ve 4 kHz) ve 100 Hz; IMU gürültüsü süzgeçten geçer, otokolimatör kayıt bandında beyaz; Welch 4096",
+   "exp": "IMU RMS = imu_asd·√ENBW (ayrık süzgeç, sayısal integral), yoğunluk = imu_asd; otokolimatör RMS = ac_asd·√500, yoğunluk = ac_asd (0,0224 µrad/√Hz)",
+   "got": "f_IMU 500 Hz, fs 2000: IMU RMS 0.5007 / 0.5009 µrad (ENBW 500.0 Hz), yoğunluk 1–50 Hz 0.02234; otokolimatör RMS 0.5018 / 0.5009 · f_IMU 500 Hz, fs 4000: IMU RMS 0.5139 / 0.5150 µrad (ENBW 528.6 Hz), yoğunluk 1–50 Hz 0.02291; otokolimatör RMS 0.5018 / 0.5009 · f_IMU 100 Hz, fs 2000: IMU RMS 0.2340 / 0.2347 µrad (ENBW 109.7 Hz), yoğunluk 1–50 Hz 0.02221; otokolimatör RMS 0.5018 / 0.5009",
+   "crit": "RMS ±%3, yoğunluk ±%5 (120 s kayıt istatistiği)",
+   "pass": true,
+   "detail": "Bütçe U-04, analog ikinci derece Butterworth'ün ENBW'sini kullanır (1,111·f_IMU = 555 Hz → 0,528 µrad): ayrık benzetimde ENBW fs 2 kHz'te 500, 4 kHz'te 529 Hz olduğundan kayıttaki IMU gürültüsü 0,501–0,515 µrad çıkar; bütçe en çok %5 temkinlidir. Kayıt 1 kHz'e seyreltilirken süzgecin 500 Hz üstündeki kuyruğu banda katlanır (fs 4 kHz'te 1–50 Hz yoğunluğu %2 yüksek)."
+  },
+  {
+   "grp": "V",
+   "id": "V1",
+   "name": "Yaklaşım 1 (E.7) ve c_lat,0(Re): yayımlanmış örnek",
+   "method": "37,9 m aydınlatma direği, üç durum: b = St·v_crit/n, c_lat motorun Şekil E.2 eğrisinden (Re = 1,2·10⁵ / 4,1·10⁵ / 1,1·10⁶), y_F = b·K·K_W·c_lat/(St²·Sc); makalenin Sc, K, K_W değerleriyle",
+   "exp": "Rakočević ve Popović (2018): 26,8 / 28,9 / 68,3 mm; c_lat 0,700 / 0,386 / 0,200",
+   "got": "26.82/26.8 mm (c_lat 0.700/0.7) · 28.97/28.9 mm (c_lat 0.386/0.386) · 68.42/68.3 mm (c_lat 0.200/0.2)",
+   "crit": "y ±%0,5 (girdilerin yuvarlaması); c_lat ±0,001",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V2",
+   "name": "Mod biçimi katsayıları (konsol, Φ = (z/l)²)",
+   "method": "K_W = ∫_{L_j}Φ / ∫_l Φ sayısal integral (2·10⁵ nokta) ↔ kapalı biçim 3x(1 − x + x²/3), x = L_j/l ∈ {0,05; 0,3; 0,75; 1}; K = ∫Φ / (4π∫Φ²)",
+   "exp": "K_W kapalı biçimi; K ≈ 0,13 (Tablo E.5 konsol)",
+   "got": "K_W en büyük fark 2.2e-12; K = 0.1326",
+   "crit": "K_W ≤ 1·10⁻⁸; K 0,13 ± 0,005",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V3",
+   "name": "Direk tepesi eğim oranı κ = θ·l/y",
+   "method": "düzgün konsol: cos βl·cosh βl = −1 (ikiye bölme), φ'(l)·l/φ(l); tepe kütlesi baskın sınır: statik uç yükü biçimi (3ξ² − ξ³)/2 → 1,5; varsayılan κ bu iki sınır arasında olmalı",
+   "exp": "βl = 1,8751; κ = 1,3765 (düzgün) … 1,5 (tepe kütlesi)",
+   "got": "βl = 1.87510; κ = 1.3765; varsayılan κ = 1.5",
+   "crit": "βl ±1·10⁻⁴; 1,37 ≤ κ_varsayılan ≤ 1,5",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V4",
+   "name": "İşletmede rüzgâr VIV eşlemesi (açı ↔ öteleme)",
+   "method": "gemi varsayılanı, β = 30°, yalnız VIV kaynağı, 80 s: (a) üretilen ivme dizisi açı dizisinin ikinci türevi mi (ızgarada merkezi fark), (b) ölçek oranı −l/κ, (c) benzetimde a_y/roll RMS oranı ızgaradakiyle aynı mı, (d) roll/pitch = cot β, (e) roll–a_y korelasyonu (tepe +y·n'e giderken direk o yana yatar)",
+   "exp": "(a) özdeş, (b) 1, (c) aynı, (d) 1.7321, (e) +1",
+   "got": "(a) göreli fark 0.258 %, (b) 1.000000000, (c) 3557.99 / 3557.99 m/s²/rad, (d) 1.732051, (e) 0.99980",
+   "crit": "(a) ≤ %0,5; (b) ±1·10⁻⁹; (c) ±%0,3 (ara değer); (d) ±1·10⁻⁶; (e) > 0,999",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V5",
+   "name": "Laboratuvar öteleme kanalı → dengesizlik torku → LOS",
+   "method": "hexapod y ötelemesi (1 m/s² genlik, LOS iskele yönünde → LOS boyunca), yalnız kuplaj + dengesizlik; mekanik LOS genliği (T2.2 gemi dwell'inin öteleme yolu)",
+   "exp": "U_z·a·|θ/T_d(f)| (analitik)",
+   "got": "2 Hz: 0.9694/0.9695 µrad · 4.1 Hz: 0.9878/0.9879 µrad · 8 Hz: 1.9264/1.9270 µrad · en büyük fark 0.00 dB",
+   "crit": "±0,5 dB",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V7",
+   "name": "İşletmede denizaltı VIV eşlemesi (açı ↔ mast başı ötelemesi)",
+   "method": "denizaltı varsayılanı (L = 4 m, κ = 1,5), yalnız VIV kaynağı, 80 s: (a) ivme dizisi açı dizisinin ikinci türevi mi (ızgarada merkezi fark), (b) ölçek oranı −L/κ, (c) benzetimde a_y/roll RMS oranı ızgaradakiyle aynı mı, (d) pitch ve x bileşeni yok, (e) roll–a_y korelasyonu (mast başı +y'ye giderken roll −), (f) roll RMS = A/√2, (g) B2-01 satırında dengesizlik ve optik montaj açık",
+   "exp": "(a) özdeş, (b) 1, (c) aynı, (d) yok, (e) +1, (f) A/√2, (g) açık",
+   "got": "(a) göreli fark 0.191 %, (b) 1.000000000, (c) 942.042 / 942.479 m/s²/rad, (d) yok, (e) 0.99993, (f) 590.3 / 617.1 µrad, (g) açık",
+   "crit": "(a) ≤ %0,5; (b) ±1·10⁻⁹; (c) ±%0,3; (e) > 0,999; (f) ±%5 (80 s, dar bant süreç)",
+   "pass": true
+  },
+  {
+   "grp": "V",
+   "id": "V6",
+   "name": "T2.2 yol ayrımı (gemi): ayna ↔ video − ayna",
+   "method": "gemi, β = 90°, f_n dwell (açısal + öteleme), xel, dar bant OFF ve ON; aynı tohumla tüm mekanizmalar ↔ optik montaj kapalı: (a) optik montaj kapalıyken |video − ayna|, (b) |ayna(tüm) − video(optik kapalı)| — ikisi de ayrıştırılan yolların büyüğüne göre; (c) |video − ayna|(tüm) ↔ ablasyon farkı |video(tüm) − video(optik kapalı)|",
+   "exp": "(a) 0, (b) 0, (c) 0 (doğrusal üst üste binme; ölçüm gürültüsü ve sürtünme kadar sapma)",
+   "got": "OFF: video 4.952, ayna 15.435, video − ayna 10.498 / ablasyon 10.349 µrad (a 1.00 %, b 1.00 %, c 1.44 %) · ON: video 8.480, ayna 1.704, video − ayna 10.183 / ablasyon 10.103 µrad (a 0.86 %, b 0.86 %, c 0.80 %)",
+   "crit": "(a) ≤ %3; (b) ≤ %5; (c) ≤ %5",
+   "pass": true
+  },
+  {
+   "grp": "S",
+   "id": "S1",
+   "name": "Bant sınırlı deniz profili sentezi (6-DOF)",
+   "method": "SS5 roll: ±10° tepe → σ = A/3, bant 0.1–0.25 Hz (4. derece Butterworth), 20 Hz, 7.28 saat. Gerçekleşme hedef RMS'e ölçeklenir (yapı gereği); sınanan: Gauss dağılımı (|x| > 3σ oranı, basıklık), ivme/konum RMS oranı (synthSeriesDer'in spektral türevi) ↔ (2π)²·√(∫f⁴S/∫S), varyansın [f1/1,5; 1,5·f2] içindeki payı",
+   "exp": "RMS = σ (3.3333°), aşım %0,270, basıklık 3, ivme oranı 2.0396 1/s²",
+   "got": "RMS 3.3333°, aşım %0.263, basıklık 2.983, ivme oranı 2.0434 (0.19 %), bant içi pay %98.5",
+   "crit": "aşım %0,10–0,50 (N_eff ≈ 5686, ≈ 25 bağımsız olay); basıklık 3 ± 0,25; ivme oranı ±%3 (RMS kestirim belirsizliği ≈ 0.66 %); bant içi ≥ %95",
+   "pass": true
+  },
+  {
+   "grp": "S",
+   "id": "S2",
+   "name": "Kaldıraç kolu ivmesi ↔ tam rijit cisim kinematiği",
+   "method": "SS4 açısal profil, 3000 s, üç kol: (0, 0, 15), (20, −4, 15) ve (30, 0, 0) m. Motorun işletme ivme serisi (a = ω̇_B × r + ω_B × (ω_B × r), ω_B = (φ̇ − ψ̇sθ, θ̇cφ + ψ̇cθsφ, −θ̇sφ + ψ̇cθcφ)) ↔ p = Rz(ψ)Ry(θ)Rx(φ)·r konumunun beş noktalı merkezi farkla ikinci türevi, gövdeye Rᵀ ile; bütçe kestirimi (birinci derece, bağımsız terimler: a_x = θ̈r_z − ψ̈r_y, a_y = ψ̈r_x − φ̈r_z, a_z = φ̈r_y − θ̈r_x) ↔ tam RMS. v13.1 bulgusu: önceki küçük açı ifadesi (ω ≈ Euler hızları) boyuna kolda y ivmesini SS4'te %19 yanlış veriyordu (probe/k3/exactacc.js)",
+   "exp": "özdeş (sayısal türev hatası düzeyinde); bütçe ±%10",
+   "got": "r = (0, 0, 15) m: fark x 0.272 %, y 0.166 %, z 0.023 %; tam RMS 0.8939 / 0.9210 / 0.0457 m/s²; bütçe 0.8918 / 0.8899 / 0.0000 (-0.2 % / -3.4 % / —) · r = (20, -4, 15) m: fark x 0.276 %, y 0.162 %, z 0.273 %; tam RMS 0.8955 / 0.9045 / 1.2112 m/s²; bütçe 0.8927 / 0.9132 / 1.2125 (-0.3 % / 1.0 % / 0.1 %) · r = (30, 0, 0) m: fark x 0.043 %, y 0.124 %, z 0.273 %; tam RMS 0.0373 / 0.3121 / 1.7914 m/s²; bütçe 0.0000 / 0.3071 / 1.7835 (— / -1.6 % / -0.4 %)",
+   "crit": "fark ≤ %0,5 (her eksen, her kol; referansın sayısal türev hatası ≈ %0,02–0,3); bütçe kestirimi tam RMS'ten ±%10 (kolun ivme ürettiği eksenler, tek gerçekleşme)",
+   "pass": true
+  },
+  {
+   "grp": "S",
+   "id": "S3",
+   "name": "Laboratuvar öteleme talebi ve ölçek q",
+   "method": "SS5, r = (20, −4, 15) m, 6000 s: hexapod yer değiştirmesi = ağırlık merkezi ötelemesi + (R − I)·r, R = Rz(ψ)Ry(θ)Rx(φ) ↔ bağımsız matrislerle yeniden hesap (aynı tohum: kolsuz koşunun ötelemesi + açısal diziler); ölçek sonrası tepe ↔ strok; RMS ↔ birinci derece analitik √(σ_öteleme² + Σ(r·σ_açı)²)",
+   "exp": "özdeş; tepe = ±0.1 m; x 0.500, y 0.997, z 0.743 m RMS",
+   "got": "en büyük fark 6.8e-15 m; q = 0.02481, ölçek sonrası tepe 0.100000 m; x 0.496 (-0.7 %), y 0.993 (-0.5 %), z 0.738 (-0.7 %) m RMS; tepe/σ = 4.06",
+   "crit": "fark ≤ 1·10⁻¹² m; tepe ±1·10⁻¹² m; RMS ±%5 (tek gerçekleşme, N_eff ≈ 900)",
+   "pass": true
+  },
+  {
+   "grp": "S",
+   "id": "S4",
+   "name": "T2.5 kestirimi ↔ işletme benzetimi (B1-08)",
+   "method": "gemi, SS5 6-DOF, iki kaldıraç kolu (r = (0, 0, 15) m ve (20, −4, 15) m): T2.5 (x, y, z öteleme 2 ve 3 Hz, 2 m/s² (v13.5; önceden 1 ve 2 Hz); ayna ve video − ayna yolları ayrı, doğrusal toplam) × işletme ivmesi ↔ aynı DUT'un işletme ayrıştırmasındaki B1-08 satırı (600 s, öteleme + kaldıraç kolu, açısal hareketin kendisi yok)",
+   "exp": "kestirim ≥ işletme (muhafazakâr), ≤ 4 kat",
+   "got": "r = (0, 0, 15) m: kestirim el 3.246 / xel 4.294 µrad; işletme el 1.842 / xel 2.531 µrad; yol ayrımı olmadan 2.093 / 1.555 µrad · r = (20, −4, 15) m: kestirim el 6.019 / xel 4.329 µrad; işletme el 3.862 / xel 2.541 µrad; yol ayrımı olmadan 3.020 / 1.585 µrad",
+   "crit": "işletme ≤ kestirim ≤ 4 × işletme (iki eksen, iki kol)",
+   "pass": true
+  },
+  {
+   "grp": "F",
+   "id": "F1",
+   "name": "FOG gecikmesi: DRR ve faz payı",
+   "method": "el döngüsü, 1 ms ek gecikme (benzetimde kontrol hızında gecikme hattı); 0,05° sinüs 1–60 Hz, zaman alanı ↔ analitik model; faz payı kaybı ↔ 360·f_c·τ",
+   "exp": "|DRR| model; ΔPM = 14.563°, f_c değişmez",
+   "got": "en büyük fark 0.176 dB; ΔPM 14.563° (PM 52.35° → 37.79°), f_c farkı 3.331e-14 %",
+   "crit": "DRR ±0,25 dB (D1 ile aynı); ΔPM ±0,01°; f_c ≤ %0,01",
+   "pass": true,
+   "detail": "1 Hz: -56.49/-56.49 dB (gecikmesiz -56.49) · 3 Hz: -60.17/-60.20 dB (gecikmesiz -60.20) · 8 Hz: -33.90/-33.90 dB (gecikmesiz -33.91) · 20 Hz: -29.15/-29.12 dB (gecikmesiz -29.77) · 40 Hz: -28.03/-27.88 dB (gecikmesiz -30.52) · 60 Hz: -29.03/-28.86 dB (gecikmesiz -32.34)"
+  },
+  {
+   "grp": "F",
+   "id": "F2",
+   "name": "FOG ölçek hatası: bozucu bastırma ve dönüş",
+   "method": "(a) S_f = 0 ↔ 1000 ppm, 0,125 ve 3 Hz DRR (zaman alanı); (b) T1.8 (10° @ 30°/s): ölçek hatasının yalıtılmış payı (aynı tohum, S_f = S_nl = 0 koşusuyla fark) ↔ −S_etkin·θ; S_etkin = S_f − 1,5·S_nl + 2,5·S_nl·⟨ω²⟩/FS² (kübik doğrusalsızlık)",
+   "exp": "(a) -0.0087 dB; (b) S_f = 100 ppm: -17.45 µrad; + S_nl = 50 ppm·FS, FS = 300 °/s: -4.53 µrad",
+   "got": "(a) -0.0087 / -0.0087 dB; (b) -17.48 / -4.54 µrad",
+   "crit": "(a) |Δ| ≤ 0,05 dB; (b) ±%5 ya da ±0,3 µrad",
+   "pass": true
+  },
+  {
+   "grp": "F",
+   "id": "F3",
+   "name": "Gyro eksen kaçıklığı: LOS etrafındaki dönmenin sızması",
+   "method": "yanal bakış (pitch = LOS ekseni etrafında dönme: rot), 3° @ 0,125 Hz, stab ON, yalnız kuplaj + eksen kaçıklığı ε = 0.1 mrad; el genliği ↔ ε·θ·ω·|θ/n(ω)| (analitik gyro yolu)",
+   "exp": "5.2361 µrad (≈ ε·θ = 5.2360; RMS εθ/√2 = 3.702)",
+   "got": "5.2343 µrad",
+   "crit": "±%1",
+   "pass": true
+  },
+  {
+   "grp": "F",
+   "id": "F4",
+   "name": "FOG sıcaklık katsayısı, doyma, g-duyarlılığı",
+   "method": "(a) b0 = 0, TC = 0,01 °/h/°C, T_op − T_cal = 35 °C, yalnız sabit bias: LOS kayma hızı; (b) T1.8 menzil 20 °/s (dönüş 30 °/s) ↔ varsayılan 1000 °/s; (c) k_g = 1 °/h/g, 2 m/s² @ 2 Hz üç eksende ayrı: el genliklerinin karesel toplamı",
+   "exp": "(a) 1.6968 µrad/s; (b) doyum > 0 / = 0; (c) 78.954 nrad",
+   "got": "(a) el 1.6967 / xel 1.6967 µrad/s; (b) 25741 / 0 örnek, tepe 728.4 °/s; (c) 79.040 nrad",
+   "crit": "(a) ±%0,5; (b) doyum yalnız dar menzilde; (c) ±%2",
+   "pass": true
+  },
+  {
+   "grp": "G",
+   "id": "G1",
+   "name": "Proje metrik motoru: Gauss gürültü ve saf ton",
+   "method": "(a) iki eksende bağımsız beyaz Gauss gürültü σ = 2 µrad, 2 kHz, 620 s (ilk 20 s atılır): σ, σ_vek, P99,73 eksen ve radyal, bant RMS'leri, bantların toplamı, ton yokluğu; (b) El'de 3 µrad @ 7,3 Hz saf ton: σ, PPV, P99,73, pozlama içi (PSD ve zaman alanı), ton tespiti ve bandı",
+   "exp": "(a) σ 2.000, σ_vek 2.828, P99,73 3σ = 6.000, radyal √(−2 ln 0,0027)·σ = 6.879; bantlar σ·√(Δf/f_N) = 0.098 / 0.265 / 0.566 / 1.265; ton yok · (b) σ = A/√2 = 2.121, PPV 2A = 6.000, P99,73 A·sin(0,9973·π/2) = 3.000, pozlama (A/√2)·√(1 − sinc²(πfT_e)) = 0.280 µrad; tek ton 7,3 Hz, 2,5–20 Hz bandında",
+   "got": "(a) σ 1.999 / 2.000, σ_vek 2.827, P99,73 5.994 / 6.008, radyal 6.876; bantlar 0.098 / 0.266 / 0.566 / 1.266; 0 ton · (b) σ 2.121, PPV 6.016 (PPV/σ 2.836), P99,73 3.004, pozlama 0.280 (zaman alanı 0.280); ton 7.294 Hz 2.121",
+   "crit": "(a) σ ve yüzdelikler ±%1, bantlar ±%5, bant toplamı = toplam, ton yok; (b) ±%0,5, ton frekansı ±1 kutu",
+   "pass": true,
+   "detail": "en büyük göreli fark (a) 0.134 %, bant 0.39 %; (b) 0.269 %. Kutu genişliği Δf = 0.0305 Hz (≥ 30 s Welch segmenti). Bu kontrol bir hata yakaladı: sıfır fazlı yüksek geçirenin ters geçişi kaydın sonundaki değerin DC kararlı durumundan başladığı için son ~15 s'de geçici rejim bırakıyordu ve son pencereye giriyordu (saf tonda PPV +%22, P99,73 +%1). Yansımalı dolgu salınımlı sinyalde bunu gidermiyor; düzeltme: sondan da süzgecin sönüm süresi (0,1 Hz'de 21 s) atılır, T1.9 kaydı 645 s'ye uzatıldı (10 × 60 s pencere korunur)."
+  },
+  {
+   "grp": "G",
+   "id": "G2",
+   "name": "Sıfır fazlı yüksek geçiren (0,1 Hz)",
+   "method": "2 kHz (gerçek LOS) ve 50 Hz (video) örneklemede 0,05 / 0,1 / 0,3 / 1 Hz sinüs, 1200 s, uçlardan 200 s atılarak sinüs uydurma; genlik oranı ve faz farkı",
+   "exp": "|H|² = r⁴/(1 + r⁴), r = tan(πf/f_s)/tan(πf_c/f_s): 0,1 Hz'de 0,5 (−6,02 dB), 0,3 Hz'de 0.9878; faz 0",
+   "got": "en büyük göreli fark 1.6e-9, en büyük faz 2.303e-10°",
+   "crit": "±%0,2; |faz| ≤ 0,05°",
+   "pass": true,
+   "detail": "2000 Hz / 0.05 Hz: 0.05882 (0.05882), 2.303e-10° · 2000 Hz / 0.1 Hz: 0.50000 (0.50000), 1.323e-10° · 2000 Hz / 0.3 Hz: 0.98780 (0.98780), 7.958e-13° · 2000 Hz / 1 Hz: 0.99990 (0.99990), 6.821e-12° · 50 Hz / 0.05 Hz: 0.05882 (0.05882), 9.095e-13° · 50 Hz / 0.1 Hz: 0.50000 (0.50000), 6.821e-13° · 50 Hz / 0.3 Hz: 0.98781 (0.98781), 0.0000° · 50 Hz / 1 Hz: 0.99990 (0.99990), 5.343e-12°"
+  },
+  {
+   "grp": "G",
+   "id": "G3",
+   "name": "Dış kamera takip döngüsü: duyarlılık |S(f)|",
+   "method": "bant 2.5 Hz, 2 kare gecikme; optik alt montajın ivmeyle yarı statik sapması (gyro görmez), 2 m/s² dikey sinüs, gürültüsüz video; takip açık / kapalı El genlik oranı ↔ analitik L(s) = K(1 + W_i/s)/s·e^(−sτ) (iç döngü ideal)",
+   "exp": "|S| analitik; tepe 9.33 dB @ 3.46 Hz, |S| = 1 @ 1.69 Hz",
+   "got": "0.30 Hz: -25.28 (-25.26) dB · 1.00 Hz: -7.39 (-7.09) dB · 2.00 Hz: 2.03 (2.48) dB · 3.46 Hz: 9.34 (9.33) dB · 6.00 Hz: 4.02 (3.51) dB; kilit kaybı 0",
+   "crit": "±0,6 dB (örneklemeli döngünün sürekli yaklaşımı); tepede ±0,3 dB",
+   "pass": true,
+   "detail": "Fark kesim civarında (|S| ≈ 1) en büyüktür; orada |1 + L| faz hatasına duyarlıdır: 2 Hz'de 2° faz farkı ≈ 0,4 dB. Kaynakları: kare başına bir kez güncellenen PI (geri Euler integral), ZOH'nin T_kare/2 gecikmeyle yaklaşımı, iç stabilizasyon döngüsünün komut yanıtı (6–8 Hz'de |T_iç| 1,08–1,15)."
+  },
+  {
+   "grp": "G",
+   "id": "G4",
+   "name": "Pozlama içi jitter: zaman alanı ↔ PSD",
+   "method": "T_e = 10 ms, 50 fps, 2 kHz: (a) beyaz gürültü σ = 2 µrad; (b) 2 µrad, 49,3 Hz ton (kare hızına kilitli değil); (c) 2 µrad, 50 Hz ton, 12 faz (kare hızına kilitli)",
+   "exp": "(a) σ·√(1 − 1/N) = 1.9494; (b) (A/√2)·√(1 − sinc²) = 1.0801; (c) PSD = faz ortalaması 1.0906, zaman alanı faza bağlı 0.6155…1.4142 µrad",
+   "got": "(a) zaman 1.9466, PSD 1.9511; (b) 1.0793 / 1.0801; (c) zaman 0.6209…1.4107 (fazlar üzerinden karesel ortalama 1.0898), PSD 1.0906…1.0906 µrad",
+   "crit": "±%1",
+   "pass": true,
+   "detail": "Kare hızına kilitli tonda (ör. 50 Hz yardımcı makine, 50 fps kamera) her kare tonun aynı fazını görür; gerçekleşen pozlama içi jitter faza göre faz ortalamasının 0,57–1,30 katıdır. Karar değeri PSD'den (faz ortalaması) alınır; kilitli tonlarda en kötü durum tonun tam RMS'idir. Bu, işletme kayıtlarında zaman alanı ile PSD kestirimi arasındaki eksene göre değişen ±%5 farkın nedenidir."
+  },
+  {
+   "grp": "G",
+   "id": "G5",
+   "name": "PPV/σ için Gauss beklentisi (Rice) ↔ Gauss süreç (v13.12)",
+   "method": "iki tayf (dar 0,2–2,5 Hz, geniş 0,5–400 Hz), σ = 3 µrad, 645 s, 2 kHz; T1.9 ön işlemi (0,1 Hz sıfır fazlı yüksek geçiren, 60 s pencerede doğrusal trend); dört gerçekleşme",
+   "exp": "2·√(2 ln(ν0·n_W·T_w)), ν0 = √(m2/m0)",
+   "got": "dar 0,2–2,5 Hz: ölçülen 7.72 (7.20, 7.72, 8.02, 7.93) / Rice 7.67 (0.6 %) · geniş 0,5–400 Hz: ölçülen 9.52 (8.95, 9.69, 9.75, 9.71) / Rice 9.79 (-2.7 %)",
+   "crit": "±%6",
+   "pass": true,
+   "detail": "Bağımsız numpy Monte Carlo (k14/limits_ref.py, 100 gerçekleşme) T1.9 takip sonrası tayfıyla 9,14 / 9,24 (tonlu), tonsuz 9,39; yalnız 0,1–2,5 Hz bandıyla 7,24 verir. PPV sınırı 6,5·σ olduğu için σ sınırında Gauss bir artık PPV ölçütünü geçemez."
+  },
+  {
+   "grp": "G",
+   "id": "G6",
+   "name": "İşletme: çarpmasız ek koşu yalnız dalga çarpmasını kaldırır, kalıntı Gauss (v13.17)",
+   "method": "denizaltı varsayılanı, 600 s, tohum 11, bütün kaynaklar; aynı tohumla slap kaynağı kapalı ek koşu (takip öncesi / sonrası)",
+   "exp": "Az (yalnız çapraz kuplaj): ≤ %0,1; çarpmasız PPV/σ El = Rice ± %15; çarpmalı PPV/σ El > 2 × Rice",
+   "got": "takip öncesi: PPV El 184.9 → 55.9 µrad, PPV/σ El 26.82 → 8.48 (Rice 9.11, -6.9 %), Az farkı 2.9e-5 · takip sonrası: PPV El 192.5 → 64.7 µrad, PPV/σ El 26.85 → 9.84 (Rice 9.14, 7.7 %), Az farkı 3.4e-4",
+   "crit": "%0,1 · ±%15 · > 2×",
+   "pass": true,
+   "detail": "Çarpmalı koşuda PPV/σ El en az Rice beklentisinin 2.94 katı: PPV ve P99,73'ü seyrek geçişler belirler. 60 s'lik pencereden çarpma içerenleri atmak uygulanamaz (λ·T_w = 6 olay, olaysız pencere olasılığı 0.25 %); bu yüzden aynı tohumla çarpmasız ek koşu kullanılır."
+  },
+  {
+   "grp": "K",
+   "id": "K8",
+   "name": "Düzenek: hexapod'un gerçekleştirdiği darbe tepeleri (v13.14)",
+   "method": "yarım sinüs açı darbesi (roll, T_p 50 / 100 / 200 ms, A = 0,9·min(θ_max, ω_max·T_p/π, α_max·(T_p/π)²)); hexapod 2. derece f_bw 20 Hz, ζ 0,7071: motorun oynatma metriği ↔ sürekli zaman RK4 (20 kHz)",
+   "exp": "T_p 50 ms: A 0.091° → α 349 °/s² · T_p 100 ms: A 0.365° → α 644 °/s² · T_p 200 ms: A 1.459° → α 1306 °/s²; en büyük θ 1.459°, ω 22.60 °/s, α 1306.4 °/s²",
+   "got": "θ 1.459°, ω 22.60 °/s, α 1305.7 °/s² (komutun sayısal türevi: 22917 °/s²)",
+   "crit": "±%1",
+   "pass": true,
+   "detail": "Sınır α_max 400 °/s²: 200 ms'lik darbe sınırın 3.27 katına çıkar (iç tepe kuralı 360 °/s² verirdi); 100 ms 1.61 kat, 50 ms 0.87 kat. Komutun sayısal türevi hız sıçramasında örnekleme hızına bağlıdır (Δω·f_s). Aynı profil T2.4'te kullanılır."
+  }
+ ],
+ "elapsed": 289.255
+}

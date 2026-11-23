@@ -1,0 +1,128 @@
+S0 varsayılan [29 s]
+   T2.1 OK | VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 2.59 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 19.72 → ON 1.90 µrad
+      · 1.65 Hz: OFF 11.95 µrad (DRR -34.3 dB) · ON 1.20 µrad (DRR -54.2 dB)
+      · 2.06 Hz: OFF 14.59 µrad (DRR -32.5 dB) · ON 1.52 µrad (DRR -52.2 dB)
+      · 2.47 Hz: OFF 16.87 µrad (DRR -31.3 dB) · ON 1.71 µrad (DRR -51.2 dB)
+      · 2.88 Hz: OFF 18.99 µrad (DRR -30.2 dB) · ON 1.79 µrad (DRR -50.7 dB)
+      · 3.00 Hz: OFF 19.72 µrad (DRR -29.9 dB) · ON 1.90 µrad (DRR -50.3 dB)
+      · 3.29 Hz: OFF 21.05 µrad (DRR -29.3 dB) · ON 2.05 µrad (DRR -49.6 dB)
+      · 4.12 Hz: OFF 24.43 µrad (DRR -28.0 dB) · ON 2.38 µrad (DRR -48.3 dB)
+      · 4.94 Hz: OFF 27.00 µrad (DRR -27.2 dB) · ON 2.59 µrad (DRR -47.5 dB)
+      · Dar bant kontrol çalışma bandı: 1.2–6 Hz: bütün dwell frekansları bant içinde
+      · Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz: -40.0 dB; ölçülen (OFF) -29.9 dB
+      ~ Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (0,05°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.
+      ~ ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 6,17 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.
+      ~ Kapalıyken artık, doğrusal modelin verdiği -40,0 dB'den (f_n = 3,00 Hz) kötüdür (ölçülen -29,9 dB): 0,05° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir.
+   T2.3 OK | Kombine artık 6.61 µrad; ayrı testlerin RSS'i 7.01 µrad → sapma -5.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+      · Yalnız deniz profili (wander el): 6.72 µrad
+      · Yalnız VIV tonu (f_n = 3.00 Hz, artık RMS): 2.00 µrad
+      · RSS: 7.01 µrad
+      · Kombine (wander el): 6.61 µrad
+      · Sapma: -5.66 %
+      · Kabul (B1⊕B2 açısal tahsis; B2-06 hariç): 13.4 µrad
+S2 St = 0,25 [25 s]
+   T2.1 AŞIM | VIV bandında (1.54–6.17 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -33.7 dB @ 6.10 Hz (gerekli -40.2 dB); yaw→xel -32.7 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 30.31 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 19.59 → ON 1.90 µrad
+      · 1.54 Hz: OFF 11.16 µrad (DRR -34.9 dB) · ON 1.08 µrad (DRR -55.1 dB)
+      · 2.06 Hz: OFF 14.59 µrad (DRR -32.5 dB) · ON 1.53 µrad (DRR -52.1 dB)
+      · 2.57 Hz: OFF 17.49 µrad (DRR -31.0 dB) · ON 1.74 µrad (DRR -51.0 dB)
+      · 3.00 Hz: OFF 19.59 µrad (DRR -30.0 dB) · ON 1.90 µrad (DRR -50.3 dB)
+      · 3.09 Hz: OFF 20.25 µrad (DRR -29.7 dB) · ON 1.97 µrad (DRR -49.9 dB)
+      · 3.60 Hz: OFF 22.44 µrad (DRR -28.8 dB) · ON 2.23 µrad (DRR -48.8 dB)
+      · 4.12 Hz: OFF 24.43 µrad (DRR -28.0 dB) · ON 2.35 µrad (DRR -48.4 dB)
+      · 5.14 Hz: OFF 27.61 µrad (DRR -27.0 dB) · ON 2.65 µrad (DRR -47.3 dB)
+      · 6.17 Hz: OFF 30.15 µrad (DRR -26.2 dB) · ON 30.31 µrad (DRR -26.1 dB)
+      · Dar bant kontrol çalışma bandı: 1.2–6 Hz: bandın DIŞINDAKİ dwell frekansları 6.17 Hz (ON = OFF)
+      · Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz: -40.0 dB; ölçülen (OFF) -30.0 dB
+      ~ Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (0,05°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.
+      ~ ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 6,17 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.
+      ~ Kapalıyken artık, doğrusal modelin verdiği -40,0 dB'den (f_n = 3,00 Hz) kötüdür (ölçülen -30,0 dB): 0,05° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir.
+   T2.3 OK | Kombine artık 6.61 µrad; ayrı testlerin RSS'i 7.01 µrad → sapma -5.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+      · Yalnız deniz profili (wander el): 6.72 µrad
+      · Yalnız VIV tonu (f_n = 3.00 Hz, artık RMS): 2.00 µrad
+      · RSS: 7.01 µrad
+      · Kombine (wander el): 6.61 µrad
+      · Sapma: -5.66 %
+      · Kabul (B1⊕B2 açısal tahsis; B2-06 hariç): 13.4 µrad
+S3 f_n = 2 Hz [21 s]
+   T2.1 OK | VIV bandında (1.23–4.12 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 2.35 µrad RMS (tahsis 6.0); f_n = 2 Hz'de OFF 14.28 → ON 1.52 µrad
+      · 1.23 Hz: OFF 9.19 µrad (DRR -36.5 dB) · ON 0.84 µrad (DRR -57.3 dB)
+      · 1.65 Hz: OFF 11.93 µrad (DRR -34.3 dB) · ON 1.19 µrad (DRR -54.3 dB)
+      · 2.00 Hz: OFF 14.28 µrad (DRR -32.7 dB) · ON 1.52 µrad (DRR -52.2 dB)
+      · 2.06 Hz: OFF 14.65 µrad (DRR -32.5 dB) · ON 1.43 µrad (DRR -52.7 dB)
+      · 2.47 Hz: OFF 16.95 µrad (DRR -31.2 dB) · ON 1.78 µrad (DRR -50.8 dB)
+      · 2.88 Hz: OFF 19.16 µrad (DRR -30.2 dB) · ON 1.81 µrad (DRR -50.6 dB)
+      · 3.29 Hz: OFF 21.06 µrad (DRR -29.3 dB) · ON 2.09 µrad (DRR -49.4 dB)
+      · 4.12 Hz: OFF 24.30 µrad (DRR -28.1 dB) · ON 2.35 µrad (DRR -48.4 dB)
+      · Dar bant kontrol çalışma bandı: 1.2–6 Hz: bütün dwell frekansları bant içinde
+      · Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 2 Hz: -45.2 dB; ölçülen (OFF) -32.7 dB
+      ~ Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (0,05°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.
+      ~ ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 6,17 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.
+      ~ Kapalıyken artık, doğrusal modelin verdiği -45,2 dB'den (f_n = 2,00 Hz) kötüdür (ölçülen -32,7 dB): 0,05° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir.
+   T2.3 OK | Kombine artık 6.59 µrad; ayrı testlerin RSS'i 6.87 µrad → sapma -4.1 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+      · Yalnız deniz profili (wander el): 6.72 µrad
+      · Yalnız VIV tonu (f_n = 2.00 Hz, artık RMS): 1.45 µrad
+      · RSS: 6.87 µrad
+      · Kombine (wander el): 6.59 µrad
+      · Sapma: -4.13 %
+      · Kabul (B1⊕B2 açısal tahsis; B2-06 hariç): 13.4 µrad
+S5 f_n = 8 Hz [16 s]
+   T2.1 AŞIM | VIV bandında (4.12–8.00 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -28.1 dB @ 7.93 Hz (gerekli -40.2 dB); yaw→xel -26.8 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 33.10 µrad RMS (tahsis 6.0); f_n = 8 Hz'de OFF 32.91 → ON 33.10 µrad
+      · 4.12 Hz: OFF 24.62 µrad (DRR -28.0 dB) · ON 2.66 µrad (DRR -47.3 dB)
+      · 4.94 Hz: OFF 27.16 µrad (DRR -27.1 dB) · ON 2.57 µrad (DRR -47.6 dB)
+      · 8.00 Hz: OFF 32.91 µrad (DRR -25.3 dB) · ON 33.10 µrad (DRR -25.3 dB)
+      · Dar bant kontrol çalışma bandı: 1.2–6 Hz: bandın DIŞINDAKİ dwell frekansları 8.00 Hz (ON = OFF)
+      · Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 8 Hz: -32.4 dB; ölçülen (OFF) -25.3 dB
+      ~ Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (0,05°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.
+      ~ ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 6,17 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.
+      ~ Kapalıyken artık, doğrusal modelin verdiği -32,4 dB'den (f_n = 8,00 Hz) kötüdür (ölçülen -25,3 dB): 0,05° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir.
+   T2.3 AŞIM | Kombine artık 27.00 µrad; ayrı testlerin RSS'i 33.78 µrad → sapma -20.1 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+      · Yalnız deniz profili (wander el): 6.72 µrad
+      · Yalnız VIV tonu (f_n = 8.00 Hz, artık RMS): 33.10 µrad
+      · RSS: 33.78 µrad
+      · Kombine (wander el): 27.00 µrad
+      · Sapma: -20.06 %
+      · Kabul (B1⊕B2 açısal tahsis; B2-06 hariç): 13.4 µrad
+S11 genlik 1,5° (erişim sınırı) [19 s]
+   T2.1 AŞIM | VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -69.8 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 GEÇERSİZ | Hexapod erişimi VIV genliğini (1,5°) 2.88, 3.00, 3.29, 4.12, 4.94 Hz'de küçültüyor: sonuç GEÇERSİZ. Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 16.08 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 160.97 → ON 15.82 µrad
+      · 1.65 Hz: OFF 90.78 µrad (DRR -46.2 dB) · ON 9.10 µrad (DRR -66.2 dB)
+      · 2.06 Hz: OFF 125.54 µrad (DRR -43.4 dB) · ON 12.58 µrad (DRR -63.4 dB)
+      · 2.47 Hz: OFF 161.23 µrad (DRR -41.2 dB) · ON 16.07 µrad (DRR -61.2 dB)
+      · 2.88 Hz (hexapod erişimiyle sınırlı: θ 1.222°): OFF 164.33 µrad (DRR -39.2 dB) · ON 16.08 µrad (DRR -59.4 dB)
+      · 3.00 Hz (hexapod erişimiyle sınırlı: θ 1.126°): OFF 160.97 µrad (DRR -38.7 dB) · ON 15.82 µrad (DRR -58.9 dB)
+      · 3.29 Hz (hexapod erişimiyle sınırlı: θ 0.936°): OFF 153.36 µrad (DRR -37.5 dB) · ON 14.93 µrad (DRR -57.8 dB)
+      · 4.12 Hz (hexapod erişimiyle sınırlı: θ 0.597°): OFF 133.37 µrad (DRR -34.8 dB) · ON 12.80 µrad (DRR -55.2 dB)
+      · 4.94 Hz (hexapod erişimiyle sınırlı: θ 0.415°): OFF 116.59 µrad (DRR -32.8 dB) · ON 11.00 µrad (DRR -53.3 dB)
+      · Dar bant kontrol çalışma bandı: 1.2–6 Hz: bütün dwell frekansları bant içinde
+      · Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 3 Hz: -40.0 dB; ölçülen (OFF) -38.7 dB
+      ~ Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (1,5°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.
+      ~ ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 185,12 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.
+      ~ Kapalıyken artık, doğrusal modelin verdiği -40,0 dB'den (f_n = 3,00 Hz) kötüdür (ölçülen -38,7 dB): 1,5° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir.
+      ~ Hexapod erişimi (θ 15° / ω 40°/s / α 400°/s²) uyarımı 2.88, 3.00, 3.29, 4.12, 4.94 Hz'de küçülttü. VIV adaylarında uyarım üretilemediği için sonuç GEÇERSİZ: daha büyük erişimli düzenek gerekir.
+   T2.3 AŞIM | Kombine artık 24.41 µrad; ayrı testlerin RSS'i 21.48 µrad → sapma 13.6 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+      · Yalnız deniz profili (wander el): 6.72 µrad
+      · Yalnız VIV tonu (f_n = 3.00 Hz, artık RMS): 20.41 µrad
+      · RSS: 21.48 µrad
+      · Kombine (wander el): 24.41 µrad
+      · Sapma: 13.62 %
+      · Kabul (B1⊕B2 açısal tahsis; B2-06 hariç): 13.4 µrad
+S12 f_n = 12 Hz (taramada risk yok) [17 s]
+   T2.1 AŞIM | VIV bandında (11.88–12.13 Hz; taramada riskli hız yok, yalnız f_n çevresi) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -25.1 dB @ 12.08 Hz (gerekli -40.2 dB); yaw→xel -23.5 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 34.50 µrad RMS (tahsis 6.0); f_n = 12 Hz'de OFF 34.22 → ON 34.50 µrad
+      · 12.00 Hz: OFF 34.22 µrad (DRR -24.6 dB) · ON 34.50 µrad (DRR -24.5 dB)
+      · Dar bant kontrol çalışma bandı: 1.2–6 Hz: bandın DIŞINDAKİ dwell frekansları 12.00 Hz (ON = OFF)
+      · Doğrusal model (dar bant kapalı taban döngü) DRR @ f_n = 12 Hz: -31.2 dB; ölçülen (OFF) -24.6 dB
+      ~ Hidrodinamik kuvvet değil, mast başında doğurduğu açısal hareket (0,05°, roll) yeniden üretilir; mast başı ötelemesi bu modelde yoktur. Dwell frekansları VIV taramasının adayları (Model → VIV), f_n ve T2.1'in rezonans adaylarıdır.
+      ~ ON: uyarlanır dar bantlı (rezonans) kontrolcü, dwell frekansına ayarlı, +20 dB (çalışma bandı 1.2–6 Hz; dışında devreye girmez). Analitik bütçe tahmini (-40 dB varsayımıyla 6,17 µrad) B2-01 tahsisini (6 µrad) aşar; örnek DUT'ta bu açığı dar bant kontrol kapatır.
+      ~ Kapalıyken artık, doğrusal modelin verdiği -31,2 dB'den (f_n = 12,00 Hz) kötüdür (ölçülen -24,6 dB): 0,05° genlikte bağıl hız her periyotta iki kez sıfırdan geçer ve sürtünme geçişleri tonda temel bileşen üretir.
+   T2.3 AŞIM | Kombine artık 30.34 µrad; ayrı testlerin RSS'i 35.07 µrad → sapma -13.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+      · Yalnız deniz profili (wander el): 6.72 µrad
+      · Yalnız VIV tonu (f_n = 12.00 Hz, artık RMS): 34.42 µrad
+      · RSS: 35.07 µrad
+      · Kombine (wander el): 30.34 µrad
+      · Sapma: -13.47 %
+      · Kabul (B1⊕B2 açısal tahsis; B2-06 hariç): 13.4 µrad

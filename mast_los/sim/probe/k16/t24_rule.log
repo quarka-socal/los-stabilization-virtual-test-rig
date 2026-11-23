@@ -1,0 +1,23 @@
+== ic: genlik (ölçeksiz) 0.1013 / 0.4053 / 1.6211°; BİLGİ; Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 2.57 / deniz profili üzerinde 2.37 µrad RMS (tahsis 3)
+    roll→el, T_p = 50 ms, A = 0.091° | tepe 50.7 µrad (31.83 mrad/rad), oturma ortanca 95 ms, 1/10 darbe 2,4 s içinde oturmadı
+    roll→el, T_p = 100 ms, A = 0.365° | tepe 90.5 µrad (14.22 mrad/rad), oturma ortanca 205 ms
+    roll→el, T_p = 200 ms, A = 1.459° | tepe 125.7 µrad (4.94 mrad/rad), oturma ortanca 331 ms
+    yaw→xel, T_p = 50 ms | tepe 62.0 µrad (38.98 mrad/rad), oturma ortanca 93 ms
+    yaw→xel, T_p = 100 ms | tepe 104.8 µrad (16.46 mrad/rad), oturma ortanca 204 ms
+    yaw→xel, T_p = 200 ms | tepe 138.5 µrad (5.44 mrad/rad), oturma ortanca 206 ms
+    Deniz profili üzerinde (roll), T_p = 50 ms | tepe (fark) 42.4 µrad (30.00 mrad/rad)
+    Deniz profili üzerinde (roll), T_p = 100 ms | tepe (fark) 83.8 µrad (14.81 mrad/rad)
+    Deniz profili üzerinde (roll), T_p = 200 ms | tepe (fark) 114.4 µrad (5.05 mrad/rad)
+   düzenek darbe (×0,9): θ 1.459°, ω 22.60 °/s, α 1305.7 °/s²; B2-02 dolgu 2.366 µrad; 3.7 s
+== gercek: genlik (ölçeksiz) 0.1013 / 0.2222 / 0.4444°; BİLGİ; Tepe hata en büyük 74.5 µrad; oturma en uzun 2270 ms (3/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, eksen başına 30 darbe); işletme kestirimi B2-02: durgun gimbal 2.76 / deniz profili üzerinde 2.57 µrad RMS (tahsis 3)
+    roll→el, T_p = 50 ms, A = 0.091° | tepe 50.7 µrad (31.83 mrad/rad), oturma ortanca 95 ms, 1/10 darbe 2,4 s içinde oturmadı
+    roll→el, T_p = 100 ms, A = 0.200° | tepe 61.2 µrad (17.52 mrad/rad), oturma ortanca 217 ms
+    roll→el, T_p = 200 ms, A = 0.400° | tepe 51.2 µrad (7.34 mrad/rad), oturma ortanca 429 ms, 1/10 darbe 2,4 s içinde oturmadı
+    yaw→xel, T_p = 50 ms | tepe 62.0 µrad (38.98 mrad/rad), oturma ortanca 93 ms
+    yaw→xel, T_p = 100 ms | tepe 72.3 µrad (20.72 mrad/rad), oturma ortanca 221 ms
+    yaw→xel, T_p = 200 ms | tepe 59.2 µrad (8.48 mrad/rad), oturma ortanca 350 ms, 1/10 darbe 2,4 s içinde oturmadı
+    Deniz profili üzerinde (roll), T_p = 50 ms | tepe (fark) 42.4 µrad (30.00 mrad/rad)
+    Deniz profili üzerinde (roll), T_p = 100 ms | tepe (fark) 55.4 µrad (17.85 mrad/rad)
+    Deniz profili üzerinde (roll), T_p = 200 ms | tepe (fark) 46.5 µrad (7.50 mrad/rad)
+   düzenek darbe (×0,9): θ 0.400°, ω 6.20 °/s, α 358.0 °/s²; B2-02 dolgu 2.570 µrad; 4.1 s
+varsayılan kural ön hesapla aynı: true

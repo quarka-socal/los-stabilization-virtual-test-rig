@@ -1,0 +1,60 @@
+varsayılan [14 s]
+  T0.1 OK: IFOV 40.1587 (u %0.0014); S-eğrisi 0.0266 ± 0.0016 px (beklenen 0.0268); kazanç 0.874/1.057 ± 0.010; ızgara artığı 00.0206 (0.0095)
+  T0.2 OK: stab OFF 2.04/1.67; beklenen zincir 1.60/1.48; DUT payı 1.27/0.76; otokolimatör 1.11/1.12 µrad
+  T0.4 OK: -0.9285 ± 0.0318 ms (model -0.9502) · Video − IMU gecikmesi -0.928 ± 0.032 ms (10 darbe); kompanze edilmezse f_bw'de 6.68°, kompanzasyon sonrası belirsizlik (2σ) 0.46°
+  T3.3 OK: TUR 4.26 (u_h 2.35; ölçüme dayalı 2.35)
+centroid 0,06 px [9 s]
+  T0.1 OK: IFOV 40.1588 (u %0.0015); S-eğrisi 0.0265 ± 0.0017 px (beklenen 0.0268); kazanç 0.877/1.053 ± 0.011; ızgara artığı 00.0209 (0.0101)
+  T0.2 OK: stab OFF 2.91/2.67; beklenen zincir 2.62/2.56; DUT payı 1.26/0.77; otokolimatör 1.11/1.12 µrad
+  T0.4 OK: -0.9053 ± 0.0411 ms (model -0.9502) · Video − IMU gecikmesi -0.905 ± 0.041 ms (10 darbe); kompanze edilmezse f_bw'de 6.52°, kompanzasyon sonrası belirsizlik (2σ) 0.59°
+  T3.3 OK: TUR 4.26 (u_h 2.35; ölçüme dayalı 2.35)
+hava 3 µrad [8 s]
+  T0.1 OK: IFOV 40.1584 (u %0.0018); S-eğrisi 0.0264 ± 0.0033 px (beklenen 0.0243); kazanç 0.869/1.066 ± 0.021; ızgara artığı 00.0252 (0.0179)
+  T0.2 OK: stab OFF 3.59/3.02; beklenen zincir 3.42/2.87; DUT payı 1.09/0.95; otokolimatör 3.03/3.04 µrad
+  T0.4 OK: -0.9262 ± 0.0633 ms (model -0.9502) · Video − IMU gecikmesi -0.926 ± 0.063 ms (10 darbe); kompanze edilmezse f_bw'de 6.67°, kompanzasyon sonrası belirsizlik (2σ) 0.91°
+  T3.3 AŞIM: TUR 2.72 (u_h 3.67; ölçüme dayalı 3.68)
+piksel fazı 0,05 px [21 s]
+  T0.1 OK: IFOV 40.1572 (u %0.0033); S-eğrisi 0.0680 ± 0.0024 px (beklenen 0.0669); kazanç 0.696/1.122 ± 0.015; ızgara artığı 00.0475 (0.0141)
+  T0.2 OK: stab OFF 2.13/1.52; beklenen zincir 1.64/1.39; DUT payı 1.36/0.61; otokolimatör 1.11/1.12 µrad
+  T0.4 OK: -0.9171 ± 0.0402 ms (model -0.9502) · Video − IMU gecikmesi -0.917 ± 0.040 ms (10 darbe); kompanze edilmezse f_bw'de 6.60°, kompanzasyon sonrası belirsizlik (2σ) 0.58°
+  T3.3 OK: TUR 4.26 (u_h 2.35; ölçüme dayalı 2.35)
+  T1.9 AŞIM: Takip sonrası (pencere RMS'lerinin %95 üst güven sınırı): σ_vek 4.09 µrad (sınır 4.00), σ_El 3.23 / σ_Az 2.51, PPV 30.1 / 21.8, P99,73 10.1, pozlama içi 1.96 / 1.71 µrad; aşan: σ_El, σ_vek, PPV El, PP
+     · Takip öncesi: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 4.95 / 2.74 / 5.66 µrad · 40.5 / 26.7 µrad
+     · Takip sonrası: σ_El / σ_Az / σ_vek (havuz · %95 üst · en kötü pencere): 3.16 · 3.23 · 3.47 / 2.49 · 2.51 · 2.53 / 4.03 · 4.09 · 4.27 µrad
+     · Takip sonrası: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 3.37 / 2.05 / 3.94 µrad · 25.6 / 16.3 µrad
+     · Piksel fazı: takip hedef noktasını sabit tutar: sub-piksel faz xel 0.37 / el 0.79 → video küçük hareketleri ×0.696 / ×1.122 ölçer (S-eğrisi T0.1 kestirimi, genlik 0.0680 px; noktaya göre ×0.573–×1.427); takip döngüsünün kazancı da bu oranda değişir
+piksel fazı 0 [12 s]
+  T0.1 OK: IFOV 40.1597 (u %0.0006); S-eğrisi 0.0027 ± 0.0016 px (beklenen 0.0000); kazanç 0.990/1.015 ± 0.010; ızgara artığı 00.0093 (0.0093)
+  T0.2 OK: stab OFF 1.99/1.78; beklenen zincir 1.57/1.56; DUT payı 1.21/0.87; otokolimatör 1.11/1.12 µrad
+  T0.4 OK: -0.9359 ± 0.0291 ms (model -0.9502) · Video − IMU gecikmesi -0.936 ± 0.029 ms (10 darbe); kompanze edilmezse f_bw'de 6.74°, kompanzasyon sonrası belirsizlik (2σ) 0.42°
+  T3.3 OK: TUR 4.26 (u_h 2.35; ölçüme dayalı 2.35)
+hedef noktası x0 = y0 = 0 [9 s]
+  T0.1 OK: IFOV 40.1646 (u %0.0010); S-eğrisi 0.0270 ± 0.0017 px (beklenen 0.0268); kazanç 1.169/1.169 ± 0.011; ızgara artığı 00.0145 (0.0095)
+  T0.2 OK: stab OFF 2.21/1.96; beklenen zincir 1.68/1.68; DUT payı 1.44/1.02; otokolimatör 1.11/1.12 µrad
+  T0.4 OK: -0.9136 ± 0.0290 ms (model -0.9502) · Video − IMU gecikmesi -0.914 ± 0.029 ms (10 darbe); kompanze edilmezse f_bw'de 6.58°, kompanzasyon sonrası belirsizlik (2σ) 0.42°
+  T3.3 OK: TUR 4.26 (u_h 2.35; ölçüme dayalı 2.35)
+otokolimatör gürültüsü 2 µrad [9 s]
+  T0.1 OK: IFOV 40.1587 (u %0.0014); S-eğrisi 0.0266 ± 0.0016 px (beklenen 0.0268); kazanç 0.874/1.057 ± 0.010; ızgara artığı 00.0206 (0.0095)
+  T0.2 OK: stab OFF 2.04/1.67; beklenen zincir 1.60/1.48; DUT payı 1.27/0.76; otokolimatör 2.24/2.24 µrad
+  T0.4 OK: -0.9285 ± 0.0318 ms (model -0.9502) · Video − IMU gecikmesi -0.928 ± 0.032 ms (10 darbe); kompanze edilmezse f_bw'de 6.68°, kompanzasyon sonrası belirsizlik (2σ) 0.46°
+  T3.3 AŞIM: TUR 3.29 (u_h 3.04; ölçüme dayalı 3.04)
+IMU bandı 100 Hz [8 s]
+  T0.1 OK: IFOV 40.1587 (u %0.0014); S-eğrisi 0.0272 ± 0.0015 px (beklenen 0.0268); kazanç 0.876/1.053 ± 0.009; ızgara artığı 00.0201 (0.0082)
+  T0.2 OK: stab OFF 2.04/1.67; beklenen zincir 1.60/1.49; DUT payı 1.27/0.76; otokolimatör 1.11/1.12 µrad
+  T0.4 OK: -2.7491 ± 0.0318 ms (model -2.7508) · Video − IMU gecikmesi -2.749 ± 0.032 ms (10 darbe); kompanze edilmezse f_bw'de 19.79°, kompanzasyon sonrası belirsizlik (2σ) 0.46°
+  T3.3 OK: TUR 4.26 (u_h 2.35; ölçüme dayalı 2.35)
+senkron Δt 2 ms [8 s]
+  T0.1 OK: IFOV 40.1586 (u %0.0014); S-eğrisi 0.0272 ± 0.0017 px (beklenen 0.0268); kazanç 0.873/1.056 ± 0.011; ızgara artığı 00.0205 (0.0093)
+  T0.2 OK: stab OFF 2.04/1.67; beklenen zincir 1.60/1.48; DUT payı 1.27/0.77; otokolimatör 1.11/1.12 µrad
+  T0.4 OK: -2.4283 ± 0.0318 ms (model -2.4502) · Video − IMU gecikmesi -2.428 ± 0.032 ms (10 darbe); kompanze edilmezse f_bw'de 17.48°, kompanzasyon sonrası belirsizlik (2σ) 0.46°
+  T3.3 OK: TUR 4.26 (u_h 2.35; ölçüme dayalı 2.35)
+hedef TUR 10 [8 s]
+  T0.1 OK: IFOV 40.1587 (u %0.0014); S-eğrisi 0.0266 ± 0.0016 px (beklenen 0.0268); kazanç 0.874/1.057 ± 0.010; ızgara artığı 00.0206 (0.0095)
+  T0.2 AŞIM: stab OFF 2.04/1.67; beklenen zincir 1.60/1.48; DUT payı 1.27/0.76; otokolimatör 1.11/1.12 µrad
+  T0.4 OK: -0.9285 ± 0.0318 ms (model -0.9502) · Video − IMU gecikmesi -0.928 ± 0.032 ms (10 darbe); kompanze edilmezse f_bw'de 6.68°, kompanzasyon sonrası belirsizlik (2σ) 0.46°
+  T3.3 AŞIM: TUR 4.26 (u_h 2.35; ölçüme dayalı 2.35)
+Z540.3 (k = 2) [9 s]
+  T0.1 OK: IFOV 40.1587 (u %0.0014); S-eğrisi 0.0266 ± 0.0016 px (beklenen 0.0268); kazanç 0.874/1.057 ± 0.010; ızgara artığı 00.0206 (0.0095)
+  T0.2 OK: stab OFF 2.04/1.67; beklenen zincir 1.60/1.48; DUT payı 1.27/0.76; otokolimatör 1.11/1.12 µrad
+  T0.4 OK: -0.9285 ± 0.0318 ms (model -0.9502) · Video − IMU gecikmesi -0.928 ± 0.032 ms (10 darbe); kompanze edilmezse f_bw'de 6.68°, kompanzasyon sonrası belirsizlik (2σ) 0.46°
+  T3.3 AŞIM: TUR 2.13 (u_h 2.35; ölçüme dayalı 2.35)

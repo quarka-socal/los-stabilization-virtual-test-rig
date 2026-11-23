@@ -1,0 +1,86 @@
+[
+ {
+  "nm": "varsayılan — T0.6 / işletme B1-05",
+  "T06": "OK ARW 0.00424 °/√h (sınır 0.005), bias kararsızlığı 0.0461 °/h (sınır 0.05)",
+  "B105_wEl": 2.680807700493102,
+  "B105_wXel": 3.3038576141264486,
+  "B105_el": 6.576259657868675
+ },
+ {
+  "nm": "ARW × 2 — T0.6 / işletme B1-05",
+  "T06": "AŞIM ARW 0.00845 °/√h (sınır 0.005), bias kararsızlığı 0.0531 °/h (sınır 0.05)",
+  "B105_wEl": 5.361615400988562,
+  "B105_wXel": 6.60771524559658,
+  "B105_el": 13.152519314683241
+ },
+ {
+  "nm": "BI × 2 — T0.6",
+  "T06": "AŞIM ARW 0.00428 °/√h (sınır 0.005), bias kararsızlığı 0.0867 °/h (sınır 0.05)"
+ },
+ {
+  "nm": "f_bw 300 Hz",
+  "PMel": 46.98969707590399,
+  "GMel": 10.805262339478777,
+  "PMaz": 48.01585153410599,
+  "GMaz": 13.440302440991466,
+  "fcEl": 40.44589289519957,
+  "T18": "BİLGİ Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 333 ms; aşma en büyük 0.13 mrad",
+  "T11": "OK DRR(f) eğrisi: roll 0.050 Hz -84.7 dB; roll 0.083 Hz -81.5 dB; roll 0.100 Hz -80.4 dB; roll 0.125 Hz -78.5 dB*; roll 0.2"
+ },
+ {
+  "nm": "f_bw 3000 Hz",
+  "PMel": 53.89473404129447,
+  "GMel": 12.740547065194654,
+  "PMaz": 53.21099355290069,
+  "GMaz": 15.348591891375133,
+  "fcEl": 40.45346452253437,
+  "T18": "BİLGİ Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad",
+  "T11": "OK DRR(f) eğrisi: roll 0.050 Hz -84.6 dB; roll 0.083 Hz -81.4 dB; roll 0.100 Hz -80.3 dB; roll 0.125 Hz -78.4 dB*; roll 0.2"
+ },
+ {
+  "nm": "S_f 1000 ppm",
+  "T18": "BİLGİ Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad",
+  "slew": "bekleme ortalaması -189.5 µrad (oturma artığı dahil, 10 tekrar); ölçek hatasının payı (aynı tohum, S_f = S_nl = 0 ile fark) -174.7 µrad; beklenen −S_etkin·θ = -174.5 µrad (S_f = 1000 ppm). Jitter değil, pointing hatası; görüntü izleyici ya da enkoder döngüsü kapatır.",
+  "range": "dönüşte en büyük eylemsiz hız 30.8 °/s (menzil ±1000 °/s); doyum yok",
+  "fogEff_ppm": 1000,
+  "s10_urad": 174.53292519943295
+ },
+ {
+  "nm": "S_nl 300 ppm·FS",
+  "T18": "BİLGİ Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad",
+  "slew": "bekleme ortalaması 46.2 µrad (oturma artığı dahil, 10 tekrar); ölçek hatasının payı (aynı tohum, S_f = S_nl = 0 ile fark) 61.1 µrad; beklenen −S_etkin·θ = 61.0 µrad (S_f = 100 ppm, doğrusalsızlık 300 ppm·FS → kübik modelde etkin -349.5 ppm). Jitter değil, pointing hatası; görüntü izleyici ya da enkoder döngüsü kapatır.",
+  "range": "dönüşte en büyük eylemsiz hız 30.8 °/s (menzil ±1000 °/s); doyum yok",
+  "fogEff_ppm": -349.476875,
+  "s10_urad": -60.99522128330658
+ },
+ {
+  "nm": "menzil ±20 °/s",
+  "T18": "BİLGİ Oturma süresi (|hata| ≤ 20 µrad): en büyük 1086 ms, ortalama 979 ms; aşma en büyük 769.96 mrad",
+  "slew": "bekleme ortalaması 2173473.5 µrad (oturma artığı dahil, 10 tekrar); ölçek hatasının payı (aynı tohum, S_f = S_nl = 0 ile fark) -7.0 µrad; beklenen −S_etkin·θ = -17.5 µrad (S_f = 100 ppm). Jitter değil, pointing hatası; görüntü izleyici ya da enkoder döngüsü kapatır.",
+  "range": "dönüşte en büyük eylemsiz hız 728.4 °/s (menzil ±20 °/s); 25741 örnekte doyum — DÖNÜŞ ÖLÇÜMÜ GEÇERSİZ",
+  "fogEff_ppm": 99.99999999999999,
+  "s10_urad": 17.453292519943297
+ },
+ {
+  "nm": "ε_el 0,5 mrad",
+  "T11cross": "0.4977 mrad/rad (model ε = 0.5 mrad)",
+  "B104_el": 9.27626084543434,
+  "B104_xel": 1.8612268721848717
+ },
+ {
+  "nm": "g-duyarlılığı 1 °/h/g (sub)",
+  "B110_budget": 0.016401065153705416,
+  "sim_el": 0.15385867975068251,
+  "sim_xel": 0.12595784238183086,
+  "simNoAng_el": 0.009694051728991173,
+  "simNoAng_xel": 0.012621954555213165
+ },
+ {
+  "nm": "g-duyarlılığı 1 °/h/g (ship)",
+  "B110_budget": 0.39101462519073926,
+  "sim_el": 0.32183264286745084,
+  "sim_xel": 0.4800376794779586,
+  "simNoAng_el": 0.17985361876767184,
+  "simNoAng_xel": 0.5165566122755264
+ }
+]

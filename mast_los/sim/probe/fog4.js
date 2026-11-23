@@ -1,0 +1,10 @@
+const L = require('../engine.js');
+const P = L.defaultParams('sub');
+let t0 = Date.now(); const r = L.runTest('T1.8', P, {}, null);
+console.log('T1.8', r.status, ((Date.now() - t0) / 1000).toFixed(1), 's'); for (const kv of r.kv.slice(-2)) console.log('  ', kv.join(' = '));
+const P2 = L.defaultParams('sub'); P2.dut.gyro.tcBias = 0.01; P2.dut.gyro.tcSF = 5;
+t0 = Date.now(); const r2 = L.runTest('T4.2', P2, {}, null);
+console.log('T4.2', r2.status, ((Date.now() - t0) / 1000).toFixed(1), 's'); for (const kv of r2.kv.slice(-3)) console.log('  ', kv.join(' = '));
+const P3 = L.defaultParams('sub'); P3.dut.gyro.lat_ms = 1; P3.dut.gyro.lsb_dph = 0.01; P3.dut.gyro.sfnl_ppm = 50; P3.dut.gyro.kg = 0.1;
+const S = L.labScenario(P3, { label: 'x', T: 30, fs: 2000, seed: 5, cmd: [{ type: 'sine', axis: 0, A: 0.0349, f: 0.2, t0: 0, ramp: 2 }] });
+const R = L.runSim(P3, S, null); console.log('FOG ekleri açık: koşu tamam; gyroMax', (R.stats.gyroMax * 180 / Math.PI).toFixed(4), '°/s; doyum', R.stats.gyroSat);

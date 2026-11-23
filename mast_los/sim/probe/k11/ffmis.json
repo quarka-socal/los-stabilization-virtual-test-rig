@@ -1,0 +1,51 @@
+[
+ {
+  "eta": 0.76,
+  "st": "AŞIM",
+  "m": "Yön değişimi geçişi (senkron ortalama): tepe 31.9 µrad (sınır 10.3), tekrarlanan bileşen el 5.74 µrad RMS; 40 sıfır geçişi",
+  "opEl": 0.000012915653766891493,
+  "opXel": 0.00000961835200825406
+ },
+ {
+  "eta": 0.855,
+  "st": "AŞIM",
+  "m": "Yön değişimi geçişi (senkron ortalama): tepe 18.8 µrad (sınır 10.3), tekrarlanan bileşen el 3.49 µrad RMS; 40 sıfır geçişi",
+  "opEl": 0.000007809943744315409,
+  "opXel": 0.000005811829619665647
+ },
+ {
+  "eta": 0.9,
+  "st": "AŞIM",
+  "m": "Yön değişimi geçişi (senkron ortalama): tepe 12.6 µrad (sınır 10.3), tekrarlanan bileşen el 2.47 µrad RMS; 40 sıfır geçişi",
+  "opEl": 0.0000053920457827310865,
+  "opXel": 0.0000040102143136645125
+ },
+ {
+  "eta": 0.95,
+  "st": "OK",
+  "m": "Yön değişimi geçişi (senkron ortalama): tepe 5.8 µrad (sınır 10.3), tekrarlanan bileşen el 1.45 µrad RMS; 40 sıfır geçişi",
+  "opEl": 0.0000027112110006056206,
+  "opXel": 0.000002011524618590639
+ },
+ {
+  "eta": 1,
+  "st": "OK",
+  "m": "Yön değişimi geçişi (senkron ortalama): tepe 3.2 µrad (sınır 10.3), tekrarlanan bileşen el 1.04 µrad RMS; 40 sıfır geçişi",
+  "opEl": 3.3154914588259086e-7,
+  "opXel": 1.73192493195298e-7
+ },
+ {
+  "eta": 1.045,
+  "st": "OK",
+  "m": "Yön değişimi geçişi (senkron ortalama): tepe 8.8 µrad (sınır 10.3), tekrarlanan bileşen el 1.64 µrad RMS; 40 sıfır geçişi",
+  "opEl": 0.0000024471305908995973,
+  "opXel": 0.0000018067219396928518
+ },
+ {
+  "eta": 1.14,
+  "st": "AŞIM",
+  "m": "Yön değişimi geçişi (senkron ortalama): tepe 21.7 µrad (sınır 10.3), tekrarlanan bileşen el 3.73 µrad RMS; 40 sıfır geçişi",
+  "opEl": 0.000007550495649980658,
+  "opXel": 0.000005600393987276342
+ }
+]

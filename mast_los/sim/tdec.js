@@ -1,0 +1,12 @@
+const L = require('./engine.js');
+const P = L.defaultParams();
+const t0 = Date.now();
+const D = L.opDecomposition(P, { T: 600, seed: 11 }, null);
+const u = (x) => (x == null || isNaN(x)) ? '  —  ' : (x * 1e6).toFixed(3);
+console.log('time', ((Date.now() - t0) / 1000).toFixed(1), 's; rho G1', D.rho.toFixed(3));
+for (const [id, r] of Object.entries(D.rows)) console.log(id.padEnd(6), 'el', u(r.el), 'xel', u(r.xel), 'cmp', u(r.cmp), u(r.cmpXel), 'wEl', u(r.wEl), 'sEl', u(r.sEl), 'pde', u(r.pdeEl), 'p99', u(r.p99El));
+const a = D.all, M = a.M, v = M.video;
+console.log('ALL rms el/xel', u(M.rms.el), u(M.rms.xel), '| RSS of rows (el)', u(a.rss), '| bands el', u(M.band.el.B1), u(M.band.el.B2), u(M.band.el.B3));
+console.log('ALL wander', u(v.wander.el), u(v.wander.xel), 'smear', u(v.smear.el), u(v.smear.xel), 'p99', u(v.p99.el), u(v.p99.xel), 'MTF', v.mtf.el.toFixed(4), v.mtf.xel.toFixed(4));
+console.log('PSD weighting el wander/smear', u(a.pw.wander), u(a.pw.smear), 'xel', u(a.pwx.wander), u(a.pwx.smear), '| EIS', u(a.eis), 'lock', u(a.eisLock));
+require('fs').writeFileSync('dec_out.json', JSON.stringify({ rows: D.rows, rho: D.rho, rss: a.rss }, null, 1));

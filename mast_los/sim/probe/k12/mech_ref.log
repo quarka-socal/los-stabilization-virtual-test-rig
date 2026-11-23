@@ -1,0 +1,8 @@
+el: çözüm b = 1.670561 (motor 1.6626), k = 4.838585 (motor 4.8402); göreli fark 4.79e-03 / -3.34e-04
+   duyarlılık d(DRR dB)/d ln: b@0.125: 0.58, b@3: 8.50, k@0.125: 8.10, k@3: 0.19
+az: çözüm b = 2.906853 (motor 2.9694), k = 13.328057 (motor 13.3244); göreli fark -2.11e-02 / 2.74e-04
+   duyarlılık d(DRR dB)/d ln: b@0.08333: 0.11, b@3: 8.24, k@0.08333: 8.57, k@3: 0.45
+J × 0.5: K 30.938 (motor 30.938), kesim 40.453, PM 53.85°; |θ/T_d| 1 Hz -71.70 dB, 2 Hz -72.33 dB, 8 Hz -66.37 dB, 20 Hz -70.42 dB
+J × 1: K 61.831 (motor 61.831), kesim 40.453, PM 52.35°; |θ/T_d| 1 Hz -77.71 dB, 2 Hz -78.33 dB, 8 Hz -72.36 dB, 20 Hz -76.17 dB
+J × 2: K 123.648 (motor 123.648), kesim 40.453, PM 51.60°; |θ/T_d| 1 Hz -83.73 dB, 2 Hz -84.35 dB, 8 Hz -78.37 dB, 20 Hz -82.06 dB
+J taraması en büyük fark (göreli / ° / dB): 1.48e-11

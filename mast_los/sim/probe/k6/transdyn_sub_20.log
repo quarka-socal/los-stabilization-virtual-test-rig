@@ -1,0 +1,40 @@
+== sub f_bw 20 Hz, öteleme dinamiği ideal
+  T1.3 OK | Wander (en kötü tohum) el 6.96 / xel 6.57 µrad RMS; P99 17.40 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 10.16 / 9.39 µrad (gereksinim 120)
+     fill {"T1.3":6.963}
+  T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.19 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 21.00 → ON 2.10 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+     · 3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²): OFF el 21.00 / xel 0.76 µrad · ON el 2.10 / xel 0.06 µrad (açısal DRR karşılığı -49.4 dB)
+     · 5.48 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (2.76 m/s²): OFF el 32.38 / xel 2.43 µrad · ON el 3.19 / xel 0.26 µrad (açısal DRR karşılığı -45.7 dB)
+     · 3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT: el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.34 µrad
+     · Hexapod iletimi τ = θ_ölç / θ_komut (IMU), dwell frekanslarında en düşük: 0.997 @ 5.48 Hz (analitik 1/√(1 + (f/f_bw)⁴) = 0.997; f_bw = 20 Hz)
+     fill {"B2-01":2.1}
+  T2.3 OK | Kombine artık 6.65 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+     fill {}
+  T2.5 OK | İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.64 µrad RMS (tahsis 3); duyarlılık 1.906 µrad/(m/s²) (hexapod iletimi τ = 0.987: laboratuvar farkı 1.62 µrad komut düzeyine ölçeklendi)
+     · Hexapod iletimi τ = θ_ölç / θ_komut (IMU), ölçülen ↔ analitik 1/√(1 + (f/f_bw)⁴): 0.5 Hz 1.000 ↔ 1.000 · 1 Hz 1.000 ↔ 1.000 · 2 Hz 1.000 ↔ 1.000 · 5 Hz 0.998 ↔ 0.998 · 8 Hz 0.987 ↔ 0.987 (f_bw = 20 Hz)
+     · Öteleme x (surge), 1 Hz, ±50.7 mm (2.00 m/s²): optik LOS el 0.094 / xel 0.904 µrad per m/s² (±0.103) · yollar: ayna (dengesizlik) el 0.102 / xel 0.952, optik montaj (video − ayna) el 0.044 / xel 1.509
+     · Öteleme x (surge), 2 Hz, ±12.7 mm (2.00 m/s²): optik LOS el 0.088 / xel 0.674 µrad per m/s² (±0.112) · yollar: ayna (dengesizlik) el 0.110 / xel 0.793, optik montaj (video − ayna) el 0.113 / xel 1.446
+     · Öteleme y (sway), 1 Hz, ±50.7 mm (2.00 m/s²): optik LOS el 0.993 / xel 0.420 µrad per m/s² (±0.107) · yollar: ayna (dengesizlik) el 0.998 / xel 0.537, optik montaj (video − ayna) el 0.019 / xel 0.147
+     · Öteleme y (sway), 2 Hz, ±12.7 mm (2.00 m/s²): optik LOS el 0.753 / xel 0.549 µrad per m/s² (±0.106) · yollar: ayna (dengesizlik) el 0.904 / xel 0.477, optik montaj (video − ayna) el 0.157 / xel 0.091
+     · Öteleme z (heave), 1 Hz, ±50.7 mm (2.00 m/s²): optik LOS el 1.002 / xel 0.058 µrad per m/s² (±0.117) · yollar: ayna (dengesizlik) el 0.850 / xel 0.139, optik montaj (video − ayna) el 1.625 / xel 0.117
+     · Öteleme z (heave), 2 Hz, ±12.7 mm (2.00 m/s²): optik LOS el 0.812 / xel 0.068 µrad per m/s² (±0.114) · yollar: ayna (dengesizlik) el 0.684 / xel 0.047, optik montaj (video − ayna) el 1.462 / xel 0.088
+     fill {"B2-03":1.641,"B1-08":0.025}
+== sub f_bw 20 Hz, öteleme dinamiği fbw
+  T1.3 OK | Wander (en kötü tohum) el 6.96 / xel 6.57 µrad RMS; P99 17.40 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 10.16 / 9.39 µrad (gereksinim 120)
+     fill {"T1.3":6.963}
+  T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.05 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.08 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)
+     · 3.00 Hz (f_n) · θ 0.050° · öteleme ±2.33 mm (0.83 m/s²): OFF el 20.78 / xel 0.76 µrad · ON el 2.08 / xel 0.06 µrad (açısal DRR karşılığı -49.5 dB)
+     · 5.48 Hz (alt dal f*·f_n) · θ 0.050° · öteleme ±2.33 mm (2.76 m/s²): OFF el 30.90 / xel 2.41 µrad · ON el 3.05 / xel 0.26 µrad (açısal DRR karşılığı -46.1 dB)
+     · 3.00 Hz, yalnız açısal (öteleme yok), yapılandırılmış DUT: el 2.07 / xel 0.08 µrad → öteleme yolu karesel 0.16 µrad
+     · Hexapod iletimi τ = θ_ölç / θ_komut (IMU), dwell frekanslarında en düşük: 0.997 @ 5.48 Hz (analitik 1/√(1 + (f/f_bw)⁴) = 0.997; f_bw = 20 Hz)
+     fill {"B2-01":2.079}
+  T2.3 OK | Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+     fill {}
+  T2.5 OK | İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.64 µrad RMS (tahsis 3); duyarlılık 1.906 µrad/(m/s²) (hexapod iletimi τ = 0.987: laboratuvar farkı 1.62 µrad komut düzeyine ölçeklendi)
+     · Hexapod iletimi τ = θ_ölç / θ_komut (IMU), ölçülen ↔ analitik 1/√(1 + (f/f_bw)⁴): 0.5 Hz 1.000 ↔ 1.000 · 1 Hz 1.000 ↔ 1.000 · 2 Hz 1.000 ↔ 1.000 · 5 Hz 0.998 ↔ 0.998 · 8 Hz 0.987 ↔ 0.987 (f_bw = 20 Hz)
+     · Öteleme x (surge), 1 Hz, ±50.7 mm (2.00 m/s²): optik LOS el 0.094 / xel 0.904 µrad per m/s² (±0.103) · yollar: ayna (dengesizlik) el 0.102 / xel 0.948, optik montaj (video − ayna) el 0.044 / xel 1.505
+     · Öteleme x (surge), 2 Hz, ±12.7 mm (2.00 m/s²): optik LOS el 0.088 / xel 0.692 µrad per m/s² (±0.112) · yollar: ayna (dengesizlik) el 0.110 / xel 0.792, optik montaj (video − ayna) el 0.113 / xel 1.463
+     · Öteleme y (sway), 1 Hz, ±50.7 mm (2.00 m/s²): optik LOS el 0.994 / xel 0.421 µrad per m/s² (±0.107) · yollar: ayna (dengesizlik) el 0.997 / xel 0.531, optik montaj (video − ayna) el 0.019 / xel 0.146
+     · Öteleme y (sway), 2 Hz, ±12.7 mm (2.00 m/s²): optik LOS el 0.756 / xel 0.539 µrad per m/s² (±0.106) · yollar: ayna (dengesizlik) el 0.913 / xel 0.475, optik montaj (video − ayna) el 0.159 / xel 0.093
+     · Öteleme z (heave), 1 Hz, ±50.7 mm (2.00 m/s²): optik LOS el 0.999 / xel 0.058 µrad per m/s² (±0.117) · yollar: ayna (dengesizlik) el 0.851 / xel 0.139, optik montaj (video − ayna) el 1.619 / xel 0.117
+     · Öteleme z (heave), 2 Hz, ±12.7 mm (2.00 m/s²): optik LOS el 0.815 / xel 0.068 µrad per m/s² (±0.114) · yollar: ayna (dengesizlik) el 0.684 / xel 0.047, optik montaj (video − ayna) el 1.463 / xel 0.088
+     fill {"B2-03":1.641,"B1-08":0.025}

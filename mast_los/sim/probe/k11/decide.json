@@ -1,0 +1,160 @@
+{
+ "est": [
+  {
+   "kind": "sub",
+   "e": 0,
+   "t22": "OK",
+   "m22": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.05 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.08 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "t23": "OK",
+   "m23": "Kombine artık 6.64 µrad; ayrı testlerin RSS'i 7.03 µrad → sapma -5.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad"
+  },
+  {
+   "kind": "sub",
+   "e": 0.05,
+   "t22": "OK",
+   "m22": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.54 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.43 µrad; yalnız açısal uyarımla 2.46 µrad (öteleme payı)",
+   "t23": "OK",
+   "m23": "Kombine artık 6.68 µrad; ayrı testlerin RSS'i 7.14 µrad → sapma -6.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad"
+  },
+  {
+   "kind": "sub",
+   "e": -0.05,
+   "t22": "OK",
+   "m22": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.64 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.45 µrad; yalnız açısal uyarımla 2.48 µrad (öteleme payı)",
+   "t23": "OK",
+   "m23": "Kombine artık 6.68 µrad; ayrı testlerin RSS'i 7.14 µrad → sapma -6.5 % (sınır ±20 %); tahsis sınırı 13.4 µrad"
+  },
+  {
+   "kind": "sub",
+   "e": 0.1,
+   "t22": "AŞIM",
+   "m22": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 31.07 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 3.20 µrad; yalnız açısal uyarımla 3.28 µrad (öteleme payı)",
+   "t23": "OK",
+   "m23": "Kombine artık 6.77 µrad; ayrı testlerin RSS'i 7.43 µrad → sapma -9.0 % (sınır ±20 %); tahsis sınırı 13.4 µrad"
+  },
+  {
+   "kind": "sub",
+   "e": 0.2,
+   "t22": "AŞIM",
+   "m22": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 31.07 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 5.01 µrad; yalnız açısal uyarımla 5.17 µrad (öteleme payı)",
+   "t23": null,
+   "m23": null
+  },
+  {
+   "kind": "ship",
+   "e": 0,
+   "t22": "AŞIM",
+   "m22": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 6.55 µrad RMS (tahsis 6.0); f_n = 4.10 Hz'de OFF 60.30 → ON 5.75 µrad; yalnız açısal uyarımla 5.56 µrad (öteleme payı)",
+   "t23": null,
+   "m23": null
+  },
+  {
+   "kind": "ship",
+   "e": 0.05,
+   "t22": "AŞIM",
+   "m22": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 7.58 µrad RMS (tahsis 6.0); f_n = 4.10 Hz'de OFF 60.30 → ON 6.71 µrad; yalnız açısal uyarımla 6.54 µrad (öteleme payı)",
+   "t23": null,
+   "m23": null
+  },
+  {
+   "kind": "ship",
+   "e": 0.1,
+   "t22": "AŞIM",
+   "m22": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 9.93 µrad RMS (tahsis 6.0); f_n = 4.10 Hz'de OFF 60.30 → ON 8.90 µrad; yalnız açısal uyarımla 8.50 µrad (öteleme payı)",
+   "t23": null,
+   "m23": null
+  }
+ ],
+ "obs": [
+  {
+   "nm": "tam bilgi",
+   "o": {},
+   "st": "OK",
+   "peak": 5.8,
+   "opEl": 0.0000027112110006056206
+  },
+  {
+   "nm": "F_c × 0,9",
+   "o": {
+    "Fc": 0.9
+   },
+   "st": "AŞIM",
+   "peak": 13.8,
+   "opEl": 0.000007041452580691555
+  },
+  {
+   "nm": "F_c × 1,1",
+   "o": {
+    "Fc": 1.1
+   },
+   "st": "OK",
+   "peak": 8.8,
+   "opEl": 0.0000028513170672154296
+  },
+  {
+   "nm": "F_c, F_s × 0,9",
+   "o": {
+    "Fc": 0.9,
+    "Fs": 0.9
+   },
+   "st": "AŞIM",
+   "peak": 17.2,
+   "opEl": 0.000007443196590043434
+  },
+  {
+   "nm": "F_c, F_s × 1,1",
+   "o": {
+    "Fc": 1.1,
+    "Fs": 1.1
+   },
+   "st": "AŞIM",
+   "peak": 10.9,
+   "opEl": 0.0000032297028323943496
+  },
+  {
+   "nm": "F_s × 1,2",
+   "o": {
+    "Fs": 1.2
+   },
+   "st": "OK",
+   "peak": 7.8,
+   "opEl": 0.000002607658809278711
+  },
+  {
+   "nm": "v_s × 0,5",
+   "o": {
+    "vs": 0.5
+   },
+   "st": "OK",
+   "peak": 7.6,
+   "opEl": 0.0000029546406141993464
+  },
+  {
+   "nm": "v_s × 2",
+   "o": {
+    "vs": 2
+   },
+   "st": "OK",
+   "peak": 4.6,
+   "opEl": 0.0000022908275193503927
+  },
+  {
+   "nm": "σ0 × 0,5",
+   "o": {
+    "s0": 0.5
+   },
+   "st": "AŞIM",
+   "peak": 58.4,
+   "opEl": 0.00001884689080874731
+  },
+  {
+   "nm": "σ0 × 2",
+   "o": {
+    "s0": 2
+   },
+   "st": "AŞIM",
+   "peak": 58,
+   "opEl": 0.00001673631966929413
+  }
+ ]
+}

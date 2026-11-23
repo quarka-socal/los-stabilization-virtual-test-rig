@@ -1,0 +1,166 @@
+{
+ "which": "b",
+ "r": [
+  20,
+  0,
+  15
+ ],
+ "T2.5": {
+  "status": "OK",
+  "measured": "İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.62 µrad RMS (tahsis 3); duyarlılık 1.882 µrad/(m/s²)",
+  "kv": [
+   [
+    "0.5 Hz, θ = 5.730°",
+    "ivme 0.987 m/s² → fark 0.426 µrad RMS (0.611 µrad per m/s² RMS)"
+   ],
+   [
+    "1 Hz, θ = 1.767°",
+    "ivme 1.218 m/s² → fark 0.896 µrad RMS (1.041 µrad per m/s² RMS)"
+   ],
+   [
+    "2 Hz, θ = 0.442°",
+    "ivme 1.218 m/s² → fark 0.833 µrad RMS (0.968 µrad per m/s² RMS)"
+   ],
+   [
+    "5 Hz, θ = 0.071°",
+    "ivme 1.218 m/s² → fark 1.259 µrad RMS (1.462 µrad per m/s² RMS)"
+   ],
+   [
+    "8 Hz, θ = 0.028°",
+    "ivme 1.218 m/s² → fark 1.620 µrad RMS (1.882 µrad per m/s² RMS)"
+   ],
+   [
+    "Pivotlar",
+    "göz bebeği / 1 m aşağıda (ölçekli gövde dönme merkezi)"
+   ],
+   [
+    "Öteleme stroku sınırı",
+    "r·θ ≤ 100 mm"
+   ],
+   [
+    "Öteleme x (surge), 1 Hz, ±50.7 mm (2.00 m/s²)",
+    "optik LOS el 0.093 / xel 0.900 µrad per m/s² (±0.102) · yollar: ayna (dengesizlik) el 0.102 / xel 0.952, optik montaj (video − ayna) el 0.044 / xel 1.506"
+   ],
+   [
+    "Öteleme x (surge), 2 Hz, ±12.7 mm (2.00 m/s²)",
+    "optik LOS el 0.087 / xel 0.671 µrad per m/s² (±0.112) · yollar: ayna (dengesizlik) el 0.110 / xel 0.793, optik montaj (video − ayna) el 0.113 / xel 1.443"
+   ],
+   [
+    "Öteleme y (sway), 1 Hz, ±50.7 mm (2.00 m/s²)",
+    "optik LOS el 0.989 / xel 0.419 µrad per m/s² (±0.107) · yollar: ayna (dengesizlik) el 0.998 / xel 0.537, optik montaj (video − ayna) el 0.021 / xel 0.149"
+   ],
+   [
+    "Öteleme y (sway), 2 Hz, ±12.7 mm (2.00 m/s²)",
+    "optik LOS el 0.750 / xel 0.547 µrad per m/s² (±0.106) · yollar: ayna (dengesizlik) el 0.904 / xel 0.477, optik montaj (video − ayna) el 0.160 / xel 0.089"
+   ],
+   [
+    "Öteleme z (heave), 1 Hz, ±50.7 mm (2.00 m/s²)",
+    "optik LOS el 0.998 / xel 0.057 µrad per m/s² (±0.117) · yollar: ayna (dengesizlik) el 0.850 / xel 0.139, optik montaj (video − ayna) el 1.622 / xel 0.117"
+   ],
+   [
+    "Öteleme z (heave), 2 Hz, ±12.7 mm (2.00 m/s²)",
+    "optik LOS el 0.809 / xel 0.068 µrad per m/s² (±0.113) · yollar: ayna (dengesizlik) el 0.684 / xel 0.047, optik montaj (video − ayna) el 1.459 / xel 0.088"
+   ],
+   [
+    "Direktördeki deniz ivmesi RMS (x / y / z)",
+    "0.335 / 0.444 / 0.447 m/s² (kaldıraç kolu r = (20.0, 0.0, 15.0) m: x 0.335, y 0.444, z 0.447 m/s²); dar profil (yalnız açısal + kaldıraç kolu)"
+   ],
+   [
+    "İşletme kestirimi B1-08 (yollar ayrı taşınıp doğrusal toplandı, muhafazakâr)",
+    "el 1.19 / xel 0.89 µrad RMS (deniz frekansı x/y/z 0.14 / 0.10 / 0.14 Hz)"
+   ],
+   [
+    "Bilgi: 1 Hz toplam duyarlılığı × ivme (yol ayrımı olmadan)",
+    "el 0.63 / xel 0.36 µrad RMS — iki yol bu frekansta kısmen birbirini söndürebilir; iyimser olabilir"
+   ],
+   [
+    "Bilgi: serbestlik dereceleri tam ilişkili olsaydı (bir eksendeki terimler aynı fazda)",
+    "ivme |a| 0.756 m/s² (×1.06); B1-08 kestirimi el 1.22 / xel 0.90 µrad RMS. Model serbestlik derecelerini bağımsız üretir (çapraz spektrum yok); gerçek gemide roll–sway–yaw ve pitch–heave–surge faz ilişkilidir, ters fazda değer bağımsız tahminin de altına inebilir"
+   ]
+  ],
+  "notes": [
+   "Aynı açısal girdi iki pivotta uygulanır; fark, gimbal kütle dengesizliğinin (T = m·r × a) doğrusal ivmeye duyarlılığıdır.",
+   "Gerçek mastta dönme merkezi metrelerce aşağıdadır; duyarlılık işletme ivme spektrumuyla çarpılarak B2-03 kestirilir.",
+   "6-DOF öteleme (\"ivme eşdeğeri\"): kolimatör hedefi sonsuzda olduğu için öteleme LOS'u geometrik olarak değiştirmez; etkisi ivme üzerindendir. Deniz ötelemesi laboratuvarda tam üretilemediğinden (strok 100 mm) aynı ivme daha yüksek frekansta küçük strokla uygulanır. İki yol farklı frekans bağımlılığı taşır: optik montaj esnemesi yarı statiktir (frekanstan bağımsız), dengesizlik torkunun döngü bastırması frekansla değişir. Bu yüzden yollar ayrılır: ayna (otokolimatör) mekanik LOS'u yani dengesizlik yolunu, video − ayna fazör farkı optik montaj yolunu verir. Her yol kendi frekans bağımlılığıyla deniz frekansına taşınır ve doğrusal toplanır. Tek frekanstaki toplam duyarlılık iki yolun kısmi sönümlemesini içerir; deniz frekansında sönümleme değiştiği için iyimser olabilir. Kestirim, işletme benzetimindeki B1-08 satırıyla Bütçe sekmesinde karşılaştırılır."
+  ],
+  "num": {
+   "tr6": {
+    "predEl": 0.0000011936210522939653,
+    "predXel": 8.852370117103181e-7,
+    "acc": {
+     "x": 0.33494115114025513,
+     "y": 0.44399703132316287,
+     "z": 0.4465882015203402,
+     "eff": 0.7132741130085353
+    }
+   }
+  }
+ },
+ "T1.3": {
+  "status": "OK",
+  "measured": "Wander (en kötü tohum) el 8.21 / xel 6.68 µrad RMS; P99 20.64 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 11.13 / 9.44 µrad (gereksinim 120)",
+  "kv": [
+   [
+    "Tohum başına wander el/xel (µrad)",
+    "8.04/5.80 · 8.18/5.20 · 8.21/6.68"
+   ],
+   [
+    "Masa mikro-titreşiminin video zincirine geçen payı (stab ON, yalıtılmış koşu)",
+    "el 0.41 / xel 0.37 µrad (tabla 2.02 µrad, masa parametresi 2.00 µrad)"
+   ],
+   [
+    "Taban düzeltmeli wander σ = √(σ_ölç² − s²), zincire özgü pay",
+    "el 8.20 / xel 6.67 µrad (s = 0.41 / 0.37); 2.00 µrad tam düşülseydi el 7.97 µrad"
+   ],
+   [
+    "MWIR-WFOV (IFOV 240 µrad), tohum 1",
+    "wander el/xel 11.13 / 9.44 µrad = 0.046 / 0.039 px; P99 28.89 µrad (gereksinim 120 / 309 µrad)"
+   ],
+   [
+    "Radyal wander (tohum 1)",
+    "9.91 µrad = 0.248 px"
+   ],
+   [
+    "P95 / P99 (el, tohum 1)",
+    "15.67 / 20.64 µrad"
+   ],
+   [
+    "Gerçek LOS (simülasyon): wander / smear el",
+    "7.96 / 1.65 µrad"
+   ],
+   [
+    "EIS AÇIK (f_c = 0.5 Hz, η = 0.8) wander el/xel",
+    "8.47 / 6.70 µrad"
+   ],
+   [
+    "EIS referans kareye kilit (f_c = 0) wander el",
+    "4.29 µrad"
+   ],
+   [
+    "Hexapod tepe θ/ω/α (roll)",
+    "12.05° / 7.75°/s / 5.47°/s²"
+   ],
+   [
+    "Deniz ötelemesi (laboratuvar, tohum 1)",
+    "talep ±3.34 m → hexapod ±100 mm (q = 0.0299)"
+   ],
+   [
+    "Gereksinim",
+    "wander ≤ 20.0 µrad, P99 ≤ 51.5 µrad"
+   ]
+  ],
+  "notes": [
+   "Wander: 120 s pencerelerde doğrusal trend çıkarılarak kare ortalamalarının saçılımı (drift ayrı raporlanır). Pencere seçimi ARW katkısını belirgin değiştirir (Bütçe sekmesi).",
+   "Ölçülen wander, video ölçüm tabanını (centroid, piksel fazı, hava) da içerir; taban düzeltmesi Bütçe sekmesinde.",
+   "WFOV: aynı taban hareketiyle (tohum 1) ayrı koşu. LOS hareketi kanaldan bağımsızdır; px cinsinden tanımlı ölçüm tabanı (centroid, piksel fazı) µrad cinsinden IFOV oranında büyür. Gereksinim kanalın IFOV'una ölçeklenir (k_wander·IFOV, k_conf·k_wander·IFOV).",
+   "Laboratuvar deniz ötelemesini (r = (20, 0, 15) m kaldıraç kolunun ötelemesi) hexapod stroku içinde q = 0.0299 oranında üretir; ötelemenin LOS etkisi bu testte tam ölçekte yoktur. İşletme ivmesindeki etkisi T2.5'te ivme eşdeğeriyle ölçülür (B1-08).",
+   "Taban düzeltmesi yalnız masa mikro-titreşimini düşer (seçili kip); centroid, piksel fazı ve hava katkısı ölçülen değerde kalır. Ham değer kabul kararında, düzeltilmiş değer Bütçe sekmesinde kullanılır (ikisi birlikte raporlanır). Yöntemin doğrulaması: Yöntem → V&V M7."
+  ],
+  "num": {
+   "wander": {
+    "el": 0.000008212858951041635,
+    "xel": 0.000006683510036284018
+   }
+  }
+ }
+}

@@ -1,0 +1,286 @@
+FARK SAYISI 2279 (93 grup)
+== tests/T1.7/kv[4][1]: 1
+    tests/T1.7/kv[4][1] : 'girilmedi (Model → Proje gereksinimleri); yalnız kilit kaybı = 0 değerlendirildi' → 'girilmedi (Model → Proje gereksinimleri); kilit kaybı yoksa sonuç BİLGİ'
+== tests/T1.7/notes[1]: 1
+    tests/T1.7/notes[1] : 'Hata eşiği proje gereksinimidir (Model → Proje gereksinimleri); girilmezse yalnız kilit ka' → 'Hata eşiği proje gereksinimidir (Model → Proje gereksinimleri); girilmezse sonuç BİLGİ olu'
+== tests/T1.7/status: 1
+    tests/T1.7/status : 'OK' → 'BİLGİ'
+== tests/T2.4/fill: 1
+    tests/T2.4/fill/B2-02 : 2.7697288467507166e-06 → 2.3663265167520362e-06
+== tests/T2.4/kv[11][1]: 1
+    tests/T2.4/kv[11][1] : 'λ = 0.1/s, T_p ∈ [50, 200] ms, A_RMS = 2458 µrad' → 'λ = 0.1/s, T_p ∈ [50, 200] ms, A_RMS = 2100 µrad'
+== tests/T2.4/measured: 1
+    tests/T2.4/measured : 'Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: k' → 'Tepe hata en büyük 141.1 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: k'
+== op/all/bandEl: 4
+    op/all/bandEl/B1 : 5.9129625184234866e-06 → 5.913026274733679e-06
+    op/all/bandEl/B2 : 3.71838622809477e-06 → 3.5385920202942065e-06
+    op/all/bandEl/B3 : 4.454632247586024e-06 → 4.434960618237495e-06
+    op/all/bandEl/hp1 : 5.802598090727821e-06 → 5.673668052627622e-06
+== op/all/bandXel: 4
+    op/all/bandXel/B1 : 6.675074494437197e-06 → 6.675053930174204e-06
+    op/all/bandXel/B2 : 1.498180809484871e-06 → 1.4979404511513637e-06
+    op/all/bandXel/B3 : 4.4475714238197625e-06 → 4.4475656599616946e-06
+    op/all/bandXel/hp1 : 4.693126602584555e-06 → 4.693044416459968e-06
+== op/all/eis: 1
+    op/all/eis : 7.117991398553619e-06 → 7.113804528725826e-06
+== op/all/eisLock: 1
+    op/all/eisLock : 4.273013085057927e-06 → 4.266808150604106e-06
+== op/all/mtfEl: 1
+    op/all/mtfEl : 0.9785437141670988 → 0.9788000181739477
+== op/all/mtfXel: 1
+    op/all/mtfXel : 0.9814283064779614 → 0.981428270560898
+== op/all/p99El: 1
+    op/all/p99El : 1.877390475126822e-05 → 1.8459167830429324e-05
+== op/all/p99Xel: 1
+    op/all/p99Xel : 1.604002866404064e-05 → 1.6040368776152548e-05
+== op/all/pdeEl: 1
+    op/all/pdeEl : 5.215664057168625e-06 → 5.159324309902231e-06
+== op/all/pdeXel: 1
+    op/all/pdeXel : 6.115410056384073e-06 → 6.115379461935664e-06
+== op/all/psdEl: 1
+    op/all/psdEl/P : '10VKQ/qANUIAhx9DImjOQ6xGXUPKMu9BwfpUQLusvz8YJKY/l+eSPywsR0CdHwJBvuEBQWokvECV8xRAWh+gP6WzhT' → '6EdKQ9SKNUIalR9DOXzOQ1FZXUPkQu9BHUtVQFNbvz8N/KM/UtWRP1H6R0BwogJBdWsCQSiwvEA+2RVA7kmfP4fthD'
+== op/all/psdXel: 1
+    op/all/psdXel/P : '4/5PRDAwy0I1PpVCIRwHQoypLEGhZyhB9aS4QYryR0LW4yBCg12iQZU1O0FPIkBBFWq4QVNv4UFCEqlB14JeQRARTE' → 'N/5PRHwvy0J0P5VC2xwHQiOpLEFEaChBI6e4QaHyR0IC4yBCnVyiQRc0O0HWHUBBY2m4QSNw4UHoEKlB54FeQRcSTE'
+== op/all/pw: 12
+    op/all/pw/bands/B1/smear : 9.631846904067322e-09 → 9.601333850444804e-09
+    op/all/pw/bands/B1/total : 5.911826101413264e-06 → 5.9119300683030475e-06
+    op/all/pw/bands/B1/wander : 5.911818255061326e-06 → 5.911922271722958e-06
+    op/all/pw/bands/B2/smear : 2.7775073420372834e-07 → 2.63908574596732e-07
+    op/all/pw/bands/B2/total : 3.720269212384415e-06 → 3.540500900925492e-06
+    op/all/pw/bands/B2/wander : 3.7098864594842627e-06 → 3.5306513412837195e-06
+== op/all/pwx: 12
+    op/all/pwx/bands/B1/smear : 1.5465054317020967e-08 → 1.5465060890006888e-08
+    op/all/pwx/bands/B1/total : 6.674372132948057e-06 → 6.674351547393168e-06
+    op/all/pwx/bands/B1/wander : 6.6743542160398215e-06 → 6.674333630414441e-06
+    op/all/pwx/bands/B2/smear : 1.514002658730242e-07 → 1.513875269418148e-07
+    op/all/pwx/bands/B2/total : 1.501437425604079e-06 → 1.5011977526539251e-06
+    op/all/pwx/bands/B2/wander : 1.493784556921842e-06 → 1.4935449471842607e-06
+== op/all/rmsEl: 1
+    op/all/rmsEl : 2.465824562832072e-05 → 2.462974381611081e-05
+== op/all/rmsXel: 1
+    op/all/rmsXel : 1.236976221478835e-05 → 1.2370176187205757e-05
+== op/all/rotRes: 1
+    op/all/rotRes : 0.000501661772734255 → 0.0005016612918428365
+== op/all/smearEl: 1
+    op/all/smearEl : 2.69464807252404e-06 → 2.665880232760166e-06
+== op/all/smearXel: 1
+    op/all/smearXel : 2.4772234517028898e-06 → 2.4772259001694194e-06
+== op/all/ts: 2
+    op/all/ts/t : '4XqhQQAAo0FmZqVBw/WlQa5HpkFxPalBAACrQUjhq0HXo6xBZmatQQAAsEGkcLBBheuzQeF6tUGuR7ZB16O3QY/CuE' → '4XqhQQAAo0FmZqVBw/WlQa5HpkFxPalBAACrQUjhq0HXo6xBZmatQQAAsEGkcLBBheuzQeF6tUGuR7ZB16O3QY/CuE'
+    op/all/ts/y : '0IlfwgWC78HgItrBJBJOwswTS8L0nbvBxlSGwcqqIcJiNTTCO5G1wdCrK8KkcqbBFdl8wTk/MsLc3SbCKVOKwffLnc' → 'YI1fwg0Q8sGfwNnB5PRNwhMFS8IQpbvBuluGwUWuIcLeODTCMpi1wUqvK8KXeabB8OZ8wa9CMsJS4SbCEVqKwd3Snc'
+== op/all/wanderEl: 1
+    op/all/wanderEl : 7.3301202181733205e-06 → 7.2419843323336494e-06
+== op/all/wanderXel: 1
+    op/all/wanderXel : 6.096519894206296e-06 → 6.096426084480463e-06
+== op/req/checksPost[0]: 1
+    op/req/checksPost[0]/v : 7.71594056104226e-06 → 7.471061306443698e-06
+== op/req/checksPost[1]: 1
+    op/req/checksPost[1]/v : 4.81831796038869e-06 → 4.8178123496257825e-06
+== op/req/checksPost[2]: 1
+    op/req/checksPost[2]/v : 9.083563914192646e-06 → 8.876859679321377e-06
+== op/req/checksPost[3]: 1
+    op/req/checksPost[3]/v : 0.00021658893259211598 → 0.0001925167368623976
+== op/req/checksPost[4]: 1
+    op/req/checksPost[4]/v : 4.165715639687921e-05 → 4.1657156345559455e-05
+== op/req/checksPost[5]: 1
+    op/req/checksPost[5]/v : 3.5898615203501234e-05 → 3.1488432452095015e-05
+== op/req/checksPost[6]: 1
+    op/req/checksPost[6]/v : 3.861772283000237e-06 → 3.836875275489049e-06
+== op/req/checksPost[7]: 1
+    op/req/checksPost[7]/v : 3.769735507436289e-06 → 3.7697270740292004e-06
+== op/req/checksPost[8]: 1
+    op/req/checksPost[8]/v : 1.2080875729712897e-06 → 1.1685364605928407e-06
+== op/req/checksPost[9]: 1
+    op/req/checksPost[9]/v : 7.330908557534738e-07 → 7.32975765235294e-07
+== op/req/checksPost[10]: 1
+    op/req/checksPost[10]/v : 5.7357689742375204e-06 → 5.490026687124208e-06
+== op/req/checksPost[11]: 1
+    op/req/checksPost[11]/v : 1.6477840918910527e-06 → 1.6464178825974611e-06
+== op/req/checksPost[12]: 1
+    op/req/checksPost[12]/v : 3.5568183038408784e-06 → 3.552537142660351e-06
+== op/req/checksPost[13]: 1
+    op/req/checksPost[13]/v : 3.6310555439591547e-06 → 3.6310486569480246e-06
+== op/req/checksPost[14]: 1
+    op/req/checksPost[14]/v : 2.701038218304172e-06 → 2.6736377565558885e-06
+== op/req/checksPost[15]: 1
+    op/req/checksPost[15]/v : 2.5833432555957257e-06 → 2.5833431436118197e-06
+== op/req/checksPost[16]: 1
+    op/req/checksPost[16]/v : 3.01318286303563e-06 → 3.0131914650652737e-06
+== op/req/checksPost[17]: 1
+    op/req/checksPost[17]/v : 3.2813414143115035e-06 → 3.2813394504502797e-06
+== op/req/checksPre[0]: 1
+    op/req/checksPre[0]/v : 7.3692559328333836e-06 → 7.243148005458957e-06
+== op/req/checksPre[1]: 1
+    op/req/checksPre[1]/v : 5.992125549339272e-06 → 5.992067440179958e-06
+== op/req/checksPre[2]: 1
+    op/req/checksPre[2]/v : 9.434462383950152e-06 → 9.336548587181251e-06
+== op/req/checksPre[3]: 1
+    op/req/checksPre[3]/v : 0.0002092732809515546 → 0.0001849081425074143
+== op/req/checksPre[4]: 1
+    op/req/checksPre[4]/v : 4.886067440160897e-05 → 4.8860749727134694e-05
+== op/req/checksPre[5]: 1
+    op/req/checksPre[5]/v : 2.574635597811075e-05 → 2.3979272629769412e-05
+== op/req/checksPre[6]: 1
+    op/req/checksPre[6]/v : 3.847163054775181e-06 → 3.8235673373865965e-06
+== op/req/checksPre[7]: 1
+    op/req/checksPre[7]/v : 3.7682363728911875e-06 → 3.7682314818312747e-06
+== op/req/checksPre[8]: 1
+    op/req/checksPre[8]/v : 4.86162593344189e-06 → 4.853300651908785e-06
+== op/req/checksPre[9]: 1
+    op/req/checksPre[9]/v : 3.7143695964959604e-06 → 3.714365772778407e-06
+== op/req/checksPre[10]: 1
+    op/req/checksPre[10]/v : 3.5462323251622795e-06 → 3.3690263744881955e-06
+== op/req/checksPre[11]: 1
+    op/req/checksPre[11]/v : 1.3623937340837563e-06 → 1.3621505857632271e-06
+== op/req/checksPre[12]: 1
+    op/req/checksPre[12]/v : 3.5418523624649835e-06 → 3.537959121272146e-06
+== op/req/checksPre[13]: 1
+    op/req/checksPre[13]/v : 3.6200890457994808e-06 → 3.6200820489761317e-06
+== op/req/checksPre[14]: 1
+    op/req/checksPre[14]/v : 2.701566370154374e-06 → 2.674167145161678e-06
+== op/req/checksPre[15]: 1
+    op/req/checksPre[15]/v : 2.5836899446752037e-06 → 2.583689780376488e-06
+== op/req/checksPre[16]: 1
+    op/req/checksPre[16]/v : 3.013266313026663e-06 → 3.013276113860934e-06
+== op/req/checksPre[17]: 1
+    op/req/checksPre[17]/v : 3.2819051093925617e-06 → 3.281903139972601e-06
+== op/req/post: 1003
+    op/req/post/asd/el[0] : 1.4394100507571227e-07 → 1.4283128265351928e-07
+    op/req/post/asd/el[1] : 2.685628340362821e-07 → 2.6764295200323015e-07
+    op/req/post/asd/el[2] : 4.3174845590452345e-07 → 4.308728634607723e-07
+    op/req/post/asd/el[3] : 3.5325200397540177e-07 → 3.5272696762042095e-07
+    op/req/post/asd/el[4] : 2.0467937977294086e-07 → 2.037946168720306e-07
+    op/req/post/asd/el[5] : 1.481415700122091e-07 → 1.475875016077899e-07
+== op/req/pre: 1002
+    op/req/pre/asd/el[0] : 6.563487005127353e-06 → 6.5640451253127985e-06
+    op/req/pre/asd/el[1] : 1.2545859611383285e-05 → 1.2548090029006354e-05
+    op/req/pre/asd/el[2] : 2.0348355490584668e-05 → 2.0352201132754807e-05
+    op/req/pre/asd/el[3] : 1.4862933316702725e-05 → 1.4865389627460288e-05
+    op/req/pre/asd/el[4] : 5.467687586369545e-06 → 5.46839780429195e-06
+    op/req/pre/asd/el[5] : 1.8234466482392919e-06 → 1.824801855845389e-06
+== op/rows/B2-02: 29
+    op/rows/B2-02/cmp : 1.2738744765401323e-06 → 1.0883386490602958e-06
+    op/rows/B2-02/cmpXel : 3.842664496813228e-13 → 2.8199870059554744e-13
+    op/rows/B2-02/edge : 6.250343973758687e-12 → 5.339998195351035e-12
+    op/rows/B2-02/el : 1.2738744765401323e-06 → 1.0883386490602958e-06
+    op/rows/B2-02/hp1El : 1.2853603809557914e-06 → 1.0981516675295712e-06
+    op/rows/B2-02/hp1Xel : 2.0583561528739287e-12 → 2.0580549055754903e-12
+== seeds/all/eis: 10
+    seeds/all/eis/cv : 0.025070626723052734 → 0.025104848847845192
+    seeds/all/eis/max : 7.117991398553619e-06 → 7.113804528725826e-06
+    seeds/all/eis/mean : 6.908448713410047e-06 → 6.903212846694439e-06
+    seeds/all/eis/min : 6.69872136578678e-06 → 6.692830836350836e-06
+    seeds/all/eis/sd : 1.731991389292572e-07 → 1.7330411508076702e-07
+    seeds/all/eis/v[0] : 7.117991398553619e-06 → 7.113804528725826e-06
+== seeds/all/p99El: 10
+    seeds/all/p99El/cv : 0.03236389305271915 → 0.031083880969184994
+    seeds/all/p99El/max : 1.877390475126822e-05 → 1.8459167830429324e-05
+    seeds/all/p99El/mean : 1.811057331044387e-05 → 1.782187976072849e-05
+    seeds/all/p99El/min : 1.7312545243615783e-05 → 1.703118809469643e-05
+    seeds/all/p99El/sd : 5.861286577426353e-07 → 5.539731891296116e-07
+    seeds/all/p99El/v[0] : 1.877390475126822e-05 → 1.8459167830429324e-05
+== seeds/all/rmsEl: 10
+    seeds/all/rmsEl/cv : 0.431348913864553 → 0.43557171188565535
+    seeds/all/rmsEl/max : 2.465824562832072e-05 → 2.462974381611081e-05
+    seeds/all/rmsEl/mean : 1.4082978910004611e-05 → 1.4009098122188488e-05
+    seeds/all/rmsEl/min : 9.038849893773431e-06 → 8.937991601684084e-06
+    seeds/all/rmsEl/sd : 6.074677656807895e-06 → 6.10196685105576e-06
+    seeds/all/rmsEl/v[0] : 2.465824562832072e-05 → 2.462974381611081e-05
+== seeds/all/rmsXel: 10
+    seeds/all/rmsXel/cv : 0.27536221022511403 → 0.2753641458846608
+    seeds/all/rmsXel/max : 1.9973699705475828e-05 → 1.9973862506645695e-05
+    seeds/all/rmsXel/mean : 1.3641905313218633e-05 → 1.3641936158547574e-05
+    seeds/all/rmsXel/min : 1.0193296614418979e-05 → 1.0193284531326816e-05
+    seeds/all/rmsXel/sd : 3.756465198729609e-06 → 3.7565000985115233e-06
+    seeds/all/rmsXel/v[0] : 1.236976221478835e-05 → 1.2370176187205757e-05
+== seeds/all/smearEl: 10
+    seeds/all/smearEl/cv : 0.117574580282785 → 0.11539351493983248
+    seeds/all/smearEl/max : 3.50464060193254e-06 → 3.4522890611215374e-06
+    seeds/all/smearEl/mean : 2.9601727054932506e-06 → 2.921997096674114e-06
+    seeds/all/smearEl/min : 2.6450202645737872e-06 → 2.617251663890221e-06
+    seeds/all/smearEl/sd : 3.480410634129251e-07 → 3.371795156292115e-07
+    seeds/all/smearEl/v[0] : 2.69464807252404e-06 → 2.665880232760166e-06
+== seeds/all/smearXel: 10
+    seeds/all/smearXel/cv : 0.1076450832555024 → 0.10764499253663427
+    seeds/all/smearXel/max : 3.0815159715010044e-06 → 3.081515621984849e-06
+    seeds/all/smearXel/mean : 2.7873829902268753e-06 → 2.787381695097753e-06
+    seeds/all/smearXel/min : 2.470321890185938e-06 → 2.470317119485746e-06
+    seeds/all/smearXel/sd : 3.000480740479432e-07 → 3.0004768176554864e-07
+    seeds/all/smearXel/v[0] : 2.4772234517028898e-06 → 2.4772259001694194e-06
+== seeds/all/wanderEl: 10
+    seeds/all/wanderEl/cv : 0.027501827682129984 → 0.02553460429122861
+    seeds/all/wanderEl/max : 7.52499729866778e-06 → 7.365286459165118e-06
+    seeds/all/wanderEl/mean : 7.223816711537747e-06 → 7.112510278987372e-06
+    seeds/all/wanderEl/min : 7.073404321043773e-06 → 6.95371078743697e-06
+    seeds/all/wanderEl/sd : 1.98668162408002e-07 → 1.8161513549123855e-07
+    seeds/all/wanderEl/v[0] : 7.3301202181733205e-06 → 7.2419843323336494e-06
+== seeds/all/wanderXel: 10
+    seeds/all/wanderXel/cv : 0.04326059501764666 → 0.04326128823229855
+    seeds/all/wanderXel/max : 6.322499630960152e-06 → 6.322366056646894e-06
+    seeds/all/wanderXel/mean : 6.058448359815052e-06 → 6.058369462839759e-06
+    seeds/all/wanderXel/min : 5.639903507395331e-06 → 5.639798305924411e-06
+    seeds/all/wanderXel/sd : 2.620920809292846e-07 → 2.620928675496666e-07
+    seeds/all/wanderXel/v[0] : 6.096519894206296e-06 → 6.096426084480463e-06
+== seeds/op/B2-02: 30
+    seeds/op/B2-02/cmp/cv : 0.18416017196803122 → 0.184160172128543
+    seeds/op/B2-02/cmp/max : 1.9077641732733703e-06 → 1.6299042970295855e-06
+    seeds/op/B2-02/cmp/mean : 1.491964920484759e-06 → 1.2746649028772909e-06
+    seeds/op/B2-02/cmp/min : 1.2136067881150887e-06 → 1.036848760099432e-06
+    seeds/op/B2-02/cmp/sd : 2.7476051632674325e-07 → 2.3474250792009442e-07
+    seeds/op/B2-02/cmp/v[0] : 1.2738744765401323e-06 → 1.0883386490602958e-06
+== seeds/tests/T1.7: 2
+    seeds/tests/T1.7/status/BİLGİ : yalnız yeni
+    seeds/tests/T1.7/status/OK : yalnız eski
+== seeds/tests/T2.4: 9
+    seeds/tests/T2.4/fill/B2-02/max : 2.85894136840303e-06 → 2.442545514095347e-06
+    seeds/tests/T2.4/fill/B2-02/mean : 2.7369479267847515e-06 → 2.338320035088681e-06
+    seeds/tests/T2.4/fill/B2-02/min : 2.514600780238255e-06 → 2.1483570539057505e-06
+    seeds/tests/T2.4/fill/B2-02/sd : 1.304589295269009e-07 → 1.1145799512062333e-07
+    seeds/tests/T2.4/fill/B2-02/v[0] : 2.7697288467507166e-06 → 2.3663265167520362e-06
+    seeds/tests/T2.4/fill/B2-02/v[1] : 2.85894136840303e-06 → 2.442545514095347e-06
+== extra/gsens/sub: 4
+    extra/gsens/sub/el : 1.538586797506825e-07 → 1.5385879006885397e-07
+    extra/gsens/sub/elNoAng : 9.694051728991174e-09 → 9.694051234002935e-09
+    extra/gsens/sub/xel : 1.2595784238183086e-07 → 1.2592473113766934e-07
+    extra/gsens/sub/xelNoAng : 1.2621954555213165e-08 → 1.2620759136229039e-08
+== extra/mount[0]/allW: 1
+    extra/mount[0]/allW : 7.4771637214093085e-06 → 7.390800805158255e-06
+== extra/mount[0]/allWx: 1
+    extra/mount[0]/allWx : 5.643894272448176e-06 → 5.6438219168496125e-06
+== extra/mount[1]/allW: 1
+    extra/mount[1]/allW : 1.797863797999606e-05 → 1.7945536350514378e-05
+== extra/mount[1]/allWx: 1
+    extra/mount[1]/allWx : 1.5174801014331974e-05 → 1.5174806364690322e-05
+== extra/resOff/opAll: 1
+    extra/resOff/opAll : 1.506188163980794e-05 → 1.4946836777806433e-05
+== extra/resOff/opDev: 1
+    extra/resOff/opDev : 52.186093194219296 → 51.85908533363923
+== extra/resOff/opRss: 1
+    extra/resOff/opRss : 9.897015767785053e-06 → 9.842570001635239e-06
+== extra/slap/cfg: 6
+    extra/slap/cfg/mean : 1.554350956640487e-06 → 1.327964608918841e-06
+    extra/slap/cfg/p05 : 1.4105833924222474e-06 → 1.2051363409959649e-06
+    extra/slap/cfg/p95 : 1.850947105276467e-06 → 1.58136245743056e-06
+    extra/slap/cfg/rms : 1.5631626928310595e-06 → 1.3354929433499153e-06
+    extra/slap/cfg/s11 : 1.2738744765401323e-06 → 1.0883386490602958e-06
+    extra/slap/cfg/sd : 1.6930766802425297e-07 → 1.4464853667256234e-07
+== extra/slap/off: 6
+    extra/slap/off/mean : 2.254839521123982e-06 → 1.9264292080335264e-06
+    extra/slap/off/p05 : 2.0669929935497995e-06 → 1.7659419401474608e-06
+    extra/slap/off/p95 : 2.563588851839921e-06 → 2.190210165341239e-06
+    extra/slap/off/rms : 2.262172719421084e-06 → 1.932694348972419e-06
+    extra/slap/off/s11 : 2.00210262532248e-06 → 1.7105026487259263e-06
+    extra/slap/off/sd : 1.8591483736289668e-07 → 1.588369237061311e-07
+== extra/t24nofric/sea: 1
+    extra/t24nofric/sea : 1.63 → 1.4
+== extra/t24nofric/still: 1
+    extra/t24nofric/still : 1.86 → 1.59
+== extra/twOp: 1
+    extra/twOp : yalnız yeni
+== ship/tests/T1.7: 3
+    ship/tests/T1.7/kv[4][1] : 'girilmedi (Model → Proje gereksinimleri); yalnız kilit kaybı = 0 değerlendirildi' → 'girilmedi (Model → Proje gereksinimleri); kilit kaybı yoksa sonuç BİLGİ'
+    ship/tests/T1.7/notes[1] : 'Hata eşiği proje gereksinimidir (Model → Proje gereksinimleri); girilmezse yalnız kilit ka' → 'Hata eşiği proje gereksinimidir (Model → Proje gereksinimleri); girilmezse sonuç BİLGİ olu'
+    ship/tests/T1.7/status : 'OK' → 'BİLGİ'
+== ship/tests/T2.4: 2
+    ship/tests/T2.4/kv[11][1] : 'λ = 0.1/s, T_p ∈ [50, 200] ms, A_RMS = 2458 µrad' → 'λ = 0.1/s, T_p ∈ [50, 200] ms, A_RMS = 2100 µrad'
+    ship/tests/T2.4/measured : 'Gemi direği: dalga çarpması yok (B2-02 aktarılmaz); darbeler geçici yanıt karakterizasyonu' → 'Gemi direği: dalga çarpması yok (B2-02 aktarılmaz); darbeler geçici yanıt karakterizasyonu'

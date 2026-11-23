@@ -1,0 +1,7 @@
+limitler: {"el": 2.5, "az": 3.1, "vec": 4.0, "vecAxes": 3.9825, "shareRss": 0.9952, "ppvEl": 16.25, "ppvAz": 20.15, "p9973": 12.0} | P99,73 radyal (Gauss): σ = sınırlarda 9.89 µrad; σ_vek eşit bölünmüş 9.73 ; ölçülen σ (3,05 / 2,51) 9.77 (T1.9: 9,76)
+El takip sonrası (T1.9 bantları + 60/120/10 Hz tonları) · T_w 60 s: PPV/σ ort 9.14 ± 0.28 (%5–%95 8.69–9.51); σ = sınır iken PPV ≤ 6,5·σ olasılığı %0; T1.9 ölçülen 8.92
+El takip sonrası (T1.9 bantları + 60/120/10 Hz tonları) · T_w 30 s: PPV/σ ort 9.05 ± 0.30 (%5–%95 8.67–9.54); σ = sınır iken PPV ≤ 6,5·σ olasılığı %0
+El takip sonrası (T1.9 bantları + 60/120/10 Hz tonları) · T_w 120 s: PPV/σ ort 9.25 ± 0.26 (%5–%95 8.82–9.67); σ = sınır iken PPV ≤ 6,5·σ olasılığı %0
+Az takip sonrası · T_w 60 s: PPV/σ ort 9.24 ± 0.30 (%5–%95 8.85–9.76); σ = sınır iken PPV ≤ 6,5·σ olasılığı %0; T1.9 ölçülen 8.84
+El, tonsuz Gauss · T_w 60 s: PPV/σ ort 9.39 ± 0.32 (%5–%95 8.97–9.98); σ = sınır iken PPV ≤ 6,5·σ olasılığı %0
+El, yalnız 0,1–2,5 Hz · T_w 60 s: PPV/σ ort 7.24 ± 0.38 (%5–%95 6.63–7.95); σ = sınır iken PPV ≤ 6,5·σ olasılığı %2

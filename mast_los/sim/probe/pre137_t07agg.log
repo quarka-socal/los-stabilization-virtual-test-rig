@@ -1,0 +1,4 @@
+dünya payı el 0.818 xel 0.975 µrad/s · eşik 1.709
+durağan başlangıç: 1/100 AŞIM (%1.0; %95 GA 0.0–5.4) · eksen: xel 0 el 1 · gyro payı sd el 0.365 xel 0.316 µrad/s (0.075 / 0.065 °/h), ort el 0.031 xel -0.024 · oran medyan 0.626 max 1.034 · tohumlar 8
+taze kalibrasyon: 0/100 AŞIM (%0.0; %95 GA 0.0–3.6) · eksen: xel 0 el 0 · gyro payı sd el 0.261 xel 0.261 µrad/s (0.054 / 0.054 °/h), ort el 0.024 xel -0.033 · oran medyan 0.620 max 0.885 · tohumlar 
+5 tekrarda 0/5; p̂ ile 5'te sıfır görme olasılığı 0.95

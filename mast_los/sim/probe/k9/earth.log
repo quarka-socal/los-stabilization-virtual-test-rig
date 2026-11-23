@@ -1,0 +1,48 @@
+varsayılan (φ 40°, α 90°, ε 0°, δ 1°) [9 s] T0.7 OK
+  KAPALI 46.91 / 55.45 µrad/s (hesap 46.87 / 55.86; bağımsız 46.87 / 55.86; roll 0.00)
+  AÇIK 0.688 / 1.334 µrad/s (sınır 1.515); beklenen kompanzasyon artığı yatay / düşey 0.975 / 0.818 (|Δ| 1.273)
+  ayrıştırma (gürültüsüz koşu): artık el / xel 0.818 / 0.975 · bias el / xel 0.556 / -0.272 · gerçek LOS 1.339 / 0.691 µrad/s
+δ 0,1° [8 s] T0.7 AŞIM
+  KAPALI 46.91 / 55.45 µrad/s (hesap 46.87 / 55.86; bağımsız 46.87 / 55.86; roll 0.00)
+  AÇIK 0.186 / 0.601 µrad/s (sınır 0.370); beklenen kompanzasyon artığı yatay / düşey 0.097 / 0.082 (|Δ| 0.127)
+  ayrıştırma (gürültüsüz koşu): artık el / xel 0.082 / 0.097 · bias el / xel 0.556 / -0.272 · gerçek LOS 0.603 / -0.186 µrad/s
+δ 5° [9 s] T0.7 OK
+  KAPALI 46.91 / 55.45 µrad/s (hesap 46.87 / 55.86; bağımsız 46.87 / 55.86; roll 0.00)
+  AÇIK 4.572 / 4.592 µrad/s (sınır 6.606); beklenen kompanzasyon artığı yatay / düşey 4.875 / 4.090 (|Δ| 6.364)
+  ayrıştırma (gürültüsüz koşu): artık el / xel 4.090 / 4.875 · bias el / xel 0.556 / -0.272 · gerçek LOS 4.611 / 4.590 µrad/s
+enlem 0° [8 s] T0.7 AŞIM
+  KAPALI 0.25 / 72.44 µrad/s (hesap 0.00 / 72.92; bağımsız 0.00 / 72.92; roll 0.00)
+  AÇIK 0.989 / 0.521 µrad/s (sınır 1.515); beklenen kompanzasyon artığı yatay / düşey 1.273 / 0.000 (|Δ| 1.273)
+  ayrıştırma (gürültüsüz koşu): artık el / xel 0.000 / 1.273 · bias el / xel 0.556 / -0.272 · gerçek LOS 0.523 / 0.993 µrad/s
+enlem 80° [6 s] T0.7 AŞIM
+  KAPALI 71.75 / 12.43 µrad/s (hesap 71.81 / 12.66; bağımsız 71.81 / 12.66; roll 0.00)
+  AÇIK 0.065 / 1.763 µrad/s (sınır 1.515); beklenen kompanzasyon artığı yatay / düşey 0.221 / 1.253 (|Δ| 1.273)
+  ayrıştırma (gürültüsüz koşu): artık el / xel 1.253 / 0.221 · bias el / xel 0.556 / -0.272 · gerçek LOS 1.770 / -0.065 µrad/s
+kolimatör yönü α 0° (kuzey) [7 s] T0.7 AŞIM
+  KAPALI 46.92 / 0.01 µrad/s (hesap 46.87 / 0.00; bağımsız 46.87 / 0.00; roll 55.86)
+  AÇIK 0.288 / 1.786 µrad/s (sınır 1.515); beklenen kompanzasyon artığı yatay / düşey 0.000 / 1.273 (|Δ| 1.273)
+  ayrıştırma (gürültüsüz koşu): artık el / xel 1.273 / 0.000 · bias el / xel 0.556 / -0.272 · gerçek LOS 1.794 / -0.289 µrad/s
+α 45° [7 s] T0.7 OK
+  KAPALI 46.82 / 39.27 µrad/s (hesap 46.87 / 39.50; bağımsız 46.87 / 39.50; roll 39.50)
+  AÇIK 0.530 / 1.490 µrad/s (sınır 1.515); beklenen kompanzasyon artığı yatay / düşey 0.820 / 0.973 (|Δ| 1.273)
+  ayrıştırma (gürültüsüz koşu): artık el / xel 0.973 / 0.820 · bias el / xel 0.556 / -0.272 · gerçek LOS 1.496 / 0.532 µrad/s
+LOS elevasyonu 45° [8 s] T0.7 OK
+  KAPALI 33.12 / 55.52 µrad/s (hesap 33.14 / 55.86; bağımsız 33.14 / 55.86; roll 33.14)
+  AÇIK 0.805 / 1.169 µrad/s (sınır 1.515); beklenen kompanzasyon artığı yatay / düşey 1.095 / 0.649 (|Δ| 1.273)
+  ayrıştırma (gürültüsüz koşu): artık el / xel 0.649 / 1.095 · bias el / xel 0.556 / -0.272 · gerçek LOS 1.174 / 0.808 µrad/s
+gyro sabit bias 0 [7 s] T0.7 OK
+  KAPALI 46.72 / 55.64 µrad/s (hesap 46.87 / 55.86; bağımsız 46.87 / 55.86; roll 0.00)
+  AÇIK 0.882 / 1.140 µrad/s (sınır 1.515); beklenen kompanzasyon artığı yatay / düşey 0.975 / 0.818 (|Δ| 1.273)
+  ayrıştırma (gürültüsüz koşu): artık el / xel 0.818 / 0.975 · bias el / xel 0.362 / -0.078 · gerçek LOS 1.145 / 0.885 µrad/s
+kayıt 300 s [3 s] T0.7 OK
+  KAPALI 46.91 / 55.45 µrad/s (hesap 46.87 / 55.86; bağımsız 46.87 / 55.86; roll 0.00)
+  AÇIK 0.664 / 0.938 µrad/s (sınır 1.515); beklenen kompanzasyon artığı yatay / düşey 0.975 / 0.818 (|Δ| 1.273)
+  ayrıştırma (gürültüsüz koşu): artık el / xel 0.818 / 0.975 · bias el / xel 0.201 / -0.379 · gerçek LOS 0.942 / 0.667 µrad/s
+kompanzasyon KAPALI T1.1 GEÇERSİZ [78 s]: Kayıt geçersiz: hedef t = 369 s'de görüş alanından çıktı (geçerli kare %46.7); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: geçersiz eksen roll; DRR(f) eğrisi: roll 0.050 Hz -85.7 dB; roll 0.083 Hz -81.8 
+kompanzasyon KAPALI T1.3 GEÇERSİZ [118 s]: Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %59.1); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Wander (en kötü tohum) el 7.14 / xel 7.03 µrad RMS; P99 18.23 µrad; FOV'da kalma
+   MWIR-WFOV (IFOV 240 µrad), tohum 1: wander el/xel 10.91 / 10.22 µrad = 0.045 / 0.043 px; P99 27.86 µrad (gereksinim 120 / 309 µrad)
+kompanzasyon KAPALI T1.4 GEÇERSİZ [119 s]: Kayıt geçersiz: hedef t = 365 s'de görüş alanından çıktı (geçerli kare %73.2); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: geçersiz elevasyon 0°, 30°, 60°, 75°; el 0°: roll→el -82.3 dB, yaw→xel — dB; el 
+kompanzasyon KAPALI T2.3 GEÇERSİZ [72 s]: Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %59.1); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Kombine artık 6.58 µrad; ayrı testlerin RSS'i 6.96 µrad → sapma -5.4 % (sınır ±2
+kompanzasyon KAPALI T1.9 GEÇERSİZ [64 s]: Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %56.7); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Takip sonrası (pencere RMS'lerinin %95 üst güven sınırı): σ_vek 4.00 µrad (sınır
+   Gereksinim seti (IFOV = 40.00 µrad): σ_vek ≤ 4.00, σ_El ≤ 2.50, σ_Az ≤ 3.10 (√(El² + Az²) = 3.98), PPV ≤ 16.3 / 20.2 (6.5·σ), geçiş PPV ≤ 16.0 (T1.6), P99,73 radyal ≤ 12.0, pozlama içi ≤ 2.00 µrad (MTF_jitter ≥ 0.988)
+kompanzasyon KAPALI T1.7 OK [31 s]: Nişan noktası hatası el 3.47 / xel 2.09 µrad RMS, P99 9.54 µrad; kilit kaybı 0

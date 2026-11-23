@@ -1,0 +1,259 @@
+
+== ship · varsayılan
+  erişim: köşe θ→ω 0.4244 Hz, ω→α 1.5915 Hz; 0.125 Hz 15.0000° (Aralık), 1 Hz 6.3662° (Hız), 2 Hz 2.5330° (İvme), 5.48 Hz 0.3374° (İvme), 10 Hz 0.1013° (İvme); en büyük göreli fark 0.0e+0
+  Osc2 (f_bw 20 Hz, ζ 0.7071, 4 kHz FOH): 1.00 Hz |H| 1.0000 (analitik 1.0000), φ -4.1° (-4.1°); 2.00 Hz |H| 0.9999 (analitik 1.0000), φ -8.1° (-8.1°); 5.00 Hz |H| 0.9980 (analitik 0.9981), φ -20.7° (-20.7°); 7.55 Hz |H| 0.9900 (analitik 0.9900), φ -31.9° (-31.9°); 10.00 Hz |H| 0.9701 (analitik 0.9701), φ -43.3° (-43.3°); 20.00 Hz |H| 0.7071 (analitik 0.7071), φ -90.0° (-90.0°)
+  |H| = 0,99 → 7.55 Hz, 0,95 → 11.47 Hz; güvenilir bant 10.0 Hz'de |H| 0.9701, faz -43.3°
+  FOV 2.9329° × 2.3465° (motor 2.9329 × 2.3465); stab-OFF sınırı 0.9386° (motor 0.9386)
+  kolimatör: f_c/f 5.00 (OK), iğne 33.3 µrad = 0.833 IFOV, görüntü 10.00 µm / piksel 12 µm (alt piksel), D_p 100 mm, e_free 18.18 mm, durağan OK; motorla en büyük göreli fark 2.0e-16, bayraklar aynı
+  örtüşme (D_p 100, D_c 150 mm): s 0.0 → 1.0000, s 20.0 → 1.0000, s 18.2 → 1.0000, s 25.0 → 1.0000, s 25.0 → 1.0000, s 40.0 → 0.8647, s 57.7 → 0.6439, s 115.0 → 0.0410, s 126.0 → 0.0000; integralle en büyük mutlak fark 3.3e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 0.00 mm → OK
+  T0.3 uç poz +θ_test (5°), stab ON: motor 14.11 mm · bağımsız (1 kHz) 14.11 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 141 mm · RMS yatay/düşey 3.9/4.3 mm → OK
+  T0.3 uç poz −θ_test (5°), stab ON: motor 15.39 mm · bağımsız (1 kHz) 15.39 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 144 mm · RMS yatay/düşey 4.7/4.3 mm → OK
+  T2.1 roll süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 0.0/6.3 mm → OK
+  T2.1 yaw süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 6.3/0.0 mm → OK
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.33 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 40.23 mm · bağımsız (1 kHz) 40.23 mm (fark %0.00) · örtüşme 86.2/86.2 % · vinyetleme süresi 7.7/7.7 % (pay sınırı aşımı 21.5 %) · gerekli D_c 199 mm · RMS yatay/düşey 12.5/8.4 mm → YETERSİZ
+  T2.3 deniz profili + VIV tonu: motor 37.16 mm · bağımsız (1 kHz) 37.16 mm (fark %0.00) · örtüşme 89.7/89.7 % · vinyetleme süresi 4.1/4.1 % (pay sınırı aşımı 15.4 %) · gerekli D_c 192 mm · RMS yatay/düşey 10.7/8.4 mm → YETERSİZ
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 26.2/0.0 mm → YETERSİZ
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 110 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 0.0/26.2 mm → YETERSİZ
+  kapalı biçim: T2.5 genlik 50.66 mm; T0.3 +θ 14.11 / −θ 15.39 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 13.31 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 112.5 km, tepe 0.36 µrad, RMS yatay 0.11 / düşey 0.07 µrad; δ 0.050 mm → R 45.0 km, tepe 0.89 µrad, RMS yatay 0.28 / düşey 0.19 µrad; δ 0.100 mm → R 22.5 km, tepe 1.79 µrad, RMS yatay 0.55 / düşey 0.37 µrad; δ 0.225 mm → R 10.0 km, tepe 4.02 µrad, RMS yatay 1.25 / düşey 0.84 µrad; δ 0.800 mm → R 2.8 km, tepe 14.31 µrad, RMS yatay 4.43 / düşey 2.99 µrad
+    F/# 10.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.800 mm, 1 µm ±0.200 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0559 mm
+
+== ship · küçük hexapod 10°/20°/s/200°/s²
+  erişim: köşe θ→ω 0.3183 Hz, ω→α 1.5915 Hz; 0.125 Hz 10.0000° (Aralık), 1 Hz 3.1831° (Hız), 2 Hz 1.2665° (İvme), 5.48 Hz 0.1687° (İvme), 10 Hz 0.0507° (İvme); en büyük göreli fark 0.0e+0
+  FOV 2.9329° × 2.3465° (motor 2.9329 × 2.3465); stab-OFF sınırı 0.9386° (motor 0.9386)
+  kolimatör: f_c/f 5.00 (OK), iğne 33.3 µrad = 0.833 IFOV, görüntü 10.00 µm / piksel 12 µm (alt piksel), D_p 100 mm, e_free 18.18 mm, durağan OK; motorla en büyük göreli fark 2.0e-16, bayraklar aynı
+  örtüşme (D_p 100, D_c 150 mm): s 0.0 → 1.0000, s 20.0 → 1.0000, s 18.2 → 1.0000, s 25.0 → 1.0000, s 25.0 → 1.0000, s 40.0 → 0.8647, s 57.7 → 0.6439, s 115.0 → 0.0410, s 126.0 → 0.0000; integralle en büyük mutlak fark 3.3e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 0.00 mm → OK
+  T0.3 uç poz +θ_test (5°), stab ON: motor 14.11 mm · bağımsız (1 kHz) 14.11 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 141 mm · RMS yatay/düşey 3.9/4.3 mm → OK
+  T0.3 uç poz −θ_test (5°), stab ON: motor 15.39 mm · bağımsız (1 kHz) 15.39 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 144 mm · RMS yatay/düşey 4.7/4.3 mm → OK
+  T2.1 roll süpürmesi (1 Hz'de 3.18°), stab ON: motor 6.49 mm · bağımsız (1 kHz) 6.49 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 124 mm · RMS yatay/düşey 0.0/3.1 mm → OK
+  T2.1 yaw süpürmesi (1 Hz'de 3.18°), stab ON: motor 6.49 mm · bağımsız (1 kHz) 6.49 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 124 mm · RMS yatay/düşey 3.1/0.0 mm → OK
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.33 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 40.23 mm · bağımsız (1 kHz) 40.23 mm (fark %0.00) · örtüşme 86.2/86.2 % · vinyetleme süresi 7.7/7.7 % (pay sınırı aşımı 21.5 %) · gerekli D_c 199 mm · RMS yatay/düşey 12.5/8.4 mm → YETERSİZ
+  T2.3 deniz profili + VIV tonu: motor 37.16 mm · bağımsız (1 kHz) 37.16 mm (fark %0.00) · örtüşme 89.7/89.7 % · vinyetleme süresi 4.1/4.1 % (pay sınırı aşımı 15.4 %) · gerekli D_c 192 mm · RMS yatay/düşey 10.7/8.4 mm → YETERSİZ
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 26.2/0.0 mm → YETERSİZ
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 110 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 0.0/26.2 mm → YETERSİZ
+  kapalı biçim: T2.5 genlik 50.66 mm; T0.3 +θ 14.11 / −θ 15.39 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 6.66 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 112.5 km, tepe 0.36 µrad, RMS yatay 0.11 / düşey 0.07 µrad; δ 0.050 mm → R 45.0 km, tepe 0.89 µrad, RMS yatay 0.28 / düşey 0.19 µrad; δ 0.100 mm → R 22.5 km, tepe 1.79 µrad, RMS yatay 0.55 / düşey 0.37 µrad; δ 0.225 mm → R 10.0 km, tepe 4.02 µrad, RMS yatay 1.25 / düşey 0.84 µrad; δ 0.800 mm → R 2.8 km, tepe 14.31 µrad, RMS yatay 4.43 / düşey 2.99 µrad
+    F/# 10.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.800 mm, 1 µm ±0.200 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0559 mm
+
+== ship · f_bw 10 Hz
+  erişim: köşe θ→ω 0.4244 Hz, ω→α 1.5915 Hz; 0.125 Hz 15.0000° (Aralık), 1 Hz 6.3662° (Hız), 2 Hz 2.5330° (İvme), 5.48 Hz 0.3374° (İvme), 10 Hz 0.1013° (İvme); en büyük göreli fark 0.0e+0
+  Osc2 (f_bw 10 Hz, ζ 0.7071, 4 kHz FOH): 1.00 Hz |H| 0.9999 (analitik 1.0000), φ -8.1° (-8.1°); 2.00 Hz |H| 0.9992 (analitik 0.9992), φ -16.4° (-16.4°); 5.00 Hz |H| 0.9701 (analitik 0.9701), φ -43.3° (-43.3°); 3.77 Hz |H| 0.9900 (analitik 0.9900), φ -31.9° (-31.9°); 10.00 Hz |H| 0.7071 (analitik 0.7071), φ -90.0° (-90.0°); 10.00 Hz |H| 0.7071 (analitik 0.7071), φ -90.0° (-90.0°)
+  |H| = 0,99 → 3.77 Hz, 0,95 → 5.73 Hz; güvenilir bant 5.0 Hz'de |H| 0.9701, faz -43.3°
+  FOV 2.9329° × 2.3465° (motor 2.9329 × 2.3465); stab-OFF sınırı 0.9386° (motor 0.9386)
+  kolimatör: f_c/f 5.00 (OK), iğne 33.3 µrad = 0.833 IFOV, görüntü 10.00 µm / piksel 12 µm (alt piksel), D_p 100 mm, e_free 18.18 mm, durağan OK; motorla en büyük göreli fark 2.0e-16, bayraklar aynı
+  örtüşme (D_p 100, D_c 150 mm): s 0.0 → 1.0000, s 20.0 → 1.0000, s 18.2 → 1.0000, s 25.0 → 1.0000, s 25.0 → 1.0000, s 40.0 → 0.8647, s 57.7 → 0.6439, s 115.0 → 0.0410, s 126.0 → 0.0000; integralle en büyük mutlak fark 3.3e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 0.00 mm → OK
+  T0.3 uç poz +θ_test (5°), stab ON: motor 14.11 mm · bağımsız (1 kHz) 14.11 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 141 mm · RMS yatay/düşey 3.9/4.3 mm → OK
+  T0.3 uç poz −θ_test (5°), stab ON: motor 15.39 mm · bağımsız (1 kHz) 15.39 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 144 mm · RMS yatay/düşey 4.7/4.3 mm → OK
+  T2.1 roll süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 0.0/6.3 mm → OK
+  T2.1 yaw süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 6.3/0.0 mm → OK
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.33 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 40.23 mm · bağımsız (1 kHz) 40.23 mm (fark %0.00) · örtüşme 86.2/86.2 % · vinyetleme süresi 7.7/7.7 % (pay sınırı aşımı 21.5 %) · gerekli D_c 199 mm · RMS yatay/düşey 12.5/8.4 mm → YETERSİZ
+  T2.3 deniz profili + VIV tonu: motor 37.16 mm · bağımsız (1 kHz) 37.16 mm (fark %0.00) · örtüşme 89.7/89.7 % · vinyetleme süresi 4.1/4.1 % (pay sınırı aşımı 15.4 %) · gerekli D_c 192 mm · RMS yatay/düşey 10.7/8.4 mm → YETERSİZ
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 26.2/0.0 mm → YETERSİZ
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 110 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 0.0/26.2 mm → YETERSİZ
+  kapalı biçim: T2.5 genlik 50.66 mm; T0.3 +θ 14.11 / −θ 15.39 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 13.31 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 112.5 km, tepe 0.36 µrad, RMS yatay 0.11 / düşey 0.07 µrad; δ 0.050 mm → R 45.0 km, tepe 0.89 µrad, RMS yatay 0.28 / düşey 0.19 µrad; δ 0.100 mm → R 22.5 km, tepe 1.79 µrad, RMS yatay 0.55 / düşey 0.37 µrad; δ 0.225 mm → R 10.0 km, tepe 4.02 µrad, RMS yatay 1.25 / düşey 0.84 µrad; δ 0.800 mm → R 2.8 km, tepe 14.31 µrad, RMS yatay 4.43 / düşey 2.99 µrad
+    F/# 10.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.800 mm, 1 µm ±0.200 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0559 mm
+
+== ship · strok ±50 mm
+  erişim: köşe θ→ω 0.4244 Hz, ω→α 1.5915 Hz; 0.125 Hz 15.0000° (Aralık), 1 Hz 6.3662° (Hız), 2 Hz 2.5330° (İvme), 5.48 Hz 0.3374° (İvme), 10 Hz 0.1013° (İvme); en büyük göreli fark 0.0e+0
+  FOV 2.9329° × 2.3465° (motor 2.9329 × 2.3465); stab-OFF sınırı 0.9386° (motor 0.9386)
+  kolimatör: f_c/f 5.00 (OK), iğne 33.3 µrad = 0.833 IFOV, görüntü 10.00 µm / piksel 12 µm (alt piksel), D_p 100 mm, e_free 18.18 mm, durağan OK; motorla en büyük göreli fark 2.0e-16, bayraklar aynı
+  örtüşme (D_p 100, D_c 150 mm): s 0.0 → 1.0000, s 20.0 → 1.0000, s 18.2 → 1.0000, s 25.0 → 1.0000, s 25.0 → 1.0000, s 40.0 → 0.8647, s 57.7 → 0.6439, s 115.0 → 0.0410, s 126.0 → 0.0000; integralle en büyük mutlak fark 3.3e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 0.00 mm → OK
+  T0.3 uç poz +θ_test (5°), stab ON: motor 14.11 mm · bağımsız (1 kHz) 14.11 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 141 mm · RMS yatay/düşey 3.9/4.3 mm → OK
+  T0.3 uç poz −θ_test (5°), stab ON: motor 15.39 mm · bağımsız (1 kHz) 15.39 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 144 mm · RMS yatay/düşey 4.7/4.3 mm → OK
+  T2.1 roll süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 0.0/6.3 mm → OK
+  T2.1 yaw süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 6.3/0.0 mm → OK
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.33 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 30.47 mm · bağımsız (1 kHz) 30.47 mm (fark %0.00) · örtüşme 96.6/96.6 % · vinyetleme süresi 1.0/1.0 % (pay sınırı aşımı 5.2 %) · gerekli D_c 177 mm · RMS yatay/düşey 6.4/8.3 mm → YETERSİZ
+  T2.3 deniz profili + VIV tonu: motor 29.08 mm · bağımsız (1 kHz) 29.08 mm (fark %0.00) · örtüşme 97.7/97.7 % · vinyetleme süresi 0.7/0.7 % (pay sınırı aşımı 3.9 %) · gerekli D_c 174 mm · RMS yatay/düşey 4.6/8.3 mm → YETERSİZ
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 45.00 mm · bağımsız (1 kHz) 45.00 mm (fark %0.00) · örtüşme 80.4/80.4 % · vinyetleme süresi 32.4/32.2 % (pay sınırı aşımı 37.8 %) · gerekli D_c 209 mm · RMS yatay/düşey 23.4/0.0 mm → YETERSİZ
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 110 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 45.00 mm · bağımsız (1 kHz) 45.00 mm (fark %0.00) · örtüşme 80.4/80.4 % · vinyetleme süresi 32.4/32.2 % (pay sınırı aşımı 37.8 %) · gerekli D_c 209 mm · RMS yatay/düşey 0.0/23.4 mm → YETERSİZ
+  kapalı biçim: T2.5 genlik 45.00 mm; T0.3 +θ 14.11 / −θ 15.39 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 13.31 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 112.5 km, tepe 0.27 µrad, RMS yatay 0.06 / düşey 0.07 µrad; δ 0.050 mm → R 45.0 km, tepe 0.68 µrad, RMS yatay 0.14 / düşey 0.18 µrad; δ 0.100 mm → R 22.5 km, tepe 1.35 µrad, RMS yatay 0.28 / düşey 0.37 µrad; δ 0.225 mm → R 10.0 km, tepe 3.05 µrad, RMS yatay 0.64 / düşey 0.83 µrad; δ 0.800 mm → R 2.8 km, tepe 10.83 µrad, RMS yatay 2.26 / düşey 2.95 µrad
+    F/# 10.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.800 mm, 1 µm ±0.200 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0738 mm
+
+== ship · stab-OFF payı 0,2
+  erişim: köşe θ→ω 0.4244 Hz, ω→α 1.5915 Hz; 0.125 Hz 15.0000° (Aralık), 1 Hz 6.3662° (Hız), 2 Hz 2.5330° (İvme), 5.48 Hz 0.3374° (İvme), 10 Hz 0.1013° (İvme); en büyük göreli fark 0.0e+0
+  FOV 2.9329° × 2.3465° (motor 2.9329 × 2.3465); stab-OFF sınırı 0.4693° (motor 0.4693)
+  kolimatör: f_c/f 5.00 (OK), iğne 33.3 µrad = 0.833 IFOV, görüntü 10.00 µm / piksel 12 µm (alt piksel), D_p 100 mm, e_free 18.18 mm, durağan OK; motorla en büyük göreli fark 2.0e-16, bayraklar aynı
+  örtüşme (D_p 100, D_c 150 mm): s 0.0 → 1.0000, s 20.0 → 1.0000, s 18.2 → 1.0000, s 25.0 → 1.0000, s 25.0 → 1.0000, s 40.0 → 0.8647, s 57.7 → 0.6439, s 115.0 → 0.0410, s 126.0 → 0.0000; integralle en büyük mutlak fark 3.3e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 0.00 mm → OK
+  T0.3 uç poz +θ_test (5°), stab ON: motor 14.11 mm · bağımsız (1 kHz) 14.11 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 141 mm · RMS yatay/düşey 3.9/4.3 mm → OK
+  T0.3 uç poz −θ_test (5°), stab ON: motor 15.39 mm · bağımsız (1 kHz) 15.39 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 144 mm · RMS yatay/düşey 4.7/4.3 mm → OK
+  T2.1 roll süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 0.0/6.3 mm → OK
+  T2.1 yaw süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 6.3/0.0 mm → OK
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.33 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 40.23 mm · bağımsız (1 kHz) 40.23 mm (fark %0.00) · örtüşme 86.2/86.2 % · vinyetleme süresi 7.7/7.7 % (pay sınırı aşımı 21.5 %) · gerekli D_c 199 mm · RMS yatay/düşey 12.5/8.4 mm → YETERSİZ
+  T2.3 deniz profili + VIV tonu: motor 37.16 mm · bağımsız (1 kHz) 37.16 mm (fark %0.00) · örtüşme 89.7/89.7 % · vinyetleme süresi 4.1/4.1 % (pay sınırı aşımı 15.4 %) · gerekli D_c 192 mm · RMS yatay/düşey 10.7/8.4 mm → YETERSİZ
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 26.2/0.0 mm → YETERSİZ
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 110 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 0.0/26.2 mm → YETERSİZ
+  kapalı biçim: T2.5 genlik 50.66 mm; T0.3 +θ 14.11 / −θ 15.39 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 13.31 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 112.5 km, tepe 0.36 µrad, RMS yatay 0.11 / düşey 0.07 µrad; δ 0.050 mm → R 45.0 km, tepe 0.89 µrad, RMS yatay 0.28 / düşey 0.19 µrad; δ 0.100 mm → R 22.5 km, tepe 1.79 µrad, RMS yatay 0.55 / düşey 0.37 µrad; δ 0.225 mm → R 10.0 km, tepe 4.02 µrad, RMS yatay 1.25 / düşey 0.84 µrad; δ 0.800 mm → R 2.8 km, tepe 14.31 µrad, RMS yatay 4.43 / düşey 2.99 µrad
+    F/# 10.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.800 mm, 1 µm ±0.200 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0559 mm
+
+== ship · θ_test 10°
+  erişim: köşe θ→ω 0.4244 Hz, ω→α 1.5915 Hz; 0.125 Hz 15.0000° (Aralık), 1 Hz 6.3662° (Hız), 2 Hz 2.5330° (İvme), 5.48 Hz 0.3374° (İvme), 10 Hz 0.1013° (İvme); en büyük göreli fark 0.0e+0
+  FOV 2.9329° × 2.3465° (motor 2.9329 × 2.3465); stab-OFF sınırı 0.9386° (motor 0.9386)
+  kolimatör: f_c/f 5.00 (OK), iğne 33.3 µrad = 0.833 IFOV, görüntü 10.00 µm / piksel 12 µm (alt piksel), D_p 100 mm, e_free 18.18 mm, durağan OK; motorla en büyük göreli fark 2.0e-16, bayraklar aynı
+  örtüşme (D_p 100, D_c 150 mm): s 0.0 → 1.0000, s 20.0 → 1.0000, s 18.2 → 1.0000, s 25.0 → 1.0000, s 25.0 → 1.0000, s 40.0 → 0.8647, s 57.7 → 0.6439, s 115.0 → 0.0410, s 126.0 → 0.0000; integralle en büyük mutlak fark 3.3e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 0.00 mm → OK
+  T0.3 uç poz +θ_test (10°), stab ON: motor 26.62 mm · bağımsız (1 kHz) 26.62 mm (fark %0.00) · örtüşme 99.4/99.4 % · vinyetleme süresi 45.9/46.0 % (pay sınırı aşımı 57.5 %) · gerekli D_c 169 mm · RMS yatay/düşey 7.0/8.5 mm → YETERSİZ
+  T0.3 uç poz −θ_test (10°), stab ON: motor 31.64 mm · bağımsız (1 kHz) 31.64 mm (fark %0.00) · örtüşme 95.5/95.5 % · vinyetleme süresi 52.3/52.3 % (pay sınırı aşımı 59.7 %) · gerekli D_c 180 mm · RMS yatay/düşey 10.0/8.5 mm → YETERSİZ
+  T2.1 roll süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 0.0/6.3 mm → OK
+  T2.1 yaw süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 6.3/0.0 mm → OK
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.33 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 40.23 mm · bağımsız (1 kHz) 40.23 mm (fark %0.00) · örtüşme 86.2/86.2 % · vinyetleme süresi 7.7/7.7 % (pay sınırı aşımı 21.5 %) · gerekli D_c 199 mm · RMS yatay/düşey 12.5/8.4 mm → YETERSİZ
+  T2.3 deniz profili + VIV tonu: motor 37.16 mm · bağımsız (1 kHz) 37.16 mm (fark %0.00) · örtüşme 89.7/89.7 % · vinyetleme süresi 4.1/4.1 % (pay sınırı aşımı 15.4 %) · gerekli D_c 192 mm · RMS yatay/düşey 10.7/8.4 mm → YETERSİZ
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 26.2/0.0 mm → YETERSİZ
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 110 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 0.0/26.2 mm → YETERSİZ
+  kapalı biçim: T2.5 genlik 50.66 mm; T0.3 +θ 26.62 / −θ 31.64 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 13.31 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 112.5 km, tepe 0.36 µrad, RMS yatay 0.11 / düşey 0.07 µrad; δ 0.050 mm → R 45.0 km, tepe 0.89 µrad, RMS yatay 0.28 / düşey 0.19 µrad; δ 0.100 mm → R 22.5 km, tepe 1.79 µrad, RMS yatay 0.55 / düşey 0.37 µrad; δ 0.225 mm → R 10.0 km, tepe 4.02 µrad, RMS yatay 1.25 / düşey 0.84 µrad; δ 0.800 mm → R 2.8 km, tepe 14.31 µrad, RMS yatay 4.43 / düşey 2.99 µrad
+    F/# 10.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.800 mm, 1 µm ±0.200 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0559 mm
+
+== ship · D_c 250 mm
+  erişim: köşe θ→ω 0.4244 Hz, ω→α 1.5915 Hz; 0.125 Hz 15.0000° (Aralık), 1 Hz 6.3662° (Hız), 2 Hz 2.5330° (İvme), 5.48 Hz 0.3374° (İvme), 10 Hz 0.1013° (İvme); en büyük göreli fark 0.0e+0
+  FOV 2.9329° × 2.3465° (motor 2.9329 × 2.3465); stab-OFF sınırı 0.9386° (motor 0.9386)
+  kolimatör: f_c/f 5.00 (OK), iğne 33.3 µrad = 0.833 IFOV, görüntü 10.00 µm / piksel 12 µm (alt piksel), D_p 100 mm, e_free 63.64 mm, durağan OK; motorla en büyük göreli fark 2.0e-16, bayraklar aynı
+  örtüşme (D_p 100, D_c 250 mm): s 0.0 → 1.0000, s 70.0 → 1.0000, s 63.6 → 1.0000, s 75.0 → 1.0000, s 25.0 → 1.0000, s 40.0 → 1.0000, s 57.7 → 1.0000, s 165.0 → 0.0446, s 176.0 → 0.0000; integralle en büyük mutlak fark 2.2e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 0.00 mm → OK
+  T0.3 uç poz +θ_test (5°), stab ON: motor 14.11 mm · bağımsız (1 kHz) 14.11 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 141 mm · RMS yatay/düşey 3.9/4.3 mm → OK
+  T0.3 uç poz −θ_test (5°), stab ON: motor 15.39 mm · bağımsız (1 kHz) 15.39 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 144 mm · RMS yatay/düşey 4.7/4.3 mm → OK
+  T2.1 roll süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 0.0/6.3 mm → OK
+  T2.1 yaw süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 6.3/0.0 mm → OK
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.33 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 40.23 mm · bağımsız (1 kHz) 40.23 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 199 mm · RMS yatay/düşey 12.5/8.4 mm → OK
+  T2.3 deniz profili + VIV tonu: motor 37.16 mm · bağımsız (1 kHz) 37.16 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 192 mm · RMS yatay/düşey 10.7/8.4 mm → OK
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 221 mm · RMS yatay/düşey 26.2/0.0 mm → OK
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 110 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 221 mm · RMS yatay/düşey 0.0/26.2 mm → OK
+  kapalı biçim: T2.5 genlik 50.66 mm; T0.3 +θ 14.11 / −θ 15.39 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 13.31 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 112.5 km, tepe 0.36 µrad, RMS yatay 0.11 / düşey 0.07 µrad; δ 0.050 mm → R 45.0 km, tepe 0.89 µrad, RMS yatay 0.28 / düşey 0.19 µrad; δ 0.100 mm → R 22.5 km, tepe 1.79 µrad, RMS yatay 0.55 / düşey 0.37 µrad; δ 0.225 mm → R 10.0 km, tepe 4.02 µrad, RMS yatay 1.25 / düşey 0.84 µrad; δ 0.288 mm → R 7.8 km, tepe 5.15 µrad, RMS yatay 1.60 / düşey 1.08 µrad
+    F/# 6.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.288 mm, 1 µm ±0.072 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0559 mm
+
+== ship · f_c 900 mm
+  erişim: köşe θ→ω 0.4244 Hz, ω→α 1.5915 Hz; 0.125 Hz 15.0000° (Aralık), 1 Hz 6.3662° (Hız), 2 Hz 2.5330° (İvme), 5.48 Hz 0.3374° (İvme), 10 Hz 0.1013° (İvme); en büyük göreli fark 0.0e+0
+  FOV 2.9329° × 2.3465° (motor 2.9329 × 2.3465); stab-OFF sınırı 0.9386° (motor 0.9386)
+  kolimatör: f_c/f 3.00 (OK), iğne 55.6 µrad = 1.389 IFOV, görüntü 16.67 µm / piksel 12 µm (PİKSELDEN BÜYÜK), D_p 100 mm, e_free 18.18 mm, durağan OK; motorla en büyük göreli fark 0.0e+0, bayraklar aynı
+  örtüşme (D_p 100, D_c 150 mm): s 0.0 → 1.0000, s 20.0 → 1.0000, s 18.2 → 1.0000, s 25.0 → 1.0000, s 25.0 → 1.0000, s 40.0 → 0.8647, s 57.7 → 0.6439, s 115.0 → 0.0410, s 126.0 → 0.0000; integralle en büyük mutlak fark 3.3e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 0.00 mm → OK
+  T0.3 uç poz +θ_test (5°), stab ON: motor 14.11 mm · bağımsız (1 kHz) 14.11 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 141 mm · RMS yatay/düşey 3.9/4.3 mm → OK
+  T0.3 uç poz −θ_test (5°), stab ON: motor 15.39 mm · bağımsız (1 kHz) 15.39 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 144 mm · RMS yatay/düşey 4.7/4.3 mm → OK
+  T2.1 roll süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 0.0/6.3 mm → OK
+  T2.1 yaw süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 6.3/0.0 mm → OK
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.33 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 40.23 mm · bağımsız (1 kHz) 40.23 mm (fark %0.00) · örtüşme 86.2/86.2 % · vinyetleme süresi 7.7/7.7 % (pay sınırı aşımı 21.5 %) · gerekli D_c 199 mm · RMS yatay/düşey 12.5/8.4 mm → YETERSİZ
+  T2.3 deniz profili + VIV tonu: motor 37.16 mm · bağımsız (1 kHz) 37.16 mm (fark %0.00) · örtüşme 89.7/89.7 % · vinyetleme süresi 4.1/4.1 % (pay sınırı aşımı 15.4 %) · gerekli D_c 192 mm · RMS yatay/düşey 10.7/8.4 mm → YETERSİZ
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 26.2/0.0 mm → YETERSİZ
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 110 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 0.0/26.2 mm → YETERSİZ
+  kapalı biçim: T2.5 genlik 50.66 mm; T0.3 +θ 14.11 / −θ 15.39 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 13.31 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 40.5 km, tepe 0.99 µrad, RMS yatay 0.31 / düşey 0.21 µrad; δ 0.050 mm → R 16.2 km, tepe 2.48 µrad, RMS yatay 0.77 / düşey 0.52 µrad; δ 0.100 mm → R 8.1 km, tepe 4.97 µrad, RMS yatay 1.54 / düşey 1.04 µrad; δ 0.225 mm → R 3.6 km, tepe 11.18 µrad, RMS yatay 3.46 / düşey 2.33 µrad; δ 0.288 mm → R 2.8 km, tepe 14.31 µrad, RMS yatay 4.43 / düşey 2.99 µrad
+    F/# 6.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.288 mm, 1 µm ±0.072 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0201 mm
+
+== ship · iğne deliği 100 µm
+  erişim: köşe θ→ω 0.4244 Hz, ω→α 1.5915 Hz; 0.125 Hz 15.0000° (Aralık), 1 Hz 6.3662° (Hız), 2 Hz 2.5330° (İvme), 5.48 Hz 0.3374° (İvme), 10 Hz 0.1013° (İvme); en büyük göreli fark 0.0e+0
+  FOV 2.9329° × 2.3465° (motor 2.9329 × 2.3465); stab-OFF sınırı 0.9386° (motor 0.9386)
+  kolimatör: f_c/f 5.00 (OK), iğne 66.7 µrad = 1.667 IFOV, görüntü 20.00 µm / piksel 12 µm (PİKSELDEN BÜYÜK), D_p 100 mm, e_free 18.18 mm, durağan OK; motorla en büyük göreli fark 2.0e-16, bayraklar aynı
+  örtüşme (D_p 100, D_c 150 mm): s 0.0 → 1.0000, s 20.0 → 1.0000, s 18.2 → 1.0000, s 25.0 → 1.0000, s 25.0 → 1.0000, s 40.0 → 0.8647, s 57.7 → 0.6439, s 115.0 → 0.0410, s 126.0 → 0.0000; integralle en büyük mutlak fark 3.3e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 0.00 mm → OK
+  T0.3 uç poz +θ_test (5°), stab ON: motor 14.11 mm · bağımsız (1 kHz) 14.11 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 141 mm · RMS yatay/düşey 3.9/4.3 mm → OK
+  T0.3 uç poz −θ_test (5°), stab ON: motor 15.39 mm · bağımsız (1 kHz) 15.39 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 144 mm · RMS yatay/düşey 4.7/4.3 mm → OK
+  T2.1 roll süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 0.0/6.3 mm → OK
+  T2.1 yaw süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 6.3/0.0 mm → OK
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.33 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 40.23 mm · bağımsız (1 kHz) 40.23 mm (fark %0.00) · örtüşme 86.2/86.2 % · vinyetleme süresi 7.7/7.7 % (pay sınırı aşımı 21.5 %) · gerekli D_c 199 mm · RMS yatay/düşey 12.5/8.4 mm → YETERSİZ
+  T2.3 deniz profili + VIV tonu: motor 37.16 mm · bağımsız (1 kHz) 37.16 mm (fark %0.00) · örtüşme 89.7/89.7 % · vinyetleme süresi 4.1/4.1 % (pay sınırı aşımı 15.4 %) · gerekli D_c 192 mm · RMS yatay/düşey 10.7/8.4 mm → YETERSİZ
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 26.2/0.0 mm → YETERSİZ
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 110 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 0.0/26.2 mm → YETERSİZ
+  kapalı biçim: T2.5 genlik 50.66 mm; T0.3 +θ 14.11 / −θ 15.39 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 13.31 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 112.5 km, tepe 0.36 µrad, RMS yatay 0.11 / düşey 0.07 µrad; δ 0.050 mm → R 45.0 km, tepe 0.89 µrad, RMS yatay 0.28 / düşey 0.19 µrad; δ 0.100 mm → R 22.5 km, tepe 1.79 µrad, RMS yatay 0.55 / düşey 0.37 µrad; δ 0.225 mm → R 10.0 km, tepe 4.02 µrad, RMS yatay 1.25 / düşey 0.84 µrad; δ 0.800 mm → R 2.8 km, tepe 14.31 µrad, RMS yatay 4.43 / düşey 2.99 µrad
+    F/# 10.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.800 mm, 1 µm ±0.200 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0559 mm
+
+== ship · HDTV-NFOV kanalı
+  erişim: köşe θ→ω 0.4244 Hz, ω→α 1.5915 Hz; 0.125 Hz 15.0000° (Aralık), 1 Hz 6.3662° (Hız), 2 Hz 2.5330° (İvme), 5.48 Hz 0.3374° (İvme), 10 Hz 0.1013° (İvme); en büyük göreli fark 0.0e+0
+  FOV 1.2650° × 0.7116° (motor 1.2650 × 0.7116); stab-OFF sınırı 0.2846° (motor 0.2846)
+  kolimatör: f_c/f 5.00 (OK), iğne 33.3 µrad = 2.899 IFOV, görüntü 10.00 µm / piksel 3.45 µm (PİKSELDEN BÜYÜK), D_p 75 mm, e_free 30.68 mm, durağan OK; motorla en büyük göreli fark 2.0e-16, bayraklar aynı
+  örtüşme (D_p 75, D_c 150 mm): s 0.0 → 1.0000, s 33.7 → 1.0000, s 30.7 → 1.0000, s 37.5 → 1.0000, s 25.0 → 1.0000, s 40.0 → 0.9859, s 57.7 → 0.7376, s 102.5 → 0.0661, s 113.5 → 0.0000; integralle en büyük mutlak fark 4.4e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 0.00 mm → OK
+  T0.3 uç poz +θ_test (5°), stab ON: motor 14.11 mm · bağımsız (1 kHz) 14.11 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 114 mm · RMS yatay/düşey 3.9/4.3 mm → OK
+  T0.3 uç poz −θ_test (5°), stab ON: motor 15.39 mm · bağımsız (1 kHz) 15.39 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 116 mm · RMS yatay/düşey 4.7/4.3 mm → OK
+  T2.1 roll süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 111 mm · RMS yatay/düşey 0.0/6.3 mm → OK
+  T2.1 yaw süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 111 mm · RMS yatay/düşey 6.3/0.0 mm → OK
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.33 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 40.23 mm · bağımsız (1 kHz) 40.23 mm (fark %0.00) · örtüşme 98.4/98.4 % · vinyetleme süresi 0.4/0.4 % (pay sınırı aşımı 2.5 %) · gerekli D_c 171 mm · RMS yatay/düşey 12.5/8.4 mm → YETERSİZ
+  T2.3 deniz profili + VIV tonu: motor 37.16 mm · bağımsız (1 kHz) 37.16 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 1.3 %) · gerekli D_c 164 mm · RMS yatay/düşey 10.7/8.4 mm → YETERSİZ
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 85.1/85.1 % · vinyetleme süresi 24.1/24.0 % (pay sınırı aşımı 30.1 %) · gerekli D_c 194 mm · RMS yatay/düşey 26.2/0.0 mm → YETERSİZ
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 83 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 85.1/85.1 % · vinyetleme süresi 24.1/24.0 % (pay sınırı aşımı 30.1 %) · gerekli D_c 194 mm · RMS yatay/düşey 0.0/26.2 mm → YETERSİZ
+  kapalı biçim: T2.5 genlik 50.66 mm; T0.3 +θ 14.11 / −θ 15.39 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 13.31 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 112.5 km, tepe 0.36 µrad, RMS yatay 0.11 / düşey 0.07 µrad; δ 0.050 mm → R 45.0 km, tepe 0.89 µrad, RMS yatay 0.28 / düşey 0.19 µrad; δ 0.100 mm → R 22.5 km, tepe 1.79 µrad, RMS yatay 0.55 / düşey 0.37 µrad; δ 0.225 mm → R 10.0 km, tepe 4.02 µrad, RMS yatay 1.25 / düşey 0.84 µrad; δ 0.800 mm → R 2.8 km, tepe 14.31 µrad, RMS yatay 4.43 / düşey 2.99 µrad
+    F/# 10.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.800 mm, 1 µm ±0.200 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0559 mm
+
+== ship · L_off 0,15 m
+  erişim: köşe θ→ω 0.4244 Hz, ω→α 1.5915 Hz; 0.125 Hz 15.0000° (Aralık), 1 Hz 6.3662° (Hız), 2 Hz 2.5330° (İvme), 5.48 Hz 0.3374° (İvme), 10 Hz 0.1013° (İvme); en büyük göreli fark 0.0e+0
+  FOV 2.9329° × 2.3465° (motor 2.9329 × 2.3465); stab-OFF sınırı 0.9386° (motor 0.9386)
+  kolimatör: f_c/f 5.00 (OK), iğne 33.3 µrad = 0.833 IFOV, görüntü 10.00 µm / piksel 12 µm (alt piksel), D_p 100 mm, e_free 18.18 mm, durağan OK; motorla en büyük göreli fark 2.0e-16, bayraklar aynı
+  örtüşme (D_p 100, D_c 150 mm): s 0.0 → 1.0000, s 20.0 → 1.0000, s 18.2 → 1.0000, s 25.0 → 1.0000, s 25.0 → 1.0000, s 40.0 → 0.8647, s 57.7 → 0.6439, s 115.0 → 0.0410, s 126.0 → 0.0000; integralle en büyük mutlak fark 3.3e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 3.93 mm → OK
+  T0.3 uç poz +θ_test (5°), stab ON: motor 32.57 mm · bağımsız (1 kHz) 32.57 mm (fark %0.00) · örtüşme 94.6/94.6 % · vinyetleme süresi 53.6/53.7 % (pay sınırı aşımı 60.8 %) · gerekli D_c 182 mm · RMS yatay/düşey 3.9/4.3 mm → YETERSİZ
+  T0.3 uç poz −θ_test (5°), stab ON: motor 33.86 mm · bağımsız (1 kHz) 33.86 mm (fark %0.00) · örtüşme 93.3/93.3 % · vinyetleme süresi 54.4/54.5 % (pay sınırı aşımı 61.2 %) · gerekli D_c 184 mm · RMS yatay/düşey 4.7/4.3 mm → YETERSİZ
+  T2.1 roll süpürmesi (1 Hz'de 6.37°), stab ON: motor 29.18 mm · bağımsız (1 kHz) 29.18 mm (fark %0.00) · örtüşme 97.7/97.7 % · vinyetleme süresi 4.8/4.8 % (pay sınırı aşımı 23.7 %) · gerekli D_c 174 mm · RMS yatay/düşey 0.0/6.3 mm → YETERSİZ
+  T2.1 yaw süpürmesi (1 Hz'de 6.37°), stab ON: motor 29.18 mm · bağımsız (1 kHz) 29.18 mm (fark %0.00) · örtüşme 97.7/97.7 % · vinyetleme süresi 4.8/4.8 % (pay sınırı aşımı 23.7 %) · gerekli D_c 174 mm · RMS yatay/düşey 6.3/0.0 mm → YETERSİZ
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.74 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 67.66 mm · bağımsız (1 kHz) 67.66 mm (fark %0.00) · örtüşme 51.8/51.8 % · vinyetleme süresi 34.0/34.0 % (pay sınırı aşımı 57.5 %) · gerekli D_c 259 mm · RMS yatay/düşey 12.5/8.4 mm → YETERSİZ
+  T2.3 deniz profili + VIV tonu: motor 66.52 mm · bağımsız (1 kHz) 66.52 mm (fark %0.00) · örtüşme 53.3/53.2 % · vinyetleme süresi 29.4/29.4 % (pay sınırı aşımı 52.3 %) · gerekli D_c 256 mm · RMS yatay/düşey 10.7/8.4 mm → YETERSİZ
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 26.2/0.0 mm → YETERSİZ
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 110 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 0.0/26.2 mm → YETERSİZ
+  kapalı biçim: T2.5 genlik 50.66 mm; T0.3 +θ 14.11 / −θ 15.39 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 13.31 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 112.5 km, tepe 0.60 µrad, RMS yatay 0.11 / düşey 0.07 µrad; δ 0.050 mm → R 45.0 km, tepe 1.50 µrad, RMS yatay 0.28 / düşey 0.19 µrad; δ 0.100 mm → R 22.5 km, tepe 3.01 µrad, RMS yatay 0.55 / düşey 0.37 µrad; δ 0.225 mm → R 10.0 km, tepe 6.77 µrad, RMS yatay 1.25 / düşey 0.84 µrad; δ 0.800 mm → R 2.8 km, tepe 24.06 µrad, RMS yatay 4.43 / düşey 2.99 µrad
+    F/# 10.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.800 mm, 1 µm ±0.200 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0333 mm
+
+== ship · mikro-titreşim 5 µrad
+  erişim: köşe θ→ω 0.4244 Hz, ω→α 1.5915 Hz; 0.125 Hz 15.0000° (Aralık), 1 Hz 6.3662° (Hız), 2 Hz 2.5330° (İvme), 5.48 Hz 0.3374° (İvme), 10 Hz 0.1013° (İvme); en büyük göreli fark 0.0e+0
+  FOV 2.9329° × 2.3465° (motor 2.9329 × 2.3465); stab-OFF sınırı 0.9386° (motor 0.9386)
+  kolimatör: f_c/f 5.00 (OK), iğne 33.3 µrad = 0.833 IFOV, görüntü 10.00 µm / piksel 12 µm (alt piksel), D_p 100 mm, e_free 18.18 mm, durağan OK; motorla en büyük göreli fark 2.0e-16, bayraklar aynı
+  örtüşme (D_p 100, D_c 150 mm): s 0.0 → 1.0000, s 20.0 → 1.0000, s 18.2 → 1.0000, s 25.0 → 1.0000, s 25.0 → 1.0000, s 40.0 → 0.8647, s 57.7 → 0.6439, s 115.0 → 0.0410, s 126.0 → 0.0000; integralle en büyük mutlak fark 3.3e-7
+  pupilShift (2000 rastgele duruş ±14°, öteleme ±100 mm, stab ON/OFF): |e| farkı en çok 0.000 nm, |yatay| farkı 0.000 nm
+  T0.1 ızgara ±%40 alan, stab OFF: motor 0.00 mm → OK
+  T0.3 uç poz +θ_test (5°), stab ON: motor 14.11 mm · bağımsız (1 kHz) 14.11 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 141 mm · RMS yatay/düşey 3.9/4.3 mm → OK
+  T0.3 uç poz −θ_test (5°), stab ON: motor 15.39 mm · bağımsız (1 kHz) 15.39 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 144 mm · RMS yatay/düşey 4.7/4.3 mm → OK
+  T2.1 roll süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 0.0/6.3 mm → OK
+  T2.1 yaw süpürmesi (1 Hz'de 6.37°), stab ON: motor 12.97 mm · bağımsız (1 kHz) 12.97 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 139 mm · RMS yatay/düşey 6.3/0.0 mm → OK
+  T2.2 VIV tonu 4.10 Hz (açısal + öteleme): motor 0.33 mm → OK
+  T1.3 deniz profili + öteleme (tohum 1301): motor 40.23 mm · bağımsız (1 kHz) 40.23 mm (fark %0.00) · örtüşme 86.2/86.2 % · vinyetleme süresi 7.7/7.7 % (pay sınırı aşımı 21.5 %) · gerekli D_c 199 mm · RMS yatay/düşey 12.5/8.4 mm → YETERSİZ
+  T2.3 deniz profili + VIV tonu: motor 37.16 mm · bağımsız (1 kHz) 37.16 mm (fark %0.00) · örtüşme 89.7/89.7 % · vinyetleme süresi 4.1/4.1 % (pay sınırı aşımı 15.4 %) · gerekli D_c 192 mm · RMS yatay/düşey 10.7/8.4 mm → YETERSİZ
+  T2.5 öteleme x (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 26.2/0.0 mm → YETERSİZ
+  T2.5 öteleme y (1 ve 2 Hz, 2 m/s²): motor 0.00 mm · bağımsız (1 kHz) 0.00 mm (fark %0.00) · örtüşme 100.0/100.0 % · vinyetleme süresi 0.0/0.0 % (pay sınırı aşımı 0.0 %) · gerekli D_c 110 mm · RMS yatay/düşey 0.0/0.0 mm → OK
+  T2.5 öteleme z (1 ve 2 Hz, 2 m/s²): motor 50.66 mm · bağımsız (1 kHz) 50.66 mm (fark %0.00) · örtüşme 73.3/73.3 % · vinyetleme süresi 34.5/34.5 % (pay sınırı aşımı 39.5 %) · gerekli D_c 221 mm · RMS yatay/düşey 0.0/26.2 mm → YETERSİZ
+  kapalı biçim: T2.5 genlik 50.66 mm; T0.3 +θ 14.11 / −θ 15.39 mm; T2.1 tavanı L_pg·sin(erişim 1 Hz) 13.31 mm
+  paralaks (T1.3 hareketi): δ 0.020 mm → R 112.5 km, tepe 0.36 µrad, RMS yatay 0.11 / düşey 0.07 µrad; δ 0.050 mm → R 45.0 km, tepe 0.89 µrad, RMS yatay 0.28 / düşey 0.19 µrad; δ 0.100 mm → R 22.5 km, tepe 1.79 µrad, RMS yatay 0.55 / düşey 0.37 µrad; δ 0.225 mm → R 10.0 km, tepe 4.02 µrad, RMS yatay 1.25 / düşey 0.84 µrad; δ 0.800 mm → R 2.8 km, tepe 14.31 µrad, RMS yatay 4.43 / düşey 2.99 µrad
+    F/# 10.0 → odak derinliği ±2λN²: MWIR (4 µm) ±0.800 mm, 1 µm ±0.200 mm; tepe görünür kaymayı 1 µrad'da tutan δ ≤ 0.0559 mm
+collExcursions süresi (50 Hz değerlendirme): 202 ms
+
+en büyük göreli fark (erişim, stab-OFF, kolimatör): 2.03e-16 (iğne)

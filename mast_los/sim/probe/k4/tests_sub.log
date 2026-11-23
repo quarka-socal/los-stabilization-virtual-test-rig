@@ -1,0 +1,30 @@
+S0 varsayılan [32 s]
+   T2.1 OK | VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 2.59 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 19.72 → ON 1.90 µrad
+   T2.3 OK | Kombine artık 6.61 µrad; ayrı testlerin RSS'i 7.01 µrad → sapma -5.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.61 / xel 0.00 µrad
+S2 St = 0,25 [27 s]
+   T2.1 AŞIM | VIV bandında (1.54–6.17 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -33.7 dB @ 6.10 Hz (gerekli -40.2 dB); yaw→xel -32.7 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 30.31 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 19.59 → ON 1.90 µrad
+   T2.3 OK | Kombine artık 6.61 µrad; ayrı testlerin RSS'i 7.01 µrad → sapma -5.7 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.61 / xel 0.00 µrad
+S3 f_n = 2 Hz [22 s]
+   T2.1 OK | VIV bandında (1.23–4.12 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 2.35 µrad RMS (tahsis 6.0); f_n = 2 Hz'de OFF 14.28 → ON 1.52 µrad
+   T2.3 AŞIM | Kombine artık 6.59 µrad; ayrı testlerin RSS'i 9.40 µrad → sapma -29.9 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 0.34 / xel 0.00 µrad
+S5 f_n = 8 Hz [17 s]
+   T2.1 OK | VIV bandında (4.12–4.94 Hz) γ² ≥ 0.8 nokta yok (14 düşük koheranslı nokta); koherans üst sınırı: roll→el DRR ≤ -51.5 dB @ 4.88 Hz (gerekli -40.2 dB) → sınır gereksinimi sağlıyor; yaw→xel ≤ -49.9 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 33.10 µrad RMS (tahsis 6.0); f_n = 8 Hz'de OFF 32.91 → ON 33.10 µrad
+   T2.3 AŞIM | Kombine artık 27.00 µrad; ayrı testlerin RSS'i 28.80 µrad → sapma -6.3 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 14.89 / xel 0.00 µrad
+S6 genlik 0,10° [20 s]
+   T2.1 OK | VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -46.3 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı
+   T2.2 OK | Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON): en kötü 4.34 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 32.26 → ON 3.16 µrad
+   T2.3 OK | Kombine artık 7.31 µrad; ayrı testlerin RSS'i 7.46 µrad → sapma -2.0 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 1.22 / xel 0.00 µrad
+S10 dar bant kontrol kapalı [18 s]
+   T2.1 AŞIM | VIV bandında (1.65–4.94 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -33.0 dB @ 4.88 Hz (gerekli -40.2 dB); yaw→xel -32.2 dB (bilgi); 0 rezonans adayı
+   T2.2 AŞIM | Tondaki artık (yapılandırılmış DUT, dar bant kontrol OFF): en kötü 27.00 µrad RMS (tahsis 6.0); f_n = 3 Hz'de OFF 19.72 → ON 1.90 µrad
+   T2.3 AŞIM | Kombine artık 12.68 µrad; ayrı testlerin RSS'i 20.99 µrad → sapma -39.6 % (sınır ±20 %); tahsis sınırı 13.4 µrad
+   işletme B2-01 el 6.16 / xel 0.00 µrad

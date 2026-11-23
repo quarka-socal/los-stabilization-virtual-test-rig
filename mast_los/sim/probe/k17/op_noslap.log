@@ -1,0 +1,5 @@
+çarpma açık, pre: σ_El 7.24 σ_Az 5.99 σ_vek 9.34 · PPV El 184.91 / Az 48.86 · PPV/σ 26.82 / 8.29 (Gauss 9.1 / 9.2) · P99,73 23.98
+çarpma kapalı, pre: σ_El 6.91 σ_Az 5.99 σ_vek 9.08 · PPV El 55.88 / Az 48.86 · PPV/σ 8.48 / 8.29 (Gauss 9.1 / 9.2) · P99,73 21.30
+çarpma açık, post: σ_El 7.47 σ_Az 4.82 σ_vek 8.88 · PPV El 192.52 / Az 41.66 · PPV/σ 26.85 / 8.68 (Gauss 9.1 / 9.3) · P99,73 31.49
+çarpma kapalı, post: σ_El 6.78 σ_Az 4.82 σ_vek 8.30 · PPV El 64.71 / Az 41.66 · PPV/σ 9.84 / 8.68 (Gauss 9.1 / 9.3) · P99,73 21.76
+sınırlar: PPV El 16.3, P99,73 12.0 µrad; 43 s

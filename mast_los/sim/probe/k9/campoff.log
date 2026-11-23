@@ -1,0 +1,28 @@
+T0.1 OK → OK [5 s] IFOV_eff = 40.1587 µrad/px (nominale göre 0.397 %); ölçek belirsizliği 0.0014 % (sınır 0.50 %)
+T0.2 OK → OK [9 s] σ_taban (ölçüm zinciri, stab OFF): 2.04 / 1.67 µrad (sınır 5.00); stab ON 3.78 / 3.41 µrad — DUT döngü gürültüsü dahil, bilgi (el / xel)
+T0.3 OK → OK [13 s] Hexapod açısal gürültüsü (IMU, 6 koşunun en kötüsü) 2.08 µrad RMS (sınır 5.00); nominal pozda 3 tekrar: roll 2.06 ± 0.01, pitch 2.06 ± 0.01, yaw 2.06 
+T0.4 OK → OK [1 s] Video − IMU gecikmesi -0.927 ± 0.032 ms (10 darbe); kompanze edilmezse f_bw'de 6.68°, kompanzasyon sonrası belirsizlik (2σ) 0.46°
+T0.5 BİLGİ → BİLGİ [0 s] Kanal paralellik referansı kaydedildi (ölçüm doğruluğu ≈ 15 µrad).
+T0.6 OK → OK [1 s] ARW 0.00424 °/√h (sınır 0.005), bias kararsızlığı 0.0461 °/h (sınır 0.05)
+T0.7 OK → OK [7 s] KAPALI: yatay 47.10, düşey 55.67 µrad/s (hesap 46.9 / 55.9); AÇIK: 0.691 / 1.339 µrad/s (sınır 1.71)
+T1.1 OK → GEÇERSİZ [18 s] Kayıt geçersiz: hedef t = 369 s'de görüş alanından çıktı (geçerli kare %46.7); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: geçersiz e
+T1.2 OK → OK [2 s] En büyük |kazanç − 1| = 0.021 % (genlik 0.50° ≤ 0.94°)
+T1.3 OK → GEÇERSİZ [20 s] Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %59.1); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Wander (en
+T1.4 OK → GEÇERSİZ [25 s] Kayıt geçersiz: hedef t = 365 s'de görüş alanından çıktı (geçerli kare %73.2); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: geçersiz e
+T1.5 OK → OK [7 s] Alan köşesi yer değiştirmesi (türetme ON): sinüs 16.31, deniz profili 16.86 µrad RMS (sınır 20.0); türetme OFF sinüs 606.7 µrad
+T1.6 OK → OK [6 s] Yön değişimi geçişi (senkron ortalama): tepe 5.5 µrad (sınır 10.3), tekrarlanan bileşen el 1.08 µrad RMS; 40 sıfır geçişi
+T1.7 OK → OK [5 s] Nişan noktası hatası el 3.47 / xel 2.09 µrad RMS, P99 9.54 µrad; kilit kaybı 0
+T1.8 BİLGİ → BİLGİ [4 s] Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad
+T1.9 AŞIM → GEÇERSİZ [12 s] Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %56.7); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Takip sonr
+T2.1 OK → GEÇERSİZ [18 s] Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %46.1); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: VIV bandın
+T2.2 OK → OK [8 s] Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 2.90 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.68 → ON 2.0
+T2.3 OK → GEÇERSİZ [9 s] Kayıt geçersiz: hedef t = 366 s'de görüş alanından çıktı (geçerli kare %59.1); dünya dönüşü kompanzasyonu kapalı. Geçerli kalan segmentler: Kombine ar
+T2.4 BİLGİ → BİLGİ [4 s] Tepe hata en büyük 140.4 µrad; oturma en uzun 2270 ms (1/60 darbe 2,4 s içinde oturmadı: küçük darbelerde ön-kayma/stiction) (el ve az eksenleri, ekse
+T2.5 OK → OK [2 s] İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.65 µrad RMS (tahsis 3); duyarlılık 1.913 µrad/(m/s²) (hexapod iletimi τ = 0.987: laborat
+T3.1 OK → OK [6 s] B2-06 ⊕ B3 LOS (≥ 4 Hz; taban + 3 öteleme ekseni): optik el 4.47 / xel 4.22 µrad; ayna kanalı el 1.89 / xel 1.54 µrad (sınır 6.5)
+T3.2 OK → OK [0 s] MTF_titreşim/MTF_statik @ Nyquist en kötü 0.9793 (sınır 0.7346); eksen başına 3 ölçüm
+T3.3 OK → OK [0 s] Yüksek hızlı kanal TUR (bütçeden) = 4.25 (hedef 4); ayna PSD'si: wander 2.02 / smear 0.56 µrad, gerçek optik: 2.13 / 0.92 µrad
+T3.4 OK → OK [1 s] Videoda 10.0 Hz'e katlanan ton → sinc düzeltmeli temel bileşen 1.41 µrad RMS (tahsis 2); ayna kanalı 0.002 µrad (görmez)
+T3.5 OK → OK [3 s] 120 Hz: optik 26.28 / ayna 0.05 µrad RMS → Optik iç hareket (zoom grubu / FPA / ayna montajı) — aynada görünmez; 180 Hz: optik 17.37 / ayna 17.39 µrad
+T4.1 BİLGİ → BİLGİ [0 s] En büyük kanal kayması 51.3 µrad (ölçüm doğruluğu ≈ 15 µrad; gereksinim girilmedi)
+T4.2 AŞIM → AŞIM [11 s] Yapılandırılmış DUT (sabit FF): -20 °C sürtünme tepesi 81.8 µrad, 3.00 Hz artık 15.00 µrad; 20 °C sürtünme tepesi 5.5 µrad, 3.00 Hz artık 1.95 µrad; 5

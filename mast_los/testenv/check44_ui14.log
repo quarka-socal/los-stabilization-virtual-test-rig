@@ -1,0 +1,64 @@
+1) kabuk
+  ✓ varsayılan tema açık (data-theme=light)
+  ✓ açılış ekranı Özet (#ozet)
+  ✓ gezinmede 7 ekran (7)
+  ✓ şeritte 28 hücre (28)
+  ✓ hücre durumları toplamı 28 (OK 21, aşım 2, bilgi 5, geçersiz 0)
+  ✓ sayaçlar şeritle aynı ({"ok":21,"fail":2,"info":5})
+  ✓ Kampanya rozeti = aşım sayısı (2)
+  ✓ Model rozeti boş (parametreler varsayılan)
+  ✓ durum satırı: kaynak, parametre durumu, V&V
+  ✓ Özet matrisinde 28 test (28)
+  ✓ sürüm künyesi (Fiziksel sayısal ikiz Motor v13.18 · arayüz 14.0)
+  ✓ tema düğmesi koyuya geçirir ve saklar (dark, "dark", gövde rgb(12, 18, 22), etiket "Açık temaya geç")
+  ✓ ikinci tıklama açık temaya döner
+  ✓ şerit hücresi T1.9'u açar (#kampanya, şerit true, liste true)
+  ✓ "Aşım" süzgeci 2 test gösterir (ti-T1_9, ti-T4_2)
+  ✓ metin süzgeci "T2" (5 test)
+  ✓ eşleşme yoksa "Süzgece uyan test yok."
+  ✓ süzgeç temizlenince 28 test
+  ✓ gezinmede ↓ tuşu sonraki ekrana geçer
+  ✓ adres çubuğundaki #butce Bütçe ekranını açar
+  ✓ Bütçe panel sekmesi değişir ve hatırlanır ("top")
+  ✓ panel sekmelerinde ← tuşu
+  ✓ parametre araması "VIV": 6/201 satır, hepsi eşleşiyor
+  ✓ parametre değişince Model rozeti ve durum satırı (1)
+  ✓ sonuçlar bayat işaretlenir (28 hücre, uyarı şeridi true)
+  ✓ Varsayılana dön: rozet ve bayatlık kalkar
+  ✓ Özet matrisindeki hücre testi Kampanya ekranında açar
+   T0.1 koşuluyor…
+  ✓ koşu sırasında hücre "koşuyor" (cell run)
+  ✓ koşu bitince hücre cell ok, durum satırı "Son koşu 16:58, denizaltı mastı varsayılanı"
+  ✓ sayfa hatası yok
+2) 1440 px, light
+  ✓ yatay taşma yok
+  ✓ "kılavuz" geçmiyor
+  ✓ tema light korunur
+  ✓ sayfa hatası yok
+2) 1440 px, dark
+  ✓ yatay taşma yok
+  ✓ "kılavuz" geçmiyor
+  ✓ tema dark korunur
+  ✓ sayfa hatası yok
+2) 390 px, light
+  ✓ yatay taşma yok
+  ✓ "kılavuz" geçmiyor
+  ✓ tema light korunur
+  ✓ sayfa hatası yok
+2) 390 px, dark
+  ✓ yatay taşma yok
+  ✓ "kılavuz" geçmiyor
+  ✓ tema dark korunur
+  ✓ sayfa hatası yok
+2) 1920 px, light
+  ✓ yatay taşma yok
+  ✓ "kılavuz" geçmiyor
+  ✓ tema light korunur
+  ✓ sayfa hatası yok
+2) 1024 px, light
+  ✓ yatay taşma yok
+  ✓ "kılavuz" geçmiyor
+  ✓ tema light korunur
+  ✓ sayfa hatası yok
+
+SONUÇ: 54 geçti, 0 kaldı

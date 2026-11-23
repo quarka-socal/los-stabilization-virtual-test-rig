@@ -1,0 +1,7 @@
+el varsayılan (f_bw 1000 Hz) K    61.831 f_kesim  40.45 PM  52.35° GM  12.16 dB @ 156.7 Hz |S|max 3.33 dB @ 91.7 · DRR 0,125 -80.0 · 1 -56.5 · 3 -60.2 · 5 -40.4 · 40 -30.5 dB
+az varsayılan (f_bw 1000 Hz) K   109.743 f_kesim  30.34 PM  52.05° GM  14.77 dB @ 156.5 Hz |S|max 2.53 dB @ 73.7 · DRR 0,125 -76.3 · 1 -55.5 · 3 -60.0 · 5 -40.2 · 40 -32.2 dB
+el gyro f_bw 300 Hz          K    62.328 f_kesim  40.45 PM  46.99° GM  10.81 dB @ 127.1 Hz |S|max 4.20 dB @ 76.3 · DRR 0,125 -80.0 · 1 -56.6 · 3 -60.3 · 5 -40.5 · 40 -29.7 dB
+az gyro f_bw 300 Hz          K   110.240 f_kesim  30.33 PM  48.02° GM  13.44 dB @ 126.9 Hz |S|max 3.21 dB @ 60.9 · DRR 0,125 -76.4 · 1 -55.5 · 3 -60.0 · 5 -40.2 · 40 -31.4 dB
+el gyro f_bw 3000 Hz         K    61.787 f_kesim  40.45 PM  53.89° GM  12.74 dB @ 168.3 Hz |S|max 3.07 dB @ 97.4 · DRR 0,125 -80.0 · 1 -56.5 · 3 -60.2 · 5 -40.4 · 40 -30.8 dB
+az gyro f_bw 3000 Hz         K   109.699 f_kesim  30.34 PM  53.21° GM  15.35 dB @ 168.2 Hz |S|max 2.33 dB @ 77.8 · DRR 0,125 -76.3 · 1 -55.5 · 3 -60.0 · 5 -40.2 · 40 -32.4 dB
+el gyro f_bw 150 Hz          K    63.940 f_kesim  40.43 PM  39.59° GM   9.55 dB @ 102.0 Hz |S|max 5.47 dB @ 62.2 · DRR 0,125 -80.2 · 1 -56.8 · 3 -60.5 · 5 -40.7 · 40 -28.3 dB

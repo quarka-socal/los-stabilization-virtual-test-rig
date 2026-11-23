@@ -1,0 +1,26 @@
+FARK SAYISI 13 (12 grup)
+== tests/T1.7/notes[1]: 1
+    tests/T1.7/notes[1] : 'Hata eşiği proje gereksinimidir (Model → Proje gereksinimleri); girilmezse sonuç BİLGİ ola' → 'Hata eşiği proje gereksinimidir (Model → Proje gereksinimleri); girilmezse yalnız kilit ka'
+== tests/T1.9/kv[4][1]: 1
+    tests/T1.9/kv[4][1] : '40.4 / 27.3 µrad · 8.49 / 10.50 (Gauss 60 s: ≈ 6–8,5)' → '40.4 / 27.3 µrad · 8.49 / 10.50 (aynı tayfta Gauss süreç beklentisi 9.1 / 9.4; sınır 6.5·σ'
+== tests/T1.9/kv[11][1]: 1
+    tests/T1.9/kv[11][1] : '27.2 / 22.2 µrad · 8.92 / 8.84 (Gauss 60 s: ≈ 6–8,5)' → '27.2 / 22.2 µrad · 8.92 / 8.84 (aynı tayfta Gauss süreç beklentisi 9.3 / 9.4; sınır 6.5·σ)'
+== ctx/T01: 1
+    ctx/T01 : yalnız yeni
+== ctx/floor: 1
+    ctx/floor : yalnız yeni
+== extra/calibOff: 1
+    extra/calibOff : yalnız yeni
+== extra/slap: 1
+    extra/slap : yalnız yeni
+== extra/t24nofric: 1
+    extra/t24nofric : yalnız yeni
+== ship/ctx/T01: 1
+    ship/ctx/T01 : yalnız yeni
+== ship/ctx/floor: 1
+    ship/ctx/floor : yalnız yeni
+== ship/tests/T1.7: 1
+    ship/tests/T1.7/notes[1] : 'Hata eşiği proje gereksinimidir (Model → Proje gereksinimleri); girilmezse sonuç BİLGİ ola' → 'Hata eşiği proje gereksinimidir (Model → Proje gereksinimleri); girilmezse yalnız kilit ka'
+== ship/tests/T1.9: 2
+    ship/tests/T1.9/kv[4][1] : '41.5 / 31.2 µrad · 8.03 / 10.19 (Gauss 60 s: ≈ 6–8,5)' → '41.5 / 31.2 µrad · 8.03 / 10.19 (aynı tayfta Gauss süreç beklentisi 9.0 / 9.3; sınır 6.5·σ'
+    ship/tests/T1.9/kv[11][1] : '27.3 / 21.9 µrad · 8.51 / 8.74 (Gauss 60 s: ≈ 6–8,5)' → '27.3 / 21.9 µrad · 8.51 / 8.74 (aynı tayfta Gauss süreç beklentisi 9.3 / 9.4; sınır 6.5·σ)'

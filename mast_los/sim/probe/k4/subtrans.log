@@ -1,0 +1,20 @@
+işletme B2-01 (motor, yalnız açısal, narrowSeries): el 0.610 / xel 0.000 µrad
+yalnız açısal (bugünkü model): θ 0.050°, y ±0.00 mm, ivme 0.000 m/s²
+   dwell f_n: OFF el 19.79 (ayna 19.74, video − ayna 0.06) / xel 0.05 → ON el 2.08 (ayna 1.89, video − ayna 0.21) / xel 0.05 µrad
+   işletme B2-01 (600 s): el 0.610 / xel 0.000 µrad
+L = 2 m, κ = 1,5: θ 0.050°, y ±1.16 mm, ivme 0.413 m/s²
+   dwell f_n: OFF el 20.32 (ayna 20.27, video − ayna 0.05) / xel 0.31 → ON el 2.14 (ayna 1.94, video − ayna 0.21) / xel 0.03 µrad
+   işletme B2-01 (600 s): el 0.626 / xel 0.037 µrad
+L = 4 m, κ = 1,5: θ 0.050°, y ±2.33 mm, ivme 0.827 m/s²
+   dwell f_n: OFF el 20.86 (ayna 20.82, video − ayna 0.05) / xel 0.62 → ON el 2.19 (ayna 1.99, video − ayna 0.22) / xel 0.03 µrad
+   işletme B2-01 (600 s): el 0.653 / xel 0.073 µrad
+L = 6 m, κ = 1,5: θ 0.050°, y ±3.49 mm, ivme 1.240 m/s²
+   dwell f_n: OFF el 21.41 (ayna 21.38, video − ayna 0.04) / xel 0.94 → ON el 2.25 (ayna 2.04, video − ayna 0.22) / xel 0.06 µrad
+   işletme B2-01 (600 s): el 0.687 / xel 0.109 µrad
+L = 4 m, κ = 1,5, genlik 0,10°: θ 0.100°, y ±4.65 mm, ivme 1.654 m/s²
+   dwell f_n: OFF el 34.32 (ayna 34.15, video − ayna 0.17) / xel 1.26 → ON el 3.52 (ayna 3.30, video − ayna 0.27) / xel 0.09 µrad
+   işletme B2-01 (600 s): el 1.306 / xel 0.145 µrad
+L = 4 m, κ = 1,5, genlik 0,82° (patent: ±40 mm / 4,2 m): θ 0.820°, y ±38.16 mm, ivme 13.560 m/s²
+   dwell f_n: OFF el 133.52 (ayna 133.40, video − ayna 0.60) / xel 11.24 → ON el 13.23 (ayna 13.10, video − ayna 0.84) / xel 1.07 µrad
+   işletme B2-01 (600 s): el 10.714 / xel 1.192 µrad
+süre 19 s

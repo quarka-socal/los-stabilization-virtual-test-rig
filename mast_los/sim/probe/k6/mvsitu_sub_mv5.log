@@ -1,0 +1,3 @@
+sub mv 5 µrad, tohum 1301 [6 s]: wander açık 6.704 / 5.475, kapalı 6.775 / 5.726 µrad; fark sinyali (yerinde pay) video 1.509 / 2.101, karesel fark 0.000 / 0.000; otokolimatör 3.367 / 3.661; gerçek LOS 3.807 / 4.056; tabla 4.941 µrad
+sub mv 5 µrad, tohum 1302 [5 s]: wander açık 6.927 / 4.788, kapalı 6.989 / 5.009 µrad; fark sinyali (yerinde pay) video 1.457 / 2.070, karesel fark 0.000 / 0.000; otokolimatör 3.333 / 3.629; gerçek LOS 3.770 / 4.027; tabla 4.930 µrad
+yalıtılmış statik koşu (tableShare, stab ON): video 1.025 / 0.936, otokolimatör 3.298 / 3.267, gerçek LOS 3.765 / 3.695, tabla 5.041 µrad

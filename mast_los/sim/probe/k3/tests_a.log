@@ -1,0 +1,7 @@
+T2.5 OK 2 s | İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.62 µrad RMS (tahsis 3); duyarlılık 1.882 µrad/(m/s²)
+    Direktördeki deniz ivmesi RMS (x / y / z) | 0.008 / 0.024 / 0.000 m/s² (kaldıraç kolu h = 1.0 m: x 0.008, y 0.024 m/s²); dar profil (yalnız açısal + kaldıraç kolu)
+    İşletme kestirimi B1-08 (yollar ayrı taşınıp doğrusal toplandı, muhafazakâr) | el 0.02 / xel 0.03 µrad RMS (deniz frekansı x/y/z 0.10 / 0.13 / 0.01 Hz)
+T1.3 OK 14 s | Wander (en kötü tohum) el 6.94 / xel 6.54 µrad RMS; P99 17.33 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 10.12 / 9.36 µrad (gereksinim 120)
+    Tohum başına wander el/xel (µrad) | 6.72/5.57 · 6.94/4.86 · 6.71/6.54
+    Deniz ötelemesi (laboratuvar, tohum 1) | talep ±0.11 m → hexapod ±100 mm (q = 0.8849)
+   not: Laboratuvar deniz ötelemesini (h = 1 m kaldıraç kolunun ötelemesi) hexapod stroku içinde q = 0.8849 oranında üretir; ötelemenin LOS etkisi bu testte tam ölçekte yoktur. İşletme ivmesindeki etkisi T2.5'te ivme eşdeğeriyle ölçülür (B1-08).

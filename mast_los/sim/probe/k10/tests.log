@@ -1,0 +1,23 @@
+T0.6 varsayılan: OK — ARW 0.00424 °/√h (sınır 0.005), bias kararsızlığı 0.0461 °/h (sınır 0.05) · dolgu B1-05 1.232 B1-06 0.223 µrad [1 s]
+T0.6 DUT ARW 0,008 °/√h: AŞIM — ARW 0.00805 °/√h (sınır 0.005), bias kararsızlığı 0.0526 °/h (sınır 0.05) · dolgu B1-05 2.341 B1-06 0.255 µrad [1 s]
+T0.6 DUT bias kararsızlığı 0,08 °/h: AŞIM — ARW 0.00428 °/√h (sınır 0.005), bias kararsızlığı 0.0827 °/h (sınır 0.05) · dolgu B1-05 1.244 B1-06 0.401 µrad [1 s]
+T0.6 bütçe ARW 0,003 / bias 0,03 (sıkı): AŞIM — ARW 0.00424 °/√h (sınır 0.003), bias kararsızlığı 0.0461 °/h (sınır 0.03) · dolgu B1-05 1.232 B1-06 0.223 µrad [1 s]
+T1.1 varsayılan: OK · B1-04 ölçülen 2.04 µrad ↔ bütçe (roll tabanı) 3.70 [17 s]
+   pitch (LOS ekseni etrafında): çapraz eksen katsayısı: 0.1100 mrad/rad (model ε = 0.1 mrad) | pitch: işletme karşılığı ε·θ_RMS (B1-04 tipi): 2.04 µrad RMS (tahsis 4)
+T1.1 gemi: AŞIM · B1-04 ölçülen 2.72 µrad ↔ bütçe (roll tabanı) 6.99 [16 s]
+   pitch (LOS ekseni etrafında): çapraz eksen katsayısı: 0.1041 mrad/rad (model ε = 0.1 mrad) | pitch: işletme karşılığı ε·θ_RMS (B1-04 tipi): 2.72 µrad RMS (tahsis 4)
+T1.1 DUT ε 0,5 mrad: OK · B1-04 ölçülen 9.54 µrad ↔ bütçe (roll tabanı) 18.51 [16 s]
+   pitch (LOS ekseni etrafında): çapraz eksen katsayısı: 0.5152 mrad/rad (model ε = 0.5 mrad) | pitch: işletme karşılığı ε·θ_RMS (B1-04 tipi): 9.54 µrad RMS (tahsis 4)
+T1.1 LOS pruvaya bakar (a0 = 0°): OK · B1-04 ölçülen 3.48 µrad ↔ bütçe (roll tabanı) 3.70 [16 s]
+   roll (LOS ekseni etrafında): çapraz eksen katsayısı: 0.0941 mrad/rad (model ε = 0.1 mrad) | roll: işletme karşılığı ε·θ_RMS (B1-04 tipi): 3.48 µrad RMS (tahsis 4)
+T1.5 varsayılan: OK — Alan köşesi yer değiştirmesi (türetme ON): sinüs 16.31, deniz profili 16.81 µrad RMS (sınır 20.0); türetme OFF sinüs 606.7 µrad · analitik artık 495.5 µrad → köşe 16.24 µrad (bütçe varsayımı 0.5 mrad → 16.39) [7 s]
+T1.5 gemi: AŞIM — Alan köşesi yer değiştirmesi (türetme ON): sinüs 28.44, deniz profili 28.71 µrad RMS (sınır 20.0); türetme OFF sinüs 857.5 µrad · analitik artık 862.3 µrad → köşe 28.26 µrad (bütçe varsayımı 0.5 mrad → 16.39) [5 s]
+T1.5 türetme ölçek hatası 0: OK — Alan köşesi yer değiştirmesi (türetme ON): sinüs 11.42, deniz profili 11.92 µrad RMS (sınır 20.0); türetme OFF sinüs 606.7 µrad · analitik artık 348.9 µrad → köşe 11.44 µrad (bütçe varsayımı 0.5 mrad → 16.39) [5 s]
+T1.5 türetme gecikmesi 0: OK — Alan köşesi yer değiştirmesi (türetme ON): sinüs 11.53, deniz profili 11.75 µrad RMS (sınır 20.0); türetme OFF sinüs 606.7 µrad · analitik artık 351.7 µrad → köşe 11.53 µrad (bütçe varsayımı 0.5 mrad → 16.39) [5 s]
+T1.5 gemi, türetme gecikmesi 10 ms: OK — Alan köşesi yer değiştirmesi (türetme ON): sinüs 18.06, deniz profili 18.19 µrad RMS (sınır 20.0); türetme OFF sinüs 857.5 µrad · analitik artık 549.8 µrad → köşe 18.02 µrad (bütçe varsayımı 0.5 mrad → 16.39) [6 s]
+işletme B1-04, a0 = 0° (LOS ekseni = roll): el 3.75 / xel 3.76 µrad (ε·σ_roll 3.70) [3 s]
+işletme B1-05 tohum 11: wander penceresi el 2.68 / xel 3.30 · τ penceresi (PDE) 1.21 / 1.18 µrad [3 s]
+işletme B1-05 tohum 12: wander penceresi el 3.56 / xel 2.60 · τ penceresi (PDE) 1.25 / 1.23 µrad [2 s]
+işletme B1-05 tohum 13: wander penceresi el 2.90 / xel 4.21 · τ penceresi (PDE) 1.18 / 1.18 µrad [2 s]
+işletme B1-05 tohum 14: wander penceresi el 3.32 / xel 2.68 · τ penceresi (PDE) 1.23 / 1.19 µrad [2 s]
+B1-05 ortalama: wander el 3.12 xel 3.20 ↔ σ√(T_w/15) 3.46 µrad; PDE el 1.22 xel 1.19 ↔ σ√τ 1.22 (DUT ARW 0.0042 °/√h)

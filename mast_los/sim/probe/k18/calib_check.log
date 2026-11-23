@@ -1,0 +1,10 @@
+B1-07: el 3.013 µrad ↔ hedef 3.00 (0.45 %) 2.3 s
+B2-02: el 1.711 µrad ↔ hedef 2.00 (-14.47 %) 1.6 s
+B2-03: el 2.003 µrad ↔ hedef 2.00 (0.15 %) 1.7 s
+B2-04: el 1.500 µrad ↔ hedef 1.50 (-0.01 %) 1.8 s
+B2-06: el 2.011 µrad ↔ hedef 2.00 (0.56 %) 2.1 s
+B3-01: el 3.033 µrad ↔ hedef 3.00 (1.11 %) 0.4 s
+B3-02: el 1.500 µrad ↔ hedef 1.50 (-0.02 %) 0.4 s
+B3-03: el 2.000 µrad ↔ hedef 2.00 (0.01 %) 0.4 s
+B3-04: el 1.500 µrad ↔ hedef 1.50 (-0.03 %) 0.4 s
+dalga çarpması dışında en büyük sapma B3-01 1.11 %; B2-02 tek gerçekleşme (beklenen değere kalibre, v13.13)

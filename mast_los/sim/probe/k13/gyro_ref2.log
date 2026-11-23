@@ -1,0 +1,8 @@
+4 sa, BI 0.042: τ_max 3600 s · min/0,664 0.0332 ± 0.0093 (kabul %98) · model uydurma 0.0384 ± 0.0034 (kabul %100)
+4 sa, BI 0.05: τ_max 3600 s · min/0,664 0.0397 ± 0.0108 (kabul %82) · model uydurma 0.0468 ± 0.0032 (kabul %87)
+4 sa, BI 0.06: τ_max 3600 s · min/0,664 0.0456 ± 0.0129 (kabul %58) · model uydurma 0.0561 ± 0.0028 (kabul %5)
+12 sa, BI 0.042: τ_max 10800 s · min/0,664 0.0352 ± 0.0082 (kabul %100) · model uydurma 0.0403 ± 0.0016 (kabul %100)
+12 sa, BI 0.05: τ_max 10800 s · min/0,664 0.0419 ± 0.0105 (kabul %75) · model uydurma 0.0481 ± 0.0016 (kabul %88)
+12 sa, BI 0.06: τ_max 10800 s · min/0,664 0.0484 ± 0.0118 (kabul %47) · model uydurma 0.0574 ± 0.0018 (kabul %2)
+24 sa, BI 0.042: τ_max 21600 s · min/0,664 0.0359 ± 0.0066 (kabul %100) · model uydurma 0.0406 ± 0.0013 (kabul %100)
+24 sa, BI 0.05: τ_max 21600 s · min/0,664 0.0427 ± 0.0091 (kabul %78) · model uydurma 0.0483 ± 0.0012 (kabul %92)

@@ -1,0 +1,6 @@
+OK  G6 İşletme: çarpmasız ek koşu yalnız dalga çarpmasını kaldırır, kalıntı Gauss (v13.17)
+     beklenen: Az (yalnız çapraz kuplaj): ≤ %0,1; çarpmasız PPV/σ El = Rice ± %15; çarpmalı PPV/σ El > 2 × Rice
+     elde:     takip öncesi: PPV El 184.9 → 55.9 µrad, PPV/σ El 26.82 → 8.48 (Rice 9.11, -6.9 %), Az farkı 2.9e-5 · takip sonrası: PPV El 192.5 → 64.7 µrad, PPV/σ El 26.85 → 9.84 (Rice 9.14, 7.7 %), Az farkı 3.4e-4
+     ölçüt:    %0,1 · ±%15 · > 2×
+
+1/1 doğrulama geçti (54 s)

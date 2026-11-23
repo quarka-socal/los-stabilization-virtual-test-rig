@@ -1,0 +1,57 @@
+<title>Mast LOS Sanal Test Düzeneği</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Optronik mast LOS jitter test kampanyasının fiziksel sayısal ikizi: hexapod, DUT, kolimatör, 28 test, jitter bütçesi ve proje LOS kalıntı gereksinimleri.">
+<style>
+/*@FONTS@*/
+/*@CSS@*/
+</style>
+<div class="app" id="app">
+  <header class="appbar" id="appbar">
+    <a class="brand" href="#ozet" aria-label="Mast LOS Sanal Test Düzeneği, özete git">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="18" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M18 1.5v9M18 25.5v9M1.5 18h9M25.5 18h9" stroke="currentColor" stroke-width="1.6"/><circle cx="19.4" cy="16.9" r="1.7" fill="#d1452b"/></svg>
+      <span class="nm"><b>Mast LOS</b><span>Sanal test düzeneği</span></span>
+    </a>
+    <div class="platsel">
+      <span class="lbl" id="platLbl">Platform</span>
+      <div class="seg" id="platSeg" role="group" aria-labelledby="platLbl">
+        <button type="button" data-p="sub" aria-pressed="true" title="Denizaltı sürülebilir optronik mastı: periskop derinliğinde deniz hareketi, hidrodinamik VIV ve dalga çarpması"><span class="l">Denizaltı mastı</span><span class="s">Denizaltı</span></button>
+        <button type="button" data-p="ship" aria-pressed="false" title="Gemi direğinde EO direktör: gemi deniz hareketi, rüzgâr kaynaklı girdap kopması (EN 1991-1-4), dalga çarpması yok"><span class="l">Gemi direği</span><span class="s">Gemi</span></button>
+      </div>
+    </div>
+    <span class="ab-sep" aria-hidden="true"></span>
+    <nav class="strip" id="strip" aria-label="Kampanya sekansı: 28 testin durumu"></nav>
+    <div class="ab-counts" id="abCounts" aria-live="polite"></div>
+    <span class="ab-spacer"></span>
+    <div class="ab-run">
+      <button class="btn primary" id="runAll" type="button"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 2.8v10.4L13 8z" fill="currentColor"/></svg><span>Kampanyayı koştur</span></button>
+    </div>
+    <button class="iconbtn" id="themeBtn" type="button" aria-label="Koyu temaya geç" title="Koyu temaya geç"></button>
+    <div class="progline" aria-hidden="true"><i id="progBar"></i></div>
+  </header>
+  <nav class="rail" id="tabs" role="tablist" aria-label="Ekranlar" aria-orientation="vertical"></nav>
+  <main class="main" id="main">
+    <div class="banner" id="staleBanner" hidden></div>
+    <section id="v-ozet" class="view" role="tabpanel" aria-labelledby="tab-ozet"></section>
+    <section id="v-kampanya" class="view" role="tabpanel" aria-labelledby="tab-kampanya" hidden></section>
+    <section id="v-duzenek" class="view" role="tabpanel" aria-labelledby="tab-duzenek" hidden></section>
+    <section id="v-butce" class="view" role="tabpanel" aria-labelledby="tab-butce" hidden></section>
+    <section id="v-gereksinim" class="view" role="tabpanel" aria-labelledby="tab-gereksinim" hidden></section>
+    <section id="v-model" class="view" role="tabpanel" aria-labelledby="tab-model" hidden></section>
+    <section id="v-yontem" class="view" role="tabpanel" aria-labelledby="tab-yontem" hidden></section>
+  </main>
+  <footer class="statusbar"><div class="sbinfo" id="statusbar"></div><span class="sbprog" id="progTxt" aria-live="polite">28 test + işletme ayrıştırması</span></footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/*@ENGINE@*/
+</script>
+<script>
+window.__PRE__ = /*@PRE@*/;
+window.__TM__ = /*@TM@*/;
+</script>
+<script>
+(function () {
+'use strict';
+/*@APP@*/
+})();
+</script>

@@ -1,0 +1,76 @@
+{
+ "t25": [
+  {
+   "id": "D1",
+   "nm": "denizaltı varsayılanı, h = 1 m",
+   "status": "OK",
+   "measured": "İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.64 µrad RMS (tahsis 3); duyarlılık 1.906 µrad/(m/s²) (hexapod iletimi τ = 0.987: laboratuvar farkı 1.62 µrad komut düzeyine ölçeklendi)",
+   "predEl": 2.707579028505222e-8,
+   "predXel": 2.2034456001557277e-8,
+   "upEl": 2.707579028505222e-8,
+   "upXel": 2.2034456001557277e-8
+  },
+  {
+   "id": "G1",
+   "nm": "gemi varsayılanı, h = 15 m",
+   "status": "OK",
+   "measured": "İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.64 µrad RMS (tahsis 3); duyarlılık 1.906 µrad/(m/s²) (hexapod iletimi τ = 0.987: laboratuvar farkı 1.62 µrad komut düzeyine ölçeklendi)",
+   "predEl": 4.924492101506043e-7,
+   "predXel": 7.900544698713356e-7,
+   "upEl": 4.924492101506043e-7,
+   "upXel": 7.900544698713356e-7
+  },
+  {
+   "id": "G3",
+   "nm": "gemi, r = (20, −4, 15) m",
+   "status": "OK",
+   "measured": "İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.64 µrad RMS (tahsis 3); duyarlılık 1.906 µrad/(m/s²) (hexapod iletimi τ = 0.987: laboratuvar farkı 1.62 µrad komut düzeyine ölçeklendi)",
+   "predEl": 0.0000010827843087024822,
+   "predXel": 7.967007812222606e-7,
+   "upEl": 0.000001305165879240712,
+   "upXel": 8.406207205519211e-7
+  },
+  {
+   "id": "G6",
+   "nm": "gemi SS4, r = (20, −4, 15) m",
+   "status": "OK",
+   "measured": "İşletme ivme düzeyinde (8 Hz, 1.22 m/s² genlik) artık farkı 1.64 µrad RMS (tahsis 3); duyarlılık 1.906 µrad/(m/s²) (hexapod iletimi τ = 0.987: laboratuvar farkı 1.62 µrad komut düzeyine ölçeklendi)",
+   "predEl": 0.000002923334203583988,
+   "predXel": 0.000002140634361854917,
+   "upEl": 0.000004270352132349224,
+   "upXel": 0.000002702396690581063
+  }
+ ],
+ "t13": [
+  {
+   "nm": "Roll genliği 6°",
+   "status": "GEÇERSİZ",
+   "measured": "Kolimatör demeti göz bebeğini tam kaplamıyor (kayma 27.0 mm > (D_c − D_p)/2 = 25.0 mm, en düşük örtüşme %99.2): sonuç GEÇERSİZ. Wander (en kötü tohum) el 9.80 / xel 6.54 µrad RMS; P99 24.00 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 12.30 / 9.37 µrad (gereksinim 120)",
+   "q": "talep ±0.22 m → hexapod ±100 mm (q = 0.4452) → kolimatör sınırı (e ≤ 18.2 mm) için ×0.000: ±0.0 mm (ölçeksiz kayma 38.7 mm)"
+  },
+  {
+   "nm": "h = 10 m",
+   "status": "OK",
+   "measured": "Wander (en kötü tohum) el 6.93 / xel 6.54 µrad RMS; P99 17.33 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 10.12 / 9.36 µrad (gereksinim 120)",
+   "q": "talep ±1.13 m → hexapod ±100 mm (q = 0.0885) → kolimatör sınırı (e ≤ 18.2 mm) için ×0.299: ±29.9 mm (ölçeksiz kayma 57.7 mm)"
+  },
+  {
+   "nm": "6-DOF SS4 (h = 0)",
+   "status": "OK",
+   "measured": "Wander (en kötü tohum) el 9.04 / xel 7.44 µrad RMS; P99 22.71 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 11.57 / 9.86 µrad (gereksinim 120)",
+   "q": "talep ±0.60 m → hexapod ±100 mm (q = 0.1656) → kolimatör sınırı (e ≤ 18.2 mm) için ×0.161: ±16.1 mm (ölçeksiz kayma 99.9 mm)"
+  },
+  {
+   "nm": "6-DOF SS4 (h = 1 m)",
+   "status": "OK",
+   "measured": "Wander (en kötü tohum) el 9.04 / xel 7.44 µrad RMS; P99 22.71 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 11.57 / 9.86 µrad (gereksinim 120)",
+   "q": "talep ±0.60 m → hexapod ±100 mm (q = 0.1656) → kolimatör sınırı (e ≤ 18.2 mm) için ×0.159: ±15.9 mm (ölçeksiz kayma 100.0 mm)"
+  },
+  {
+   "nm": "6-DOF SS4 (h = 1 m), sığdırma kapalı",
+   "status": "GEÇERSİZ",
+   "measured": "Kolimatör demeti göz bebeğini tam kaplamıyor (kayma 100.0 mm > (D_c − D_p)/2 = 25.0 mm, en düşük örtüşme %15.8): sonuç GEÇERSİZ. Wander (en kötü tohum) el 9.04 / xel 7.44 µrad RMS; P99 22.67 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 11.57 / 9.86 µrad (gereksinim 120)",
+   "q": "talep ±0.60 m → hexapod ±100 mm (q = 0.1656)"
+  }
+ ]
+}

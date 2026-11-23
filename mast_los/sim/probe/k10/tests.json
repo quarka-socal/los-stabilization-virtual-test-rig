@@ -1,0 +1,166 @@
+{
+ "t06": [
+  {
+   "nm": "varsayılan",
+   "st": "OK",
+   "m": "ARW 0.00424 °/√h (sınır 0.005), bias kararsızlığı 0.0461 °/h (sınır 0.05)",
+   "fill": {
+    "B1-05": 0.0000012323067486777618,
+    "B1-06": 2.2343934671791358e-7
+   }
+  },
+  {
+   "nm": "DUT ARW 0,008 °/√h",
+   "st": "AŞIM",
+   "m": "ARW 0.00805 °/√h (sınır 0.005), bias kararsızlığı 0.0526 °/h (sınır 0.05)",
+   "fill": {
+    "B1-05": 0.0000023411897043117814,
+    "B1-06": 2.549943053277543e-7
+   }
+  },
+  {
+   "nm": "DUT bias kararsızlığı 0,08 °/h",
+   "st": "AŞIM",
+   "m": "ARW 0.00428 °/√h (sınır 0.005), bias kararsızlığı 0.0827 °/h (sınır 0.05)",
+   "fill": {
+    "B1-05": 0.000001243735441920041,
+    "B1-06": 4.0109981939582966e-7
+   }
+  },
+  {
+   "nm": "bütçe ARW 0,003 / bias 0,03 (sıkı)",
+   "st": "AŞIM",
+   "m": "ARW 0.00424 °/√h (sınır 0.003), bias kararsızlığı 0.0461 °/h (sınır 0.03)",
+   "fill": {
+    "B1-05": 0.0000012323067486777618,
+    "B1-06": 2.2343934671791358e-7
+   }
+  }
+ ],
+ "t11": [
+  {
+   "nm": "varsayılan",
+   "st": "OK",
+   "b104": 0.0000020370019380375237,
+   "budget": 3.7024024484653055,
+   "kv": "pitch (LOS ekseni etrafında): çapraz eksen katsayısı: 0.1100 mrad/rad (model ε = 0.1 mrad) | pitch: işletme karşılığı ε·θ_RMS (B1-04 tipi): 2.04 µrad RMS (tahsis 4)"
+  },
+  {
+   "nm": "gemi",
+   "st": "AŞIM",
+   "b104": 0.0000027239823146988213,
+   "budget": 6.9851992861045415,
+   "kv": "pitch (LOS ekseni etrafında): çapraz eksen katsayısı: 0.1041 mrad/rad (model ε = 0.1 mrad) | pitch: işletme karşılığı ε·θ_RMS (B1-04 tipi): 2.72 µrad RMS (tahsis 4)"
+  },
+  {
+   "nm": "DUT ε 0,5 mrad",
+   "st": "OK",
+   "b104": 0.00000953716725093157,
+   "budget": 18.512012242326527,
+   "kv": "pitch (LOS ekseni etrafında): çapraz eksen katsayısı: 0.5152 mrad/rad (model ε = 0.5 mrad) | pitch: işletme karşılığı ε·θ_RMS (B1-04 tipi): 9.54 µrad RMS (tahsis 4)"
+  },
+  {
+   "nm": "LOS pruvaya bakar (a0 = 0°)",
+   "st": "OK",
+   "b104": 0.0000034844799496707627,
+   "budget": 3.7024024484653055,
+   "kv": "roll (LOS ekseni etrafında): çapraz eksen katsayısı: 0.0941 mrad/rad (model ε = 0.1 mrad) | roll: işletme karşılığı ε·θ_RMS (B1-04 tipi): 3.48 µrad RMS (tahsis 4)"
+  }
+ ],
+ "t15": [
+  {
+   "nm": "varsayılan",
+   "st": "OK",
+   "m": "Alan köşesi yer değiştirmesi (türetme ON): sinüs 16.31, deniz profili 16.81 µrad RMS (sınır 20.0); türetme OFF sinüs 606.7 µrad",
+   "fill": 0.000016814666005715003,
+   "exp": 0.000495453442215694,
+   "expPt": 0.000016237128211662462
+  },
+  {
+   "nm": "gemi",
+   "st": "AŞIM",
+   "m": "Alan köşesi yer değiştirmesi (türetme ON): sinüs 28.44, deniz profili 28.71 µrad RMS (sınır 20.0); türetme OFF sinüs 857.5 µrad",
+   "fill": 0.000028707985155214985,
+   "exp": 0.0008622553449247601,
+   "expPt": 0.000028258054932716514
+  },
+  {
+   "nm": "türetme ölçek hatası 0",
+   "st": "OK",
+   "m": "Alan köşesi yer değiştirmesi (türetme ON): sinüs 11.42, deniz profili 11.92 µrad RMS (sınır 20.0); türetme OFF sinüs 606.7 µrad",
+   "fill": 0.000011916059521014295,
+   "exp": 0.00034894320998194394,
+   "expPt": 0.00001143565702910038
+  },
+  {
+   "nm": "türetme gecikmesi 0",
+   "st": "OK",
+   "m": "Alan köşesi yer değiştirmesi (türetme ON): sinüs 11.53, deniz profili 11.75 µrad RMS (sınır 20.0); türetme OFF sinüs 606.7 µrad",
+   "fill": 0.00001175007340583414,
+   "exp": 0.00035172823260420396,
+   "expPt": 0.00001152692851000439
+  },
+  {
+   "nm": "gemi, türetme gecikmesi 10 ms",
+   "st": "OK",
+   "m": "Alan köşesi yer değiştirmesi (türetme ON): sinüs 18.06, deniz profili 18.19 µrad RMS (sınır 20.0); türetme OFF sinüs 857.5 µrad",
+   "fill": 0.000018188016195955844,
+   "exp": 0.0005497903656366556,
+   "expPt": 0.000018017871904284426
+  }
+ ],
+ "op": [
+  {
+   "nm": "B1-04, a0 = 0° (LOS ekseni = roll)",
+   "id": "B1-04",
+   "r": {
+    "el": 0.0000037517065958118886,
+    "xel": 0.0000037563582214094224,
+    "wEl": 0.000003750995411323554,
+    "wXel": 0.0000037549644919293155,
+    "pdeEl": 0.0000029218301435773096,
+    "pdeXel": 0.0000029277879877250334
+   },
+   "expLos": 0.000003702402448465305
+  },
+  {
+   "id": "B1-05",
+   "rows": [
+    {
+     "el": 0.000006576259657868675,
+     "xel": 0.000004602692133975662,
+     "wEl": 0.0000026808077004931017,
+     "wXel": 0.0000033038576141264485,
+     "pdeEl": 0.0000012103539494915076,
+     "pdeXel": 0.0000011827081700783416
+    },
+    {
+     "el": 0.000009196218060924357,
+     "xel": 0.000004543160082587481,
+     "wEl": 0.00000356223181990147,
+     "wXel": 0.00000260231813899679,
+     "pdeEl": 0.0000012481317846451296,
+     "pdeXel": 0.00000122746123696862
+    },
+    {
+     "el": 0.000008946449417612673,
+     "xel": 0.000007923143940946709,
+     "wEl": 0.0000029011624794726683,
+     "wXel": 0.000004211863600849097,
+     "pdeEl": 0.000001184378457478499,
+     "pdeXel": 0.0000011773638070432665
+    },
+    {
+     "el": 0.00000776055968211588,
+     "xel": 0.000005974155676496214,
+     "wEl": 0.0000033216373707339663,
+     "wXel": 0.0000026817464020030638,
+     "pdeEl": 0.0000012253616208945327,
+     "pdeXel": 0.0000011879450804403306
+    }
+   ],
+   "wExp": 0.0000034555756185676182,
+   "pdeExp": 0.0000012217304763960306
+  }
+ ]
+}

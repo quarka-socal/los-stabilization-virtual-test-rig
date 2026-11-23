@@ -1,0 +1,96 @@
+[
+ {
+  "nm": "varsayılan",
+  "T35": "OK 120 Hz: optik 26.30 / ayna 0.05 µrad RMS → Optik iç hareket (zoom grubu / FPA / ayna montajı) — aynada görünmez; 180 Hz: optik 17.37 / ayna 17.39 µrad RMS → Gimbal / taşıyıcı yapı — aynada görünür; işletmede B3-03 ≈ 2.07 µrad",
+  "B303_el": 2.000105013334075,
+  "B303_xel": 2.0181639724962874,
+  "B304_el": 1.4995081148059803,
+  "B304_xel": 1.4674368363264214
+ },
+ {
+  "nm": "optik modu 80 Hz",
+  "T35": "OK 80 Hz: optik 26.33 / ayna 0.11 µrad RMS → Optik iç hareket (zoom grubu / FPA / ayna montajı) — aynada görünmez; 180 Hz: optik 17.39 / ayna 17.39 µrad RMS → Gimbal / taşıyıcı yapı — aynada görünür; işletmede B3-03 ≈ 1.51 µrad",
+  "B303_el": 1.5190220598284516,
+  "B303_xel": 1.4433752639007247,
+  "B304_el": 1.4995081148059803,
+  "B304_xel": 1.4674368363264214
+ },
+ {
+  "nm": "optik modu 200 Hz",
+  "T35": "OK 200 Hz: optik 26.04 / ayna 0.01 µrad RMS → Optik iç hareket (zoom grubu / FPA / ayna montajı) — aynada görünmez; 180 Hz: optik 17.09 / ayna 17.39 µrad RMS → Gimbal / taşıyıcı yapı — aynada görünür; işletmede B3-03 ≈ 2.70 µrad",
+  "B303_el": 2.6870193745115705,
+  "B303_xel": 2.6083528954645367,
+  "B304_el": 1.4995081148059803,
+  "B304_xel": 1.4674368363264214
+ },
+ {
+  "nm": "gimbal modu 120 Hz",
+  "T35": "OK 120 Hz: optik 26.30 / ayna 0.05 µrad RMS → Optik iç hareket (zoom grubu / FPA / ayna montajı) — aynada görünmez; 120 Hz: optik 1.60 / ayna 17.41 µrad RMS → Gimbal / taşıyıcı yapı — aynada görünür; işletmede B3-03 ≈ 2.07 µrad",
+  "B303_el": 2.000105013334075,
+  "B303_xel": 2.0181639724962874,
+  "B304_el": 0.5535974058166129,
+  "B304_xel": 0.5557341803686106
+ },
+ {
+  "nm": "gimbal modu 300 Hz",
+  "T35": "OK 120 Hz: optik 26.30 / ayna 0.05 µrad RMS → Optik iç hareket (zoom grubu / FPA / ayna montajı) — aynada görünmez; 300 Hz: optik 16.98 / ayna 16.98 µrad RMS → Gimbal / taşıyıcı yapı — aynada görünür; işletmede B3-03 ≈ 2.07 µrad",
+  "B303_el": 2.000105013334075,
+  "B303_xel": 2.0181639724962874,
+  "B304_el": 4.5094750377158785,
+  "B304_xel": 4.591525969836259
+ },
+ {
+  "nm": "soğutucu varsayılan (60 Hz)",
+  "T34": "OK Videoda 10.0 Hz'e katlanan ton → sinc düzeltmeli temel bileşen 1.47 µrad RMS (tahsis 2); ayna kanalı 0.002 µrad (görmez)",
+  "kvOn": "ayna 0.002 µrad · video alias 1.26 µrad → düzeltilmiş 1.47 µrad · gerçek 60 Hz bileşeni 1.40 µrad",
+  "tot": "5.51 µrad RMS",
+  "B302_el": 1.4996551163369485,
+  "B302_xel": 1.049758563077854,
+  "B302_wEl": 1.2293856358471293
+ },
+ {
+  "nm": "soğutucu genliği × 2",
+  "T34": "AŞIM Videoda 10.0 Hz'e katlanan ton → sinc düzeltmeli temel bileşen 2.93 µrad RMS (tahsis 2); ayna kanalı 0.002 µrad (görmez)",
+  "kvOn": "ayna 0.002 µrad · video alias 2.51 µrad → düzeltilmiş 2.93 µrad · gerçek 60 Hz bileşeni 2.80 µrad",
+  "tot": "6.09 µrad RMS",
+  "B302_el": 2.999310232622999,
+  "B302_xel": 2.0995171261670396,
+  "B302_wEl": 2.45877127169426
+ },
+ {
+  "nm": "soğutucu 55 Hz",
+  "T34": "OK Videoda 5.0 Hz'e katlanan ton → sinc düzeltmeli temel bileşen 1.43 µrad RMS (tahsis 2); ayna kanalı 0.003 µrad (görmez)",
+  "kvOn": "ayna 0.003 µrad · video alias 1.26 µrad → düzeltilmiş 1.43 µrad · gerçek 55 Hz bileşeni 1.40 µrad",
+  "tot": "5.51 µrad RMS",
+  "B302_el": 1.4996551157035403,
+  "B302_xel": 1.0497585577030224,
+  "B302_wEl": 1.2661622202171834
+ },
+ {
+  "nm": "soğutucu 50 Hz (kare hızına eşit)",
+  "T34": "AŞIM Videoda 0.0 Hz'e katlanan ton → sinc düzeltmeli temel bileşen 33.29 µrad RMS (tahsis 2); ayna kanalı 0.002 µrad (görmez)",
+  "kvOn": "ayna 0.002 µrad · video alias 29.97 µrad → düzeltilmiş 33.29 µrad · gerçek 50 Hz bileşeni 1.40 µrad",
+  "tot": "5.51 µrad RMS",
+  "B302_el": 1.4996551148413224,
+  "B302_xel": 1.0497585505041223,
+  "B302_wEl": 1.7575904435241993e-14
+ },
+ {
+  "nm": "soğutucu 75 Hz (katlanma Nyquist'te)",
+  "T34": "AŞIM Videoda 25.0 Hz'e katlanan ton → sinc düzeltmeli temel bileşen 29.42 µrad RMS (tahsis 2); ayna kanalı 0.002 µrad (görmez)",
+  "kvOn": "ayna 0.002 µrad · video alias 23.07 µrad → düzeltilmiş 29.42 µrad · gerçek 75 Hz bileşeni 1.40 µrad",
+  "tot": "5.51 µrad RMS",
+  "B302_el": 1.4996551176758495,
+  "B302_xel": 1.049758573031148,
+  "B302_wEl": 0.2773975817696875
+ },
+ {
+  "nm": "soğutucu 100 Hz",
+  "T34": "AŞIM Videoda 0.0 Hz'e katlanan ton → sinc düzeltmeli temel bileşen 48.82 µrad RMS (tahsis 2); ayna kanalı 0.002 µrad (görmez)",
+  "kvOn": "ayna 0.002 µrad · video alias 31.08 µrad → düzeltilmiş 48.82 µrad · gerçek 100 Hz bileşeni 1.40 µrad",
+  "tot": "5.51 µrad RMS",
+  "B302_el": 1.4996551190099996,
+  "B302_xel": 1.049758580353796,
+  "B302_wEl": 3.690607709868781e-14
+ }
+]

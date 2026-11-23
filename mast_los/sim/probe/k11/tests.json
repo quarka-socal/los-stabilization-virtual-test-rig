@@ -1,0 +1,312 @@
+{
+ "T1.1": [
+  {
+   "nm": "varsayılan",
+   "st": "OK",
+   "m": "DRR(f) eğrisi: roll 0.050 Hz -84.6 dB; roll 0.083 Hz -81.4 dB; roll 0.100 Hz -80.3 dB; roll 0.125 Hz -78.4 dB*; roll 0.200 Hz -73.5 dB; yaw 0.050 Hz -79.8 dB; yaw 0.083 Hz -77.9 dB*; yaw 0.100 Hz -73.3 dB; yaw 0.125 Hz -73.1 dB; yaw 0.200 Hz -67.8 dB (* baskın frekans, kabul burada); her frekansta DRR ≤ gerekli: 8/14 nokta",
+   "x": "PM el 52.4° / az 52.1°, kesim 40.5 / 30.3 Hz",
+   "fill": {
+    "B1-01": 0.000004576919194785895,
+    "B1-03": 0.0000018232165764009932,
+    "B1-04": 0.0000020370019380375237
+   }
+  },
+  {
+   "nm": "el f_c 20 Hz",
+   "st": "AŞIM",
+   "m": "deniz spektrumu ağırlıklı artık tahsisi aşıyor (roll 9.68 > 5 µrad); DRR(f) eğrisi: roll 0.050 Hz -79.3 dB; roll 0.083 Hz -75.3 dB; roll 0.100 Hz -73.9 dB; roll 0.125 Hz -71.9 dB*; roll 0.200 Hz -67.1 dB; yaw 0.050 Hz -79.8 dB; yaw 0.083 Hz -77.9 dB*; yaw 0.100 Hz -73.3 dB; yaw 0.125 Hz -73.1 dB; yaw 0.200 Hz -67.8 dB (* baskın frekans, kabul burada); her frekansta DRR ≤ gerekli: 5/14 nokta",
+   "x": "PM el 47.6° / az 52.1°, kesim 20.2 / 30.3 Hz",
+   "fill": {
+    "B1-01": 0.000009681142883593464,
+    "B1-03": 0.0000018232162588136332,
+    "B1-04": 0.0000020356713312889853
+   }
+  },
+  {
+   "nm": "el f_c 60 Hz",
+   "st": "OK",
+   "m": "DRR(f) eğrisi: roll 0.050 Hz -87.2 dB; roll 0.083 Hz -84.7 dB; roll 0.100 Hz -83.9 dB; roll 0.125 Hz -82.0 dB*; roll 0.200 Hz -77.1 dB; yaw 0.050 Hz -79.8 dB; yaw 0.083 Hz -77.9 dB*; yaw 0.100 Hz -73.3 dB; yaw 0.125 Hz -73.1 dB; yaw 0.200 Hz -67.8 dB (* baskın frekans, kabul burada); her frekansta DRR ≤ gerekli: 8/14 nokta",
+   "x": "PM el 46.7° / az 52.1°, kesim 60.6 / 30.3 Hz",
+   "fill": {
+    "B1-01": 0.0000030223011806084728,
+    "B1-03": 0.0000018232172014129781,
+    "B1-04": 0.00000203724496630305
+   }
+  },
+  {
+   "nm": "el f_i 2 Hz",
+   "st": "AŞIM",
+   "m": "deniz spektrumu ağırlıklı artık tahsisi aşıyor (roll 18.26 > 5 µrad); DRR(f) eğrisi: roll 0.050 Hz -74.4 dB; roll 0.083 Hz -70.0 dB; roll 0.100 Hz -68.4 dB; roll 0.125 Hz -66.3 dB*; roll 0.200 Hz -61.7 dB; yaw 0.050 Hz -79.8 dB; yaw 0.083 Hz -77.9 dB*; yaw 0.100 Hz -73.3 dB; yaw 0.125 Hz -73.1 dB; yaw 0.200 Hz -67.8 dB (* baskın frekans, kabul burada); her frekansta DRR ≤ gerekli: 4/14 nokta",
+   "x": "PM el 58.0° / az 52.1°, kesim 40.2 / 30.3 Hz",
+   "fill": {
+    "B1-01": 0.000018259431874302663,
+    "B1-03": 0.0000018232166178841501,
+    "B1-04": 0.000002032802784009053
+   }
+  },
+  {
+   "nm": "el f_i 8 Hz",
+   "st": "OK",
+   "m": "DRR(f) eğrisi: roll 0.050 Hz -91.4 dB; roll 0.083 Hz -91.1 dB; roll 0.100 Hz -91.9 dB; roll 0.125 Hz -89.9 dB*; roll 0.200 Hz -85.0 dB; yaw 0.050 Hz -79.8 dB; yaw 0.083 Hz -77.9 dB*; yaw 0.100 Hz -73.3 dB; yaw 0.125 Hz -73.1 dB; yaw 0.200 Hz -67.8 dB (* baskın frekans, kabul burada); her frekansta DRR ≤ gerekli: 9/14 nokta",
+   "x": "PM el 41.5° / az 52.1°, kesim 40.9 / 30.3 Hz",
+   "fill": {
+    "B1-01": 0.0000012198918968463375,
+    "B1-03": 0.0000018232164819356643,
+    "B1-04": 0.0000020381222789276905
+   }
+  }
+ ],
+ "T2.1": [
+  {
+   "nm": "varsayılan",
+   "st": "OK",
+   "m": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -58.5 dB @ 3.05 Hz (gerekli -40.2 dB); yaw→xel -58.1 dB (bilgi); 0 rezonans adayı",
+   "x": "",
+   "fill": {}
+  },
+  {
+   "nm": "dar bant kapalı",
+   "st": "AŞIM",
+   "m": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -32.0 dB @ 5.37 Hz (gerekli -40.2 dB); yaw→xel -31.1 dB (bilgi); 0 rezonans adayı",
+   "x": "",
+   "fill": {}
+  },
+  {
+   "nm": "dar bant 10 dB",
+   "st": "OK",
+   "m": "VIV bandında (1.65–5.48 Hz) γ² ≥ 0.8 noktalarda en kötü DRR: roll→el -42.5 dB @ 5.37 Hz (gerekli -40.2 dB); yaw→xel -41.8 dB (bilgi); 0 rezonans adayı",
+   "x": "",
+   "fill": {}
+  }
+ ],
+ "T2.2": [
+  {
+   "nm": "varsayılan (dar bant ideal ayarlı)",
+   "st": "OK",
+   "m": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 3.05 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.08 µrad; yalnız açısal uyarımla 2.07 µrad (öteleme payı)",
+   "x": "",
+   "fill": {
+    "B2-01": 0.0000020788504063532326
+   }
+  },
+  {
+   "nm": "dar bant kapalı",
+   "st": "AŞIM",
+   "m": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol OFF; el ve xel'in büyüğü): en kötü 30.90 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 2.08 µrad; yalnız açısal uyarımla 19.55 µrad (öteleme payı)",
+   "x": "",
+   "fill": {
+    "B2-01": 0.000020779383936237788
+   }
+  },
+  {
+   "nm": "dar bant 10 dB",
+   "st": "AŞIM",
+   "m": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 9.60 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 6.49 µrad; yalnız açısal uyarımla 6.63 µrad (öteleme payı)",
+   "x": "",
+   "fill": {
+    "B2-01": 0.000006492940101560474
+   }
+  },
+  {
+   "nm": "dar bant 30 dB",
+   "st": "OK",
+   "m": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 1.00 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 0.72 µrad; yalnız açısal uyarımla 0.63 µrad (öteleme payı)",
+   "x": "",
+   "fill": {
+    "B2-01": 7.21573864148138e-7
+   }
+  },
+  {
+   "nm": "çalışma bandı üst sınırı 2,5 Hz (VIV dışarıda)",
+   "st": "AŞIM",
+   "m": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 31.07 µrad RMS (tahsis 6.0); f_n = 3.00 Hz'de OFF 20.78 → ON 20.91 µrad; yalnız açısal uyarımla 19.69 µrad (öteleme payı)",
+   "x": "",
+   "fill": {
+    "B2-01": 0.000020906339195418704
+   }
+  },
+  {
+   "nm": "gemi",
+   "st": "AŞIM",
+   "m": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol ON; el ve xel'in büyüğü): en kötü 6.55 µrad RMS (tahsis 6.0); f_n = 4.10 Hz'de OFF 60.30 → ON 5.75 µrad; yalnız açısal uyarımla 5.56 µrad (öteleme payı)",
+   "x": "",
+   "fill": {
+    "B2-01": 0.000005745870326969503
+   }
+  },
+  {
+   "nm": "gemi, dar bant kapalı",
+   "st": "AŞIM",
+   "m": "Tondaki artık (yapılandırılmış DUT, dar bant kontrol OFF; el ve xel'in büyüğü): en kötü 67.55 µrad RMS (tahsis 6.0); f_n = 4.10 Hz'de OFF 60.30 → ON 5.75 µrad; yalnız açısal uyarımla 53.90 µrad (öteleme payı)",
+   "x": "",
+   "fill": {
+    "B2-01": 0.000060304799754185413
+   }
+  }
+ ],
+ "T1.6": [
+  {
+   "nm": "varsayılan (LuGre ileri besleme, η 0,95)",
+   "st": "OK",
+   "m": "Yön değişimi geçişi (senkron ortalama): tepe 5.8 µrad (sınır 10.3), tekrarlanan bileşen el 1.45 µrad RMS; 40 sıfır geçişi",
+   "x": "",
+   "fill": {
+    "B1-07": 0.0000014534777274379316
+   }
+  },
+  {
+   "nm": "ileri besleme kapalı",
+   "st": "AŞIM",
+   "m": "Yön değişimi geçişi (senkron ortalama): tepe 135.4 µrad (sınır 10.3), tekrarlanan bileşen el 24.10 µrad RMS; 40 sıfır geçişi",
+   "x": "",
+   "fill": {
+    "B1-07": 0.000024100187414937288
+   }
+  },
+  {
+   "nm": "η 0,5",
+   "st": "AŞIM",
+   "m": "Yön değişimi geçişi (senkron ortalama): tepe 67.4 µrad (sınır 10.3), tekrarlanan bileşen el 12.01 µrad RMS; 40 sıfır geçişi",
+   "x": "",
+   "fill": {
+    "B1-07": 0.000012005556956619438
+   }
+  },
+  {
+   "nm": "η 1,1 (aşırı)",
+   "st": "AŞIM",
+   "m": "Yön değişimi geçişi (senkron ortalama): tepe 16.2 µrad (sınır 10.3), tekrarlanan bileşen el 2.81 µrad RMS; 40 sıfır geçişi",
+   "x": "",
+   "fill": {
+    "B1-07": 0.0000028098213717232847
+   }
+  },
+  {
+   "nm": "hız kestirimi 100 Hz",
+   "st": "AŞIM",
+   "m": "Yön değişimi geçişi (senkron ortalama): tepe 14.6 µrad (sınır 10.3), tekrarlanan bileşen el 2.18 µrad RMS; 40 sıfır geçişi",
+   "x": "",
+   "fill": {
+    "B1-07": 0.0000021832835814086053
+   }
+  },
+  {
+   "nm": "hız kestirimi 2000 Hz",
+   "st": "OK",
+   "m": "Yön değişimi geçişi (senkron ortalama): tepe 7.4 µrad (sınır 10.3), tekrarlanan bileşen el 1.53 µrad RMS; 40 sıfır geçişi",
+   "x": "",
+   "fill": {
+    "B1-07": 0.0000015349258354234897
+   }
+  }
+ ],
+ "T1.8": [
+  {
+   "nm": "varsayılan",
+   "st": "BİLGİ",
+   "m": "Oturma süresi (|hata| ≤ 20 µrad): en büyük 379 ms, ortalama 334 ms; aşma en büyük 0.13 mrad",
+   "x": "PM el 52.4° / az 52.1°, kesim 40.5 / 30.3 Hz",
+   "fill": {}
+  },
+  {
+   "nm": "az f_c 15 Hz",
+   "st": "BİLGİ",
+   "m": "Oturma süresi (|hata| ≤ 20 µrad): en büyük 2120 ms, ortalama 583 ms; aşma en büyük 0.31 mrad",
+   "x": "PM el 52.4° / az 39.0°, kesim 40.5 / 15.1 Hz",
+   "fill": {}
+  },
+  {
+   "nm": "az f_c 45 Hz",
+   "st": "BİLGİ",
+   "m": "Oturma süresi (|hata| ≤ 20 µrad): en büyük 342 ms, ortalama 305 ms; aşma en büyük 0.09 mrad",
+   "x": "PM el 52.4° / az 51.0°, kesim 40.5 / 45.5 Hz",
+   "fill": {}
+  },
+  {
+   "nm": "az f_i 8 Hz",
+   "st": "BİLGİ",
+   "m": "Oturma süresi (|hata| ≤ 20 µrad): en büyük 250 ms, ortalama 170 ms; aşma en büyük 0.11 mrad",
+   "x": "PM el 52.4° / az 38.0°, kesim 40.5 / 30.6 Hz",
+   "fill": {}
+  }
+ ],
+ "T1.4": [
+  {
+   "nm": "varsayılan (sekant AÇIK)",
+   "st": "OK",
+   "m": "el 0°: roll→el -82.4 dB, yaw→xel -82.2 dB; el 30°: roll→el -81.5 dB, yaw→xel -88.8 dB; el 60°: roll→el -78.4 dB, yaw→xel -79.2 dB; el 75°: roll→el -80.2 dB, yaw→xel -79.6 dB (baskın frekanslarda)",
+   "x": "",
+   "fill": {}
+  },
+  {
+   "nm": "sekant kapalı",
+   "st": "OK",
+   "m": "el 0°: roll→el -82.4 dB, yaw→xel -82.2 dB; el 30°: roll→el -81.5 dB, yaw→xel -86.6 dB; el 60°: roll→el -78.4 dB, yaw→xel -76.8 dB; el 75°: roll→el -80.1 dB, yaw→xel -75.3 dB (baskın frekanslarda)",
+   "x": "",
+   "fill": {}
+  }
+ ],
+ "T4.2": [
+  {
+   "nm": "varsayılan (sabit sürtünme modeli)",
+   "st": "AŞIM",
+   "m": "Yapılandırılmış DUT (sabit FF): -20 °C sürtünme tepesi 82.1 µrad, 3.00 Hz artık 15.13 µrad; 20 °C sürtünme tepesi 5.5 µrad, 3.00 Hz artık 2.18 µrad; 55 °C sürtünme tepesi 13.2 µrad, 3.00 Hz artık 2.57 µrad",
+   "x": "",
+   "fill": {}
+  },
+  {
+   "nm": "sıcaklık programlı sürtünme modeli",
+   "st": "OK",
+   "m": "Yapılandırılmış DUT (sıcaklık programlı FF): -20 °C sürtünme tepesi 8.7 µrad, 3.00 Hz artık 2.49 µrad; 20 °C sürtünme tepesi 5.5 µrad, 3.00 Hz artık 2.18 µrad; 55 °C sürtünme tepesi 5.9 µrad, 3.00 Hz artık 1.93 µrad",
+   "x": "",
+   "fill": {}
+  }
+ ],
+ "T1.5": [
+  {
+   "nm": "türetme kapalı",
+   "st": "OK",
+   "m": "Alan köşesi yer değiştirmesi (türetme ON): sinüs 16.31, deniz profili 16.81 µrad RMS (sınır 20.0); türetme OFF sinüs 606.7 µrad",
+   "x": "",
+   "fill": {
+    "R-01": 0.000016814666005715003
+   }
+  }
+ ],
+ "mistune": [
+  {
+   "e": 0,
+   "sim": -60.1743962024934,
+   "mdl": -60.19515496708827
+  },
+  {
+   "e": 0.05,
+   "sim": -58.8244433132585,
+   "mdl": -58.83040404383045
+  },
+  {
+   "e": 0.1,
+   "sim": -56.405821957467865,
+   "mdl": -56.396866274674544
+  },
+  {
+   "e": 0.2,
+   "sim": -52.45047177467313,
+   "mdl": -52.42148032572391
+  }
+ ],
+ "op": [
+  {
+   "nm": "ileri besleme AÇIK",
+   "el": 0.0000027112110006056206,
+   "xel": 0.000002011524618590639,
+   "wEl": 0.000002704929390290329
+  },
+  {
+   "nm": "ileri besleme kapalı",
+   "el": 0.000053638163684825165,
+   "xel": 0.00004012457108976697,
+   "wEl": 0.000053518545327923035
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+OK  S3 Laboratuvar öteleme talebi ve ölçek q
+     beklenen: özdeş; tepe = ±0.1 m; x 0.500, y 0.997, z 0.743 m RMS
+     elde:     en büyük fark 6.8e-15 m; q = 0.02481, ölçek sonrası tepe 0.100000 m; x 0.496 (-0.7 %), y 0.993 (-0.5 %), z 0.738 (-0.7 %) m RMS; tepe/σ = 4.06
+     ölçüt:    fark ≤ 1·10⁻¹² m; tepe ±1·10⁻¹² m; RMS ±%5 (tek gerçekleşme, N_eff ≈ 900)
+OK  S4 T2.5 kestirimi ↔ işletme benzetimi (B1-08)
+     beklenen: kestirim ≥ işletme (muhafazakâr), ≤ 4 kat
+     elde:     r = (0, 0, 15) m: kestirim el 3.447 / xel 4.751 µrad; işletme el 1.842 / xel 2.531 µrad; yol ayrımı olmadan 2.285 / 1.863 µrad · r = (20, −4, 15) m: kestirim el 6.927 / xel 4.804 µrad; işletme el 3.862 / xel 2.541 µrad; yol ayrımı olmadan 3.354 / 1.878 µrad
+     ölçüt:    işletme ≤ kestirim ≤ 4 × işletme (iki eksen, iki kol)
+
+2/2 doğrulama geçti (10 s)

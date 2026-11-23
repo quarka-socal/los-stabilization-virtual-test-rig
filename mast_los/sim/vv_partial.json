@@ -1,0 +1,18 @@
+{
+ "generated": "2026-11-10T10:49:06.649Z",
+ "engine": "v3",
+ "items": [
+  {
+   "grp": "G",
+   "id": "G6",
+   "name": "İşletme: çarpmasız ek koşu yalnız dalga çarpmasını kaldırır, kalıntı Gauss (v13.17)",
+   "method": "denizaltı varsayılanı, 600 s, tohum 11, bütün kaynaklar; aynı tohumla slap kaynağı kapalı ek koşu (takip öncesi / sonrası)",
+   "exp": "Az (yalnız çapraz kuplaj): ≤ %0,1; çarpmasız PPV/σ El = Rice ± %15; çarpmalı PPV/σ El > 2 × Rice",
+   "got": "takip öncesi: PPV El 184.9 → 55.9 µrad, PPV/σ El 26.82 → 8.48 (Rice 9.11, -6.9 %), Az farkı 2.9e-5 · takip sonrası: PPV El 192.5 → 64.7 µrad, PPV/σ El 26.85 → 9.84 (Rice 9.14, 7.7 %), Az farkı 3.4e-4",
+   "crit": "%0,1 · ±%15 · > 2×",
+   "pass": true,
+   "detail": "Çarpmalı koşuda PPV/σ El en az Rice beklentisinin 2.94 katı: PPV ve P99,73'ü seyrek geçişler belirler. 60 s'lik pencereden çarpma içerenleri atmak uygulanamaz (λ·T_w = 6 olay, olaysız pencere olasılığı 0.25 %); bu yüzden aynı tohumla çarpmasız ek koşu kullanılır."
+  }
+ ],
+ "elapsed": 53.839
+}

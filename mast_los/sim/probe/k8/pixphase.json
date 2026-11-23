@@ -1,0 +1,77 @@
+[
+ {
+  "nm": "varsayılan (x0 0,37, y0 −0,21)",
+  "t13": "Wander (en kötü tohum) el 6.96 / xel 6.57 µrad RMS; P99 17.40 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 10.16 / 9.39 µrad (gereksinim 120)",
+  "seeds": "6.74/5.60 · 6.96/4.89 · 6.74/6.57",
+  "real": "6.55 / 1.65 µrad",
+  "t19": "Takip sonrası (pencere RMS'lerinin %95 üst güven sınırı): σ_vek 4.00 µrad (sınır 4.00), σ_El 3.11 / σ_Az 2.53, PPV 27.2 / 22.2, P99,73 9.8, pozlama içi 1.96 / 1.71 µrad; aşan: σ_El, PPV El, PPV Az, Bant 0.1–2.5 Hz El, Bant 2.5–20 Hz El, Bant 20–100 Hz El, Bant 100–500 Hz El, Bant 100–500 Hz Az, Ton El 60.00 Hz",
+  "t19kv": [
+   "Takip öncesi: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 4.77 / 2.65 / 5.46 µrad · 36.6 / 24.7 µrad",
+   "Takip sonrası: σ_El / σ_Az / σ_vek (havuz · %95 üst · en kötü pencere): 3.05 · 3.11 · 3.33 / 2.51 · 2.53 · 2.55 / 3.95 · 4.00 · 4.16 µrad",
+   "Takip sonrası: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 2.87 / 2.12 / 3.57 µrad · 22.1 / 16.5 µrad"
+  ],
+  "gX": 0.8783454937081496,
+  "gE": 1.0441960022630905,
+  "s": 36.239
+ },
+ {
+  "nm": "piksel fazı 0",
+  "t13": "Wander (en kötü tohum) el 6.94 / xel 6.61 µrad RMS; P99 17.54 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 9.78 / 9.02 µrad (gereksinim 120)",
+  "seeds": "6.67/5.60 · 6.94/4.80 · 6.74/6.61",
+  "real": "6.55 / 1.65 µrad",
+  "t19": "Takip sonrası (pencere RMS'lerinin %95 üst güven sınırı): σ_vek 4.02 µrad (sınır 4.00), σ_El 3.10 / σ_Az 2.58, PPV 26.6 / 22.5, P99,73 9.8, pozlama içi 1.96 / 1.71 µrad; aşan: σ_El, σ_vek, PPV El, PPV Az, Bant 0.1–2.5 Hz El, Bant 20–100 Hz El, Bant 100–500 Hz El, Bant 100–500 Hz Az, Ton El 60.00 Hz",
+  "t19kv": [
+   "Takip öncesi: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 4.72 / 2.62 / 5.40 µrad · 35.1 / 24.5 µrad",
+   "Takip sonrası: σ_El / σ_Az / σ_vek (havuz · %95 üst · en kötü pencere): 3.03 · 3.10 · 3.31 / 2.56 · 2.58 · 2.62 / 3.97 · 4.02 · 4.17 µrad",
+   "Takip sonrası: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 2.72 / 2.32 / 3.57 µrad · 21.3 / 17.7 µrad"
+  ],
+  "gX": 1,
+  "gE": 1,
+  "s": 96.617
+ },
+ {
+  "nm": "x0 = y0 = 0 (kazanç en büyük)",
+  "t13": "Wander (en kötü tohum) el 7.00 / xel 6.78 µrad RMS; P99 17.79 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 10.21 / 8.96 µrad (gereksinim 120)",
+  "seeds": "6.70/5.71 · 7.00/4.81 · 6.78/6.78",
+  "real": "6.55 / 1.65 µrad",
+  "t19": "Takip sonrası (pencere RMS'lerinin %95 üst güven sınırı): σ_vek 4.17 µrad (sınır 4.00), σ_El 3.17 / σ_Az 2.73, PPV 28.9 / 23.8, P99,73 10.1, pozlama içi 1.96 / 1.71 µrad; aşan: σ_El, σ_vek, PPV El, PPV Az, Bant 2.5–20 Hz El, Bant 20–100 Hz El, Bant 100–500 Hz El, Bant 100–500 Hz Az, Ton El 60.00 Hz",
+  "t19kv": [
+   "Takip öncesi: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 4.74 / 2.61 / 5.41 µrad · 36.7 / 22.5 µrad",
+   "Takip sonrası: σ_El / σ_Az / σ_vek (havuz · %95 üst · en kötü pencere): 3.10 · 3.17 · 3.39 / 2.70 · 2.73 · 2.80 / 4.11 · 4.17 · 4.31 µrad",
+   "Takip sonrası: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 3.14 / 2.76 / 4.18 µrad · 24.0 / 22.7 µrad"
+  ],
+  "gX": 1.1777153175263346,
+  "gE": 1.1777153175263346,
+  "s": 90.491
+ },
+ {
+  "nm": "x0 = y0 = 0,5 (kazanç en küçük)",
+  "t13": "Wander (en kötü tohum) el 6.98 / xel 6.55 µrad RMS; P99 17.68 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 9.86 / 9.38 µrad (gereksinim 120)",
+  "seeds": "6.74/5.60 · 6.98/4.91 · 6.79/6.55",
+  "real": "6.55 / 1.65 µrad",
+  "t19": "Takip sonrası (pencere RMS'lerinin %95 üst güven sınırı): σ_vek 3.99 µrad (sınır 4.00), σ_El 3.13 / σ_Az 2.50, PPV 26.1 / 21.9, P99,73 9.8, pozlama içi 1.96 / 1.71 µrad; aşan: σ_El, PPV El, PPV Az, Bant 0.1–2.5 Hz El, Bant 20–100 Hz El, Bant 100–500 Hz El, Bant 100–500 Hz Az, Ton El 60.00 Hz",
+  "t19kv": [
+   "Takip öncesi: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 4.75 / 2.67 / 5.44 µrad · 37.0 / 26.6 µrad",
+   "Takip sonrası: σ_El / σ_Az / σ_vek (havuz · %95 üst · en kötü pencere): 3.05 · 3.13 · 3.36 / 2.47 · 2.50 · 2.52 / 3.93 · 3.99 · 4.16 µrad",
+   "Takip sonrası: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 2.42 / 1.99 / 3.13 µrad · 19.9 / 15.2 µrad"
+  ],
+  "gX": 0.8222846824736654,
+  "gE": 0.8222846824736654,
+  "s": 91.759
+ },
+ {
+  "nm": "x0 = y0 = 0,25 (eğim hatası yok)",
+  "t13": "Wander (en kötü tohum) el 7.02 / xel 6.64 µrad RMS; P99 17.75 µrad; FOV'da kalma 100.00 %; kırpma 0.000 %; MWIR-WFOV: 9.72 / 9.26 µrad (gereksinim 120)",
+  "seeds": "6.68/5.62 · 7.02/4.85 · 6.82/6.64",
+  "real": "6.55 / 1.65 µrad",
+  "t19": "Takip sonrası (pencere RMS'lerinin %95 üst güven sınırı): σ_vek 4.04 µrad (sınır 4.00), σ_El 3.10 / σ_Az 2.60, PPV 27.0 / 22.5, P99,73 9.8, pozlama içi 1.96 / 1.71 µrad; aşan: σ_El, σ_vek, PPV El, PPV Az, Bant 0.1–2.5 Hz El, Bant 20–100 Hz El, Bant 100–500 Hz El, Bant 100–500 Hz Az, Ton El 60.00 Hz",
+  "t19kv": [
+   "Takip öncesi: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 4.71 / 2.62 / 5.39 µrad · 36.0 / 24.1 µrad",
+   "Takip sonrası: σ_El / σ_Az / σ_vek (havuz · %95 üst · en kötü pencere): 3.04 · 3.10 · 3.31 / 2.58 · 2.60 · 2.65 / 3.98 · 4.04 · 4.18 µrad",
+   "Takip sonrası: video ile ölçülen (50 fps, gürültü dahil) σ_El / σ_Az / σ_vek · PPV: 2.78 / 2.38 / 3.66 µrad · 22.1 / 18.5 µrad"
+  ],
+  "gX": 1,
+  "gE": 1,
+  "s": 90.678
+ }
+]
